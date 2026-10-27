@@ -1,0 +1,1001 @@
+
+/* =============================================
+   GRIDMIND – KI AUTOMATION
+   css/automation.css
+   ============================================= */
+
+.auto-hero {
+  position: relative;
+  background: #fff;
+  padding-top: 85px;
+  overflow: hidden;
+}
+
+.auto-hero-layout {
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.auto-hero-copy {
+  position: relative;
+  z-index: 5;
+  padding-bottom: 30px;
+}
+
+.auto-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 17px;
+  border-radius: 50px;
+  background: #eff9f2;
+  border: 1px solid #cce9d5;
+  color: #116f4b;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .075em;
+  margin-bottom: 28px;
+}
+
+.auto-live-dot {
+  width: 8px;
+  height: 8px;
+  background: #31c675;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #dbf7e6;
+  animation: autoLive 2.8s ease-in-out infinite;
+}
+
+.auto-hero h1 {
+  font-size: clamp(48px,5.5vw,76px);
+  font-weight: 900;
+  letter-spacing: -.048em;
+  line-height: 1.04;
+  color: #103f38;
+  margin-bottom: 27px;
+}
+
+.auto-hero h1 em {
+  color: #138a57;
+  font-style: normal;
+}
+
+.auto-hero-copy > p {
+  font-size: 19px;
+  color: #5a746a;
+  line-height: 1.65;
+  margin-bottom: 32px;
+  max-width: 540px;
+}
+
+.auto-hero-benefits {
+  display: flex;
+  gap: 12px 20px;
+  flex-wrap: wrap;
+  margin-top: 29px;
+  font-size: 13px;
+  color: #24704c;
+  font-weight: 750;
+}
+
+.auto-wave {
+  width: 100%;
+  height: 105px;
+  display: block;
+  margin-top: 15px;
+}
+
+/* =============================================
+   HERO BUTTON – IDENTISCHE ANIMATION
+   ============================================= */
+
+.hero-button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  animation: gmButtonBreathe 3.4s ease-in-out infinite;
+}
+
+.hero-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    rgba(255,255,255,.42) 50%,
+    transparent 70%
+  );
+  transform: translateX(-130%);
+  animation: gmButtonShimmer 3.6s ease-in-out 1.2s infinite;
+  pointer-events: none;
+}
+
+.hero-button > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes gmButtonShimmer {
+  0% { transform: translateX(-130%); }
+  60%,100% { transform: translateX(130%); }
+}
+
+@keyframes gmButtonBreathe {
+  0%,100% {
+    box-shadow:
+      0 14px 36px -10px rgba(19,138,87,.55),
+      inset 0 1px 0 rgba(255,255,255,.18);
+  }
+  50% {
+    box-shadow:
+      0 18px 44px -10px rgba(19,138,87,.75),
+      0 0 0 6px rgba(19,138,87,.12),
+      inset 0 1px 0 rgba(255,255,255,.18);
+  }
+}
+
+/* =============================================
+   WORKFLOW SCENE
+   ============================================= */
+
+.auto-scene {
+  position: relative;
+  width: 100%;
+  min-height: 525px;
+  isolation: isolate;
+}
+
+.auto-scene-glow {
+  position: absolute;
+  inset: 25px 0 10px;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    rgba(96,221,149,.32) 0%,
+    rgba(196,245,214,.35) 35%,
+    transparent 73%
+  );
+  z-index: -2;
+}
+
+.auto-scene-path {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: visible;
+}
+
+.auto-wire-base {
+  fill: none;
+  stroke: #cce9d8;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.auto-wire-moving {
+  fill: none;
+  stroke: #25bc77;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 12 13;
+  animation: autoWire 9s linear infinite;
+}
+
+.auto-particle {
+  fill: rgba(38,202,117,.3);
+}
+
+.auto-particle-core {
+  fill: #16b86b;
+}
+
+.auto-scene-brand {
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  left: 33%;
+  top: 39%;
+  border-radius: 38px;
+  padding: 17px;
+  background: rgba(255,255,255,.89);
+  border: 1px solid #dceee3;
+  box-shadow: 0 22px 70px rgba(18,109,64,.17);
+  display: grid;
+  place-items: center;
+  animation: autoBrandBob 7s ease-in-out infinite;
+}
+
+.auto-scene-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.auto-workflow-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 1px solid #dfebe3;
+  border-radius: 19px;
+  padding: 17px;
+  box-shadow: 0 22px 50px rgba(13,80,48,.15);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.auto-workflow-card strong {
+  display: block;
+  font-size: 12px;
+  color: #123d32;
+  line-height: 1.4;
+}
+
+.auto-workflow-card small {
+  display: block;
+  color: #82988a;
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.auto-workflow-icon {
+  width: 39px;
+  height: 39px;
+  border-radius: 12px;
+  background: #e7f8eb;
+  color: #15935d;
+  display: grid;
+  place-items: center;
+  flex: 0 0 39px;
+  font-size: 20px;
+}
+
+.auto-card-trigger {
+  bottom: 12%;
+  left: -1%;
+  width: 245px;
+  animation: autoFloatTrigger 8s ease-in-out infinite;
+}
+
+.auto-card-state {
+  background: #ebf7ee;
+  color: #15935d;
+  font-size: 9px;
+  border-radius: 20px;
+  padding: 6px 8px;
+  font-weight: 900;
+}
+
+.auto-card-ai {
+  top: 31%;
+  right: 4%;
+  width: 265px;
+  display: block;
+  padding: 18px;
+  animation: autoFloatAI 9.5s ease-in-out -3s infinite;
+}
+
+.auto-ai-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auto-running-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2fd17e;
+  margin-left: auto;
+  animation: autoLive 2.5s ease-in-out infinite;
+}
+
+.auto-ai-wave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 66px;
+}
+
+.auto-ai-wave i {
+  width: 5px;
+  height: 16px;
+  border-radius: 6px;
+  background: #23b870;
+  animation: autoAudio 1.3s ease-in-out infinite;
+}
+
+.auto-ai-wave i:nth-child(2n) { animation-delay: -.25s; }
+.auto-ai-wave i:nth-child(3n) { animation-delay: -.6s; }
+.auto-ai-wave i:nth-child(5n) { animation-delay: -.9s; }
+
+.auto-ai-progress {
+  height: 6px;
+  border-radius: 20px;
+  background: #e4f4ea;
+  overflow: hidden;
+}
+
+.auto-ai-progress span {
+  display: block;
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(90deg,#1a9c64,#6ee0a3);
+  border-radius: inherit;
+  animation: autoProgress 3.8s ease-in-out infinite;
+}
+
+.auto-card-ai p {
+  margin: 11px 0 0;
+  text-align: center;
+  font: 11px Consolas,monospace;
+  color: #528775;
+}
+
+.auto-card-result {
+  top: 6%;
+  right: 1%;
+  width: 247px;
+  animation: autoFloatResult 10s ease-in-out -4s infinite;
+}
+
+.auto-card-check {
+  margin-left: auto;
+  font-size: 17px;
+  font-weight: 900;
+  color: #14a65c;
+}
+
+.auto-scene-spark {
+  position: absolute;
+  color: #4bc77f;
+  font-size: 27px;
+  animation: autoTwinkle 3s ease-in-out infinite;
+}
+
+.auto-spark-a { top: 8%; left: 14%; }
+.auto-spark-b { bottom: 13%; right: 10%; animation-delay: -1.2s; }
+.auto-spark-c { top: 32%; left: 23%; animation-delay: -2s; }
+
+@keyframes autoWire {
+  to { stroke-dashoffset: -150; }
+}
+
+@keyframes autoBrandBob {
+  0%,100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-14px) rotate(-3deg); }
+}
+
+@keyframes autoFloatTrigger {
+  0%,100% { transform: translate(0,0) rotate(-3deg); }
+  50% { transform: translate(-8px,-17px) rotate(-3deg); }
+}
+
+@keyframes autoFloatAI {
+  0%,100% { transform: translate(0,0) rotate(3deg); }
+  50% { transform: translate(10px,-16px) rotate(3deg); }
+}
+
+@keyframes autoFloatResult {
+  0%,100% { transform: translate(0,0) rotate(-2deg); }
+  50% { transform: translate(-9px,13px) rotate(-2deg); }
+}
+
+@keyframes autoAudio {
+  0%,100% { height: 8px; opacity: .5; }
+  50% { height: 39px; opacity: 1; }
+}
+
+@keyframes autoProgress {
+  0% { transform: translateX(-110%); }
+  100% { transform: translateX(350%); }
+}
+
+@keyframes autoTwinkle {
+  0%,100% { opacity: .35; transform: scale(.8); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+@keyframes autoLive {
+  0%,100% { opacity: 1; }
+  50% { opacity: .4; }
+}
+
+/* =============================================
+   VALUE SECTION
+   ============================================= */
+
+.auto-value,
+.auto-benefits {
+  background: #f4f8f6;
+}
+
+.auto-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.auto-lead {
+  font-size: 18px;
+  color: #607a72;
+  max-width: 500px;
+}
+
+.auto-value-points,
+.auto-finance-list {
+  display: grid;
+  gap: 30px;
+}
+
+.auto-value-points article,
+.auto-finance-list article {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.auto-value-points article > span,
+.auto-finance-list article > span {
+  flex: 0 0 55px;
+  height: 55px;
+  border-radius: 16px;
+  background: #dff4e7;
+  color: #138a57;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.auto-value-points h3,
+.auto-finance-list h3 {
+  font-size: 21px;
+  margin: 1px 0 9px;
+}
+
+.auto-value-points p,
+.auto-finance-list p {
+  font-size: 15px;
+  color: #607a72;
+  margin: 0;
+}
+
+/* =============================================
+   INTERACTIVE ROLE PANELS
+   ============================================= */
+
+.auto-roles {
+  background: white;
+}
+
+.auto-role-tabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.auto-role-tab {
+  padding: 15px 19px;
+  border: 1px solid #d9e9de;
+  border-radius: 30px;
+  background: #f7faf8;
+  color: #234d3e;
+  font-size: 14px;
+  font-weight: 800;
+  transition: background .25s,color .25s,border-color .25s;
+}
+
+.auto-role-tab span {
+  margin-right: 8px;
+  opacity: .7;
+}
+
+.auto-role-tab.is-active,
+.auto-role-tab:hover {
+  color: white;
+  background: #138a57;
+  border-color: #138a57;
+}
+
+.auto-role-panel {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  background: #f4f8f6;
+  border-radius: 30px;
+  overflow: hidden;
+  min-height: 410px;
+  animation: autoPanelIn .4s ease both;
+}
+
+.auto-role-panel[hidden] {
+  display: none !important;
+}
+
+.auto-role-visual {
+  background: linear-gradient(145deg,#09463f,#18a367);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  min-height: 360px;
+}
+
+.auto-role-visual-alt {
+  background: linear-gradient(145deg,#0b564c,#62cf92);
+}
+
+.auto-role-visual-third {
+  background: linear-gradient(145deg,#062d34,#128875);
+}
+
+.auto-role-glyph {
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgba(255,255,255,.36);
+  border-radius: 45px;
+  display: grid;
+  place-items: center;
+  font-size: 110px;
+  box-shadow: 0 0 0 25px rgba(255,255,255,.06);
+  animation: autoGlyphBob 6s ease-in-out infinite;
+}
+
+.auto-role-visual > span {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-align: center;
+}
+
+.auto-role-copy {
+  padding: 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.auto-section-label {
+  color: #15915d;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  margin-bottom: 15px;
+}
+
+.auto-role-copy h3 {
+  font-size: clamp(30px,3.5vw,46px);
+  letter-spacing: -.035em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.auto-role-copy p {
+  color: #607a72;
+  font-size: 16px;
+}
+
+.auto-role-copy ul {
+  padding-left: 20px;
+  color: #234d3e;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 0 0 22px;
+}
+
+.auto-role-copy .btn {
+  margin-top: auto;
+}
+
+@keyframes autoPanelIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes autoGlyphBob {
+  0%,100% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-11px) rotate(-4deg); }
+}
+
+/* =============================================
+   TIMELINE
+   ============================================= */
+
+.auto-roadmap {
+  background: #f4f8f6;
+}
+
+/* Die eigentlichen Timeline-Styles
+   kommen aus education.css und
+   werden hier für diese Seite ergänzt. */
+
+/* =============================================
+   PROJECTS
+   ============================================= */
+
+.auto-projects {
+  background: white;
+}
+
+.auto-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 22px;
+}
+
+.auto-project-card {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 26px;
+  background: #f4f8f6;
+  border: 1px solid #e0ede4;
+  transition: transform .3s ease,box-shadow .3s ease;
+}
+
+.auto-project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px rgba(8,74,46,.12);
+}
+
+.auto-project-icon {
+  font-size: 32px;
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  background: #daf1e3;
+  color: #0f8a57;
+  border-radius: 19px;
+  margin-bottom: 27px;
+}
+
+.auto-project-number {
+  color: #138a57;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .11em;
+  margin-bottom: 12px;
+}
+
+.auto-project-card h3 {
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+}
+
+.auto-project-card p {
+  font-size: 15px;
+  color: #607a72;
+  flex-grow: 1;
+}
+
+.auto-project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.auto-project-tags span {
+  border-radius: 25px;
+  padding: 7px 12px;
+  background: white;
+  color: #188758;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* =============================================
+   BENEFITS
+   ============================================= */
+
+.auto-benefits-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 30px;
+}
+
+.auto-benefits-grid article {
+  padding: 25px 0;
+  border-top: 1px solid #cfe3d6;
+}
+
+.auto-benefits-grid article > span {
+  display: inline-block;
+  color: #169864;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.auto-benefits-grid h3 {
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.auto-benefits-grid p {
+  font-size: 15px;
+  color: #607a72;
+}
+
+/* =============================================
+   FINANCING / FAQ / FINAL CTA
+   ============================================= */
+
+.auto-financing {
+  background: white;
+}
+
+.auto-financing .hero-button {
+  margin-top: 15px;
+}
+
+.auto-faq {
+  background: #f4f8f6;
+}
+
+.auto-final {
+  background: linear-gradient(135deg,#0a604c,#179963);
+  padding: 115px 20px 130px;
+  text-align: center;
+  color: white;
+}
+
+.auto-final-inner > span {
+  color: #a8eec7;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+.auto-final h2 {
+  color: white;
+  font-size: clamp(40px,5vw,70px);
+  line-height: 1.08;
+  margin: 22px 0;
+}
+
+.auto-final h2 em {
+  color: #9df0b9;
+  font-style: normal;
+}
+
+.auto-final p {
+  color: #d4f8e4;
+  font-size: 18px;
+  max-width: 570px;
+  margin: 0 auto 30px;
+}
+
+.auto-final-button {
+  background: white;
+  color: #075b46;
+}
+
+.auto-final-button .arrow-circle {
+  background: #e2f5e9;
+}
+
+/* COOKIE-BANNER OHNE ABDUNKLUNG */
+
+.cookie-overlay {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  z-index: 9998;
+}
+
+.cookie-banner {
+  z-index: 9999 !important;
+  background: white;
+  box-shadow: 0 20px 60px rgba(5,58,37,.18);
+}
+
+/* =============================================
+   TABLET
+   ============================================= */
+
+@media (max-width: 1050px) {
+  .auto-hero-layout {
+    gap: 15px;
+  }
+
+  .auto-hero h1 {
+    font-size: 54px;
+  }
+
+  .auto-workflow-card {
+    padding: 13px;
+  }
+
+  .auto-card-trigger { width: 215px; }
+  .auto-card-ai { width: 220px; }
+  .auto-card-result { width: 220px; }
+
+  .auto-split { gap: 40px; }
+}
+
+/* =============================================
+   MOBILE
+   ============================================= */
+
+@media (max-width: 800px) {
+  .auto-hero {
+    padding-top: 70px;
+  }
+
+  .auto-hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .auto-hero-copy {
+    text-align: center;
+  }
+
+  .auto-hero h1 {
+    font-size: clamp(43px,8vw,66px);
+  }
+
+  .auto-hero-copy > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .auto-hero-benefits {
+    justify-content: center;
+  }
+
+  .auto-scene {
+    width: min(580px,100%);
+    margin: 0 auto;
+    min-height: 490px;
+  }
+
+  .auto-split,
+  .auto-role-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .auto-project-grid,
+  .auto-benefits-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .auto-role-copy {
+    padding: 35px;
+  }
+
+  .auto-role-visual {
+    min-height: 270px;
+  }
+
+  .auto-role-glyph {
+    width: 140px;
+    height: 140px;
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .auto-scene {
+    min-height: 450px;
+  }
+
+  .auto-scene-brand {
+    width: 90px;
+    height: 90px;
+    left: 32%;
+    top: 43%;
+  }
+
+  .auto-card-trigger {
+    left: 0;
+    bottom: 4%;
+    width: 190px;
+  }
+
+  .auto-card-ai {
+    right: 0;
+    top: 32%;
+    width: 195px;
+  }
+
+  .auto-card-result {
+    top: 2%;
+    right: 0;
+    width: 210px;
+  }
+
+  .auto-workflow-card strong {
+    font-size: 10px;
+  }
+
+  .auto-workflow-card small {
+    font-size: 9px;
+  }
+
+  .auto-workflow-icon {
+    width: 31px;
+    height: 31px;
+    flex-basis: 31px;
+    font-size: 16px;
+  }
+
+  .auto-card-state {
+    display: none;
+  }
+
+  .auto-role-tabs {
+    flex-direction: column;
+  }
+
+  .auto-role-tab {
+    text-align: left;
+  }
+
+  .auto-role-visual {
+    min-height: 220px;
+  }
+
+  .auto-role-copy {
+    padding: 27px;
+  }
+
+  .auto-project-grid,
+  .auto-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auto-project-card {
+    min-height: 0;
+  }
+
+  .auto-wave {
+    height: 70px;
+  }
+}
+
+/* =============================================
+   ACCESSIBILITY
+   ============================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .auto-live-dot,
+  .auto-running-dot,
+  .auto-scene-brand,
+  .auto-workflow-card,
+  .auto-scene-spark,
+  .auto-ai-wave i,
+  .auto-ai-progress span,
+  .auto-role-glyph,
+  .hero-button,
+  .hero-button::before {
+    animation: none !important;
+  }
+
+  .auto-wire-moving {
+    animation: none !important;
+    stroke-dasharray: none;
+  }
+
+  .auto-particle,
+  .auto-particle-core {
+    display: none;
+  }
+}
+ 

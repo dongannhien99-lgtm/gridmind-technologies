@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#138a57">
+  <meta name="description"
+    content="Gridmind Technologies: Dein Einstieg in die IT, professionelle Webentwicklung, intelligente Software und die Grid-Gerätewelt.">
+  <title>Gridmind Technologies | Deine Zukunft in der IT</title>
+  <link rel="icon" href="assets/logo-icon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/figtree.css">
+  <link rel="stylesheet" href="css/education-shared.css">
+  <link rel="stylesheet" href="../css/roadmap.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
+
+  <!-- Gemeinsamer Header für alle Gridmind-Seiten -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Gridmind Technologies – Startseite">
+        <img src="assets/logo.png" width="280" height="94" alt="Gridmind Technologies">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <div class="nav-group">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-offers">
+            Unsere Angebote
+            <svg viewBox="0 0 12 8" width="12" height="8" fill="none" aria-hidden="true">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="nav-dropdown" id="nav-offers">
+            <span class="dropdown-title">Ausbildung & Karriere</span>
+            <a href="bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+            <a href="bildungsangebote/ki-automation.html">KI-Automation</a>
+            <a href="bildungsangebote/webentwicklung.html">Webentwicklung</a>
+            <a href="bildungsangebote/devsecops.html">DevSecOps</a>
+            <a href="bildungsangebote/young-coders.html">Young Coders</a>
+            <span class="dropdown-title">Digitale Dienstleistungen</span>
+            <a href="services/websites.html">Websites erstellen lassen</a>
+            <a href="services/softwareentwicklung.html">Softwareentwicklung</a>
+            <a href="services/ki-integration.html">KI-Integration</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-devices">
+            Geräte & Software
+            <svg viewBox="0 0 12 8" width="12" height="8" fill="none" aria-hidden="true">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="nav-dropdown" id="nav-devices">
+            <a href="produkte/gridphone.html">GridPhone</a>
+            <a href="produkte/gridtab.html">GridTab</a>
+            <a href="produkte/gridwatch.html">GridWatch</a>
+            <a href="produkte/gridmac.html">GridMac</a>
+            <a href="produkte/gridmind-ai.html">Gridmind AI</a>
+          </div>
+        </div>
+
+        <a href="unternehmen/ueber-uns.html">Über uns</a>
+        <a href="unternehmen/blog.html">Blog</a>
+        <a href="unternehmen/karriere.html">Karriere</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-cta" href="unternehmen/kontakt.html">
+          Beratung anfragen <span aria-hidden="true">↗</span>
+        </a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Menü öffnen" aria-controls="mobile-menu"
+          aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobiles Menü" inert>
+      <div class="mobile-menu-inner">
+        <a href="index.html">Startseite</a>
+
+        <details>
+          <summary>Bildungsangebote</summary>
+          <div class="mobile-submenu">
+            <a href="bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+            <a href="bildungsangebote/ki-automation.html">KI-Automation</a>
+            <a href="bildungsangebote/webentwicklung.html">Webentwicklung</a>
+            <a href="bildungsangebote/devsecops.html">DevSecOps</a>
+            <a href="bildungsangebote/young-coders.html">Young Coders</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Websites & Software</summary>
+          <div class="mobile-submenu">
+            <a href="services/websites.html">Website-Erstellung</a>
+            <a href="services/softwareentwicklung.html">Softwareentwicklung</a>
+            <a href="services/ki-integration.html">KI-Integration</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Grid-Geräte</summary>
+          <div class="mobile-submenu">
+            <a href="produkte/gridphone.html">GridPhone</a>
+            <a href="produkte/gridtab.html">GridTab</a>
+            <a href="produkte/gridwatch.html">GridWatch</a>
+            <a href="produkte/gridmac.html">GridMac</a>
+            <a href="produkte/gridmind-ai.html">Gridmind AI</a>
+          </div>
+        </details>
+
+        <a href="unternehmen/ueber-uns.html">Über uns</a>
+        <a href="unternehmen/blog.html">Blog</a>
+        <a href="unternehmen/karriere.html">Karriere</a>
+        <a href="unternehmen/kontakt.html">Kontakt</a>
+        <a class="mobile-cta" href="unternehmen/kontakt.html">Beratung anfragen →</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
+      <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+      <span class="sparkle sparkle-three" aria-hidden="true">✦</span>
+
+      <div class="container hero-main">
+        <div class="hero-kicker">
+          <span class="pulse"></span>
+          Software · IT-Karriere · Technologie
+        </div>
+
+        <h1>
+          Deine Zukunft beginnt<br>
+          <em>mit Gridmind.</em>
+        </h1>
+
+        <p class="hero-lead">
+          Starte deinen Weg zum ersten IT-Job, verwirkliche digitale
+          Projekte und entdecke unsere nächste Generation
+          intelligenter Technologien.
+        </p>
+
+        <a class="btn btn-primary hero-button" href="bildungsangebote/ki-softwareentwickler.html">
+          Entdecke deine Möglichkeiten
+          <span class="arrow-circle">→</span>
+        </a>
+      </div>
+
+      <div class="container hero-stage">
+        <div class="float-card mentor-card">
+          <div class="chat-heading">
+            <span class="avatar">G</span>
+            <div><strong>Gridmind Coach</strong><small>Karrierebegleitung</small></div>
+            <span class="online">Online</span>
+          </div>
+          <div class="chat-bubble">Dein erstes Projekt ist bereit für dein Portfolio!</div>
+          <div class="chat-bubble own">Perfekt. Der nächste Schritt zum IT-Job! 🚀</div>
+          <div class="chat-bubble">Wir begleiten dich auf deinem Weg.</div>
+          <div class="chat-input">Nachricht schreiben ... <span>➤</span></div>
+        </div>
+
+        <div class="float-card code-card">
+          <div class="code-header"><span>◈ GRIDMIND DEV</span><small>workspace</small></div>
+          <div class="code-line"><span class="syntax-green">const</span> future = {</div>
+          <div class="code-line indent">career: <span class="syntax-yellow">"developer"</span>,</div>
+          <div class="code-line indent">skills: <span class="syntax-yellow">"AI + Code"</span>,</div>
+          <div class="code-line indent">status: <span class="syntax-yellow">"ready"</span></div>
+          <div class="code-line">};</div>
+          <div class="code-success">✓ Projekt erfolgreich vorbereitet</div>
+        </div>
+
+        <div class="hero-center-visual">
+          <div class="hero-aura"></div>
+          <div class="hero-emblem">
+            <img src="assets/logo-icon.png" alt="Gridmind Technologies Logo" width="500" height="370">
+          </div>
+          <div class="orbit-label label-left">LEARN</div>
+          <div class="orbit-label label-right">BUILD</div>
+          <div class="orbit-label label-bottom">CREATE</div>
+        </div>
+
+        <div class="float-card terminal-card">
+          <div class="terminal-title">
+            <span class="traffic"><i></i><i></i><i></i></span>
+            gridmind — terminal
+          </div>
+          <p><span>❯</span> career.start("IT")</p>
+          <p class="terminal-success">✓ Neue Fähigkeiten freigeschaltet</p>
+          <p class="terminal-success">✓ Portfolio wird erstellt</p>
+        </div>
+
+        <div class="float-card project-card">
+          <span class="project-small">DEIN NÄCHSTER SCHRITT</span>
+          <strong>Vom Lernen<br>zum eigenen Projekt.</strong>
+          <div class="project-progress"><span></span></div>
+          <small>Dein Weg in die Technologiebranche</small>
+        </div>
+      </div>
+
+      <svg class="wave hero-wave" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 34C254 109 490 7 749 41C1047 83 1256 16 1440 60V130H0Z" fill="#f4f8f6" />
+      </svg>
+    </section>
+
+    <!-- ANGEBOTE -->
+    <section class="section offerings" id="angebote">
+      <div class="container">
+        <span class="eyebrow">UNSERE ANGEBOTE</span>
+        <h2>Entdecke den Weg, der <em>zu dir passt.</em></h2>
+        <p class="section-intro">
+          Ob IT-Weiterbildung, professioneller Webauftritt oder innovative
+          Geräte – Gridmind vereint Bildung, Entwicklung und Technologie.
+        </p>
+
+        <div class="offer-tabs" role="tablist" aria-label="Angebotskategorien">
+          <button type="button" class="offer-tab active" role="tab" aria-selected="true" aria-controls="offer-panel-0"
+            id="offer-tab-0" data-offer="0">IT-Karriere</button>
+          <button type="button" class="offer-tab" role="tab" aria-selected="false" aria-controls="offer-panel-1"
+            id="offer-tab-1" data-offer="1">Websites</button>
+          <button type="button" class="offer-tab" role="tab" aria-selected="false" aria-controls="offer-panel-2"
+            id="offer-tab-2" data-offer="2">KI & Software</button>
+          <button type="button" class="offer-tab" role="tab" aria-selected="false" aria-controls="offer-panel-3"
+            id="offer-tab-3" data-offer="3">Grid-Geräte</button>
+        </div>
+
+        <div class="offer-panels">
+          <article class="offer-panel active" id="offer-panel-0" role="tabpanel" aria-labelledby="offer-tab-0">
+            <div class="offer-graphic career-graphic">
+              <div class="graphic-window">
+                <div class="graphic-dots"><i></i><i></i><i></i></div>
+                <span>&lt;your-future /&gt;</span>
+                <strong>Learn.<br>Code.<br>Grow.</strong>
+                <div class="graphic-status">✓ Career mode enabled</div>
+              </div>
+            </div>
+            <div class="offer-copy">
+              <span class="offer-tag">BILDUNG & KARRIERE</span>
+              <h3>Dein Einstieg<br>in die IT-Branche.</h3>
+              <p>Wir möchten Menschen dabei unterstützen, Programmieren zu lernen, echte Projekte umzusetzen und den
+                Einstieg in den ersten IT-Job zu schaffen.</p>
+              <div class="offer-benefits">
+                <span>✓ Praxisorientiertes Lernen</span>
+                <span>✓ Moderne KI-Werkzeuge</span>
+                <span>✓ Karriere- und Projektfokus</span>
+              </div>
+              <a class="btn btn-primary" href="bildungsangebote/ki-softwareentwickler.html">
+                Bildungswege ansehen <span class="arrow-circle">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="offer-panel" id="offer-panel-1" role="tabpanel" aria-labelledby="offer-tab-1" hidden>
+            <div class="offer-graphic website-graphic">
+              <div class="browser-mockup">
+                <div class="browser-bar"><i></i><i></i><i></i><span>your-next-website</span></div>
+                <div class="browser-content">
+                  <span>YOUR BRAND</span>
+                  <strong>Eine Website,<br>die begeistert.</strong>
+                  <div class="mock-button">Jetzt starten →</div>
+                  <div class="mock-tiles"><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="offer-copy">
+              <span class="offer-tag">WEBDESIGN & ENTWICKLUNG</span>
+              <h3>Deine Website.<br>Unsere Umsetzung.</h3>
+              <p>Von der ersten Designidee bis zur fertigen responsiven Website: Wir gestalten digitale Auftritte, die
+                modern aussehen und zu deinem Unternehmen passen.</p>
+              <div class="offer-benefits">
+                <span>✓ Individuelles Design</span>
+                <span>✓ Responsive Entwicklung</span>
+                <span>✓ Technik und Performance</span>
+              </div>
+              <a class="btn btn-primary" href="services/websites.html">
+                Website erstellen lassen <span class="arrow-circle">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="offer-panel" id="offer-panel-2" role="tabpanel" aria-labelledby="offer-tab-2" hidden>
+            <div class="offer-graphic ai-graphic">
+              <div class="ai-orbit"><span>G</span></div>
+              <span class="ai-chip chip-a">AI</span>
+              <span class="ai-chip chip-b">DATA</span>
+              <span class="ai-chip chip-c">CODE</span>
+            </div>
+            <div class="offer-copy">
+              <span class="offer-tag">ARTIFICIAL INTELLIGENCE</span>
+              <h3>Intelligente<br>Software gestalten.</h3>
+              <p>Wir erforschen und entwickeln KI-gestützte Anwendungen, Automatisierungen und Softwarelösungen, die
+                neue Möglichkeiten eröffnen.</p>
+              <div class="offer-benefits">
+                <span>✓ KI-Anwendungen</span>
+                <span>✓ Automatisierung</span>
+                <span>✓ Individuelle Softwarelösungen</span>
+              </div>
+              <a class="btn btn-primary" href="produkte/gridmind-ai.html">
+                Gridmind AI entdecken <span class="arrow-circle">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="offer-panel" id="offer-panel-3" role="tabpanel" aria-labelledby="offer-tab-3" hidden>
+            <div class="offer-graphic devices-graphic">
+              <div class="device-desktop">
+                <div class="device-screen"><span>GRID</span></div>
+                <div class="device-stand"></div>
+              </div>
+              <div class="device-phone"><span>G</span></div>
+              <div class="device-tablet"><span>GRIDTAB</span></div>
+              <div class="device-watch"><span>G</span></div>
+            </div>
+            <div class="offer-copy">
+              <span class="offer-tag">GRID HARDWARE · PRODUKTKONZEPTE</span>
+              <h3>Technologie,<br>die zusammengehört.</h3>
+              <p>Unsere Produktvision verbindet GridPhone, GridTab, GridWatch und GridMac zu einer durchgängigen
+                Gerätewelt.</p>
+              <div class="offer-benefits">
+                <span>✓ Verbundene Geräte</span>
+                <span>✓ Einheitliche Bedienung</span>
+                <span>✓ Intelligente Integration</span>
+              </div>
+              <a class="btn btn-primary" href="produkte/gridphone.html">
+                Gerätewelt kennenlernen <span class="arrow-circle">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KARRIERE -->
+    <section class="section method-section">
+      <div class="container method-layout">
+        <div>
+          <span class="eyebrow">DEIN KARRIEREWEG</span>
+          <h2>Mit echten Projekten<br><em>in Richtung IT-Job.</em></h2>
+          <div class="method-list">
+            <div class="method-item">
+              <span class="method-icon">01</span>
+              <div>
+                <h3>Flexibel lernen</h3>
+                <p>Baue Fähigkeiten in HTML, CSS, JavaScript, Python und moderner Softwareentwicklung auf.</p>
+              </div>
+            </div>
+            <div class="method-item">
+              <span class="method-icon">02</span>
+              <div>
+                <h3>Praxisprojekte entwickeln</h3>
+                <p>Setze eigene Anwendungen um, statt nur Theorie zu lernen.</p>
+              </div>
+            </div>
+            <div class="method-item">
+              <span class="method-icon">03</span>
+              <div>
+                <h3>Portfolio aufbauen</h3>
+                <p>Zeige potenziellen Arbeitgebern, was du selbst entwickeln kannst.</p>
+              </div>
+            </div>
+            <div class="method-item">
+              <span class="method-icon">04</span>
+              <div>
+                <h3>Auf den Einstieg vorbereiten</h3>
+                <p>Verbinde technisches Wissen mit Bewerbungs- und Karrierevorbereitung.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="method-showcase">
+          <div class="method-screen">
+            <div class="screen-top"><span>Gridmind Learning</span><span>● ● ●</span></div>
+            <div class="learning-heading">Dein Weg zum Developer</div>
+            <div class="learning-step done">✓ Grundlagen verstehen</div>
+            <div class="learning-step done">✓ Erstes Webprojekt</div>
+            <div class="learning-step current">◉ Eigene Anwendung erstellen</div>
+            <div class="learning-step">○ Portfolio aufbauen</div>
+            <div class="learning-step">○ Karriere vorbereiten</div>
+            <div class="screen-footer">Dein Fortschritt, dein Tempo.</div>
+          </div>
+          <div class="floating-note">✦ Lernen durch Machen</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+     GRIDMIND – KARRIEREPERSPEKTIVEN
+     Wiederverwendbar auf allen Bildungsseiten
+     ========================================== -->
+
+    <section class="gm-employer-wall" aria-labelledby="gm-employer-title">
+
+      <div class="gm-employer-heading">
+        <span class="gm-employer-eyebrow">
+          KARRIEREPERSPEKTIVEN
+        </span>
+
+        <h2 id="gm-employer-title">
+          Deine Fähigkeiten sind in
+          <em>vielen Branchen gefragt.</em>
+        </h2>
+
+        <p>
+          Ob Softwareentwicklung, künstliche Intelligenz
+          oder digitale Produkte: Entdecke Berufsfelder,
+          in denen technische Kenntnisse eingesetzt werden.
+        </p>
+      </div>
+
+      <div class="gm-employer-marquee" role="group" aria-label="IT-Berufsfelder und Branchen">
+
+        <!-- REIHE 1: LINKS -->
+        <div class="gm-employer-row">
+          <div class="gm-employer-track">
+
+            <div class="gm-employer-group">
+              <span class="gm-employer-item"><b>⌘</b> Softwareentwicklung</span>
+              <span class="gm-employer-item"><b>✦</b> Künstliche Intelligenz</span>
+              <span class="gm-employer-item"><b>◈</b> IT-Beratung</span>
+              <span class="gm-employer-item"><b>▣</b> Webentwicklung</span>
+              <span class="gm-employer-item"><b>◇</b> Cloud Computing</span>
+              <span class="gm-employer-item"><b>⚙</b> DevOps</span>
+              <span class="gm-employer-item"><b>✳</b> IT-Sicherheit</span>
+              <span class="gm-employer-item"><b>↗</b> App-Entwicklung</span>
+            </div>
+
+            <!-- Gleicher Inhalt für nahtlose Wiederholung -->
+            <div class="gm-employer-group" aria-hidden="true">
+              <span class="gm-employer-item"><b>⌘</b> Softwareentwicklung</span>
+              <span class="gm-employer-item"><b>✦</b> Künstliche Intelligenz</span>
+              <span class="gm-employer-item"><b>◈</b> IT-Beratung</span>
+              <span class="gm-employer-item"><b>▣</b> Webentwicklung</span>
+              <span class="gm-employer-item"><b>◇</b> Cloud Computing</span>
+              <span class="gm-employer-item"><b>⚙</b> DevOps</span>
+              <span class="gm-employer-item"><b>✳</b> IT-Sicherheit</span>
+              <span class="gm-employer-item"><b>↗</b> App-Entwicklung</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- REIHE 2: RECHTS -->
+        <div class="gm-employer-row gm-employer-row-reverse">
+          <div class="gm-employer-track">
+
+            <div class="gm-employer-group">
+              <span class="gm-employer-item"><b>◇</b> FinTech</span>
+              <span class="gm-employer-item"><b>◎</b> Gesundheitstechnologie</span>
+              <span class="gm-employer-item"><b>⚙</b> Automatisierung</span>
+              <span class="gm-employer-item"><b>▤</b> E-Commerce</span>
+              <span class="gm-employer-item"><b>◈</b> Data Engineering</span>
+              <span class="gm-employer-item"><b>✦</b> KI-Anwendungen</span>
+              <span class="gm-employer-item"><b>⌘</b> Unternehmenssoftware</span>
+              <span class="gm-employer-item"><b>↗</b> Digitale Dienstleistungen</span>
+            </div>
+
+            <div class="gm-employer-group" aria-hidden="true">
+              <span class="gm-employer-item"><b>◇</b> FinTech</span>
+              <span class="gm-employer-item"><b>◎</b> Gesundheitstechnologie</span>
+              <span class="gm-employer-item"><b>⚙</b> Automatisierung</span>
+              <span class="gm-employer-item"><b>▤</b> E-Commerce</span>
+              <span class="gm-employer-item"><b>◈</b> Data Engineering</span>
+              <span class="gm-employer-item"><b>✦</b> KI-Anwendungen</span>
+              <span class="gm-employer-item"><b>⌘</b> Unternehmenssoftware</span>
+              <span class="gm-employer-item"><b>↗</b> Digitale Dienstleistungen</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <p class="gm-employer-disclaimer">
+        Die dargestellten Bereiche sind mögliche Tätigkeitsfelder
+        und keine Zusagen über Stellenangebote oder Arbeitgeber.
+      </p>
+
+      <div class="gm-employer-cta">
+        <a href="../unternehmen/kontakt.html" class="btn btn-primary">
+          Über Karrieremöglichkeiten sprechen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- HARDWARE -->
+    <section class="section hardware-section">
+      <div class="container">
+        <span class="eyebrow">GRIDMIND HARDWARE</span>
+        <h2>Vier Geräte. <em>Eine Vision.</em></h2>
+        <p class="section-intro">Entdecke unsere Konzepte für eine nahtlos verbundene digitale Zukunft.</p>
+
+        <div class="hardware-grid">
+          <a href="produkte/gridphone.html" class="hardware-card">
+            <span class="hardware-meta">SMARTPHONE · KONZEPT</span>
+            <div class="hardware-illustration">
+              <div class="hw-phone">
+                <div class="hw-camera"></div><span>G</span>
+              </div>
+            </div>
+            <h3>GridPhone</h3>
+            <p>Dein Alltag. Intelligent verbunden.</p><span class="hardware-link">Mehr entdecken ↗</span>
+          </a>
+
+          <a href="produkte/gridtab.html" class="hardware-card">
+            <span class="hardware-meta">TABLET · KONZEPT</span>
+            <div class="hardware-illustration">
+              <div class="hw-tab"><span>G</span></div>
+            </div>
+            <h3>GridTab</h3>
+            <p>Mehr Raum für deine Ideen.</p><span class="hardware-link">Mehr entdecken ↗</span>
+          </a>
+
+          <a href="produkte/gridwatch.html" class="hardware-card">
+            <span class="hardware-meta">SMARTWATCH · KONZEPT</span>
+            <div class="hardware-illustration">
+              <div class="hw-watch"><span>G</span></div>
+            </div>
+            <h3>GridWatch</h3>
+            <p>Technologie an deinem Handgelenk.</p><span class="hardware-link">Mehr entdecken ↗</span>
+          </a>
+
+          <a href="produkte/gridmac.html" class="hardware-card">
+            <span class="hardware-meta">COMPUTER · KONZEPT</span>
+            <div class="hardware-illustration">
+              <div class="hw-mac"><span>G</span></div>
+            </div>
+            <h3>GridMac</h3>
+            <p>Entwickelt für große Ideen.</p><span class="hardware-link">Mehr entdecken ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEBDESIGN -->
+    <section class="section web-section">
+      <div class="container web-layout">
+        <div class="web-copy">
+          <span class="eyebrow">GRIDMIND WEB STUDIO</span>
+          <h2>Deine Idee verdient<br><em>eine starke Website.</em></h2>
+          <p>Von der modernen Unternehmensseite bis zum individuellen digitalen Produkt: Wir unterstützen dich bei
+            Design, Entwicklung und Umsetzung deines Webauftritts.</p>
+          <a class="btn btn-primary" href="services/websites.html">
+            Webprojekt anfragen <span class="arrow-circle">→</span>
+          </a>
+        </div>
+        <div class="web-preview">
+          <div class="preview-toolbar"><i></i><i></i><i></i><span>Gridmind Web Studio</span></div>
+          <div class="preview-banner">
+            <small>DESIGN • DEVELOPMENT • DIGITAL</small>
+            <strong>Beautiful ideas.<br>Built for the web.</strong>
+            <span>Made with Gridmind ↗</span>
+          </div>
+          <div class="preview-bottom">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section">
+      <div class="container faq-layout">
+        <div>
+          <span class="eyebrow">HÄUFIGE FRAGEN</span>
+          <h2>Gut zu wissen.<br><em>Einfach erklärt.</em></h2>
+          <p>Die wichtigsten Fragen zu Gridmind, unseren Angeboten und unseren Produktideen.</p>
+        </div>
+
+        <div class="faq-items">
+          <details>
+            <summary>Was bietet Gridmind Technologies an?</summary>
+            <p>Gridmind verbindet IT-Bildung, Webentwicklung, KI-Software und Produktentwicklung unter einer gemeinsamen
+              Marke.</p>
+          </details>
+          <details>
+            <summary>Kann Gridmind mich beim Einstieg in die IT unterstützen?</summary>
+            <p>Unser Bildungskonzept setzt auf Programmierkenntnisse, praktische Projekte und Karrierevorbereitung.
+              Konkrete Kurstermine und Betreuungsleistungen werden auf den Angebotsseiten beschrieben.</p>
+          </details>
+          <details>
+            <summary>Kann ich eine komplette Website erstellen lassen?</summary>
+            <p>Unser Web-Studio-Angebot ist auf Konzeption, Gestaltung und technische Umsetzung individueller Websites
+              ausgelegt. Einzelheiten werden im Projektgespräch abgestimmt.</p>
+          </details>
+          <details>
+            <summary>Kann ich GridPhone und andere Grid-Geräte bereits kaufen?</summary>
+            <p>GridPhone, GridTab, GridWatch und GridMac werden hier zunächst als Produktkonzepte vorgestellt.
+              Verfügbarkeit, Preise und technische Daten werden erst bei einer offiziellen Produktankündigung
+              veröffentlicht.</p>
+          </details>
+          <details>
+            <summary>Wie kann ich Gridmind kontaktieren?</summary>
+            <p>Nutze dafür unsere Kontaktseite. Dort können künftig Beratungs- und Projektanfragen entgegengenommen
+              werden.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <span>DEINE IDEE. DEIN NÄCHSTER SCHRITT.</span>
+        <h2>Bereit, die Zukunft<br>mitzugestalten?</h2>
+        <p>Ob neue Karriere, neue Website oder neue Technologie – entdecke, was mit Gridmind möglich wird.</p>
+        <a class="btn btn-light" href="unternehmen/kontakt.html">
+          Kontakt aufnehmen <span class="arrow-circle">→</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER MIT SVG-WELLE -->
+  <footer class="site-footer">
+    <svg class="footer-wave" viewBox="0 0 1440 125" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z" fill="#092f2b" />
+    </svg>
+
+    <div class="footer-main">
+      <div class="container footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/logo.png" width="280" height="94" alt="Gridmind Technologies">
+          </a>
+          <p>Wir verbinden Menschen, Ideen und Technologie – von deinem ersten IT-Projekt bis zur digitalen Zukunft.</p>
+          <a class="footer-contact" href="unternehmen/kontakt.html">Kontakt zu Gridmind ↗</a>
+          <div class="footer-social" aria-label="Weitere Informationen">
+            <a href="unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+            <a href="unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+            <a href="unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Bildungsangebote</h3>
+          <a href="bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Produkte & Services</h3>
+          <a href="services/websites.html">Website-Erstellung</a>
+          <a href="services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="services/ki-integration.html">KI-Integration</a>
+          <a href="produkte/gridmind-ai.html">Gridmind AI</a>
+          <a href="produkte/gridphone.html">GridPhone</a>
+          <a href="produkte/gridtab.html">GridTab</a>
+          <a href="produkte/gridwatch.html">GridWatch</a>
+          <a href="produkte/gridmac.html">GridMac</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Unternehmen</h3>
+          <a href="unternehmen/ueber-uns.html">Über Gridmind</a>
+          <a href="unternehmen/team.html">Unser Team</a>
+          <a href="unternehmen/karriere.html">Karriere</a>
+          <a href="unternehmen/blog.html">Blog</a>
+          <a href="unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+          <a href="unternehmen/kontakt.html">Kontakt</a>
+
+          <h3 class="footer-subtitle">Rechtliches</h3>
+          <a href="rechtliches/impressum.html">Impressum</a>
+          <a href="rechtliches/datenschutz.html">Datenschutz</a>
+          <a href="rechtliches/agb.html">AGB</a>
+          <a href="rechtliches/widerruf.html">Widerrufsrecht</a>
+          <a href="rechtliches/cookies.html">Cookie-Richtlinie</a>
+          <a href="rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+          <button class="footer-text-button" type="button" data-open-cookie>
+            Cookie-Einstellungen
+          </button>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© 2026 Gridmind Technologies GmbH</span>
+        <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EIGENER COOKIE-DIALOG -->
+  <div class="cookie-overlay" id="cookie-overlay" hidden></div>
+
+  <section class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="true" aria-labelledby="cookie-title"
+    aria-describedby="cookie-description" tabindex="-1" hidden>
+    <div class="cookie-heading">
+      <span class="cookie-icon">◈</span>
+      <div>
+        <span class="cookie-brand">GRIDMIND PRIVACY</span>
+        <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+      </div>
+    </div>
+
+    <p id="cookie-description">
+      Wir verwenden notwendige Speichertechnologien für die Funktion
+      dieser Website. Zusätzliche Technologien für Statistik,
+      Komfort oder Marketing aktivieren wir nur mit deiner Einwilligung.
+    </p>
+
+    <div class="cookie-details" id="cookie-details" hidden>
+      <label class="cookie-option">
+        <span><strong>Notwendig</strong><small>Für grundlegende Funktionen und deine Auswahl.</small></span>
+        <input type="checkbox" checked disabled>
+      </label>
+      <label class="cookie-option">
+        <span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span>
+        <input type="checkbox" id="consent-functional">
+      </label>
+      <label class="cookie-option">
+        <span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span>
+        <input type="checkbox" id="consent-analytics">
+      </label>
+      <label class="cookie-option">
+        <span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span>
+        <input type="checkbox" id="consent-marketing">
+      </label>
+    </div>
+
+    <div class="cookie-actions">
+      <button class="cookie-btn cookie-accept" type="button" id="cookie-accept">
+        Alle akzeptieren
+      </button>
+      <button class="cookie-btn cookie-reject" type="button" id="cookie-reject">
+        Nur notwendige
+      </button>
+      <button class="cookie-btn cookie-settings" type="button" id="cookie-settings">
+        Einstellungen
+      </button>
+      <button class="cookie-btn cookie-save" type="button" id="cookie-save" hidden>
+        Auswahl speichern
+      </button>
+    </div>
+
+    <div class="cookie-legal">
+      <a href="rechtliches/datenschutz.html">Datenschutz</a>
+      <a href="rechtliches/cookies.html">Cookie-Richtlinie</a>
+      <a href="rechtliches/impressum.html">Impressum</a>
+    </div>
+  </section>
+</body>
+
+</html>

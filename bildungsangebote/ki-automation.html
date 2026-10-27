@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#138a57">
+  <meta name="description"
+    content="Entdecke KI-Automation bei Gridmind Technologies: Workflows entwickeln, APIs verbinden, KI-Agenten verstehen und Prozesse intelligent automatisieren.">
+  <title>KI-Automation | Gridmind Technologies</title>
+
+  <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/education-shared.css">
+  <link rel="stylesheet" href="../css/automation.css">
+
+  <link rel="stylesheet" href="../css/roadmap.css">
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/automation.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
+
+  <!-- IDENTISCHER GRIDMIND-HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Gridmind Technologies – Startseite">
+        <img src="../assets/logo.png" width="280" height="94" alt="Gridmind Technologies">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <div class="nav-group">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-offers">
+            Unsere Angebote
+            <svg viewBox="0 0 12 8" width="12" height="8" fill="none" aria-hidden="true">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="nav-dropdown" id="nav-offers">
+            <span class="dropdown-title">Ausbildung & Karriere</span>
+            <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+            <a href="../bildungsangebote/ki-automation.html" aria-current="page">KI-Automation</a>
+            <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+            <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+            <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+            <span class="dropdown-title">Digitale Dienstleistungen</span>
+            <a href="../services/websites.html">Websites erstellen lassen</a>
+            <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+            <a href="../services/ki-integration.html">KI-Integration</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-devices">
+            Geräte & Software
+            <svg viewBox="0 0 12 8" width="12" height="8" fill="none" aria-hidden="true">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="nav-dropdown" id="nav-devices">
+            <a href="../produkte/gridphone.html">GridPhone</a>
+            <a href="../produkte/gridtab.html">GridTab</a>
+            <a href="../produkte/gridwatch.html">GridWatch</a>
+            <a href="../produkte/gridmac.html">GridMac</a>
+            <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+          </div>
+        </div>
+
+        <a href="../unternehmen/ueber-uns.html">Über uns</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-cta" href="../unternehmen/kontakt.html">
+          Beratung anfragen <span aria-hidden="true">↗</span>
+        </a>
+
+        <button class="hamburger" id="hamburger" type="button" aria-label="Menü öffnen" aria-controls="mobile-menu"
+          aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobiles Menü" inert>
+      <div class="mobile-menu-inner">
+        <a href="../index.html">Startseite</a>
+
+        <details>
+          <summary>Bildungsangebote</summary>
+          <div class="mobile-submenu">
+            <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+            <a href="../bildungsangebote/ki-automation.html" aria-current="page">KI-Automation</a>
+            <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+            <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+            <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Websites & Software</summary>
+          <div class="mobile-submenu">
+            <a href="../services/websites.html">Website-Erstellung</a>
+            <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+            <a href="../services/ki-integration.html">KI-Integration</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Grid-Geräte</summary>
+          <div class="mobile-submenu">
+            <a href="../produkte/gridphone.html">GridPhone</a>
+            <a href="../produkte/gridtab.html">GridTab</a>
+            <a href="../produkte/gridwatch.html">GridWatch</a>
+            <a href="../produkte/gridmac.html">GridMac</a>
+            <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+          </div>
+        </details>
+
+        <a href="../unternehmen/ueber-uns.html">Über uns</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+        <a class="mobile-cta" href="../unternehmen/kontakt.html">Beratung anfragen →</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="auto-hero" aria-labelledby="auto-hero-title">
+      <div class="container auto-hero-layout">
+        <div class="auto-hero-copy">
+          <div class="auto-kicker">
+            <span class="auto-live-dot"></span>
+            GRIDMIND LEARNING · KI-AUTOMATION
+          </div>
+
+          <h1 id="auto-hero-title">
+            Automatisiere<br>
+            die Zukunft <em>mit KI.</em>
+          </h1>
+
+          <p>
+            Lerne, Prozesse zu verstehen, digitale Dienste
+            miteinander zu verbinden und intelligente
+            Workflows zu entwickeln – vom ersten Trigger
+            bis zur fertigen KI-Automation.
+          </p>
+
+          <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button">
+            Jetzt Beratung anfragen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+
+          <div class="auto-hero-benefits">
+            <span>✓ Workflows & APIs</span>
+            <span>✓ KI-Agenten</span>
+            <span>✓ Praxisprojekte</span>
+          </div>
+        </div>
+
+        <!-- EIGENE GRIDMIND-WORKFLOW-SZENE -->
+        <div class="auto-scene" aria-label="Animation eines KI-Automationsprozesses">
+          <div class="auto-scene-glow"></div>
+
+          <svg class="auto-scene-path" viewBox="0 0 500 490" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <path class="auto-wire-base" d="M75 365 C110 365 95 255 180 255
+                   S270 255 290 175
+                   S365 120 405 120" />
+            <path class="auto-wire-moving" d="M75 365 C110 365 95 255 180 255
+                   S270 255 290 175
+                   S365 120 405 120" />
+            <circle r="6" class="auto-particle">
+              <animateMotion dur="4.2s" repeatCount="indefinite"
+                path="M75 365 C110 365 95 255 180 255 S270 255 290 175 S365 120 405 120" />
+            </circle>
+            <circle r="3" class="auto-particle-core">
+              <animateMotion dur="4.2s" repeatCount="indefinite"
+                path="M75 365 C110 365 95 255 180 255 S270 255 290 175 S365 120 405 120" />
+            </circle>
+          </svg>
+
+          <div class="auto-scene-brand" aria-hidden="true">
+            <img src="../assets/logo-icon.png" alt="" width="100" height="100">
+          </div>
+
+          <div class="auto-workflow-card auto-card-trigger">
+            <span class="auto-workflow-icon">🎙</span>
+            <div>
+              <strong>Neue Spracheingabe</strong>
+              <small>Trigger gestartet</small>
+            </div>
+            <span class="auto-card-state">START</span>
+          </div>
+
+          <div class="auto-workflow-card auto-card-ai">
+            <div class="auto-ai-card-head">
+              <span class="auto-workflow-icon">✦</span>
+              <div>
+                <strong>Gridmind AI</strong>
+                <small>Text wird verarbeitet</small>
+              </div>
+              <span class="auto-running-dot"></span>
+            </div>
+
+            <div class="auto-ai-wave" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="auto-ai-progress"><span></span></div>
+            <p>Sprache → Text → Aktion</p>
+          </div>
+
+          <div class="auto-workflow-card auto-card-result">
+            <span class="auto-workflow-icon">✉</span>
+            <div>
+              <strong>Newsletter vorbereitet</strong>
+              <small>Workflow abgeschlossen</small>
+            </div>
+            <span class="auto-card-check">✓</span>
+          </div>
+
+          <span class="auto-scene-spark auto-spark-a" aria-hidden="true">✦</span>
+          <span class="auto-scene-spark auto-spark-b" aria-hidden="true">✧</span>
+          <span class="auto-scene-spark auto-spark-c" aria-hidden="true">✦</span>
+        </div>
+      </div>
+
+      <svg class="auto-wave" viewBox="0 0 1440 125" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 35C270 105 480 15 720 45C990 77 1220 10 1440 50V125H0Z" fill="#f4f8f6" />
+      </svg>
+    </section>
+
+    <!-- WARUM KI AUTOMATION -->
+    <section class="auto-value section" id="vorteile">
+      <div class="container auto-split">
+        <div>
+          <span class="eyebrow">WARUM AUTOMATION?</span>
+          <h2>Weniger Routine.<br><em>Mehr Möglichkeiten.</em></h2>
+          <p class="auto-lead">
+            KI-Automation verbindet klassische Prozessautomatisierung
+            mit intelligenten Modellen. Damit lassen sich
+            wiederkehrende Aufgaben vereinfachen und digitale
+            Arbeitsabläufe besser organisieren.
+          </p>
+        </div>
+        <div class="auto-value-points">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Wiederkehrende Aufgaben reduzieren</h3>
+              <p>Arbeitsabläufe erkennen, standardisieren und automatisieren.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Systeme miteinander verbinden</h3>
+              <p>Daten über APIs und Webhooks zwischen Anwendungen austauschen.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>KI dort einsetzen, wo sie sinnvoll ist</h3>
+              <p>Texte analysieren, Informationen strukturieren und Prozesse unterstützen – mit angemessener Kontrolle.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERAKTIVE BERUFSBILDER -->
+    <section class="auto-roles section" aria-labelledby="auto-roles-title">
+      <div class="container">
+        <span class="eyebrow">DEINE KARRIEREWEGE</span>
+        <h2 id="auto-roles-title">
+          Drei Berufsbilder.<br><em>Viele Perspektiven.</em>
+        </h2>
+        <p class="section-intro">
+          KI-Automation bietet unterschiedliche Spezialisierungen.
+          Wähle eine Karte aus, um mehr über das jeweilige Berufsfeld zu erfahren.
+        </p>
+
+        <div class="auto-role-tabs" role="tablist" aria-label="KI-Automation-Berufsbilder">
+          <button type="button" class="auto-role-tab is-active" id="auto-tab-1" role="tab" aria-selected="true"
+            aria-controls="auto-panel-1" tabindex="0" data-role-tab="1">
+            <span>01</span> KI Automation Engineer
+          </button>
+          <button type="button" class="auto-role-tab" id="auto-tab-2" role="tab" aria-selected="false"
+            aria-controls="auto-panel-2" tabindex="-1" data-role-tab="2">
+            <span>02</span> AI Solutions Consultant
+          </button>
+          <button type="button" class="auto-role-tab" id="auto-tab-3" role="tab" aria-selected="false"
+            aria-controls="auto-panel-3" tabindex="-1" data-role-tab="3">
+            <span>03</span> Integration Developer
+          </button>
+        </div>
+
+        <div class="auto-role-panels">
+          <article id="auto-panel-1" class="auto-role-panel is-active" role="tabpanel" aria-labelledby="auto-tab-1">
+            <div class="auto-role-visual">
+              <div class="auto-role-glyph">⚙</div>
+              <span>WORKFLOW ENGINEERING</span>
+            </div>
+            <div class="auto-role-copy">
+              <span class="auto-section-label">TECHNISCHER SCHWERPUNKT</span>
+              <h3>KI Automation Engineer</h3>
+              <p>Du untersuchst Arbeitsabläufe und baust automatisierte Prozesse mit APIs, KI-Werkzeugen und
+                Workflow-Plattformen.</p>
+              <ul>
+                <li>Prozesse analysieren und modellieren</li>
+                <li>Digitale Dienste miteinander verbinden</li>
+                <li>Workflows testen und überwachen</li>
+              </ul>
+              <a class="btn btn-primary" href="../unternehmen/kontakt.html">
+                Lernweg besprechen <span class="arrow-circle">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article id="auto-panel-2" class="auto-role-panel" role="tabpanel" aria-labelledby="auto-tab-2" hidden>
+            <div class="auto-role-visual auto-role-visual-alt">
+              <div class="auto-role-glyph">✦</div>
+              <span>AI SOLUTIONS</span>
+            </div>
+            <div class="auto-role-copy">
+              <span class="auto-section-label">KONZEPTION & BERATUNG</span>
+              <h3>AI Solutions Consultant</h3>
+              <p>Du prüfst, welche Aufgaben sich durch KI unterstützen lassen, und entwickelst passende technische
+                Lösungsansätze.</p>
+              <ul>
+                <li>Geschäftsanforderungen verstehen</li>
+                <li>KI-Anwendungsfälle beurteilen</li>
+                <li>Prototypen und Umsetzungskonzepte erstellen</li>
+              </ul>
+              <a class="btn btn-primary" href="../unternehmen/kontakt.html">
+                Lernweg besprechen <span class="arrow-circle">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article id="auto-panel-3" class="auto-role-panel" role="tabpanel" aria-labelledby="auto-tab-3" hidden>
+            <div class="auto-role-visual auto-role-visual-third">
+              <div class="auto-role-glyph">⌘</div>
+              <span>SYSTEM INTEGRATION</span>
+            </div>
+            <div class="auto-role-copy">
+              <span class="auto-section-label">SOFTWARE & SCHNITTSTELLEN</span>
+              <h3>Integration Developer</h3>
+              <p>Du entwickelst Verbindungen zwischen Anwendungen und ergänzt bestehende Systeme um
+                Automatisierungsfunktionen.</p>
+              <ul>
+                <li>REST APIs und Webhooks einsetzen</li>
+                <li>Datenflüsse strukturieren</li>
+                <li>Integrationen absichern und betreiben</li>
+              </ul>
+              <a class="btn btn-primary" href="../unternehmen/kontakt.html">
+                Lernweg besprechen <span class="arrow-circle">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRICULUM / TIMELINE -->
+    <section class="gm-roadmap auto-roadmap" id="lernweg" aria-labelledby="auto-roadmap-title">
+      <div class="container">
+        <div class="gm-roadmap-heading">
+          <span class="eyebrow">DEIN LERNPFAD</span>
+          <h2 id="auto-roadmap-title">
+            Von der ersten Idee<br>zur <em>eigenen KI-Automation.</em>
+          </h2>
+          <p>Vier aufeinander aufbauende Phasen vermitteln die Grundlagen, Werkzeuge und praktischen Fähigkeiten für
+            Automationsprojekte.</p>
+        </div>
+
+        <div class="gm-roadmap-track">
+          <div class="gm-roadmap-line" aria-hidden="true">
+            <div class="gm-roadmap-line-progress"></div>
+          </div>
+
+          <article class="gm-phase" data-roadmap-phase>
+            <div class="gm-phase-copy">
+              <span class="gm-phase-label">PHASE 01 · GRUNDLAGEN</span>
+              <h3>Verstehe Prozesse.<br><em>Erkenne Potenziale.</em></h3>
+              <p>Entdecke Automationskonzepte und lerne, Abläufe in verständliche Schritte zu zerlegen.</p>
+              <div class="gm-phase-benefits">
+                <span><i>✓</i> Prozesse visualisieren</span>
+                <span><i>✓</i> Bedingungen und Trigger verstehen</span>
+                <span><i>✓</i> Datenstrukturen kennenlernen</span>
+              </div>
+            </div>
+            <div class="gm-phase-marker" aria-hidden="true"><span>01</span></div>
+            <div class="gm-phase-modules">
+              <div class="gm-module">
+                <span class="gm-module-dot"></span>
+                <h4>Workflow-Grundlagen</h4>
+                <div class="gm-tech-list">
+                  <span class="gm-tech"><b>WF</b> Workflows</span>
+                  <span class="gm-tech"><b>IF</b> Logik</span>
+                  <span class="gm-tech"><b>JS</b> JSON</span>
+                </div>
+              </div>
+              <div class="gm-module">
+                <span class="gm-module-dot"></span>
+                <h4>Automationswerkzeuge</h4>
+                <div class="gm-tech-list">
+                  <span class="gm-tech"><b>N</b> n8n</span>
+                  <span class="gm-tech"><b>API</b> Schnittstellen</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="gm-phase" data-roadmap-phase>
+            <div class="gm-phase-copy">
+              <span class="gm-phase-label">PHASE 02 · KI & AUTOMATION</span>
+              <h3>Baue intelligente<br><em>Workflows.</em></h3>
+              <p>Lerne, wie KI-Modelle Texte analysieren, strukturierte Informationen erzeugen und automatisierte
+                Abläufe unterstützen.</p>
+              <div class="gm-phase-benefits">
+                <span><i>✓</i> Prompting und strukturierte Ausgaben</span>
+                <span><i>✓</i> KI über APIs integrieren</span>
+                <span><i>✓</i> Ergebnisse prüfen und Fehler behandeln</span>
+              </div>
+            </div>
+            <div class="gm-phase-marker" aria-hidden="true"><span>02</span></div>
+            <div class="gm-phase-modules">
+              <div class="gm-module">
+                <span class="gm-module-dot"></span>
+                <h4>KI-Integration</h4>
+                <div class="gm-tech-list">
+                  <span class="gm-tech"><b>LLM</b> Sprachmodelle</span>
+                  <span class="gm-tech"><b>P</b> Prompting</span>
+                  <span class="gm-tech"><b>API</b> KI-APIs</span>
+                </div>
+              </div>
+              <div class="gm-module">
+                <span class="gm-module-dot"></span>
+                <h4>Praktische Automation</h4>
+                <div class="gm-tech-list">
+                  <span class="gm-tech"><b>WH</b> Webhooks</span>
+                  <span class="gm-tech"><b>N</b> n8n</span>
+                  <span class="gm-tech"><b>✓</b> Validierung</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="gm-phase" data-roadmap-phase>
+            <div class="gm-phase-copy">
+              <span class="gm-phase-label">PHASE 03 · FORTGESCHRITTENE PROJEKTE</span>
+              <h3>Verbinde Systeme.<br><em>Entwickle Lösungen.</em></h3>
+              <p>Erstelle umfangreichere Automationen, dokumentiere Datenflüsse und setze technische Schutzmaßnahmen um.
+              </p>
+              <div class="gm-phase-benefits">
+                <span><i>✓</i> Mehrstufige Workflows entwickeln</span>
+                <span><i>✓</i> Authentifizierung und Fehlerbehandlung</span>
+                <span><i>✓</i> Logging, Tests und Monitoring</span>
+              </div>
+            </div>
+            <div class="gm-phase-marker" aria-hidden="true"><span>03</span></div>
+            <div class="gm-phase-modules">
+              <div class="gm-module">
+                <span class="gm-module-dot"></span>
+                <h4>Integration & Entwicklung</h4>
+                <div class="gm-tech-list">
+                  <span class="gm-tech"><b>PY</b> Python</span>
+                  <span class="gm-tech"><b>JS</b> JavaScript</span>
+                  <span class="gm-tech"><b>DB</b> Datenbanken</span>
+                </div>
+              </div>
+              <div class="gm-module">
+                <span class="gm-module-dot"></span>
+                <h4>Sicherer Betrieb</h4>
+                <div class="gm-tech-list">
+                  <span class="gm-tech"><b>LOG</b> Monitoring</span>
+                  <span class="gm-tech"><b>SEC</b> Sicherheit</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="gm-phase gm-phase-final" data-roadmap-phase>
+            <div class="gm-phase-copy">
+              <span class="gm-phase-label">PHASE 04 · PRAXIS & KARRIERE</span>
+              <h3>Zeige deine<br><em>Automationsprojekte.</em></h3>
+              <p>Entwickle ein Portfolio, dokumentiere deine Lösungen und bereite dich auf passende berufliche
+                Möglichkeiten vor.</p>
+              <div class="gm-phase-benefits">
+                <span><i>✓</i> Eigene Automationsprojekte vorführen</span>
+                <span><i>✓</i> Architekturentscheidungen erklären</span>
+                <span><i>✓</i> Technische Bewerbungsgespräche üben</span>
+              </div>
+            </div>
+            <div class="gm-phase-marker" aria-hidden="true"><span>04</span></div>
+            <div class="gm-phase-modules">
+              <div class="gm-module">
+                <span class="gm-module-dot"></span>
+                <h4>Portfolio & Bewerbung</h4>
+                <div class="gm-tech-list">
+                  <span class="gm-tech"><b>GH</b> GitHub</span>
+                  <span class="gm-tech"><b>CV</b> Lebenslauf</span>
+                  <span class="gm-tech"><b>IT</b> Interviews</span>
+                </div>
+              </div>
+              <div class="gm-roadmap-finish">
+                <span class="gm-finish-icon">⚑</span>
+                <div>
+                  <strong>Dein Automationsportfolio</strong>
+                  <small>Eigene Projekte als Arbeitsproben</small>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="gm-roadmap-cta">
+          <h3>Starte mit deinem ersten Workflow.</h3>
+          <p>Erfahre mehr über das geplante Gridmind-Lernangebot.</p>
+          <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button">
+            Jetzt Kontakt aufnehmen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRAXISPROJEKTE -->
+    <section class="auto-projects section" id="projekte">
+      <div class="container">
+        <span class="eyebrow">LEARNING BY BUILDING</span>
+        <h2>Ideen, die zu<br><em>echten Projekten werden.</em></h2>
+        <p class="section-intro">
+          Beispiele für Projekte, an denen sich die Konzepte
+          von KI-Automation praktisch erlernen lassen.
+        </p>
+
+        <div class="auto-project-grid">
+          <article class="auto-project-card">
+            <span class="auto-project-icon">✉</span>
+            <span class="auto-project-number">PROJEKT 01</span>
+            <h3>Intelligente E-Mail-Sortierung</h3>
+            <p>Eingehende Nachrichten klassifizieren und passenden Kategorien oder Bearbeitungsschritten zuordnen.</p>
+            <div class="auto-project-tags"><span>n8n</span><span>LLM</span><span>API</span></div>
+          </article>
+          <article class="auto-project-card">
+            <span class="auto-project-icon">◈</span>
+            <span class="auto-project-number">PROJEKT 02</span>
+            <h3>Dokumenten-Workflow</h3>
+            <p>Informationen aus Dokumenten auslesen, prüfen und strukturiert in ein System übertragen.</p>
+            <div class="auto-project-tags"><span>OCR</span><span>JSON</span><span>Validation</span></div>
+          </article>
+          <article class="auto-project-card">
+            <span class="auto-project-icon">⚙</span>
+            <span class="auto-project-number">PROJEKT 03</span>
+            <h3>Digitaler Assistent</h3>
+            <p>Einen Assistenten entwickeln, der Informationen abfragt, Arbeitsschritte vorbereitet und Freigaben
+              berücksichtigt.</p>
+            <div class="auto-project-tags"><span>KI-Agent</span><span>Tools</span><span>Webhook</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GEMEINSAME BRANCHEN-MARQUEE -->
+    <section class="gm-employer-wall" aria-labelledby="gm-employer-title">
+      <div class="gm-employer-heading">
+        <span class="gm-employer-eyebrow">KARRIEREPERSPEKTIVEN</span>
+        <h2 id="gm-employer-title">
+          Automationswissen für <em>viele Branchen.</em>
+        </h2>
+        <p>KI und Prozessautomatisierung finden in unterschiedlichsten digitalen Arbeitsbereichen Anwendung.</p>
+      </div>
+
+      <div class="gm-employer-marquee" role="group" aria-label="Branchen für Automationslösungen">
+        <div class="gm-employer-row">
+          <div class="gm-employer-track">
+            <div class="gm-employer-group">
+              <span class="gm-employer-item"><b>✦</b> Künstliche Intelligenz</span>
+              <span class="gm-employer-item"><b>⚙</b> Automatisierung</span>
+              <span class="gm-employer-item"><b>⌘</b> Softwareentwicklung</span>
+              <span class="gm-employer-item"><b>◈</b> IT-Beratung</span>
+              <span class="gm-employer-item"><b>◇</b> Cloud Computing</span>
+              <span class="gm-employer-item"><b>▣</b> Webentwicklung</span>
+            </div>
+            <div class="gm-employer-group" aria-hidden="true">
+              <span class="gm-employer-item"><b>✦</b> Künstliche Intelligenz</span>
+              <span class="gm-employer-item"><b>⚙</b> Automatisierung</span>
+              <span class="gm-employer-item"><b>⌘</b> Softwareentwicklung</span>
+              <span class="gm-employer-item"><b>◈</b> IT-Beratung</span>
+              <span class="gm-employer-item"><b>◇</b> Cloud Computing</span>
+              <span class="gm-employer-item"><b>▣</b> Webentwicklung</span>
+            </div>
+          </div>
+        </div>
+        <div class="gm-employer-row gm-employer-row-reverse">
+          <div class="gm-employer-track">
+            <div class="gm-employer-group">
+              <span class="gm-employer-item"><b>▤</b> E-Commerce</span>
+              <span class="gm-employer-item"><b>◎</b> HealthTech</span>
+              <span class="gm-employer-item"><b>◇</b> FinTech</span>
+              <span class="gm-employer-item"><b>↗</b> Digitale Services</span>
+              <span class="gm-employer-item"><b>⌘</b> Unternehmenssoftware</span>
+              <span class="gm-employer-item"><b>✦</b> Data Engineering</span>
+            </div>
+            <div class="gm-employer-group" aria-hidden="true">
+              <span class="gm-employer-item"><b>▤</b> E-Commerce</span>
+              <span class="gm-employer-item"><b>◎</b> HealthTech</span>
+              <span class="gm-employer-item"><b>◇</b> FinTech</span>
+              <span class="gm-employer-item"><b>↗</b> Digitale Services</span>
+              <span class="gm-employer-item"><b>⌘</b> Unternehmenssoftware</span>
+              <span class="gm-employer-item"><b>✦</b> Data Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="gm-employer-disclaimer">
+        Dies sind mögliche Tätigkeitsfelder, keine Arbeitgeberreferenzen oder Stellenzusagen.
+      </p>
+    </section>
+
+    <!-- LERNVORTEILE -->
+    <section class="auto-benefits section">
+      <div class="container">
+        <span class="eyebrow">UNSER LERNKONZEPT</span>
+        <h2>Wissen aufbauen.<br><em>Praktisch anwenden.</em></h2>
+
+        <div class="auto-benefits-grid">
+          <article><span>01</span>
+            <h3>Schrittweise lernen</h3>
+            <p>Vom einfachen Trigger zum mehrstufigen KI-Workflow.</p>
+          </article>
+          <article><span>02</span>
+            <h3>Eigene Projekte</h3>
+            <p>Entwickle Anwendungen, die du selbst erklären und präsentieren kannst.</p>
+          </article>
+          <article><span>03</span>
+            <h3>Moderne Werkzeuge</h3>
+            <p>Beschäftige dich mit KI-Modellen, n8n, APIs und Programmiersprachen.</p>
+          </article>
+          <article><span>04</span>
+            <h3>Verantwortungsvolle KI</h3>
+            <p>Berücksichtige Datenschutz, Sicherheit und menschliche Freigaben.</p>
+          </article>
+          <article><span>05</span>
+            <h3>Technisches Verständnis</h3>
+            <p>Verstehe nicht nur, wie ein Workflow funktioniert, sondern auch warum.</p>
+          </article>
+          <article><span>06</span>
+            <h3>Karriereorientierung</h3>
+            <p>Baue ein Portfolio auf und lerne verschiedene IT-Berufsbilder kennen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINANZIERUNG -->
+    <section class="auto-financing section">
+      <div class="container auto-split">
+        <div>
+          <span class="eyebrow">KOSTEN & FINANZIERUNG</span>
+          <h2>Deine Weiterbildung.<br><em>Deine Entscheidung.</em></h2>
+          <p class="auto-lead">
+            Wir möchten künftige Teilnahmebedingungen transparent
+            kommunizieren. Konkrete Preise und Förderzulassungen
+            stehen für dieses geplante Angebot noch nicht fest.
+          </p>
+          <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button">
+            Informationen anfragen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+        </div>
+        <div class="auto-finance-list">
+          <article><span>€</span>
+            <div>
+              <h3>Eigenfinanzierung</h3>
+              <p>Informationen zu einem späteren Kursangebot und seinen Konditionen anfragen.</p>
+            </div>
+          </article>
+          <article><span>▤</span>
+            <div>
+              <h3>Öffentliche Förderung</h3>
+              <p>Eine Förderung wäre nur möglich, wenn die jeweiligen gesetzlichen und programmbezogenen Voraussetzungen
+                erfüllt sind.</p>
+            </div>
+          </article>
+          <article><span>⌂</span>
+            <div>
+              <h3>Unterstützung durch Arbeitgeber</h3>
+              <p>Eine mögliche Weiterbildung kann auch mit dem eigenen Arbeitgeber besprochen werden.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section auto-faq" id="faq">
+      <div class="container faq-layout">
+        <div>
+          <span class="eyebrow">HÄUFIGE FRAGEN</span>
+          <h2>Deine Fragen.<br><em>Unsere Antworten.</em></h2>
+          <p>Wissenswertes über KI-Automation und den geplanten Gridmind-Lernweg.</p>
+        </div>
+        <div class="faq-items">
+          <details>
+            <summary>Was genau ist KI-Automation?</summary>
+            <p>KI-Automation verbindet automatisierte Arbeitsabläufe mit künstlicher Intelligenz. Dabei können
+              beispielsweise Texte analysiert, Dokumente verarbeitet oder Aktionen in anderen Programmen vorbereitet
+              werden.</p>
+          </details>
+          <details>
+            <summary>Brauche ich Programmierkenntnisse?</summary>
+            <p>Grundlegende logische Fähigkeiten sind hilfreich. Das geplante Curriculum beginnt mit einfachen Workflows
+              und baut technische Kenntnisse schrittweise aus.</p>
+          </details>
+          <details>
+            <summary>Welche Tools werden behandelt?</summary>
+            <p>Im geplanten Lernpfad stehen unter anderem n8n, APIs, Webhooks, JSON, KI-Modelle sowie ausgewählte
+              Grundlagen in JavaScript und Python.</p>
+          </details>
+          <details>
+            <summary>Kann ich damit KI-Agenten entwickeln?</summary>
+            <p>Die Grundlagen für toolgestützte KI-Anwendungen und Agenten sind Bestandteil des geplanten Curriculums.
+              Komplexe Systeme erfordern darüber hinaus Kenntnisse über Sicherheit, Tests und zuverlässigen Betrieb.</p>
+          </details>
+          <details>
+            <summary>Ist ein IT-Job nach der Weiterbildung garantiert?</summary>
+            <p>Nein. Berufliche Chancen hängen unter anderem von Vorkenntnissen, Projekterfahrung, Marktbedingungen und
+              individuellen Bewerbungen ab.</p>
+          </details>
+          <details>
+            <summary>Wann beginnt der Kurs und wie viel kostet er?</summary>
+            <p>Starttermin, Dauer, Lernformat und verbindliche Preise sind noch nicht veröffentlicht. Du kannst dich
+              über den aktuellen Planungsstand informieren.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABSCHLUSS -->
+    <section class="auto-final">
+      <div class="container auto-final-inner">
+        <span>GRIDMIND TECHNOLOGIES</span>
+        <h2>Deine Zukunft beginnt<br>mit einer <em>Idee.</em></h2>
+        <p>Entdecke, wie du dich in KI-Automation weiterentwickeln kannst.</p>
+        <a href="../unternehmen/kontakt.html" class="btn auto-final-button">
+          Kontakt aufnehmen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- IDENTISCHER GRIDMIND-FOOTER -->
+  <footer class="site-footer">
+    <svg class="footer-wave" viewBox="0 0 1440 125" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z" fill="#092f2b" />
+    </svg>
+
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">
+            <img src="../assets/logo.png" width="280" height="94" alt="Gridmind Technologies">
+          </a>
+          <p>Wir verbinden Menschen, Ideen und Technologie – von deinem ersten IT-Projekt bis zur digitalen Zukunft.</p>
+          <a class="footer-contact" href="../unternehmen/kontakt.html">Kontakt zu Gridmind ↗</a>
+
+          <div class="footer-social" aria-label="Weitere Informationen">
+            <a href="../unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+            <a href="../unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+            <a href="../unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Bildungsangebote</h3>
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Produkte & Services</h3>
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Unternehmen</h3>
+          <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+          <a href="../unternehmen/team.html">Unser Team</a>
+          <a href="../unternehmen/karriere.html">Karriere</a>
+          <a href="../unternehmen/blog.html">Blog</a>
+          <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+          <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+          <h3 class="footer-subtitle">Rechtliches</h3>
+          <a href="../rechtliches/impressum.html">Impressum</a>
+          <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+          <a href="../rechtliches/agb.html">AGB</a>
+          <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+          <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+          <a href="../rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+          <button class="footer-text-button" type="button" data-open-cookie>
+            Cookie-Einstellungen
+          </button>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© 2026 Gridmind Technologies GmbH</span>
+        <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLEICHER COOKIE-DIALOG -->
+  <div class="cookie-overlay" id="cookie-overlay" hidden></div>
+
+  <section class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="true" aria-labelledby="cookie-title"
+    aria-describedby="cookie-description" tabindex="-1" hidden>
+    <div class="cookie-heading">
+      <span class="cookie-icon">◈</span>
+      <div>
+        <span class="cookie-brand">GRIDMIND PRIVACY</span>
+        <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+      </div>
+    </div>
+
+    <p id="cookie-description">
+      Wir verwenden notwendige Speichertechnologien für die
+      Funktion dieser Website. Zusätzliche Technologien
+      aktivieren wir nur mit deiner Einwilligung.
+    </p>
+
+    <div class="cookie-details" id="cookie-details" hidden>
+      <label class="cookie-option">
+        <span><strong>Notwendig</strong><small>Grundlegende Funktionen und deine Auswahl.</small></span>
+        <input type="checkbox" checked disabled>
+      </label>
+      <label class="cookie-option">
+        <span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span>
+        <input type="checkbox" id="consent-functional">
+      </label>
+      <label class="cookie-option">
+        <span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span>
+        <input type="checkbox" id="consent-analytics">
+      </label>
+      <label class="cookie-option">
+        <span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span>
+        <input type="checkbox" id="consent-marketing">
+      </label>
+    </div>
+
+    <div class="cookie-actions">
+      <button class="cookie-btn cookie-accept" type="button" id="cookie-accept">Alle akzeptieren</button>
+      <button class="cookie-btn cookie-reject" type="button" id="cookie-reject">Nur notwendige</button>
+      <button class="cookie-btn cookie-settings" type="button" id="cookie-settings">Einstellungen</button>
+      <button class="cookie-btn cookie-save" type="button" id="cookie-save" hidden>Auswahl speichern</button>
+    </div>
+
+    <div class="cookie-legal">
+      <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+      <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+      <a href="../rechtliches/impressum.html">Impressum</a>
+    </div>
+  </section>
+</body>
+
+</html>

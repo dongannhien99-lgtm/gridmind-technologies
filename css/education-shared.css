@@ -1,0 +1,326 @@
+
+/* ==========================================
+   GRIDMIND – EDUCATION SHARED COMPONENTS
+   Karriere- und Branchen-Marquee
+   ========================================== */
+
+.gm-employer-wall {
+  padding: 105px 0 115px;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.gm-employer-heading {
+  text-align: center;
+  max-width: 900px;
+  padding: 0 24px;
+  margin: 0 auto 55px;
+}
+
+.gm-employer-eyebrow {
+  display: block;
+  color: #168858;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .09em;
+  margin-bottom: 21px;
+}
+
+.gm-employer-heading h2 {
+  font-size: clamp(34px, 3.8vw, 53px);
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -.035em;
+  color: #103f38;
+  margin-bottom: 19px;
+}
+
+.gm-employer-heading h2 em {
+  color: #138a57;
+  font-style: normal;
+}
+
+.gm-employer-heading p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #607a72;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   MARQUEE CONTAINER
+   ========================================== */
+
+.gm-employer-marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gm-employer-row {
+  width: 100%;
+  overflow: hidden;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+/* Jede Track enthält zwei identische Gruppen */
+
+.gm-employer-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+
+  animation: gmEmployerLeft 55s linear infinite;
+  will-change: transform;
+}
+
+.gm-employer-row-reverse .gm-employer-track {
+  animation-name: gmEmployerRight;
+  animation-duration: 60s;
+}
+
+/* Exakt gleiche Breite beider Gruppen */
+
+.gm-employer-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-right: 18px;
+  flex: 0 0 auto;
+}
+
+/* ==========================================
+   KACHELN
+   ========================================== */
+
+.gm-employer-item {
+  height: 75px;
+  min-width: 190px;
+  padding: 0 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  flex: 0 0 auto;
+  white-space: nowrap;
+
+  background: #f7faf8;
+  border: 1px solid #e4eee8;
+  border-radius: 15px;
+
+  color: #305d49;
+  font-size: 15px;
+  font-weight: 750;
+
+  opacity: .76;
+
+  transition:
+    opacity .25s ease,
+    background-color .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
+}
+
+.gm-employer-item b {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+
+  width: 35px;
+  height: 35px;
+  border-radius: 11px;
+
+  background: #ddf4e5;
+  color: #118451;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+/* Hover */
+
+.gm-employer-item:hover {
+  opacity: 1;
+  background: #eff9f2;
+  border-color: #a7ddba;
+  box-shadow: 0 10px 22px rgba(13,107,62,.09);
+}
+
+/* Bei Hover auf die Reihe stoppt die Animation */
+
+.gm-employer-row:hover .gm-employer-track {
+  animation-play-state: paused;
+}
+
+/* ==========================================
+   NAHTLOSE BEWEGUNG
+   ========================================== */
+
+@keyframes gmEmployerLeft {
+  from {
+    transform: translate3d(0,0,0);
+  }
+
+  to {
+    transform: translate3d(-50%,0,0);
+  }
+}
+
+@keyframes gmEmployerRight {
+  from {
+    transform: translate3d(-50%,0,0);
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+  }
+}
+
+/* ==========================================
+   UNTERER BEREICH
+   ========================================== */
+
+.gm-employer-disclaimer {
+  max-width: 760px;
+  margin: 28px auto 0;
+  padding: 0 24px;
+  text-align: center;
+
+  font-size: 12px;
+  color: #80978a;
+  line-height: 1.6;
+}
+
+.gm-employer-cta {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 0;
+}
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 960px) {
+  .gm-employer-wall {
+    padding: 80px 0 95px;
+  }
+
+  .gm-employer-heading {
+    margin-bottom: 40px;
+  }
+
+  .gm-employer-item {
+    height: 68px;
+    min-width: 165px;
+    padding: 0 18px;
+    font-size: 13px;
+  }
+
+  .gm-employer-item b {
+    width: 32px;
+    height: 32px;
+  }
+
+  .gm-employer-track {
+    animation-duration: 45s;
+  }
+
+  .gm-employer-row-reverse .gm-employer-track {
+    animation-duration: 50s;
+  }
+}
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 600px) {
+  .gm-employer-wall {
+    padding: 70px 0 85px;
+  }
+
+  .gm-employer-heading h2 {
+    font-size: 34px;
+  }
+
+  .gm-employer-heading p {
+    font-size: 15px;
+  }
+
+  .gm-employer-marquee {
+    gap: 12px;
+  }
+
+  .gm-employer-group {
+    gap: 12px;
+    padding-right: 12px;
+  }
+
+  .gm-employer-item {
+    min-width: 150px;
+    height: 60px;
+    padding: 0 14px;
+    font-size: 12px;
+    border-radius: 12px;
+  }
+
+  .gm-employer-item b {
+    width: 29px;
+    height: 29px;
+    font-size: 14px;
+  }
+
+  .gm-employer-track {
+    animation-duration: 35s;
+  }
+
+  .gm-employer-row-reverse .gm-employer-track {
+    animation-duration: 40s;
+  }
+
+  .gm-employer-cta .btn {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   REDUCED MOTION
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .gm-employer-track {
+    animation: none !important;
+  }
+
+  .gm-employer-row {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .gm-employer-group[aria-hidden="true"] {
+    display: none;
+  }
+}

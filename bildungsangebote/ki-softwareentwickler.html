@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#138a57">
+    <meta name="description"
+        content="KI-Softwareentwicklung bei Gridmind: Lerne Programmieren, entwickle reale Projekte und bereite dich auf deinen ersten IT-Job vor.">
+    <title>KI-Softwareentwickler | Gridmind Technologies</title>
+
+
+    <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+    <link rel="stylesheet" href="../css/figtree.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/education-shared.css">
+    <link rel="stylesheet" href="../css/education.css">
+    <link rel="stylesheet" href="../css/roadmap.css">
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
+
+    <!-- GEMEINSAMER GRIDMIND HEADER -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html" aria-label="Gridmind Technologies – Startseite">
+                <img src="../assets/logo.png" width="280" height="94" alt="Gridmind Technologies">
+            </a>
+
+            <nav class="desktop-nav" aria-label="Hauptnavigation">
+                <div class="nav-group">
+                    <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-offers">
+                        Unsere Angebote
+                        <svg viewBox="0 0 12 8" width="12" height="8" fill="none" aria-hidden="true">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="nav-dropdown" id="nav-offers">
+                        <span class="dropdown-title">Ausbildung & Karriere</span>
+                        <a href="../bildungsangebote/ki-softwareentwickler.html"
+                            aria-current="page">KI-Softwareentwickler</a>
+                        <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+                        <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+                        <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+                        <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+                        <span class="dropdown-title">Digitale Dienstleistungen</span>
+                        <a href="../services/websites.html">Websites erstellen lassen</a>
+                        <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+                        <a href="../services/ki-integration.html">KI-Integration</a>
+                    </div>
+                </div>
+
+                <div class="nav-group">
+                    <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-devices">
+                        Geräte & Software
+                        <svg viewBox="0 0 12 8" width="12" height="8" fill="none" aria-hidden="true">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="nav-dropdown" id="nav-devices">
+                        <a href="../produkte/gridphone.html">GridPhone</a>
+                        <a href="../produkte/gridtab.html">GridTab</a>
+                        <a href="../produkte/gridwatch.html">GridWatch</a>
+                        <a href="../produkte/gridmac.html">GridMac</a>
+                        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+                    </div>
+                </div>
+
+                <a href="../unternehmen/ueber-uns.html">Über uns</a>
+                <a href="../unternehmen/blog.html">Blog</a>
+                <a href="../unternehmen/karriere.html">Karriere</a>
+            </nav>
+
+            <div class="header-actions">
+                <a class="header-cta" href="../unternehmen/kontakt.html">
+                    Beratung anfragen <span aria-hidden="true">↗</span>
+                </a>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Menü öffnen"
+                    aria-controls="mobile-menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobiles Menü" inert>
+            <div class="mobile-menu-inner">
+                <a href="../index.html">Startseite</a>
+
+                <details>
+                    <summary>Bildungsangebote</summary>
+                    <div class="mobile-submenu">
+                        <a href="../bildungsangebote/ki-softwareentwickler.html"
+                            aria-current="page">KI-Softwareentwickler</a>
+                        <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+                        <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+                        <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+                        <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Websites & Software</summary>
+                    <div class="mobile-submenu">
+                        <a href="../services/websites.html">Website-Erstellung</a>
+                        <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+                        <a href="../services/ki-integration.html">KI-Integration</a>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Grid-Geräte</summary>
+                    <div class="mobile-submenu">
+                        <a href="../produkte/gridphone.html">GridPhone</a>
+                        <a href="../produkte/gridtab.html">GridTab</a>
+                        <a href="../produkte/gridwatch.html">GridWatch</a>
+                        <a href="../produkte/gridmac.html">GridMac</a>
+                        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+                    </div>
+                </details>
+
+                <a href="../unternehmen/ueber-uns.html">Über uns</a>
+                <a href="../unternehmen/blog.html">Blog</a>
+                <a href="../unternehmen/karriere.html">Karriere</a>
+                <a href="../unternehmen/kontakt.html">Kontakt</a>
+                <a class="mobile-cta" href="../unternehmen/kontakt.html">Beratung anfragen →</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="edu-hero" aria-labelledby="edu-hero-title">
+            <svg class="edu-sparkle edu-sparkle-a" viewBox="0 0 30 40" fill="currentColor" aria-hidden="true">
+                <path d="M15 1C17.5 13 21 17 29 20C21 23 17.5 27 15 39C12.5 27 9 23 1 20C9 17 12.5 13 15 1Z" />
+            </svg>
+            <svg class="edu-sparkle edu-sparkle-b" viewBox="0 0 30 40" fill="currentColor" aria-hidden="true">
+                <path d="M15 1C17.5 13 21 17 29 20C21 23 17.5 27 15 39C12.5 27 9 23 1 20C9 17 12.5 13 15 1Z" />
+            </svg>
+
+            <div class="container edu-hero-content">
+                <div class="edu-kicker">
+                    <span class="edu-pulse"></span>
+                    GRIDMIND LEARNING · SOFTWAREENTWICKLUNG
+                </div>
+
+                <h1 id="edu-hero-title">
+                    Dein Weg zum<br>
+                    <em>KI-Softwareentwickler.</em>
+                </h1>
+
+                <p class="edu-hero-description">
+                    Lerne Programmieren, entwickle eigene Anwendungen
+                    mit modernen KI-Werkzeugen und bereite dich
+                    Schritt für Schritt auf deinen ersten IT-Job vor.
+                </p>
+
+                <a class="btn btn-primary hero-button edu-primary-cta" href="../unternehmen/kontakt.html">
+                    Jetzt Beratung anfragen
+                    <span class="arrow-circle" aria-hidden="true">→</span>
+                </a>
+
+                <div class="edu-hero-features">
+                    <span>✓ Praxisorientiert</span>
+                    <span>✓ KI & Programmieren</span>
+                    <span>✓ Karrierefokus</span>
+                </div>
+            </div>
+
+            <div class="edu-stage" aria-label="Visualisierung einer Lernumgebung">
+                <div class="edu-glow" aria-hidden="true"></div>
+
+                <div class="edu-editor edu-float-one">
+                    <div class="edu-editor-top">
+                        <span class="edu-window-dots"><i></i><i></i><i></i></span>
+                        <span>my-first-app / main.js</span>
+                        <span class="edu-editor-status">● Ready</span>
+                    </div>
+                    <div class="edu-editor-body">
+                        <div><span class="edu-line-no">01</span> <span class="edu-purple">const</span> developer = {
+                        </div>
+                        <div><span class="edu-line-no">02</span> &nbsp;&nbsp;name: <span
+                                class="edu-yellow">"You"</span>,</div>
+                        <div><span class="edu-line-no">03</span> &nbsp;&nbsp;skills: [</div>
+                        <div><span class="edu-line-no">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="edu-yellow">"HTML"</span>, <span class="edu-yellow">"CSS"</span>,</div>
+                        <div><span class="edu-line-no">05</span> &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="edu-yellow">"JavaScript"</span>,</div>
+                        <div><span class="edu-line-no">06</span> &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="edu-yellow">"AI"</span></div>
+                        <div><span class="edu-line-no">07</span> &nbsp;&nbsp;],</div>
+                        <div><span class="edu-line-no">08</span> &nbsp;&nbsp;future: <span
+                                class="edu-yellow">"IT"</span></div>
+                        <div><span class="edu-line-no">09</span> };</div>
+                        <div class="edu-editor-output"><span>✓</span> Projekt erfolgreich gestartet</div>
+                    </div>
+                </div>
+
+                <div class="edu-mentor edu-float-two">
+                    <div class="edu-mentor-top">
+                        <div class="edu-mentor-avatar">G</div>
+                        <div><strong>Gridmind Coach</strong><small>Projektbegleitung</small></div>
+                        <span class="edu-online">● online</span>
+                    </div>
+                    <div class="edu-chat-bubble">Du hast deine erste Anwendung erstellt. Stark! 🚀</div>
+                    <div class="edu-chat-bubble edu-chat-own">Was mache ich als Nächstes?</div>
+                    <div class="edu-chat-bubble">Jetzt bauen wir dein Portfolio weiter aus.</div>
+                    <div class="edu-typing">
+                        <span class="edu-typing-dots"><i></i><i></i><i></i></span>
+                        Gridmind tippt …
+                    </div>
+                </div>
+
+                <div class="edu-terminal edu-float-three">
+                    <div class="edu-terminal-top">
+                        <span class="edu-window-dots"><i></i><i></i><i></i></span>
+                        terminal — gridmind
+                    </div>
+                    <pre><span class="edu-terminal-sign">❯</span> npm run build
+<span class="edu-terminal-ok">✓</span> Build completed
+<span class="edu-terminal-ok">✓</span> Tests passed
+<span class="edu-terminal-sign">❯</span> <span class="edu-terminal-cursor"></span></pre>
+                </div>
+
+                <div class="edu-achievement edu-float-four">
+                    <span class="edu-achievement-icon">✦</span>
+                    <div><strong>Neuer Meilenstein</strong><small>Dein erstes Webprojekt</small></div>
+                    <span class="edu-achievement-check">✓</span>
+                </div>
+            </div>
+
+            <svg class="edu-hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0 30C250 105 480 5 740 38C1030 80 1220 12 1440 55V120H0Z" fill="#f4f8f6" />
+            </svg>
+        </section>
+
+
+        <!-- GRIDMIND: SO FUNKTIONIERT DEIN LERNWEG -->
+        <section class="gm-learning-overview" aria-labelledby="gm-learning-title">
+            <div class="container">
+                <div class="gm-learning-heading">
+                    <span class="eyebrow">DAS ERWARTET DICH</span>
+                    <h2 id="gm-learning-title">
+                        Lerne praxisnah und entwickle<br>
+                        <em>deine Zukunft in der IT.</em>
+                    </h2>
+                    <p>
+                        Mit einem klaren Lernpfad, praktischen Übungen und
+                        modernen Technologien erarbeitest du dir Schritt
+                        für Schritt deine Grundlagen in der Softwareentwicklung.
+                    </p>
+                </div>
+
+                <div class="gm-learning-layout">
+                    <div class="gm-learning-features">
+                        <article class="gm-learning-feature">
+                            <span class="gm-learning-feature-icon">◷</span>
+                            <div>
+                                <h3>Strukturiert und flexibel lernen</h3>
+                                <p>
+                                    Arbeite die Lerninhalte in einer sinnvollen
+                                    Reihenfolge durch und entwickle dabei
+                                    deinen eigenen Lernrhythmus.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="gm-learning-feature">
+                            <span class="gm-learning-feature-icon">⌘</span>
+                            <div>
+                                <h3>Praxis statt nur Theorie</h3>
+                                <p>
+                                    Wende die Konzepte direkt in Programmieraufgaben
+                                    an und entwickle Schritt für Schritt
+                                    funktionierende Webanwendungen.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="gm-learning-feature">
+                            <span class="gm-learning-feature-icon">✦</span>
+                            <div>
+                                <h3>KI sinnvoll einsetzen</h3>
+                                <p>
+                                    Erfahre, wie KI-Werkzeuge beim Programmieren,
+                                    Debugging und Testen unterstützen können –
+                                    ohne das eigene Verständnis zu ersetzen.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="gm-learning-feature">
+                            <span class="gm-learning-feature-icon">↗</span>
+                            <div>
+                                <h3>Deinen Berufseinstieg vorbereiten</h3>
+                                <p>
+                                    Lerne, Projekte zu dokumentieren, dein
+                                    Portfolio aufzubauen und deine technischen
+                                    Kenntnisse in Bewerbungen zu präsentieren.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="gm-learning-visual" aria-label="Beispiel einer digitalen Lernumgebung">
+                        <div class="gm-learning-screen">
+                            <div class="gm-learning-screen-top">
+                                <span>GRIDMIND LEARNING</span>
+                                <span class="gm-learning-live">● LEARNING MODE</span>
+                            </div>
+
+                            <div class="gm-learning-screen-content">
+                                <div class="gm-learning-sidebar">
+                                    <span>⌂</span>
+                                    <span>⌘</span>
+                                    <span>▤</span>
+                                    <span>⚙</span>
+                                </div>
+
+                                <div class="gm-learning-workspace">
+                                    <small>DEIN LERNPFAD</small>
+                                    <h3>Softwareentwicklung<br>mit KI</h3>
+
+                                    <div class="gm-learning-module gm-learning-completed">
+                                        <span>✓</span>
+                                        <div>
+                                            <strong>HTML & CSS</strong>
+                                            <small>Grundlagen der Webentwicklung</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="gm-learning-module gm-learning-completed">
+                                        <span>✓</span>
+                                        <div>
+                                            <strong>JavaScript</strong>
+                                            <small>Interaktive Anwendungen</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="gm-learning-module gm-learning-current">
+                                        <span>✦</span>
+                                        <div>
+                                            <strong>Dein KI-Projekt</strong>
+                                            <small>Die nächste Herausforderung</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="gm-learning-progress-label">
+                                        <span>Beispielhafter Lernfortschritt</span>
+                                        <strong>68%</strong>
+                                    </div>
+
+                                    <div class="gm-learning-progress">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gm-learning-floating-card">
+                            <span class="gm-learning-floating-icon">✓</span>
+                            <div>
+                                <strong>Neues Ziel erreicht</strong>
+                                <small>Weiter zum nächsten Projekt</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="gm-learning-note">
+                    Die dargestellte Lernoberfläche ist eine illustrative
+                    Konzeptansicht, kein Screenshot einer bereits betriebenen Plattform.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- GRIDMIND: BERUFSFELDER -->
+        <section class="gm-careers" aria-labelledby="gm-careers-title">
+            <div class="container gm-careers-layout">
+
+                <div class="gm-careers-intro">
+                    <span class="eyebrow">DEINE BERUFLICHEN MÖGLICHKEITEN</span>
+
+                    <h2 id="gm-careers-title">
+                        Deine Zukunft<br>
+                        in der <em>IT.</em>
+                    </h2>
+
+                    <p>
+                        Softwareentwicklung eröffnet viele berufliche
+                        Möglichkeiten. Je nach deinen Fähigkeiten,
+                        Projekten und Spezialisierungen kommen
+                        unterschiedliche Einstiegsmöglichkeiten infrage.
+                    </p>
+
+                    <a href="../unternehmen/kontakt.html" class="gm-careers-link">
+                        Mehr über deinen IT-Einstieg erfahren
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <div class="gm-careers-list">
+
+                    <article class="gm-career">
+                        <div class="gm-career-icon">⌘</div>
+                        <div>
+                            <h3>Frontend Developer</h3>
+                            <p>
+                                Entwickle moderne Benutzeroberflächen,
+                                responsive Websites und interaktive
+                                Anwendungen mit Webtechnologien.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="gm-career">
+                        <div class="gm-career-icon">▣</div>
+                        <div>
+                            <h3>Fullstack Developer</h3>
+                            <p>
+                                Arbeite sowohl an der sichtbaren Oberfläche
+                                als auch an Backend-Funktionen,
+                                Schnittstellen und Datenbanken.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="gm-career">
+                        <div class="gm-career-icon">✦</div>
+                        <div>
+                            <h3>KI-Softwareentwickler</h3>
+                            <p>
+                                Entwickle Software mit Unterstützung
+                                moderner KI-Werkzeuge und integriere
+                                KI-Funktionen in eigene Anwendungen.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="gm-career">
+                        <div class="gm-career-icon">⚙</div>
+                        <div>
+                            <h3>Automation Developer</h3>
+                            <p>
+                                Verbinde digitale Dienste, APIs und
+                                automatisierte Abläufe, um wiederkehrende
+                                Aufgaben effizienter zu gestalten.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- GRIDMIND: KOSTEN & FINANZIERUNG -->
+        <section class="gm-financing" aria-labelledby="gm-financing-title">
+            <div class="container gm-financing-layout">
+
+                <div class="gm-financing-intro">
+                    <span class="eyebrow">INVESTIERE IN DEINE ZUKUNFT</span>
+
+                    <h2 id="gm-financing-title">
+                        Kosten &<br>
+                        <em>Finanzierung.</em>
+                    </h2>
+
+                    <p>
+                        Eine Weiterbildung ist eine wichtige
+                        persönliche Entscheidung. Deshalb möchten
+                        wir dir transparent erklären, welche
+                        Teilnahmebedingungen und Kosten für
+                        unsere Bildungsangebote vorgesehen sind.
+                    </p>
+
+                    <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button">
+                        Informationen anfragen
+                        <span class="arrow-circle" aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="gm-financing-options">
+                    <article class="gm-financing-option">
+                        <span class="gm-financing-icon">€</span>
+                        <div>
+                            <h3>Eigenfinanzierung</h3>
+                            <p>
+                                Du möchtest selbst in deine Weiterbildung
+                                investieren? Informiere dich über die
+                                geplanten Kursangebote und deren
+                                Teilnahmebedingungen.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="gm-financing-option">
+                        <span class="gm-financing-icon">▤</span>
+                        <div>
+                            <h3>Fördermöglichkeiten</h3>
+                            <p>
+                                Für berufliche Weiterbildungen kommen
+                                unter bestimmten Voraussetzungen
+                                öffentliche Förderprogramme infrage.
+                                Ob ein konkretes Gridmind-Angebot
+                                förderfähig ist, muss gesondert
+                                geprüft werden.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="gm-financing-option">
+                        <span class="gm-financing-icon">⌂</span>
+                        <div>
+                            <h3>Weiterbildung über den Arbeitgeber</h3>
+                            <p>
+                                Manche Arbeitgeber unterstützen die
+                                fachliche Entwicklung ihrer Beschäftigten.
+                                Du kannst mit deinem Unternehmen
+                                besprechen, ob eine Kostenübernahme
+                                möglich wäre.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <p class="gm-financing-note">
+                Preise, konkrete Finanzierungsmodelle und etwaige
+                Förderzulassungen werden erst nach ihrer verbindlichen
+                Festlegung veröffentlicht.
+            </p>
+        </section>
+
+
+        <!-- GRIDMIND: ÜBER UNS -->
+        <section class="gm-about-learning" aria-labelledby="gm-about-learning-title">
+
+            <div class="container gm-about-learning-layout">
+
+                <div class="gm-about-learning-copy">
+                    <span class="eyebrow">ÜBER GRIDMIND</span>
+
+                    <h2 id="gm-about-learning-title">
+                        Technologie verstehen.<br>
+                        <em>Zukunft gestalten.</em>
+                    </h2>
+
+                    <p>
+                        Gridmind Technologies verbindet das Interesse
+                        an moderner Software, künstlicher Intelligenz
+                        und digitalen Produkten mit dem Ziel,
+                        technisches Wissen zugänglich zu machen.
+                    </p>
+
+                    <p>
+                        Unser Bildungskonzept setzt auf verständliche
+                        Grundlagen, praxisnahe Projekte und den
+                        selbstständigen Umgang mit modernen
+                        Entwicklungswerkzeugen.
+                    </p>
+
+                    <a href="../unternehmen/ueber-uns.html" class="gm-about-learning-link">
+                        Mehr über Gridmind erfahren
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <div class="gm-about-learning-visual">
+                    <div class="gm-about-logo">
+                        <img src="../assets/logo.png" alt="Gridmind Technologies" loading="lazy">
+                    </div>
+
+                    <div class="gm-about-learning-floating gm-about-learning-floating-one">
+                        <span>✦</span> Artificial Intelligence
+                    </div>
+
+                    <div class="gm-about-learning-floating gm-about-learning-floating-two">
+                        <span>⌘</span> Software Engineering
+                    </div>
+
+                    <div class="gm-about-learning-floating gm-about-learning-floating-three">
+                        <span>↗</span> Digital Future
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROGRAMMÜBERSICHT -->
+        <section class="section edu-intro" id="lernprogramm">
+            <div class="container">
+                <span class="eyebrow">DEIN LERNPROGRAMM</span>
+                <h2>Entwickle Fähigkeiten,<br>die dich <em>weiterbringen.</em></h2>
+                <p class="section-intro">
+                    Unser Lernkonzept verbindet technische Grundlagen,
+                    moderne KI-Werkzeuge und praktische Projekte.
+                    So wächst dein Wissen mit jeder Aufgabe.
+                </p>
+
+                <div class="edu-skills-grid">
+                    <article class="edu-skill-card">
+                        <span class="edu-skill-no">01 / FUNDAMENTALS</span>
+                        <span class="edu-skill-icon">⌘</span>
+                        <h3>HTML, CSS & JavaScript</h3>
+                        <p>Verstehe den Aufbau moderner Websites und entwickle interaktive Benutzeroberflächen.</p>
+                        <div class="edu-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                    </article>
+
+                    <article class="edu-skill-card">
+                        <span class="edu-skill-no">02 / APPLICATIONS</span>
+                        <span class="edu-skill-icon">▣</span>
+                        <h3>Webanwendungen</h3>
+                        <p>Verbinde Frontend, APIs und Datenverarbeitung zu funktionierenden Anwendungen.</p>
+                        <div class="edu-tags"><span>APIs</span><span>Frontend</span><span>Backend</span></div>
+                    </article>
+
+                    <article class="edu-skill-card">
+                        <span class="edu-skill-no">03 / ARTIFICIAL INTELLIGENCE</span>
+                        <span class="edu-skill-icon">✦</span>
+                        <h3>KI in der Entwicklung</h3>
+                        <p>Lerne, KI-Assistenten bewusst und produktiv im Softwareentwicklungsprozess einzusetzen.</p>
+                        <div class="edu-tags"><span>AI Tools</span><span>Prompts</span><span>Automation</span></div>
+                    </article>
+
+                    <article class="edu-skill-card">
+                        <span class="edu-skill-no">04 / SOFTWARE QUALITY</span>
+                        <span class="edu-skill-icon">◇</span>
+                        <h3>Testing & Git</h3>
+                        <p>Organisiere deinen Code, arbeite mit Versionskontrolle und prüfe deine Anwendungen.</p>
+                        <div class="edu-tags"><span>Git</span><span>Testing</span><span>Debugging</span></div>
+                    </article>
+
+                    <article class="edu-skill-card">
+                        <span class="edu-skill-no">05 / REAL PROJECTS</span>
+                        <span class="edu-skill-icon">◈</span>
+                        <h3>Echte Projekte</h3>
+                        <p>Entwickle eigene Websites, Tools und Apps, die du später in deinem Portfolio zeigen kannst.
+                        </p>
+                        <div class="edu-tags"><span>Portfolio</span><span>Apps</span><span>Deploy</span></div>
+                    </article>
+
+                    <article class="edu-skill-card">
+                        <span class="edu-skill-no">06 / YOUR CAREER</span>
+                        <span class="edu-skill-icon">↗</span>
+                        <h3>IT-Karriere</h3>
+                        <p>Beschäftige dich mit Bewerbungen, technischen Gesprächen und deinem beruflichen Einstieg.</p>
+                        <div class="edu-tags"><span>CV</span><span>Interview</span><span>Job</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- LERNWEG -->
+        <section class="section edu-journey">
+            <div class="container">
+                <div class="edu-journey-head">
+                    <div>
+                        <span class="eyebrow">SCHRITT FÜR SCHRITT</span>
+                        <h2>Vom ersten Code<br>zum <em>eigenen Portfolio.</em></h2>
+                    </div>
+                    <p>
+                        Ein guter Einstieg in die Softwareentwicklung entsteht
+                        nicht durch Auswendiglernen, sondern durch Verstehen,
+                        Ausprobieren und kontinuierliches Üben.
+                    </p>
+                </div>
+
+                <div class="edu-timeline">
+                    <article class="edu-step">
+                        <span class="edu-step-number">01</span>
+                        <div>
+                            <h3>Grundlagen lernen</h3>
+                            <p>Du verstehst, wie Websites und Programme aufgebaut sind.</p>
+                        </div>
+                        <span class="edu-step-arrow">↗</span>
+                    </article>
+                    <article class="edu-step">
+                        <span class="edu-step-number">02</span>
+                        <div>
+                            <h3>Selbst programmieren</h3>
+                            <p>Du setzt das Gelernte mit kleineren Übungen praktisch um.</p>
+                        </div>
+                        <span class="edu-step-arrow">↗</span>
+                    </article>
+                    <article class="edu-step">
+                        <span class="edu-step-number">03</span>
+                        <div>
+                            <h3>Komplexere Apps bauen</h3>
+                            <p>Du kombinierst mehrere Technologien und KI-Werkzeuge.</p>
+                        </div>
+                        <span class="edu-step-arrow">↗</span>
+                    </article>
+                    <article class="edu-step">
+                        <span class="edu-step-number">04</span>
+                        <div>
+                            <h3>Portfolio veröffentlichen</h3>
+                            <p>Du präsentierst deine Projekte als Nachweis deiner Fähigkeiten.</p>
+                        </div>
+                        <span class="edu-step-arrow">↗</span>
+                    </article>
+                    <article class="edu-step">
+                        <span class="edu-step-number">05</span>
+                        <div>
+                            <h3>Den IT-Einstieg vorbereiten</h3>
+                            <p>Du entwickelst eine Bewerbungsstrategie für passende Einstiegsstellen.</p>
+                        </div>
+                        <span class="edu-step-arrow">✓</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+     GRIDMIND LEARNING ROADMAP
+     ========================================== -->
+
+        <section class="gm-roadmap" id="lernweg" aria-labelledby="gm-roadmap-title">
+
+            <div class="container">
+                <div class="gm-roadmap-heading">
+                    <span class="eyebrow">DEIN LERNPFAD</span>
+
+                    <h2 id="gm-roadmap-title">
+                        Schritt für Schritt zum<br>
+                        <em>KI-Softwareentwickler.</em>
+                    </h2>
+
+                    <p>
+                        Von deiner ersten Website über intelligente Anwendungen
+                        bis zur Vorbereitung auf den IT-Arbeitsmarkt:
+                        Entdecke unseren geplanten Lernweg.
+                    </p>
+                </div>
+
+                <div class="gm-roadmap-track">
+
+                    <!-- ZENTRALE VERBINDUNGSLINIE -->
+                    <div class="gm-roadmap-line" aria-hidden="true">
+                        <div class="gm-roadmap-line-progress"></div>
+                    </div>
+
+                    <!-- PHASE 1 -->
+                    <article class="gm-phase" data-roadmap-phase>
+                        <div class="gm-phase-copy">
+                            <span class="gm-phase-label">PHASE 01 · DEINE BASIS</span>
+
+                            <h3>
+                                Lerne moderne<br>
+                                <em>Frontend-Entwicklung.</em>
+                            </h3>
+
+                            <p>
+                                Verstehe, wie Websites und Webanwendungen funktionieren.
+                                Gestalte Benutzeroberflächen und setze deine ersten
+                                eigenen Projekte um.
+                            </p>
+
+                            <div class="gm-phase-benefits">
+                                <span><i>✓</i> Webseiten von Grund auf entwickeln</span>
+                                <span><i>✓</i> Interaktive Benutzeroberflächen bauen</span>
+                                <span><i>✓</i> Eigene Projekte mit Git verwalten</span>
+                            </div>
+                        </div>
+
+                        <div class="gm-phase-marker" aria-hidden="true">
+                            <span>01</span>
+                        </div>
+
+                        <div class="gm-phase-modules">
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Webentwicklung</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>H</b> HTML</span>
+                                    <span class="gm-tech"><b>C</b> CSS</span>
+                                    <span class="gm-tech"><b>JS</b> JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Webdesign & Layouts</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>UI</b> Responsive Design</span>
+                                    <span class="gm-tech"><b>UX</b> UI/UX</span>
+                                    <span class="gm-tech"><b>F</b> Figma</span>
+                                </div>
+                            </div>
+
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Softwareentwicklung</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>G</b> Git</span>
+                                    <span class="gm-tech"><b>GH</b> GitHub</span>
+                                    <span class="gm-tech"><b>TS</b> TypeScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PHASE 2 -->
+                    <article class="gm-phase" data-roadmap-phase>
+                        <div class="gm-phase-copy">
+                            <span class="gm-phase-label">PHASE 02 · KÜNSTLICHE INTELLIGENZ</span>
+
+                            <h3>
+                                Entwickle Software<br>
+                                <em>mit der Power von KI.</em>
+                            </h3>
+
+                            <p>
+                                Entdecke moderne KI-Werkzeuge, lerne systematisches
+                                Prompting und integriere intelligente Funktionen
+                                in eigene Anwendungen.
+                            </p>
+
+                            <div class="gm-phase-benefits">
+                                <span><i>✓</i> KI-Assistenten produktiv einsetzen</span>
+                                <span><i>✓</i> Automatisierte Prozesse entwickeln</span>
+                                <span><i>✓</i> KI-Schnittstellen verstehen</span>
+                            </div>
+                        </div>
+
+                        <div class="gm-phase-marker" aria-hidden="true">
+                            <span>02</span>
+                        </div>
+
+                        <div class="gm-phase-modules">
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Programmieren mit KI</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>AI</b> KI-Assistenten</span>
+                                    <span class="gm-tech"><b>P</b> Prompting</span>
+                                    <span class="gm-tech"><b>C</b> Code Review</span>
+                                </div>
+                            </div>
+
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Workflow-Automation</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>N</b> n8n</span>
+                                    <span class="gm-tech"><b>API</b> APIs</span>
+                                    <span class="gm-tech"><b>W</b> Webhooks</span>
+                                </div>
+                            </div>
+
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Intelligente Anwendungen</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>LLM</b> Sprachmodelle</span>
+                                    <span class="gm-tech"><b>R</b> RAG</span>
+                                    <span class="gm-tech"><b>AG</b> KI-Agenten</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PHASE 3 -->
+                    <article class="gm-phase" data-roadmap-phase>
+                        <div class="gm-phase-copy">
+                            <span class="gm-phase-label">PHASE 03 · FORTGESCHRITTENE ENTWICKLUNG</span>
+
+                            <h3>
+                                Werde fit für<br>
+                                <em>Fullstack-Projekte.</em>
+                            </h3>
+
+                            <p>
+                                Ergänze deine Frontend-Kenntnisse um Backend-Entwicklung,
+                                Datenbanken und Deployment. Verbinde einzelne Komponenten
+                                zu funktionsfähigen Anwendungen.
+                            </p>
+
+                            <div class="gm-phase-benefits">
+                                <span><i>✓</i> Backend-Schnittstellen entwickeln</span>
+                                <span><i>✓</i> Datenbanken einsetzen</span>
+                                <span><i>✓</i> Anwendungen bereitstellen und testen</span>
+                            </div>
+                        </div>
+
+                        <div class="gm-phase-marker" aria-hidden="true">
+                            <span>03</span>
+                        </div>
+
+                        <div class="gm-phase-modules">
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Backend-Entwicklung</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>PY</b> Python</span>
+                                    <span class="gm-tech"><b>D</b> Django</span>
+                                    <span class="gm-tech"><b>API</b> REST APIs</span>
+                                </div>
+                            </div>
+
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Datenbanken</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>SQL</b> SQL</span>
+                                    <span class="gm-tech"><b>PG</b> PostgreSQL</span>
+                                    <span class="gm-tech"><b>DB</b> Datenmodelle</span>
+                                </div>
+                            </div>
+
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Deployment & Qualität</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>DK</b> Docker</span>
+                                    <span class="gm-tech"><b>CL</b> Cloud</span>
+                                    <span class="gm-tech"><b>CI</b> Testing & CI/CD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PHASE 4 -->
+                    <article class="gm-phase gm-phase-final" data-roadmap-phase>
+                        <div class="gm-phase-copy">
+                            <span class="gm-phase-label">PHASE 04 · DEINE KARRIERE</span>
+
+                            <h3>
+                                Bereite deinen<br>
+                                <em>ersten IT-Job vor.</em>
+                            </h3>
+
+                            <p>
+                                Stelle deine Projekte professionell vor,
+                                trainiere Bewerbungsgespräche und entdecke
+                                passende Einstiegsmöglichkeiten in der IT.
+                            </p>
+
+                            <div class="gm-phase-benefits">
+                                <span><i>✓</i> Bewerbungsunterlagen vorbereiten</span>
+                                <span><i>✓</i> Technische Interviews üben</span>
+                                <span><i>✓</i> Eigene Projekte präsentieren</span>
+                            </div>
+                        </div>
+
+                        <div class="gm-phase-marker" aria-hidden="true">
+                            <span>04</span>
+                        </div>
+
+                        <div class="gm-phase-modules">
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Persönliche Entwicklung</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>●</b> Teamarbeit</span>
+                                    <span class="gm-tech"><b>↗</b> Kommunikation</span>
+                                </div>
+                            </div>
+
+                            <div class="gm-module">
+                                <span class="gm-module-dot"></span>
+                                <h4>Bewerbungstraining</h4>
+                                <div class="gm-tech-list">
+                                    <span class="gm-tech"><b>CV</b> Lebenslauf</span>
+                                    <span class="gm-tech"><b>IT</b> Interviews</span>
+                                    <span class="gm-tech"><b>PF</b> Portfolio</span>
+                                </div>
+                            </div>
+
+                            <div class="gm-roadmap-finish">
+                                <span class="gm-finish-icon">⚑</span>
+                                <div>
+                                    <strong>Dein Ziel: IT-Job</strong>
+                                    <small>Gut vorbereitet in die Bewerbungsphase</small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="gm-roadmap-cta">
+                    <h3>Dein Weg beginnt mit dem ersten Schritt.</h3>
+                    <p>Erfahre mehr über unser geplantes Lernangebot.</p>
+                    <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button">
+                        Lernweg besprechen
+                        <span class="arrow-circle" aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+     GRIDMIND – KARRIEREPERSPEKTIVEN
+     Wiederverwendbar auf allen Bildungsseiten
+     ========================================== -->
+
+        <section class="gm-employer-wall" aria-labelledby="gm-employer-title">
+
+            <div class="gm-employer-heading">
+                <span class="gm-employer-eyebrow">
+                    KARRIEREPERSPEKTIVEN
+                </span>
+
+                <h2 id="gm-employer-title">
+                    Deine Fähigkeiten sind in
+                    <em>vielen Branchen gefragt.</em>
+                </h2>
+
+                <p>
+                    Ob Softwareentwicklung, künstliche Intelligenz
+                    oder digitale Produkte: Entdecke Berufsfelder,
+                    in denen technische Kenntnisse eingesetzt werden.
+                </p>
+            </div>
+
+            <div class="gm-employer-marquee" role="group" aria-label="IT-Berufsfelder und Branchen">
+
+                <!-- REIHE 1: LINKS -->
+                <div class="gm-employer-row">
+                    <div class="gm-employer-track">
+
+                        <div class="gm-employer-group">
+                            <span class="gm-employer-item"><b>⌘</b> Softwareentwicklung</span>
+                            <span class="gm-employer-item"><b>✦</b> Künstliche Intelligenz</span>
+                            <span class="gm-employer-item"><b>◈</b> IT-Beratung</span>
+                            <span class="gm-employer-item"><b>▣</b> Webentwicklung</span>
+                            <span class="gm-employer-item"><b>◇</b> Cloud Computing</span>
+                            <span class="gm-employer-item"><b>⚙</b> DevOps</span>
+                            <span class="gm-employer-item"><b>✳</b> IT-Sicherheit</span>
+                            <span class="gm-employer-item"><b>↗</b> App-Entwicklung</span>
+                        </div>
+
+                        <!-- Gleicher Inhalt für nahtlose Wiederholung -->
+                        <div class="gm-employer-group" aria-hidden="true">
+                            <span class="gm-employer-item"><b>⌘</b> Softwareentwicklung</span>
+                            <span class="gm-employer-item"><b>✦</b> Künstliche Intelligenz</span>
+                            <span class="gm-employer-item"><b>◈</b> IT-Beratung</span>
+                            <span class="gm-employer-item"><b>▣</b> Webentwicklung</span>
+                            <span class="gm-employer-item"><b>◇</b> Cloud Computing</span>
+                            <span class="gm-employer-item"><b>⚙</b> DevOps</span>
+                            <span class="gm-employer-item"><b>✳</b> IT-Sicherheit</span>
+                            <span class="gm-employer-item"><b>↗</b> App-Entwicklung</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- REIHE 2: RECHTS -->
+                <div class="gm-employer-row gm-employer-row-reverse">
+                    <div class="gm-employer-track">
+
+                        <div class="gm-employer-group">
+                            <span class="gm-employer-item"><b>◇</b> FinTech</span>
+                            <span class="gm-employer-item"><b>◎</b> Gesundheitstechnologie</span>
+                            <span class="gm-employer-item"><b>⚙</b> Automatisierung</span>
+                            <span class="gm-employer-item"><b>▤</b> E-Commerce</span>
+                            <span class="gm-employer-item"><b>◈</b> Data Engineering</span>
+                            <span class="gm-employer-item"><b>✦</b> KI-Anwendungen</span>
+                            <span class="gm-employer-item"><b>⌘</b> Unternehmenssoftware</span>
+                            <span class="gm-employer-item"><b>↗</b> Digitale Dienstleistungen</span>
+                        </div>
+
+                        <div class="gm-employer-group" aria-hidden="true">
+                            <span class="gm-employer-item"><b>◇</b> FinTech</span>
+                            <span class="gm-employer-item"><b>◎</b> Gesundheitstechnologie</span>
+                            <span class="gm-employer-item"><b>⚙</b> Automatisierung</span>
+                            <span class="gm-employer-item"><b>▤</b> E-Commerce</span>
+                            <span class="gm-employer-item"><b>◈</b> Data Engineering</span>
+                            <span class="gm-employer-item"><b>✦</b> KI-Anwendungen</span>
+                            <span class="gm-employer-item"><b>⌘</b> Unternehmenssoftware</span>
+                            <span class="gm-employer-item"><b>↗</b> Digitale Dienstleistungen</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="gm-employer-disclaimer">
+                Die dargestellten Bereiche sind mögliche Tätigkeitsfelder
+                und keine Zusagen über Stellenangebote oder Arbeitgeber.
+            </p>
+
+            <div class="gm-employer-cta">
+                <a href="../unternehmen/kontakt.html" class="btn btn-primary">
+                    Über Karrieremöglichkeiten sprechen
+                    <span class="arrow-circle" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- PRAXIS -->
+        <section class="section edu-practice">
+            <div class="container edu-practice-layout">
+                <div>
+                    <span class="eyebrow">LEARNING BY BUILDING</span>
+                    <h2>Dein Code.<br><em>Deine Projekte.</em></h2>
+                    <p>
+                        Programmieren lernst du vor allem durch Programmieren.
+                        Deshalb steht in unserem Bildungskonzept die praktische
+                        Entwicklung von Software im Mittelpunkt.
+                    </p>
+                    <div class="edu-checklist">
+                        <span>✓ Eigene Website gestalten</span>
+                        <span>✓ Interaktive Anwendungen programmieren</span>
+                        <span>✓ Mit modernen Entwicklertools arbeiten</span>
+                        <span>✓ Projekte dokumentieren und präsentieren</span>
+                    </div>
+                    <a href="../unternehmen/kontakt.html" class="btn btn-primary">
+                        Mehr erfahren <span class="arrow-circle" aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="edu-project-preview">
+                    <div class="edu-project-browser">
+                        <div class="edu-project-bar">
+                            <span class="edu-window-dots"><i></i><i></i><i></i></span>
+                            portfolio / preview
+                        </div>
+                        <div class="edu-project-screen">
+                            <small>WELCOME TO MY PORTFOLIO</small>
+                            <strong>Hi, ich entwickle<br>digitale Ideen.</strong>
+                            <div class="edu-project-demo-button">My Projects ↗</div>
+                            <div class="edu-project-tiles"><i></i><i></i><i></i></div>
+                        </div>
+                    </div>
+                    <span class="edu-project-badge">✦ Dein eigenes Projekt</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- KARRIERE CTA -->
+        <section class="edu-career-banner">
+            <div class="container edu-career-inner">
+                <span>DEINE KARRIERE BEGINNT MIT EINEM SCHRITT</span>
+                <h2>Du kannst mehr,<br>als du heute denkst.</h2>
+                <p>Entdecke einen Lernweg, der zu deinem Einstieg in die Softwareentwicklung passen könnte.</p>
+                <a href="../unternehmen/kontakt.html" class="btn edu-white-button">
+                    Beratung anfragen <span class="arrow-circle" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section edu-faq">
+            <div class="container faq-layout">
+                <div>
+                    <span class="eyebrow">HÄUFIGE FRAGEN</span>
+                    <h2>Deine Fragen.<br><em>Unsere Antworten.</em></h2>
+                    <p>Mehr über das Lernkonzept und den Weg in die IT.</p>
+                </div>
+
+                <div class="faq-items">
+                    <details>
+                        <summary>Ist der Einstieg ohne Vorkenntnisse möglich?</summary>
+                        <p>Unser Konzept beginnt mit den Grundlagen. Wie viel Zeit du benötigst, hängt von deinen
+                            Vorkenntnissen, deinem Lerntempo und dem konkreten Programm ab.</p>
+                    </details>
+                    <details>
+                        <summary>Welche Programmiersprachen lerne ich?</summary>
+                        <p>Im Mittelpunkt stehen HTML, CSS und JavaScript. Hinzu kommen Konzepte moderner
+                            Webentwicklung, APIs, Versionskontrolle und KI-gestützte Werkzeuge.</p>
+                    </details>
+                    <details>
+                        <summary>Wird auch künstliche Intelligenz behandelt?</summary>
+                        <p>Ja, der geplante Lernweg umfasst den sinnvollen Einsatz von KI bei der Softwareentwicklung,
+                            beispielsweise zum Analysieren, Testen und Verbessern von Code.</p>
+                    </details>
+                    <details>
+                        <summary>Bekomme ich automatisch einen IT-Job?</summary>
+                        <p>Ein Arbeitsplatz kann nicht garantiert werden. Ziel ist es, durch Fachkenntnisse, eigene
+                            Projekte und Karrierevorbereitung bessere Voraussetzungen für Bewerbungen zu schaffen.</p>
+                    </details>
+                    <details>
+                        <summary>Wie lange dauert das Lernprogramm?</summary>
+                        <p>Eine verbindliche Dauer steht noch nicht fest. Sie wird mit den konkreten Kursformaten und
+                            Teilnahmebedingungen veröffentlicht.</p>
+                    </details>
+                    <details>
+                        <summary>Kann ich mit einem Bildungsgutschein teilnehmen?</summary>
+                        <p>Eine Förderfähigkeit ist derzeit nicht bestätigt. Angaben zu möglichen Förderprogrammen
+                            werden erst nach Klärung der Voraussetzungen veröffentlicht.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- LETZTER CTA -->
+        <section class="edu-bottom-cta">
+            <div class="container">
+                <span>GRIDMIND TECHNOLOGIES</span>
+                <h2>Bereit für deinen<br>nächsten Schritt?</h2>
+                <p>Starte mit einer unverbindlichen Anfrage und erfahre mehr über unsere geplanten Bildungsangebote.</p>
+                <a href="../unternehmen/kontakt.html" class="btn edu-white-button">
+                    Jetzt Kontakt aufnehmen
+                    <span class="arrow-circle" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- GEMEINSAMER FOOTER -->
+    <footer class="site-footer">
+        <svg class="footer-wave" viewBox="0 0 1440 125" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z" fill="#092f2b" />
+        </svg>
+
+        <div class="footer-main">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../assets/logo.png" width="280" height="94" alt="Gridmind Technologies">
+                    </a>
+                    <p>Wir verbinden Menschen, Ideen und Technologie – von deinem ersten IT-Projekt bis zur digitalen
+                        Zukunft.</p>
+                    <a class="footer-contact" href="../unternehmen/kontakt.html">Kontakt zu Gridmind ↗</a>
+                    <div class="footer-social" aria-label="Weitere Informationen">
+                        <a href="../unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+                        <a href="../unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+                        <a href="../unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Bildungsangebote</h3>
+                    <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+                    <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+                    <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+                    <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+                    <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Produkte & Services</h3>
+                    <a href="../services/websites.html">Website-Erstellung</a>
+                    <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+                    <a href="../services/ki-integration.html">KI-Integration</a>
+                    <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+                    <a href="../produkte/gridphone.html">GridPhone</a>
+                    <a href="../produkte/gridtab.html">GridTab</a>
+                    <a href="../produkte/gridwatch.html">GridWatch</a>
+                    <a href="../produkte/gridmac.html">GridMac</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Unternehmen</h3>
+                    <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+                    <a href="../unternehmen/team.html">Unser Team</a>
+                    <a href="../unternehmen/karriere.html">Karriere</a>
+                    <a href="../unternehmen/blog.html">Blog</a>
+                    <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+                    <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+                    <h3 class="footer-subtitle">Rechtliches</h3>
+                    <a href="../rechtliches/impressum.html">Impressum</a>
+                    <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+                    <a href="../rechtliches/agb.html">AGB</a>
+                    <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+                    <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+                    <a href="../rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+                    <button class="footer-text-button" type="button" data-open-cookie>
+                        Cookie-Einstellungen
+                    </button>
+                </div>
+            </div>
+
+            <div class="container footer-bottom">
+                <span>© 2026 Gridmind Technologies GmbH</span>
+                <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GLEICHER COOKIE-DIALOG WIE AUF DER STARTSEITE -->
+    <div class="cookie-overlay" id="cookie-overlay" hidden></div>
+
+    <section class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="true" aria-labelledby="cookie-title"
+        aria-describedby="cookie-description" tabindex="-1" hidden>
+        <div class="cookie-heading">
+            <span class="cookie-icon">◈</span>
+            <div>
+                <span class="cookie-brand">GRIDMIND PRIVACY</span>
+                <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+            </div>
+        </div>
+
+        <p id="cookie-description">
+            Wir verwenden notwendige Speichertechnologien für die Funktion
+            dieser Website. Zusätzliche Technologien für Statistik,
+            Komfort oder Marketing aktivieren wir nur mit deiner Einwilligung.
+        </p>
+
+        <div class="cookie-details" id="cookie-details" hidden>
+            <label class="cookie-option">
+                <span><strong>Notwendig</strong><small>Grundlegende Funktionen und deine Auswahl.</small></span>
+                <input type="checkbox" checked disabled>
+            </label>
+            <label class="cookie-option">
+                <span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span>
+                <input type="checkbox" id="consent-functional">
+            </label>
+            <label class="cookie-option">
+                <span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span>
+                <input type="checkbox" id="consent-analytics">
+            </label>
+            <label class="cookie-option">
+                <span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span>
+                <input type="checkbox" id="consent-marketing">
+            </label>
+        </div>
+
+        <div class="cookie-actions">
+            <button class="cookie-btn cookie-accept" type="button" id="cookie-accept">Alle akzeptieren</button>
+            <button class="cookie-btn cookie-reject" type="button" id="cookie-reject">Nur notwendige</button>
+            <button class="cookie-btn cookie-settings" type="button" id="cookie-settings">Einstellungen</button>
+            <button class="cookie-btn cookie-save" type="button" id="cookie-save" hidden>Auswahl speichern</button>
+        </div>
+
+        <div class="cookie-legal">
+            <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+            <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+            <a href="../rechtliches/impressum.html">Impressum</a>
+        </div>
+    </section>
+</body>
+
+</html>

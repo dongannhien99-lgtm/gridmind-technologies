@@ -1,0 +1,72 @@
+/* ==========================================
+   GRIDMIND LEARNING ROADMAP
+   ========================================== */
+
+.gm-roadmap {
+  --roadmap-green: #138a57;
+  --roadmap-pale: #d9f0e2;
+  --roadmap-ink: #103f38;
+
+  background: #f6f9f7;
+  padding: 120px 0 125px;
+  overflow: hidden;
+}
+
+.gm-roadmap-heading {
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto 95px;
+}
+
+.gm-roadmap-heading h2 {
+  font-size: clamp(38px, 4.7vw, 64px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -.04em;
+  margin-bottom: 22px;
+}
+
+.gm-roadmap-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #667d72;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* TRACK */
+
+.gm-roadmap-track {
+  position: relative;
+}
+
+/* Vertikale Grundlinie */
+
+.gm-roadmap-line {
+  position: absolute;
+  left: 50%;
+  top: 62px;
+  bottom: 140px;
+  width: 3px;
+  transform: translateX(-50%);
+  background: #d4eadc;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.gm-roadmap-line-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    to bottom,
+    #38c97c,
+    #138a57,
+    #075b46
+  );
+  box-shadow: 0 0 15px rgba(41,190,100,.25);
+  transition: height .12s linear;
+}
