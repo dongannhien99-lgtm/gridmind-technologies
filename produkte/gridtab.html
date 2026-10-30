@@ -1,0 +1,979 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#103d36">
+  <meta name="description"
+    content="GridTab von Gridmind Technologies. Ein vielseitiges Tablet-Konzept für Kreativität, Produktivität und Unterhaltung.">
+  <title>GridTab | Gridmind Technologies</title>
+
+  <link rel="icon" href="../assets/logo-icon.png" type="image/png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/gridtab.css">
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body class="gridmind-gridtab">
+<a href="#main-content" class="skip-link">Zum Hauptinhalt</a>
+
+<!-- ==========================================
+     GEMEINSAMER HEADER
+     ========================================== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"
+       aria-label="Gridmind Technologies – Startseite">
+      <img src="../assets/logo.png" width="280" height="94"
+           alt="Gridmind Technologies">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-offers">
+          Unsere Angebote
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="nav-dropdown" id="nav-offers">
+          <span class="dropdown-title">Ausbildung & Karriere</span>
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+
+          <span class="dropdown-title">Digitale Dienstleistungen</span>
+          <a href="../services/websites.html">Websites erstellen lassen</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-devices">
+          Geräte & Software
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="nav-dropdown" id="nav-devices">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html" aria-current="page">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </div>
+
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="kaufen.html?produkt=gridtab" class="header-cta">
+        GridTab kaufen <span aria-hidden="true">↗</span>
+      </a>
+      <button class="hamburger" id="hamburger" type="button"
+              aria-label="Menü öffnen"
+              aria-controls="mobile-menu"
+              aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobiles Menü">
+    <div class="mobile-menu-inner">
+      <a href="../index.html">Startseite</a>
+      <details>
+        <summary>Bildungsangebote</summary>
+        <div class="mobile-submenu">
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+      </details>
+      <details>
+        <summary>Websites & Software</summary>
+        <div class="mobile-submenu">
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </details>
+      <details>
+        <summary>Grid-Geräte</summary>
+        <div class="mobile-submenu">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html" aria-current="page">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </details>
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+      <a href="../unternehmen/kontakt.html">Kontakt</a>
+      <a href="kaufen.html?produkt=gridtab" class="mobile-cta">
+        GridTab kaufen →
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- PRODUKTNAVIGATION -->
+  <nav class="gt-subnav" aria-label="GridTab Produktnavigation">
+    <div class="container gt-subnav-inner">
+      <strong>GridTab</strong>
+      <div>
+        <a href="#design">Design</a>
+        <a href="#farben">Farben</a>
+        <a href="#display">Display</a>
+        <a href="#technik">Technische Daten</a>
+        <a href="kaufen.html?produkt=gridtab" class="gt-buy-small">
+          Kaufen
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO
+       ========================================== -->
+  <section class="gt-hero">
+    <div class="container gt-hero-inner">
+      <span class="gt-eyebrow">GRIDMIND TECHNOLOGIES PRESENTS</span>
+
+      <h1>GridTab<span>.</span></h1>
+
+      <p class="gt-hero-slogan">
+        Mehr Raum für
+        <span id="gt-typewriter">deine Ideen.</span><i aria-hidden="true"></i>
+      </p>
+
+      <p class="gt-hero-description">
+        Kreativität kennt keine Grenzen.
+        GridTab verbindet ein großzügiges Display
+        mit einem schlanken Design und einer
+        Benutzeroberfläche, die sich ganz
+        auf deine Inhalte konzentriert.
+      </p>
+
+      <div class="gt-hero-actions">
+        <a href="kaufen.html?produkt=gridtab"
+           class="btn btn-primary hero-button">
+          GridTab kaufen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#entdecken" class="gt-inline-link">
+          GridTab entdecken ↓
+        </a>
+      </div>
+
+      <!-- EINHEITLICHE VORDER- UND RÜCKSEITE -->
+      <div class="gt-hero-stage">
+        <div class="gt-stage-glow"></div>
+
+        <!-- RÜCKSEITE: IMMER .gt-device -->
+        <div class="gt-device gt-back gt-hero-back">
+          <div class="gt-camera">
+            <span class="gt-lens"></span>
+            <span class="gt-flash"></span>
+          </div>
+          <img class="gt-logo" src="../assets/logo-icon.png" alt="">
+        </div>
+
+        <!-- VORDERSEITE: IMMER .gt-device -->
+        <div class="gt-device gt-front gt-hero-front">
+          <div class="gt-screen">
+            <span class="gt-front-camera"></span>
+            <div class="gt-screen-status">
+              <span>9:41</span>
+              <span>●●● ▰</span>
+            </div>
+            <div class="gt-wallpaper">
+              <span class="gt-wallpaper-orb gt-orb-one"></span>
+              <span class="gt-wallpaper-orb gt-orb-two"></span>
+              <span class="gt-wallpaper-orb gt-orb-three"></span>
+            </div>
+            <div class="gt-screen-title">
+              <small>GRIDMIND</small>
+              <strong>Think bigger.</strong>
+            </div>
+            <div class="gt-screen-dock">
+              <span>✦</span><span>▣</span><span>⌘</span><span>♫</span>
+            </div>
+          </div>
+        </div>
+
+        <span class="gt-stage-caption">
+          GRIDTAB · PRODUKTVISUALISIERUNG
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- KURZÜBERBLICK -->
+  <section class="gt-highlights" id="entdecken">
+    <div class="container gt-highlight-grid">
+      <article><span>01</span><strong>11"</strong><p>IPS-Display</p></article>
+      <article><span>02</span><strong>~464 g</strong><p>Schlankes Design</p></article>
+      <article><span>03</span><strong>12 MP</strong><p>Kamerakonzept</p></article>
+      <article><span>04</span><strong>USB-C</strong><p>Universeller Anschluss</p></article>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DESIGN
+       ========================================== -->
+  <section class="gt-section gt-design" id="design">
+    <div class="container gt-split">
+      <div class="gt-section-copy">
+        <span class="gt-eyebrow">DESIGN</span>
+        <h2>Schlank. Elegant.<br><em>Unverwechselbar.</em></h2>
+        <p>
+          GridTab setzt auf eine klare Formensprache,
+          flache Seiten und sanft abgerundete Ecken.
+          Die Rückseite trägt das Gridmind-Logo
+          und ein dezentes Kameramodul.
+        </p>
+        <p>
+          Ob auf dem Schreibtisch, unterwegs oder
+          in der Hand – das kompakte Format
+          bietet Platz für deine Ideen.
+        </p>
+        <a href="#farben" class="gt-inline-link">
+          Alle Farbvarianten entdecken ↗
+        </a>
+      </div>
+
+      <div class="gt-design-stage">
+        <div class="gt-design-circle"></div>
+
+        <!-- EXAKT DIESELBE RÜCKSEITENKOMPONENTE -->
+        <div class="gt-device gt-back gt-design-device">
+          <div class="gt-camera">
+            <span class="gt-lens"></span>
+            <span class="gt-flash"></span>
+          </div>
+          <img class="gt-logo" src="../assets/logo-icon.png" alt="">
+        </div>
+
+        <span class="gt-stage-caption">DESIGNED BY GRIDMIND</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FARBEN & SPEICHER
+       ========================================== -->
+  <section class="gt-section gt-colors" id="farben">
+    <div class="container">
+      <div class="gt-heading">
+        <span class="gt-eyebrow">DEIN GRIDTAB</span>
+        <h2>Eine Farbe.<br><em>Dein persönlicher Stil.</em></h2>
+        <p>Entdecke verschiedene Farb- und Speicheroptionen im GridTab-Konfigurator.</p>
+      </div>
+
+      <div class="gt-config-layout">
+        <div class="gt-config-stage">
+
+          <!-- WIEDER EXAKT DIESELBE RÜCKSEITE -->
+          <div class="gt-device gt-back gt-config-device">
+            <div class="gt-camera">
+              <span class="gt-lens"></span>
+              <span class="gt-flash"></span>
+            </div>
+            <img class="gt-logo" src="../assets/logo-icon.png" alt="">
+          </div>
+        </div>
+
+        <div class="gt-config">
+          <span class="gt-config-label">FARBE</span>
+          <h3 id="gt-color-name">Forest Green</h3>
+
+          <div class="gt-swatches" role="group" aria-label="GridTab Farbwahl">
+            <button type="button" class="gt-swatch is-selected"
+                    data-gt-color="forest" aria-pressed="true"
+                    aria-label="Forest Green" title="Forest Green">
+              <span></span>
+            </button>
+            <button type="button" class="gt-swatch"
+                    data-gt-color="midnight" aria-pressed="false"
+                    aria-label="Midnight" title="Midnight">
+              <span></span>
+            </button>
+            <button type="button" class="gt-swatch"
+                    data-gt-color="silver" aria-pressed="false"
+                    aria-label="Silver" title="Silver">
+              <span></span>
+            </button>
+            <button type="button" class="gt-swatch"
+                    data-gt-color="sky" aria-pressed="false"
+                    aria-label="Sky Blue" title="Sky Blue">
+              <span></span>
+            </button>
+          </div>
+
+          <div class="gt-divider"></div>
+
+          <span class="gt-config-label">SPEICHER</span>
+
+          <div class="gt-storage-options" role="group"
+               aria-label="GridTab Speicherwahl">
+            <button type="button" class="gt-storage is-selected"
+                    data-gt-storage="128" aria-pressed="true">128 GB</button>
+            <button type="button" class="gt-storage"
+                    data-gt-storage="256" aria-pressed="false">256 GB</button>
+            <button type="button" class="gt-storage"
+                    data-gt-storage="512" aria-pressed="false">512 GB</button>
+            <button type="button" class="gt-storage"
+                    data-gt-storage="1024" aria-pressed="false">1 TB</button>
+          </div>
+
+          <div class="gt-divider"></div>
+
+          <span class="gt-config-label">VERBINDUNG</span>
+
+          <div class="gt-network-options" role="group"
+               aria-label="GridTab Verbindung">
+            <button type="button" class="gt-network is-selected"
+                    data-gt-network="wifi" aria-pressed="true">Wi-Fi</button>
+            <button type="button" class="gt-network"
+                    data-gt-network="cellular" aria-pressed="false">
+              Wi-Fi + Cellular
+            </button>
+          </div>
+
+          <p class="gt-selection">
+            Deine Auswahl:
+            <strong id="gt-selection">
+              Forest Green · 128 GB · Wi-Fi
+            </strong>
+          </p>
+
+          <a href="kaufen.html?produkt=gridtab"
+             id="gt-config-buy"
+             class="btn btn-primary hero-button">
+            Jetzt kaufen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DISPLAY
+       ========================================== -->
+  <section class="gt-section gt-display" id="display">
+    <div class="container">
+      <div class="gt-heading gt-heading-dark">
+        <span class="gt-eyebrow">DISPLAY</span>
+        <h2>Deine Ideen brauchen<br><em>große Perspektiven.</em></h2>
+        <p>
+          Ein großzügiges Displaykonzept für
+          kreatives Arbeiten, Videos, Lesen
+          und digitale Organisation.
+        </p>
+      </div>
+
+      <div class="gt-display-stage">
+        <!-- ERNEUT DIE GEMEINSAME VORDERSEITE -->
+        <div class="gt-device gt-front gt-display-device">
+          <div class="gt-screen">
+            <span class="gt-front-camera"></span>
+            <div class="gt-screen-status">
+              <span>9:41</span>
+              <span>●●● ▰</span>
+            </div>
+            <div class="gt-wallpaper">
+              <span class="gt-wallpaper-orb gt-orb-one"></span>
+              <span class="gt-wallpaper-orb gt-orb-two"></span>
+              <span class="gt-wallpaper-orb gt-orb-three"></span>
+            </div>
+            <div class="gt-screen-title">
+              <small>GRIDMIND</small>
+              <strong>Think bigger.</strong>
+            </div>
+            <div class="gt-screen-dock">
+              <span>✦</span><span>▣</span><span>⌘</span><span>♫</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gt-display-stats">
+        <article><strong>11"</strong><span>Displaydiagonale</span></article>
+        <article><strong>2360 × 1640</strong><span>Pixelauflösung</span></article>
+        <article><strong>264 ppi</strong><span>Pixeldichte</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       KREATIVITÄT
+       ========================================== -->
+  <section class="gt-section gt-creativity">
+    <div class="container gt-split">
+      <div class="gt-section-copy">
+        <span class="gt-eyebrow">KREATIVITÄT</span>
+        <h2>Deine Gedanken.<br><em>Deine Leinwand.</em></h2>
+        <p>
+          Ideen sammeln, Skizzen gestalten,
+          Dokumente kommentieren oder
+          handschriftliche Notizen festhalten:
+          Ein Tablet eröffnet neue Wege,
+          Inhalte zu erstellen.
+        </p>
+        <p>
+          Das GridTab-Konzept berücksichtigt
+          stiftgestützte Anwendungen und
+          eine für kreative Aufgaben
+          optimierte Benutzeroberfläche.
+        </p>
+      </div>
+
+      <div class="gt-creative-art">
+        <div class="gt-creative-sheet">
+          <small>MY IDEAS</small>
+          <strong>Create<br>something<br>amazing.</strong>
+          <div class="gt-creative-doodle">✦ ◌ ✧</div>
+        </div>
+        <div class="gt-stylus"></div>
+        <span>GRIDTAB CREATIVE WORKSPACE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PERFORMANCE
+       ========================================== -->
+  <section class="gt-section gt-performance">
+    <div class="container gt-split">
+      <div class="gt-performance-art">
+        <div class="gt-chip-lines"></div>
+        <div class="gt-chip">
+          <small>GRIDMIND</small>
+          <strong>T1</strong>
+          <span>TABLET PERFORMANCE CONCEPT</span>
+        </div>
+      </div>
+
+      <div class="gt-section-copy">
+        <span class="gt-eyebrow">LEISTUNG</span>
+        <h2>Für Arbeit.<br><em>Für alles andere.</em></h2>
+        <p>
+          Multitasking, Videobearbeitung,
+          kreative Anwendungen und produktives
+          Arbeiten profitieren von
+          einer ausgewogenen Hardwareplattform.
+        </p>
+        <p>
+          Gridmind T1 bezeichnet das Leistungs-
+          und Energieeffizienzkonzept
+          unseres Tablet-Designs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       KAMERA / VIDEOKONFERENZEN
+       ========================================== -->
+  <section class="gt-section gt-camera-section">
+    <div class="container gt-split">
+      <div class="gt-section-copy">
+        <span class="gt-eyebrow">KAMERA & KOMMUNIKATION</span>
+        <h2>Gut verbunden.<br><em>Immer im Bild.</em></h2>
+        <p>
+          Für Videogespräche, Dokumente und
+          alltägliche Aufnahmen enthält unser
+          GridTab-Konzept Kameras auf
+          Vorder- und Rückseite.
+        </p>
+
+        <div class="gt-camera-stats">
+          <article><strong>12 MP</strong><span>Rückkamera</span></article>
+          <article><strong>12 MP</strong><span>Frontkamera</span></article>
+          <article><strong>4K</strong><span>Videokonzept hinten</span></article>
+        </div>
+      </div>
+
+      <div class="gt-camera-stage">
+        <!-- GLEICHE RÜCKSEITE -->
+        <div class="gt-device gt-back gt-camera-device">
+          <div class="gt-camera">
+            <span class="gt-lens"></span>
+            <span class="gt-flash"></span>
+          </div>
+          <img class="gt-logo" src="../assets/logo-icon.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURES
+       ========================================== -->
+  <section class="gt-section gt-features">
+    <div class="container">
+      <div class="gt-heading">
+        <span class="gt-eyebrow">VIELSEITIGKEIT</span>
+        <h2>Ein Tablet.<br><em>Viele Möglichkeiten.</em></h2>
+      </div>
+
+      <div class="gt-feature-grid">
+        <article>
+          <span>✦</span>
+          <h3>Kreatives Arbeiten</h3>
+          <p>Skizzen, Notizen und die Gestaltung digitaler Inhalte.</p>
+        </article>
+        <article>
+          <span>▣</span>
+          <h3>Großzügiges Display</h3>
+          <p>Viel Platz für Anwendungen, Bilder und Dokumente.</p>
+        </article>
+        <article>
+          <span>⌘</span>
+          <h3>Multitasking</h3>
+          <p>Mehrere Aufgaben und Informationen im Blick behalten.</p>
+        </article>
+        <article>
+          <span>☁</span>
+          <h3>Vernetzt arbeiten</h3>
+          <p>WLAN und optionale Mobilfunkkonnektivität im Ausstattungskonzept.</p>
+        </article>
+        <article>
+          <span>⚡</span>
+          <h3>USB-C</h3>
+          <p>Ein universeller Anschluss für Strom und Daten.</p>
+        </article>
+        <article>
+          <span>◈</span>
+          <h3>Intuitiv und übersichtlich</h3>
+          <p>Ein Design, bei dem die Inhalte im Mittelpunkt stehen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TECHNISCHE DATEN
+       ========================================== -->
+  <section class="gt-section gt-specs" id="technik">
+    <div class="container">
+      <div class="gt-heading">
+        <span class="gt-eyebrow">TECHNISCHE DETAILS</span>
+        <h2>GridTab.<br><em>Auf einen Blick.</em></h2>
+        <p>Technische Orientierungswerte für das GridTab-Produktkonzept.</p>
+      </div>
+
+      <div class="gt-spec-table">
+        <div class="gt-spec-row"><strong>Display</strong><span>11 Zoll, IPS LCD</span></div>
+        <div class="gt-spec-row"><strong>Auflösung</strong><span>2360 × 1640 Pixel, 264 ppi</span></div>
+        <div class="gt-spec-row"><strong>Helligkeit</strong><span>500 Nits als Entwurfsziel</span></div>
+        <div class="gt-spec-row"><strong>Abmessungen</strong><span>ca. 247,6 × 178,5 × 6,1 mm</span></div>
+        <div class="gt-spec-row"><strong>Gewicht</strong><span>ca. 464 g</span></div>
+        <div class="gt-spec-row"><strong>Speicher</strong><span>128 GB, 256 GB, 512 GB, 1 TB</span></div>
+        <div class="gt-spec-row"><strong>Rückkamera</strong><span>12 MP</span></div>
+        <div class="gt-spec-row"><strong>Frontkamera</strong><span>12 MP</span></div>
+        <div class="gt-spec-row"><strong>Video</strong><span>4K-Aufnahme als Entwurfsziel</span></div>
+        <div class="gt-spec-row"><strong>Verbindungen</strong><span>Wi-Fi; Wi-Fi + Cellular als Variante</span></div>
+        <div class="gt-spec-row"><strong>Anschluss</strong><span>USB-C</span></div>
+        <div class="gt-spec-row"><strong>Zubehör</strong><span>Stift- und Tastaturunterstützung als Konzept</span></div>
+        <div class="gt-spec-row"><strong>Leistungsplattform</strong><span>Gridmind T1 (Konzeptbezeichnung)</span></div>
+        <div class="gt-spec-row"><strong>Farben</strong><span>Forest Green, Midnight, Silver, Sky Blue</span></div>
+      </div>
+
+      <p class="gt-spec-note">
+        Produktbilder und technische Werte beschreiben ein Gestaltungskonzept.
+        Sie stellen keine bestätigte Hardwareausstattung oder Verfügbarkeitszusage dar.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GRIDMIND ÖKOSYSTEM
+       ========================================== -->
+  <section class="gt-section gt-ecosystem">
+    <div class="container">
+      <div class="gt-heading">
+        <span class="gt-eyebrow">GRIDMIND ECOSYSTEM</span>
+        <h2>Alles gehört<br><em>zusammen.</em></h2>
+        <p>Entdecke weitere Produkte aus der Gridmind-Welt.</p>
+      </div>
+
+      <div class="gt-ecosystem-grid">
+        <a href="../produkte/gridphone.html">
+          <span>▯</span>
+          <h3>GridPhone</h3>
+          <p>Technologie für deinen Alltag.</p>
+          <strong>Entdecken ↗</strong>
+        </a>
+        <a href="../produkte/gridwatch.html">
+          <span>◉</span>
+          <h3>GridWatch</h3>
+          <p>Dein Alltag am Handgelenk.</p>
+          <strong>Entdecken ↗</strong>
+        </a>
+        <a href="../produkte/gridmac.html">
+          <span>⌘</span>
+          <h3>GridMac</h3>
+          <p>Mehr Raum für Produktivität.</p>
+          <strong>Entdecken ↗</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ
+       ========================================== -->
+  <section class="gt-section gt-faq" id="faq">
+    <div class="container gt-split">
+      <div class="gt-section-copy">
+        <span class="gt-eyebrow">HÄUFIGE FRAGEN</span>
+        <h2>Fragen zum<br><em>GridTab?</em></h2>
+        <p>Die wichtigsten Informationen zu Größe, Ausstattung und Konfiguration.</p>
+      </div>
+
+      <div class="gt-faq-list">
+        <details>
+          <summary>Wie groß ist das GridTab?</summary>
+          <p>Das GridTab-Konzept orientiert sich an einem 11-Zoll-Tablet mit Abmessungen von ungefähr 247,6 × 178,5 × 6,1 mm.</p>
+        </details>
+        <details>
+          <summary>Welche Speicheroptionen kann ich wählen?</summary>
+          <p>Im Konfigurator stehen 128 GB, 256 GB, 512 GB und 1 TB zur Auswahl.</p>
+        </details>
+        <details>
+          <summary>Welche Farbvarianten zeigt der Konfigurator?</summary>
+          <p>Forest Green, Midnight, Silver und Sky Blue. Die Vorschau passt die Farbe aller dargestellten Rückseiten an.</p>
+        </details>
+        <details>
+          <summary>Ist die Geräterückseite überall identisch?</summary>
+          <p>Ja. Hero, Designbereich, Kamerabereich und Konfigurator verwenden denselben Aufbau für Gehäuse, Kamera und Gridmind-Logo.</p>
+        </details>
+        <details>
+          <summary>Kann ich mit dem GridTab zeichnen?</summary>
+          <p>Das Gestaltungskonzept umfasst die Unterstützung kreativer Anwendungen und die Möglichkeit einer Stiftintegration.</p>
+        </details>
+        <details>
+          <summary>Wohin führt der Kaufen-Button?</summary>
+          <p>Alle Kaufen-Buttons führen zur zentralen Gridmind-Kaufseite unter produkte/kaufen.html. Die ausgewählte Variante wird über URL-Parameter übertragen.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="gt-final">
+    <div class="container gt-final-inner">
+      <span class="gt-eyebrow">GRIDMIND TECHNOLOGIES</span>
+      <h2>Mehr Platz für<br><em>das, was dich bewegt.</em></h2>
+      <p>Entdecke das GridTab in deiner bevorzugten Farbe und Ausstattung.</p>
+
+      <a href="kaufen.html?produkt=gridtab"
+         class="btn btn-primary hero-button">
+        GridTab kaufen
+        <span class="arrow-circle" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================
+     GEMEINSAMER GRIDMIND FOOTER
+     ========================================== -->
+<footer class="site-footer">
+  <svg class="footer-wave" viewBox="0 0 1440 125"
+       preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z"
+          fill="#092f2b"/>
+  </svg>
+
+  <div class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <img src="../assets/logo.png" width="280" height="94"
+               alt="Gridmind Technologies">
+        </a>
+        <p>Wir verbinden Menschen, Ideen und Technologie – von deinem ersten IT-Projekt bis zur digitalen Zukunft.</p>
+        <a href="../unternehmen/kontakt.html" class="footer-contact">
+          Kontakt zu Gridmind ↗
+        </a>
+        <div class="footer-social" aria-label="Weitere Informationen">
+          <a href="../unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+          <a href="../unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+          <a href="../unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Bildungsangebote</h3>
+        <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+        <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+        <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+        <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+        <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Produkte & Services</h3>
+        <a href="../services/websites.html">Website-Erstellung</a>
+        <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+        <a href="../services/ki-integration.html">KI-Integration</a>
+        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        <a href="../produkte/gridphone.html">GridPhone</a>
+        <a href="../produkte/gridtab.html">GridTab</a>
+        <a href="../produkte/gridwatch.html">GridWatch</a>
+        <a href="../produkte/gridmac.html">GridMac</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Unternehmen</h3>
+        <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+        <a href="../unternehmen/team.html">Unser Team</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+        <h3 class="footer-subtitle">Rechtliches</h3>
+        <a href="../rechtliches/impressum.html">Impressum</a>
+        <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+        <a href="../rechtliches/agb.html">AGB</a>
+        <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+        <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+        <a href="../rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <button class="footer-text-button" type="button" data-open-cookie>
+          Cookie-Einstellungen
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Gridmind Technologies</span>
+      <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE-DIALOG -->
+<div class="cookie-overlay" id="cookie-overlay" hidden></div>
+
+<section class="cookie-banner" id="cookie-banner"
+         role="dialog" aria-modal="true"
+         aria-labelledby="cookie-title"
+         aria-describedby="cookie-description"
+         tabindex="-1" hidden>
+  <div class="cookie-heading">
+    <span class="cookie-icon">◈</span>
+    <div>
+      <span class="cookie-brand">GRIDMIND PRIVACY</span>
+      <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+    </div>
+  </div>
+
+  <p id="cookie-description">
+    Wir verwenden notwendige Speichertechnologien für die Funktion dieser Website.
+    Zusätzliche Technologien aktivieren wir nur mit deiner Einwilligung.
+  </p>
+
+  <div class="cookie-details" id="cookie-details" hidden>
+    <label class="cookie-option">
+      <span><strong>Notwendig</strong><small>Grundlegende Funktionen und deine Auswahl.</small></span>
+      <input type="checkbox" checked disabled>
+    </label>
+    <label class="cookie-option">
+      <span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span>
+      <input type="checkbox" id="consent-functional">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span>
+      <input type="checkbox" id="consent-analytics">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span>
+      <input type="checkbox" id="consent-marketing">
+    </label>
+  </div>
+
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept" type="button" id="cookie-accept">Alle akzeptieren</button>
+    <button class="cookie-btn cookie-reject" type="button" id="cookie-reject">Nur notwendige</button>
+    <button class="cookie-btn cookie-settings" type="button" id="cookie-settings">Einstellungen</button>
+    <button class="cookie-btn cookie-save" type="button" id="cookie-save" hidden>Auswahl speichern</button>
+  </div>
+
+  <div class="cookie-legal">
+    <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+    <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+    <a href="../rechtliches/impressum.html">Impressum</a>
+  </div>
+</section>
+
+<!-- ==========================================
+     GRIDTAB: TYPEWRITER & KONFIGURATOR
+     ========================================== -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  /* TYPEWRITER */
+  const typeOutput = document.getElementById("gt-typewriter");
+  const phrases = [
+    "deine Ideen.",
+    "deine Kreativität.",
+    "deine Projekte.",
+    "deinen Alltag."
+  ];
+
+  if (typeOutput && !reducedMotion) {
+    let phraseIndex = 0;
+    let charIndex = phrases[0].length;
+    let deleting = true;
+
+    function typeTick() {
+      const chars = Array.from(phrases[phraseIndex]);
+      charIndex += deleting ? -1 : 1;
+      charIndex = Math.max(0, Math.min(chars.length, charIndex));
+      typeOutput.textContent = chars.slice(0, charIndex).join("");
+
+      let delay = deleting ? 50 : 95;
+      if (deleting && charIndex === 0) {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        deleting = false;
+        delay = 330;
+      } else if (!deleting &&
+                 charIndex === phrases[phraseIndex].length) {
+        deleting = true;
+        delay = 1900;
+      }
+
+      window.setTimeout(typeTick, delay);
+    }
+
+    window.setTimeout(typeTick, 2000);
+  }
+
+  /* KONFIGURATOR */
+  const colors = {
+    forest:   {name: "Forest Green", value: "#367b66"},
+    midnight: {name: "Midnight",     value: "#293b4b"},
+    silver:   {name: "Silver",       value: "#c7d1d7"},
+    sky:      {name: "Sky Blue",     value: "#8dbbd8"}
+  };
+
+  let selectedColor = "forest";
+  let selectedStorage = "128";
+  let selectedNetwork = "wifi";
+
+  const colorButtons = Array.from(
+    document.querySelectorAll("[data-gt-color]")
+  );
+  const storageButtons = Array.from(
+    document.querySelectorAll("[data-gt-storage]")
+  );
+  const networkButtons = Array.from(
+    document.querySelectorAll("[data-gt-network]")
+  );
+
+  const colorName = document.getElementById("gt-color-name");
+  const selection = document.getElementById("gt-selection");
+  const buyLink = document.getElementById("gt-config-buy");
+
+  function updateSelection() {
+    const color = colors[selectedColor];
+    if (colorName) colorName.textContent = color.name;
+
+    const storageLabel = selectedStorage === "1024"
+      ? "1 TB" : selectedStorage + " GB";
+    const networkLabel = selectedNetwork === "wifi"
+      ? "Wi-Fi" : "Wi-Fi + Cellular";
+
+    if (selection) {
+      selection.textContent =
+        color.name + " · " + storageLabel + " · " + networkLabel;
+    }
+
+    document.body.style.setProperty(
+      "--gt-device-color", color.value
+    );
+
+    if (buyLink) {
+      const params = new URLSearchParams({
+        produkt: "gridtab",
+        farbe: selectedColor,
+        speicher: selectedStorage,
+        verbindung: selectedNetwork
+      });
+      buyLink.href = "kaufen.html?" + params.toString();
+    }
+  }
+
+  function bindSelection(buttons, dataKey, onSelect) {
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        onSelect(button.dataset[dataKey]);
+
+        buttons.forEach(item => {
+          const active = item === button;
+          item.classList.toggle("is-selected", active);
+          item.setAttribute("aria-pressed", String(active));
+        });
+
+        updateSelection();
+      });
+    });
+  }
+
+  bindSelection(colorButtons, "gtColor", value => {
+    if (Object.prototype.hasOwnProperty.call(colors, value)) {
+      selectedColor = value;
+    }
+  });
+
+  bindSelection(storageButtons, "gtStorage", value => {
+    if (["128", "256", "512", "1024"].includes(value)) {
+      selectedStorage = value;
+    }
+  });
+
+  bindSelection(networkButtons, "gtNetwork", value => {
+    if (["wifi", "cellular"].includes(value)) {
+      selectedNetwork = value;
+    }
+  });
+
+  updateSelection();
+});
+</script>
+</body>
+</html>

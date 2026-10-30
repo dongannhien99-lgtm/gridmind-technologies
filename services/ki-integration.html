@@ -1,0 +1,1147 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081e2c">
+  <meta name="description" content="KI-Integration bei Gridmind Technologies: Intelligente Assistenten, KI-Agenten, RAG-Systeme, Automatisierung, LLMs und APIs für Unternehmen.">
+  <title>KI-Integration für Unternehmen | Gridmind Technologies</title>
+
+  <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/ki-integration.css">
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body class="gridmind-ai-service">
+<a href="#main-content" class="skip-link">Zum Hauptinhalt</a>
+
+<!-- ==========================================
+     GEMEINSAMER GRIDMIND HEADER
+     ========================================== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"
+       aria-label="Gridmind Technologies – Startseite">
+      <img src="../assets/logo.png" width="280" height="94"
+           alt="Gridmind Technologies">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-offers">
+          Unsere Angebote
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown" id="nav-offers">
+          <span class="dropdown-title">Ausbildung & Karriere</span>
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+
+          <span class="dropdown-title">Digitale Dienstleistungen</span>
+          <a href="../services/websites.html">Websites erstellen lassen</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html" aria-current="page">KI-Integration</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-devices">
+          Geräte & Software
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown" id="nav-devices">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </div>
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-cta" href="../unternehmen/kontakt.html">
+        KI-Projekt anfragen <span aria-hidden="true">↗</span>
+      </a>
+      <button class="hamburger" id="hamburger" type="button"
+              aria-label="Menü öffnen" aria-controls="mobile-menu"
+              aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu"
+       aria-label="Mobiles Menü" inert>
+    <div class="mobile-menu-inner">
+      <a href="../index.html">Startseite</a>
+      <details>
+        <summary>Bildungsangebote</summary>
+        <div class="mobile-submenu">
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+      </details>
+      <details>
+        <summary>Websites & Software</summary>
+        <div class="mobile-submenu">
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html" aria-current="page">KI-Integration</a>
+        </div>
+      </details>
+      <details>
+        <summary>Grid-Geräte</summary>
+        <div class="mobile-submenu">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </details>
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+      <a href="../unternehmen/kontakt.html">Kontakt</a>
+      <a class="mobile-cta" href="../unternehmen/kontakt.html">
+        KI-Projekt anfragen →
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- ==========================================
+       HERO MIT TYPEWRITER
+       ========================================== -->
+  <section class="ais-hero" aria-labelledby="ais-hero-title">
+    <div class="container ais-hero-layout">
+      <div class="ais-hero-copy">
+        <span class="ais-kicker">
+          <i></i> GRIDMIND · AI INTEGRATION
+        </span>
+
+        <h1 id="ais-hero-title">
+          Künstliche Intelligenz,
+          <span class="ais-type-line">
+            die <span id="ais-typewriter" aria-hidden="true">verbindet.</span><i aria-hidden="true"></i>
+          </span>
+        </h1>
+
+        <p class="ais-visually-hidden">
+          Künstliche Intelligenz, die verbindet, unterstützt,
+          automatisiert und Wissen nutzbar macht.
+        </p>
+
+        <p class="ais-hero-lead">
+          Integriere künstliche Intelligenz in deine
+          digitalen Prozesse. Von intelligenten Assistenten
+          bis zu automatisierten Workflows entwickeln wir
+          Lösungen, die Informationen und Systeme verbinden.
+        </p>
+
+        <div class="ais-hero-checks">
+          <span>✓ KI-Assistenten & Agenten</span>
+          <span>✓ API-Integration</span>
+          <span>✓ Intelligente Automation</span>
+        </div>
+
+        <div class="ais-hero-actions">
+          <a class="btn btn-primary hero-button"
+             href="../unternehmen/kontakt.html">
+            KI-Projekt besprechen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+          <a href="#leistungen" class="ais-text-link">
+            Möglichkeiten entdecken ↘
+          </a>
+        </div>
+      </div>
+
+      <!-- KI-NETZWERK & ASSISTENT -->
+      <div class="ais-hero-art"
+           aria-label="Illustration eines KI-Netzwerks mit verbundenen Anwendungen">
+        <div class="ais-art-glow"></div>
+
+        <svg class="ais-network" viewBox="0 0 540 520"
+             aria-hidden="true" fill="none">
+          <path d="M270 255L108 112M270 255L434 105M270 255L468 310M270 255L356 448M270 255L94 405M108 112L434 105M94 405L356 448"
+                class="ais-network-base"/>
+          <path d="M270 255L108 112M270 255L434 105M270 255L468 310M270 255L356 448M270 255L94 405"
+                class="ais-network-flow"/>
+          <circle cx="108" cy="112" r="7" class="ais-network-point"/>
+          <circle cx="434" cy="105" r="7" class="ais-network-point"/>
+          <circle cx="468" cy="310" r="7" class="ais-network-point"/>
+          <circle cx="356" cy="448" r="7" class="ais-network-point"/>
+          <circle cx="94" cy="405" r="7" class="ais-network-point"/>
+          <circle cx="270" cy="255" r="94" class="ais-network-halo"/>
+        </svg>
+
+        <div class="ais-core">
+          <div class="ais-core-ring"></div>
+          <img src="../assets/logo-icon.png"
+               width="90" height="90" alt="">
+          <span>GRIDMIND AI</span>
+        </div>
+
+        <div class="ais-node ais-node-data">
+          <span>▤</span>
+          <div><strong>Documents</strong><small>Knowledge base</small></div>
+        </div>
+
+        <div class="ais-node ais-node-api">
+          <span>⌘</span>
+          <div><strong>API</strong><small>Connected systems</small></div>
+        </div>
+
+        <div class="ais-node ais-node-workflow">
+          <span>⚙</span>
+          <div><strong>Automation</strong><small>Workflows</small></div>
+        </div>
+
+        <div class="ais-node ais-node-chat">
+          <span>✦</span>
+          <div><strong>AI Assistant</strong><small>Conversation</small></div>
+        </div>
+
+        <div class="ais-chat-card">
+          <div class="ais-chat-top">
+            <span>✦</span>
+            <strong>Gridmind AI</strong>
+            <small>● AI</small>
+          </div>
+          <div class="ais-chat-question">Fasse die wichtigsten Informationen zusammen.</div>
+          <div class="ais-chat-answer">
+            <i></i><i></i><i></i>
+            <span>Informationen werden verarbeitet</span>
+          </div>
+        </div>
+
+        <span class="ais-spark ais-spark-a" aria-hidden="true">✦</span>
+        <span class="ais-spark ais-spark-b" aria-hidden="true">✧</span>
+        <span class="ais-spark ais-spark-c" aria-hidden="true">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTRO
+       ========================================== -->
+  <section class="ais-section ais-intro">
+    <div class="container ais-split">
+      <div>
+        <span class="ais-eyebrow">KI IM UNTERNEHMEN</span>
+        <h2>Aus Technologie<br><em>wird ein Werkzeug.</em></h2>
+        <p class="ais-lead">
+          Künstliche Intelligenz entfaltet ihren Nutzen,
+          wenn sie eine konkrete Aufgabe erfüllt.
+          Entscheidend sind verständliche Prozesse,
+          geeignete Daten und eine zuverlässige
+          Integration in bestehende Systeme.
+        </p>
+      </div>
+
+      <div class="ais-intro-list">
+        <article>
+          <span>✦</span>
+          <div>
+            <h3>Informationen schneller erschließen</h3>
+            <p>Dokumente und Wissensbestände für Suche, Zusammenfassungen und Assistenzfunktionen nutzbar machen.</p>
+          </div>
+        </article>
+        <article>
+          <span>⚙</span>
+          <div>
+            <h3>Arbeitsabläufe unterstützen</h3>
+            <p>Routineaufgaben durch strukturierte KI-Ausgaben und automatische Prozessschritte vereinfachen.</p>
+          </div>
+        </article>
+        <article>
+          <span>◈</span>
+          <div>
+            <h3>Kontrolle und Sicherheit berücksichtigen</h3>
+            <p>Zugriffsrechte, Nachvollziehbarkeit und menschliche Freigaben in die Lösung einbauen.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LEISTUNGEN
+       ========================================== -->
+  <section class="ais-section ais-services" id="leistungen">
+    <div class="container">
+      <div class="ais-heading">
+        <span class="ais-eyebrow">UNSERE KI-LEISTUNGEN</span>
+        <h2>Intelligente Lösungen<br><em>für echte Aufgaben.</em></h2>
+        <p>Wir verbinden moderne KI-Modelle mit Anwendungen, Daten und Arbeitsprozessen.</p>
+      </div>
+
+      <div class="ais-service-grid">
+        <article class="ais-service-card">
+          <span class="ais-service-index">01 / ASSISTANTS</span>
+          <span class="ais-service-icon">✦</span>
+          <h3>KI-Assistenten</h3>
+          <p>Digitale Assistenten für Fragen, Informationssuche und die Unterstützung konkreter Aufgaben.</p>
+          <div class="ais-tags"><span>Chat</span><span>LLM</span><span>Assistants</span></div>
+        </article>
+
+        <article class="ais-service-card">
+          <span class="ais-service-index">02 / KNOWLEDGE</span>
+          <span class="ais-service-icon">▤</span>
+          <h3>RAG & Wissenssysteme</h3>
+          <p>Eigene Dokumente und Wissensquellen über Suche und generative KI zugänglich machen.</p>
+          <div class="ais-tags"><span>RAG</span><span>Search</span><span>Vectors</span></div>
+        </article>
+
+        <article class="ais-service-card">
+          <span class="ais-service-index">03 / AUTOMATION</span>
+          <span class="ais-service-icon">⚙</span>
+          <h3>KI-Automatisierung</h3>
+          <p>Mehrstufige Workflows zur Verarbeitung von Texten, Daten und digitalen Anfragen.</p>
+          <div class="ais-tags"><span>Workflows</span><span>n8n</span><span>Automation</span></div>
+        </article>
+
+        <article class="ais-service-card">
+          <span class="ais-service-index">04 / AGENTS</span>
+          <span class="ais-service-icon">⌘</span>
+          <h3>KI-Agenten</h3>
+          <p>Toolgestützte KI-Systeme, die definierte Aktionen vorbereiten oder innerhalb vorgegebener Regeln ausführen.</p>
+          <div class="ais-tags"><span>Agents</span><span>Tools</span><span>Guardrails</span></div>
+        </article>
+
+        <article class="ais-service-card">
+          <span class="ais-service-index">05 / INTEGRATION</span>
+          <span class="ais-service-icon">◇</span>
+          <h3>LLM- & API-Integration</h3>
+          <p>KI-Funktionen in eigene Websites, Unternehmenssoftware und bestehende Anwendungen integrieren.</p>
+          <div class="ais-tags"><span>REST</span><span>APIs</span><span>Models</span></div>
+        </article>
+
+        <article class="ais-service-card">
+          <span class="ais-service-index">06 / ENGINEERING</span>
+          <span class="ais-service-icon">↗</span>
+          <h3>KI-Softwareentwicklung</h3>
+          <p>Individuelle Software mit intelligenter Datenverarbeitung, geeigneten Prüfungen und klarer Benutzerführung.</p>
+          <div class="ais-tags"><span>Software</span><span>Testing</span><span>Integration</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERAKTIVE LÖSUNGSKATEGORIEN
+       ========================================== -->
+  <section class="ais-section ais-solutions" id="loesungen">
+    <div class="container">
+      <div class="ais-heading">
+        <span class="ais-eyebrow">KI-ANWENDUNGSFÄLLE</span>
+        <h2>Finde die passende KI<br><em>für deine Prozesse.</em></h2>
+        <p>Entdecke vier unterschiedliche Wege, künstliche Intelligenz einzusetzen.</p>
+      </div>
+
+      <div class="ais-tabs" role="tablist" aria-label="KI-Lösungen">
+        <button class="ais-tab is-active" type="button"
+                role="tab" id="ais-tab-assistant"
+                aria-controls="ais-panel-assistant"
+                aria-selected="true" tabindex="0" data-ais-tab>
+          KI-Assistenten
+        </button>
+        <button class="ais-tab" type="button"
+                role="tab" id="ais-tab-knowledge"
+                aria-controls="ais-panel-knowledge"
+                aria-selected="false" tabindex="-1" data-ais-tab>
+          Wissenssysteme
+        </button>
+        <button class="ais-tab" type="button"
+                role="tab" id="ais-tab-workflow"
+                aria-controls="ais-panel-workflow"
+                aria-selected="false" tabindex="-1" data-ais-tab>
+          Automatisierung
+        </button>
+        <button class="ais-tab" type="button"
+                role="tab" id="ais-tab-agent"
+                aria-controls="ais-panel-agent"
+                aria-selected="false" tabindex="-1" data-ais-tab>
+          KI-Agenten
+        </button>
+      </div>
+
+      <div class="ais-panels">
+        <article class="ais-panel is-active" id="ais-panel-assistant"
+                 role="tabpanel" aria-labelledby="ais-tab-assistant">
+          <div class="ais-panel-art ais-art-assistant">
+            <div class="ais-panel-demo">
+              <span>GRIDMIND ASSISTANT · CONCEPT</span>
+              <h3>Ask.<br><em>Discover.</em></h3>
+              <div class="ais-demo-chat">Wie kann ich dir helfen? ✦</div>
+            </div>
+          </div>
+          <div class="ais-panel-copy">
+            <span class="ais-eyebrow">CONVERSATIONAL AI</span>
+            <h3>Intelligente Hilfe direkt in deiner Anwendung.</h3>
+            <p>Ein KI-Assistent kann Nutzerfragen aufnehmen, Informationen aufbereiten und passende nächste Schritte vorschlagen.</p>
+            <ul>
+              <li>Dialogbasierte Benutzeroberflächen</li>
+              <li>Anbindung an passende Informationsquellen</li>
+              <li>Kontrollierte Übergabe an Mitarbeitende</li>
+            </ul>
+            <a href="../unternehmen/kontakt.html" class="ais-text-link">Assistent anfragen ↗</a>
+          </div>
+        </article>
+
+        <article class="ais-panel" id="ais-panel-knowledge" hidden
+                 role="tabpanel" aria-labelledby="ais-tab-knowledge">
+          <div class="ais-panel-art ais-art-knowledge">
+            <div class="ais-panel-demo">
+              <span>KNOWLEDGE ENGINE · CONCEPT</span>
+              <h3>Find.<br><em>Understand.</em></h3>
+              <div class="ais-demo-chat">▤ Dokumente durchsuchen</div>
+            </div>
+          </div>
+          <div class="ais-panel-copy">
+            <span class="ais-eyebrow">RETRIEVAL AUGMENTED GENERATION</span>
+            <h3>Wissen aus deinen Dokumenten nutzbar machen.</h3>
+            <p>RAG-Systeme kombinieren Informationssuche mit generativer KI und ermöglichen Antworten unter Einbeziehung ausgewählter Wissensquellen.</p>
+            <ul>
+              <li>Dokumente erfassen und strukturieren</li>
+              <li>Relevante Inhalte gezielt abrufen</li>
+              <li>Quellenbezug und Zugriffskontrollen berücksichtigen</li>
+            </ul>
+            <a href="../unternehmen/kontakt.html" class="ais-text-link">Wissenssystem anfragen ↗</a>
+          </div>
+        </article>
+
+        <article class="ais-panel" id="ais-panel-workflow" hidden
+                 role="tabpanel" aria-labelledby="ais-tab-workflow">
+          <div class="ais-panel-art ais-art-workflow">
+            <div class="ais-panel-demo">
+              <span>AUTOMATION ENGINE · CONCEPT</span>
+              <h3>Connect.<br><em>Automate.</em></h3>
+              <div class="ais-demo-flow"><b>INPUT</b><i>→</i><b>AI</b><i>→</i><b>OUTPUT</b></div>
+            </div>
+          </div>
+          <div class="ais-panel-copy">
+            <span class="ais-eyebrow">INTELLIGENT WORKFLOWS</span>
+            <h3>Wiederkehrende Arbeitsschritte einfacher gestalten.</h3>
+            <p>KI-gestützte Workflows können Eingaben klassifizieren, Inhalte strukturieren und Aktionen in anderen Systemen vorbereiten.</p>
+            <ul>
+              <li>APIs und Webhooks verbinden</li>
+              <li>Strukturierte KI-Ausgaben verarbeiten</li>
+              <li>Validierung und Freigaben integrieren</li>
+            </ul>
+            <a href="../unternehmen/kontakt.html" class="ais-text-link">Automation anfragen ↗</a>
+          </div>
+        </article>
+
+        <article class="ais-panel" id="ais-panel-agent" hidden
+                 role="tabpanel" aria-labelledby="ais-tab-agent">
+          <div class="ais-panel-art ais-art-agent">
+            <div class="ais-panel-demo">
+              <span>AGENT SYSTEM · CONCEPT</span>
+              <h3>Plan.<br><em>Act.</em></h3>
+              <div class="ais-demo-chat">⌘ Tools · Regeln · Freigaben</div>
+            </div>
+          </div>
+          <div class="ais-panel-copy">
+            <span class="ais-eyebrow">TOOL-ENABLED AI</span>
+            <h3>KI-Systeme mit definierten Handlungsmöglichkeiten.</h3>
+            <p>Agenten können Werkzeuge nutzen, Aufgaben zerlegen und Arbeitsschritte innerhalb klarer Grenzen ausführen.</p>
+            <ul>
+              <li>Werkzeuge und Berechtigungen definieren</li>
+              <li>Aktionen protokollieren und prüfen</li>
+              <li>Menschliche Kontrolle bei kritischen Schritten</li>
+            </ul>
+            <a href="../unternehmen/kontakt.html" class="ais-text-link">Agentenlösung anfragen ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTEGRATIONS-TIMELINE
+       ========================================== -->
+  <section class="ais-section ais-process" id="projektablauf">
+    <div class="container">
+      <div class="ais-heading">
+        <span class="ais-eyebrow">UNSER INTEGRATIONSPROZESS</span>
+        <h2>Von der Herausforderung<br><em>zur KI-Lösung.</em></h2>
+        <p>Sechs Phasen verbinden Analyse, Entwicklung und sichere Integration.</p>
+      </div>
+
+      <div class="ais-process-track">
+        <div class="ais-process-line" aria-hidden="true">
+          <div class="ais-process-progress"></div>
+        </div>
+
+        <article class="ais-phase">
+          <div class="ais-phase-copy">
+            <span class="ais-phase-label">PHASE 01 · DISCOVERY</span>
+            <h3>Wir verstehen<br><em>deinen Anwendungsfall.</em></h3>
+            <p>Wir betrachten die Aufgabe, bestehende Abläufe und die erwarteten Ergebnisse.</p>
+            <div class="ais-phase-checks">
+              <span>✓ Anforderungen definieren</span>
+              <span>✓ Prozesse untersuchen</span>
+              <span>✓ Erfolgskriterien festlegen</span>
+            </div>
+          </div>
+          <div class="ais-phase-marker">01</div>
+          <div class="ais-phase-modules">
+            <div class="ais-module"><h4>Use-Case-Analyse</h4><p>Aufgaben, Nutzergruppen und Ziele.</p></div>
+            <div class="ais-module"><h4>Machbarkeit</h4><p>Datenlage, technische Möglichkeiten und Grenzen.</p></div>
+          </div>
+        </article>
+
+        <article class="ais-phase">
+          <div class="ais-phase-copy">
+            <span class="ais-phase-label">PHASE 02 · DATA</span>
+            <h3>Wir erschließen<br><em>die richtigen Daten.</em></h3>
+            <p>Geeignete Daten und Schnittstellen schaffen die Grundlage für zuverlässige KI-Funktionen.</p>
+            <div class="ais-phase-checks">
+              <span>✓ Datenquellen identifizieren</span>
+              <span>✓ Zugriffsrechte berücksichtigen</span>
+              <span>✓ Informationen strukturieren</span>
+            </div>
+          </div>
+          <div class="ais-phase-marker">02</div>
+          <div class="ais-phase-modules">
+            <div class="ais-module"><h4>Datenintegration</h4><p>Dokumente, Datenbanken und APIs.</p></div>
+            <div class="ais-module"><h4>Datenqualität</h4><p>Struktur, Validierung und Aktualität.</p></div>
+          </div>
+        </article>
+
+        <article class="ais-phase">
+          <div class="ais-phase-copy">
+            <span class="ais-phase-label">PHASE 03 · ARCHITECTURE</span>
+            <h3>Wir entwerfen<br><em>das KI-System.</em></h3>
+            <p>Wir wählen geeignete Modelle, Komponenten und Integrationswege für deinen Anwendungsfall.</p>
+            <div class="ais-phase-checks">
+              <span>✓ Modellstrategie auswählen</span>
+              <span>✓ Systemarchitektur planen</span>
+              <span>✓ Sicherheit und Kontrolle definieren</span>
+            </div>
+          </div>
+          <div class="ais-phase-marker">03</div>
+          <div class="ais-phase-modules">
+            <div class="ais-module"><h4>KI-Architektur</h4><p>Modelle, RAG, Workflows und Tools.</p></div>
+            <div class="ais-module"><h4>Governance</h4><p>Berechtigungen, Protokollierung und Freigaben.</p></div>
+          </div>
+        </article>
+
+        <article class="ais-phase">
+          <div class="ais-phase-copy">
+            <span class="ais-phase-label">PHASE 04 · DEVELOPMENT</span>
+            <h3>Wir entwickeln<br><em>die Integration.</em></h3>
+            <p>Die KI-Funktion wird mit geeigneten Schnittstellen, Benutzeroberflächen und Prüfmechanismen umgesetzt.</p>
+            <div class="ais-phase-checks">
+              <span>✓ Modelle und APIs anbinden</span>
+              <span>✓ Workflows entwickeln</span>
+              <span>✓ Benutzeroberflächen integrieren</span>
+            </div>
+          </div>
+          <div class="ais-phase-marker">04</div>
+          <div class="ais-phase-modules">
+            <div class="ais-module"><h4>Implementation</h4><p>Prompts, APIs und Anwendungslogik.</p></div>
+            <div class="ais-module"><h4>Systemintegration</h4><p>Frontend, Backend und Datenverarbeitung.</p></div>
+          </div>
+        </article>
+
+        <article class="ais-phase">
+          <div class="ais-phase-copy">
+            <span class="ais-phase-label">PHASE 05 · EVALUATION</span>
+            <h3>Wir prüfen<br><em>Ergebnisse und Grenzen.</em></h3>
+            <p>KI-Ergebnisse werden anhand geeigneter Testfälle und Qualitätskriterien bewertet.</p>
+            <div class="ais-phase-checks">
+              <span>✓ Antwortqualität prüfen</span>
+              <span>✓ Fehlerfälle testen</span>
+              <span>✓ Datenschutz und Sicherheit berücksichtigen</span>
+            </div>
+          </div>
+          <div class="ais-phase-marker">05</div>
+          <div class="ais-phase-modules">
+            <div class="ais-module"><h4>Evaluation</h4><p>Tests, Qualität und Zuverlässigkeit.</p></div>
+            <div class="ais-module"><h4>Safeguards</h4><p>Validierung, Monitoring und menschliche Kontrolle.</p></div>
+          </div>
+        </article>
+
+        <article class="ais-phase ais-phase-last">
+          <div class="ais-phase-copy">
+            <span class="ais-phase-label">PHASE 06 · DEPLOYMENT</span>
+            <h3>Deine KI wird<br><em>Teil des Arbeitsalltags.</em></h3>
+            <p>Nach der Prüfung folgen Bereitstellung, Überwachung und mögliche Weiterentwicklung.</p>
+            <div class="ais-phase-checks">
+              <span>✓ Integration bereitstellen</span>
+              <span>✓ Nutzung überwachen</span>
+              <span>✓ Lösungen kontinuierlich verbessern</span>
+            </div>
+          </div>
+          <div class="ais-phase-marker">06</div>
+          <div class="ais-phase-modules">
+            <div class="ais-module"><h4>Go-live</h4><p>Bereitstellung und technische Übergabe.</p></div>
+            <div class="ais-phase-finish"><span>✦</span><strong>AI integration ready</strong></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="ais-process-cta">
+        <h3>Welche Aufgabe soll deine KI übernehmen?</h3>
+        <p>Wir entwickeln gemeinsam einen passenden Ansatz.</p>
+        <a href="../unternehmen/kontakt.html"
+           class="btn btn-primary hero-button">
+          KI-Projekt anfragen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PRAXISBEISPIELE
+       ========================================== -->
+  <section class="ais-section ais-examples">
+    <div class="container">
+      <div class="ais-heading">
+        <span class="ais-eyebrow">KI IN DER PRAXIS</span>
+        <h2>Aus Möglichkeiten<br><em>werden Anwendungen.</em></h2>
+        <p>Drei beispielhafte Szenarien für intelligente Lösungen in digitalen Prozessen.</p>
+      </div>
+
+      <div class="ais-example-grid">
+        <article class="ais-example-card">
+          <div class="ais-example-visual ais-example-one">
+            <div class="ais-mini-ui">
+              <span>KNOWLEDGE ASSISTANT</span>
+              <div class="ais-mini-question">Wo finde ich die passende Anleitung?</div>
+              <div class="ais-mini-answer">✦ Relevante Dokumente durchsuchen</div>
+            </div>
+          </div>
+          <div class="ais-example-copy">
+            <span>USE CASE 01</span>
+            <h3>Interner Wissensassistent</h3>
+            <p>Mitarbeitende finden Informationen aus ausgewählten Dokumenten über eine dialogbasierte Suche.</p>
+            <div class="ais-tags"><span>RAG</span><span>Search</span><span>Documents</span></div>
+          </div>
+        </article>
+
+        <article class="ais-example-card">
+          <div class="ais-example-visual ais-example-two">
+            <div class="ais-mini-ui">
+              <span>DOCUMENT WORKFLOW</span>
+              <div class="ais-mini-steps"><b>PDF</b><i>→</i><b>AI</b><i>→</i><b>JSON</b></div>
+              <div class="ais-mini-answer">✓ Strukturierte Ausgabe vorbereitet</div>
+            </div>
+          </div>
+          <div class="ais-example-copy">
+            <span>USE CASE 02</span>
+            <h3>Intelligente Dokumentenverarbeitung</h3>
+            <p>Informationen aus Dokumenten extrahieren, validieren und für weitere Systeme vorbereiten.</p>
+            <div class="ais-tags"><span>Documents</span><span>LLM</span><span>Workflow</span></div>
+          </div>
+        </article>
+
+        <article class="ais-example-card">
+          <div class="ais-example-visual ais-example-three">
+            <div class="ais-mini-ui">
+              <span>AI WORKFLOW</span>
+              <div class="ais-mini-question">Neue Anfrage eingegangen</div>
+              <div class="ais-mini-answer">⚙ Klassifizieren und weiterleiten</div>
+            </div>
+          </div>
+          <div class="ais-example-copy">
+            <span>USE CASE 03</span>
+            <h3>KI-gestützte Anfragebearbeitung</h3>
+            <p>Anfragen kategorisieren, Informationen zusammenfassen und geeignete Bearbeitungsschritte unterstützen.</p>
+            <div class="ais-tags"><span>Automation</span><span>API</span><span>Classification</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TECHNOLOGIE / SICHERHEIT
+       ========================================== -->
+  <section class="ais-section ais-technology">
+    <div class="container ais-split">
+      <div>
+        <span class="ais-eyebrow">TECHNOLOGIE & VERANTWORTUNG</span>
+        <h2>Intelligent entwickelt.<br><em>Bewusst integriert.</em></h2>
+        <p class="ais-lead">
+          Eine erfolgreiche KI-Anwendung benötigt
+          mehr als ein leistungsfähiges Modell.
+          Datenqualität, Sicherheit, transparente
+          Prozesse und die Kontrolle über
+          Ergebnisse sind genauso entscheidend.
+        </p>
+        <a href="../services/softwareentwicklung.html"
+           class="ais-text-link">
+          Softwareentwicklung entdecken ↗
+        </a>
+      </div>
+
+      <div class="ais-tech-list">
+        <article><span>✦</span><div><h3>Geeignete KI-Modelle</h3><p>Modellauswahl entsprechend Aufgaben, Anforderungen und Betriebsbedingungen.</p></div></article>
+        <article><span>▤</span><div><h3>Daten & Wissensquellen</h3><p>Strukturierte Informationsverarbeitung, Retrieval und Zugriffskontrollen.</p></div></article>
+        <article><span>⌘</span><div><h3>APIs & Integration</h3><p>Verbindungen zwischen KI-Diensten, Anwendungen und vorhandenen Systemen.</p></div></article>
+        <article><span>◈</span><div><h3>Datenschutz & Sicherheit</h3><p>Berechtigungskonzepte, Datenminimierung und geeignete technische Schutzmaßnahmen.</p></div></article>
+        <article><span>⚙</span><div><h3>Evaluation & Monitoring</h3><p>Testfälle, Qualitätsprüfungen, Überwachung und kontinuierliche Verbesserung.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BRANCHEN MARQUEE
+       ========================================== -->
+  <section class="ais-section ais-industries">
+    <div class="ais-heading">
+      <span class="ais-eyebrow">VIELFÄLTIGE ANWENDUNGEN</span>
+      <h2>Intelligente Systeme<br><em>für viele Bereiche.</em></h2>
+      <p>KI-Integration kann ganz unterschiedliche digitale Prozesse unterstützen.</p>
+    </div>
+
+    <div class="ais-marquee" aria-label="Mögliche KI-Anwendungsbereiche">
+      <div class="ais-marquee-row">
+        <div class="ais-marquee-track">
+          <div class="ais-marquee-group">
+            <span>🤖 KI-Assistenten</span><span>📚 Wissensmanagement</span>
+            <span>⚙ Prozessautomatisierung</span><span>💼 Unternehmenssoftware</span>
+            <span>📊 Datenanalyse</span><span>🌐 Digitale Plattformen</span>
+          </div>
+          <div class="ais-marquee-group" aria-hidden="true">
+            <span>🤖 KI-Assistenten</span><span>📚 Wissensmanagement</span>
+            <span>⚙ Prozessautomatisierung</span><span>💼 Unternehmenssoftware</span>
+            <span>📊 Datenanalyse</span><span>🌐 Digitale Plattformen</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ais-marquee-row ais-marquee-reverse">
+        <div class="ais-marquee-track">
+          <div class="ais-marquee-group">
+            <span>🏢 Unternehmen</span><span>🛍 E-Commerce</span>
+            <span>📖 Bildung</span><span>☁ Cloud Services</span>
+            <span>🧩 Systemintegration</span><span>✦ Produktentwicklung</span>
+          </div>
+          <div class="ais-marquee-group" aria-hidden="true">
+            <span>🏢 Unternehmen</span><span>🛍 E-Commerce</span>
+            <span>📖 Bildung</span><span>☁ Cloud Services</span>
+            <span>🧩 Systemintegration</span><span>✦ Produktentwicklung</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BENEFITS
+       ========================================== -->
+  <section class="ais-section ais-benefits">
+    <div class="container">
+      <div class="ais-heading">
+        <span class="ais-eyebrow">UNSER ANSPRUCH</span>
+        <h2>KI mit klarem Ziel.<br><em>Technologie mit Verantwortung.</em></h2>
+      </div>
+
+      <div class="ais-benefit-grid">
+        <article><span>01</span><h3>Konkrete Anwendungsfälle</h3><p>Die technische Lösung orientiert sich an einer nachvollziehbaren Aufgabe.</p></article>
+        <article><span>02</span><h3>Nahtlose Integration</h3><p>KI wird mit passenden Schnittstellen in vorhandene Prozesse eingebunden.</p></article>
+        <article><span>03</span><h3>Kontrollierte Ergebnisse</h3><p>Prüfungen und menschliche Freigaben werden entsprechend dem Risiko berücksichtigt.</p></article>
+        <article><span>04</span><h3>Individuelle Entwicklung</h3><p>Architektur und Funktionen werden auf den jeweiligen Einsatzzweck ausgerichtet.</p></article>
+        <article><span>05</span><h3>Technische Transparenz</h3><p>Nachvollziehbare Datenflüsse, Berechtigungen und Systemgrenzen.</p></article>
+        <article><span>06</span><h3>Weiterentwickelbare Systeme</h3><p>Neue Anforderungen und Verbesserungen können technisch berücksichtigt werden.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ
+       ========================================== -->
+  <section class="ais-section ais-faq" id="faq">
+    <div class="container ais-split">
+      <div>
+        <span class="ais-eyebrow">HÄUFIGE FRAGEN</span>
+        <h2>Deine Fragen.<br><em>Unsere Antworten.</em></h2>
+        <p class="ais-lead">
+          Wissenswertes über KI-Integration,
+          intelligente Assistenten und Automatisierung.
+        </p>
+      </div>
+
+      <div class="ais-faq-list">
+        <details>
+          <summary>Was bedeutet KI-Integration?</summary>
+          <p>KI-Integration bedeutet, Funktionen künstlicher Intelligenz mit vorhandenen Anwendungen, Daten oder Arbeitsabläufen zu verbinden. Dadurch können beispielsweise Suche, Textverarbeitung oder Assistenzfunktionen ergänzt werden.</p>
+        </details>
+        <details>
+          <summary>Kann KI in meine bestehende Software eingebaut werden?</summary>
+          <p>Das ist häufig über geeignete APIs und Erweiterungsschnittstellen möglich. Die konkrete Umsetzung hängt von der technischen Architektur und den vorhandenen Zugriffsmöglichkeiten ab.</p>
+        </details>
+        <details>
+          <summary>Was ist ein KI-Agent?</summary>
+          <p>Ein KI-Agent ist ein System, das mithilfe eines KI-Modells Aufgaben bearbeitet und gegebenenfalls definierte Werkzeuge verwendet. Berechtigungen, Prüfungen und Freigaben sind dabei wichtige Bestandteile.</p>
+        </details>
+        <details>
+          <summary>Was ist der Unterschied zwischen Chatbot und RAG?</summary>
+          <p>Ein Chatbot beschreibt eine dialogbasierte Anwendung. RAG ist ein technischer Ansatz, bei dem passende Informationen aus Wissensquellen abgerufen und dem Modell für die Antwort zur Verfügung gestellt werden. Beides kann miteinander kombiniert werden.</p>
+        </details>
+        <details>
+          <summary>Welche Aufgaben lassen sich automatisieren?</summary>
+          <p>Beispiele sind die Kategorisierung von Anfragen, die Extraktion strukturierter Informationen, die Vorbereitung von Antworten und die Verbindung verschiedener Softwaredienste. Die Eignung hängt von Datenqualität, Anforderungen und Risiken ab.</p>
+        </details>
+        <details>
+          <summary>Wie werden Unternehmensdaten geschützt?</summary>
+          <p>Ein Schutzkonzept kann Datenminimierung, Berechtigungskontrollen, geeignete Anbieter- und Betriebsentscheidungen, Protokollierung und sichere Schnittstellen umfassen. Die konkrete Umsetzung richtet sich nach dem Projekt und den geltenden Anforderungen.</p>
+        </details>
+        <details>
+          <summary>Kann ich KI-Antworten immer vertrauen?</summary>
+          <p>Nein. Generative KI kann ungenaue oder falsche Ergebnisse erzeugen. Deshalb sind Tests, Validierungsregeln und menschliche Kontrolle je nach Anwendungsfall wichtig.</p>
+        </details>
+        <details>
+          <summary>Was kostet eine KI-Integration?</summary>
+          <p>Die Kosten hängen von Funktionsumfang, Datenquellen, Modellnutzung, Integration und Betrieb ab. Eine Anforderungsanalyse hilft dabei, den passenden Umfang für ein individuelles Angebot zu bestimmen.</p>
+        </details>
+        <details>
+          <summary>Wie beginne ich ein KI-Projekt?</summary>
+          <p>Beschreibe uns die Aufgabe, die du mit künstlicher Intelligenz unterstützen möchtest. Anschließend lassen sich technische Möglichkeiten und die nächsten Schritte besprechen.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FINAL CTA
+       ========================================== -->
+  <section class="ais-final">
+    <div class="container ais-final-inner">
+      <span class="ais-eyebrow">GRIDMIND TECHNOLOGIES</span>
+      <h2>Bereit, KI sinnvoll<br><em>einzusetzen?</em></h2>
+      <p>
+        Verbinde intelligente Technologie mit deinen
+        Ideen, Anwendungen und digitalen Prozessen.
+      </p>
+      <a href="../unternehmen/kontakt.html"
+         class="btn btn-primary hero-button">
+        KI-Projekt starten
+        <span class="arrow-circle" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- ==========================================
+     GEMEINSAMER GRIDMIND FOOTER
+     ========================================== -->
+<footer class="site-footer">
+  <svg class="footer-wave" viewBox="0 0 1440 125"
+       preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z"
+          fill="#092f2b"/>
+  </svg>
+
+  <div class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <img src="../assets/logo.png" width="280" height="94"
+               alt="Gridmind Technologies">
+        </a>
+        <p>Wir verbinden Menschen, Ideen und Technologie – von deinem ersten IT-Projekt bis zur digitalen Zukunft.</p>
+        <a href="../unternehmen/kontakt.html" class="footer-contact">
+          Kontakt zu Gridmind ↗
+        </a>
+        <div class="footer-social" aria-label="Weitere Informationen">
+          <a href="../unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+          <a href="../unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+          <a href="../unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Bildungsangebote</h3>
+        <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+        <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+        <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+        <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+        <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Produkte & Services</h3>
+        <a href="../services/websites.html">Website-Erstellung</a>
+        <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+        <a href="../services/ki-integration.html">KI-Integration</a>
+        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        <a href="../produkte/gridphone.html">GridPhone</a>
+        <a href="../produkte/gridtab.html">GridTab</a>
+        <a href="../produkte/gridwatch.html">GridWatch</a>
+        <a href="../produkte/gridmac.html">GridMac</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Unternehmen</h3>
+        <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+        <a href="../unternehmen/team.html">Unser Team</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+        <h3 class="footer-subtitle">Rechtliches</h3>
+        <a href="../rechtliches/impressum.html">Impressum</a>
+        <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+        <a href="../rechtliches/agb.html">AGB</a>
+        <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+        <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+        <a href="../rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <button type="button" class="footer-text-button"
+                data-open-cookie>Cookie-Einstellungen</button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Gridmind Technologies</span>
+      <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE-DIALOG -->
+<div class="cookie-overlay" id="cookie-overlay" hidden></div>
+
+<section class="cookie-banner" id="cookie-banner"
+         role="dialog" aria-modal="true"
+         aria-labelledby="cookie-title"
+         aria-describedby="cookie-description"
+         tabindex="-1" hidden>
+  <div class="cookie-heading">
+    <span class="cookie-icon">◈</span>
+    <div>
+      <span class="cookie-brand">GRIDMIND PRIVACY</span>
+      <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+    </div>
+  </div>
+  <p id="cookie-description">
+    Wir verwenden notwendige Speichertechnologien für die Funktion
+    dieser Website. Zusätzliche Technologien aktivieren wir nur
+    mit deiner Einwilligung.
+  </p>
+  <div class="cookie-details" id="cookie-details" hidden>
+    <label class="cookie-option">
+      <span><strong>Notwendig</strong><small>Grundlegende Funktionen und deine Auswahl.</small></span>
+      <input type="checkbox" checked disabled>
+    </label>
+    <label class="cookie-option">
+      <span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span>
+      <input type="checkbox" id="consent-functional">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span>
+      <input type="checkbox" id="consent-analytics">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span>
+      <input type="checkbox" id="consent-marketing">
+    </label>
+  </div>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept" id="cookie-accept"
+            type="button">Alle akzeptieren</button>
+    <button class="cookie-btn cookie-reject" id="cookie-reject"
+            type="button">Nur notwendige</button>
+    <button class="cookie-btn cookie-settings" id="cookie-settings"
+            type="button">Einstellungen</button>
+    <button class="cookie-btn cookie-save" id="cookie-save"
+            type="button" hidden>Auswahl speichern</button>
+  </div>
+  <div class="cookie-legal">
+    <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+    <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+    <a href="../rechtliches/impressum.html">Impressum</a>
+  </div>
+</section>
+
+<!-- TYPEWRITER / TABS / TIMELINE -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  /* TYPEWRITER */
+  const output = document.getElementById("ais-typewriter");
+  const phrases = [
+    "verbindet.",
+    "unterstützt.",
+    "automatisiert.",
+    "Wissen nutzbar macht."
+  ];
+
+  if (output && !reducedMotion) {
+    let phraseIndex = 0;
+    let charIndex = phrases[0].length;
+    let deleting = true;
+
+    function tick() {
+      const chars = Array.from(phrases[phraseIndex]);
+      charIndex += deleting ? -1 : 1;
+      charIndex = Math.max(0, Math.min(chars.length, charIndex));
+      output.textContent = chars.slice(0, charIndex).join("");
+
+      let delay = deleting ? 47 : 91;
+
+      if (deleting && charIndex === 0) {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        deleting = false;
+        delay = 360;
+      } else if (!deleting &&
+                 charIndex === Array.from(phrases[phraseIndex]).length) {
+        deleting = true;
+        delay = 1900;
+      }
+
+      window.setTimeout(tick, delay);
+    }
+
+    window.setTimeout(tick, 1900);
+  }
+
+  /* INTERAKTIVE KI-LÖSUNGEN */
+  const tabs = Array.from(
+    document.querySelectorAll("[data-ais-tab]")
+  );
+
+  function activateTab(index, focus = false) {
+    tabs.forEach((tab, i) => {
+      const active = index === i;
+      const panel = document.getElementById(
+        tab.getAttribute("aria-controls")
+      );
+
+      tab.setAttribute("aria-selected", String(active));
+      tab.classList.toggle("is-active", active);
+      tab.tabIndex = active ? 0 : -1;
+
+      if (panel) {
+        panel.hidden = !active;
+        panel.classList.toggle("is-active", active);
+      }
+    });
+
+    if (focus) tabs[index].focus();
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => activateTab(index));
+
+    tab.addEventListener("keydown", event => {
+      let next = index;
+
+      if (event.key === "ArrowRight") {
+        next = (index + 1) % tabs.length;
+      } else if (event.key === "ArrowLeft") {
+        next = (index - 1 + tabs.length) % tabs.length;
+      } else if (event.key === "Home") {
+        next = 0;
+      } else if (event.key === "End") {
+        next = tabs.length - 1;
+      } else {
+        return;
+      }
+
+      event.preventDefault();
+      activateTab(next, true);
+    });
+  });
+
+  if (tabs.length) activateTab(0);
+
+  /* SCROLL TIMELINE */
+  const section = document.querySelector(".ais-process");
+  const line = document.querySelector(".ais-process-line");
+  const progress = document.querySelector(".ais-process-progress");
+  const phases = Array.from(
+    document.querySelectorAll(".ais-phase")
+  );
+
+  if (!section || !line || !progress) return;
+
+  if (reducedMotion) {
+    phases.forEach(phase => phase.classList.add("is-visible"));
+    progress.style.height = "100%";
+    return;
+  }
+
+  if ("IntersectionObserver" in window) {
+    section.classList.add("ais-process-js");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: .05,
+      rootMargin: "0px 0px -5% 0px"
+    });
+
+    phases.forEach(phase => observer.observe(phase));
+  } else {
+    phases.forEach(phase => phase.classList.add("is-visible"));
+  }
+
+  let scheduled = false;
+
+  function updateProgress() {
+    const rect = line.getBoundingClientRect();
+    const trigger = window.innerHeight * .65;
+    progress.style.height = Math.max(
+      0,
+      Math.min(rect.height, trigger - rect.top)
+    ) + "px";
+    scheduled = false;
+  }
+
+  function requestUpdate() {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(updateProgress);
+  }
+
+  window.addEventListener("scroll", requestUpdate, {passive: true});
+  window.addEventListener("resize", requestUpdate);
+  requestUpdate();
+});
+</script>
+
+</body>
+</html>

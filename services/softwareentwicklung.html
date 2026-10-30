@@ -1,0 +1,1243 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d4438">
+  <meta name="description" content="Individuelle Softwareentwicklung mit Gridmind Technologies: Webanwendungen, Desktopsoftware, APIs, Automatisierung und skalierbare Lösungen.">
+  <title>Individuelle Softwareentwicklung | Gridmind Technologies</title>
+
+  <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/softwareentwicklung.css">
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body class="gridmind-software">
+<a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
+
+<!-- ==========================================
+     GEMEINSAMER GRIDMIND HEADER
+     ========================================== -->
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"
+       aria-label="Gridmind Technologies – Startseite">
+      <img src="../assets/logo.png" width="280" height="94"
+           alt="Gridmind Technologies">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-offers">
+          Unsere Angebote
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="nav-dropdown" id="nav-offers">
+          <span class="dropdown-title">Ausbildung & Karriere</span>
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+
+          <span class="dropdown-title">Digitale Dienstleistungen</span>
+          <a href="../services/websites.html">Websites erstellen lassen</a>
+          <a href="../services/softwareentwicklung.html"
+             aria-current="page">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-devices">
+          Geräte & Software
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown" id="nav-devices">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </div>
+
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-cta" href="../unternehmen/kontakt.html">
+        Projekt anfragen <span aria-hidden="true">↗</span>
+      </a>
+      <button class="hamburger" id="hamburger" type="button"
+              aria-label="Menü öffnen"
+              aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu"
+       aria-label="Mobiles Menü" inert>
+    <div class="mobile-menu-inner">
+      <a href="../index.html">Startseite</a>
+      <details>
+        <summary>Bildungsangebote</summary>
+        <div class="mobile-submenu">
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+      </details>
+      <details>
+        <summary>Websites & Software</summary>
+        <div class="mobile-submenu">
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html"
+             aria-current="page">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </details>
+      <details>
+        <summary>Grid-Geräte</summary>
+        <div class="mobile-submenu">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </details>
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+      <a href="../unternehmen/kontakt.html">Kontakt</a>
+      <a class="mobile-cta" href="../unternehmen/kontakt.html">
+        Projekt anfragen →
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- ==========================================
+       HERO / TYPEWRITER
+       ========================================== -->
+
+  <section class="sw-hero" aria-labelledby="sw-hero-title">
+    <div class="container sw-hero-layout">
+
+      <div class="sw-hero-copy">
+        <span class="sw-kicker">
+          <i></i> GRIDMIND SOFTWARE ENGINEERING
+        </span>
+
+        <h1 id="sw-hero-title">
+          Software, die
+          <span class="sw-type-line">
+            <span id="sw-typewriter" aria-hidden="true">begeistert.</span><i aria-hidden="true"></i>
+          </span>
+        </h1>
+
+        <p class="sw-visually-hidden">
+          Software, die begeistert, verbindet, automatisiert
+          und Möglichkeiten schafft.
+        </p>
+
+        <p class="sw-hero-lead">
+          Aus Ideen entstehen digitale Lösungen.
+          Wir entwickeln individuelle Software,
+          moderne Anwendungen und intelligente
+          Systeme, die zu deinen Anforderungen passen.
+        </p>
+
+        <div class="sw-hero-checks">
+          <span>✓ Individuelle Anwendungen</span>
+          <span>✓ Moderne Technologien</span>
+          <span>✓ Erweiterbare Architektur</span>
+        </div>
+
+        <div class="sw-hero-actions">
+          <a href="../unternehmen/kontakt.html"
+             class="btn btn-primary hero-button">
+            Software-Projekt anfragen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#leistungen" class="sw-text-link">
+            Lösungen entdecken ↘
+          </a>
+        </div>
+      </div>
+
+      <!-- ANIMIERTE SOFTWARE-ENTWICKLUNGSUMGEBUNG -->
+
+      <div class="sw-hero-art"
+           aria-label="Illustration einer Softwareentwicklungsumgebung mit Code und Dashboard">
+        <div class="sw-art-glow"></div>
+
+        <!-- CODE EDITOR -->
+        <div class="sw-editor sw-float-editor">
+          <div class="sw-editor-top">
+            <div class="sw-window-dots"><i></i><i></i><i></i></div>
+            <span>gridmind / application.ts</span>
+            <small>● DEVELOPMENT</small>
+          </div>
+
+          <div class="sw-editor-body">
+            <div><span>01</span> <b>interface</b> <em>Application</em> {</div>
+            <div><span>02</span> &nbsp; name: <strong>string</strong>;</div>
+            <div><span>03</span> &nbsp; scalable: <strong>boolean</strong>;</div>
+            <div><span>04</span> }</div>
+            <div><span>05</span></div>
+            <div><span>06</span> <b>const</b> app = {</div>
+            <div><span>07</span> &nbsp; name: <mark>"Gridmind"</mark>,</div>
+            <div><span>08</span> &nbsp; scalable: <strong>true</strong></div>
+            <div><span>09</span> };</div>
+            <div><span>10</span></div>
+            <div><span>11</span> <b>export default</b> app;</div>
+          </div>
+
+          <div class="sw-editor-bottom">
+            <span>✓ Code ready</span>
+            <span>TypeScript · UTF-8</span>
+          </div>
+        </div>
+
+        <!-- APP DASHBOARD -->
+        <div class="sw-dashboard sw-float-dashboard">
+          <div class="sw-dashboard-nav">
+            <span class="sw-dashboard-logo">G<span>●</span></span>
+            <strong>Gridmind Workspace</strong>
+            <span class="sw-dashboard-avatar">GM</span>
+          </div>
+
+          <div class="sw-dashboard-body">
+            <small>OVERVIEW</small>
+            <h3>Build something great.</h3>
+
+            <div class="sw-dashboard-stats">
+              <div>
+                <span>PROJECTS</span>
+                <strong>08</strong>
+                <small>Demo-Daten</small>
+              </div>
+              <div>
+                <span>STATUS</span>
+                <strong class="sw-status-online">Active</strong>
+                <small>Preview</small>
+              </div>
+            </div>
+
+            <div class="sw-dashboard-chart">
+              <span>DEVELOPMENT ACTIVITY</span>
+              <div class="sw-chart-bars">
+                <i></i><i></i><i></i><i></i>
+                <i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FLOATING SYSTEM CARDS -->
+        <div class="sw-floating-card sw-card-api">
+          <span class="sw-card-symbol">⌘</span>
+          <div>
+            <strong>API Connected</strong>
+            <small>Systems integrated</small>
+          </div>
+          <b>✓</b>
+        </div>
+
+        <div class="sw-floating-card sw-card-cloud">
+          <span class="sw-card-symbol">☁</span>
+          <div>
+            <strong>Cloud Ready</strong>
+            <small>Deployment preview</small>
+          </div>
+          <b>✓</b>
+        </div>
+
+        <span class="sw-spark sw-spark-a" aria-hidden="true">✦</span>
+        <span class="sw-spark sw-spark-b" aria-hidden="true">✧</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EINFÜHRUNG
+       ========================================== -->
+
+  <section class="sw-section sw-intro">
+    <div class="container sw-split">
+      <div>
+        <span class="sw-eyebrow">INDIVIDUELLE SOFTWARELÖSUNGEN</span>
+        <h2>Deine Idee.<br><em>Unsere Technologie.</em></h2>
+
+        <p class="sw-lead">
+          Standardsoftware deckt nicht jede Anforderung ab.
+          Individuelle Software kann Prozesse vereinfachen,
+          Informationen verknüpfen und digitale
+          Arbeitsabläufe an deine Organisation anpassen.
+        </p>
+      </div>
+
+      <div class="sw-intro-list">
+        <article>
+          <span>◇</span>
+          <div>
+            <h3>Auf deine Anforderungen ausgerichtet</h3>
+            <p>Funktionen, Benutzeroberflächen und Prozesse werden passend zum Einsatzzweck entwickelt.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>⚙</span>
+          <div>
+            <h3>Digitale Prozesse verbessern</h3>
+            <p>Wiederkehrende Aufgaben und Datenflüsse lassen sich mit geeigneter Software effizienter gestalten.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>↗</span>
+          <div>
+            <h3>Langfristig weiterentwickelbar</h3>
+            <p>Eine durchdachte Architektur schafft Raum für neue Funktionen und technische Anpassungen.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LEISTUNGEN
+       ========================================== -->
+
+  <section class="sw-section sw-services" id="leistungen">
+    <div class="container">
+      <div class="sw-heading">
+        <span class="sw-eyebrow">UNSERE LEISTUNGEN</span>
+        <h2>Individuelle Lösungen<br><em>für digitale Ideen.</em></h2>
+        <p>
+          Wir verbinden Software Engineering,
+          moderne Technologien und
+          durchdachte Benutzeroberflächen.
+        </p>
+      </div>
+
+      <div class="sw-service-grid">
+        <article class="sw-service-card">
+          <span class="sw-service-index">01 / WEB APPS</span>
+          <span class="sw-service-icon">▣</span>
+          <h3>Webanwendungen</h3>
+          <p>Interaktive Anwendungen für Browser – von Kundenportalen bis zu internen Tools.</p>
+          <div class="sw-tags"><span>Frontend</span><span>Backend</span><span>Web</span></div>
+        </article>
+
+        <article class="sw-service-card">
+          <span class="sw-service-index">02 / DESKTOP</span>
+          <span class="sw-service-icon">⌘</span>
+          <h3>Desktopsoftware</h3>
+          <p>Individuelle Programme mit Benutzeroberflächen für produktive Arbeitsabläufe.</p>
+          <div class="sw-tags"><span>Desktop</span><span>Electron</span><span>UI</span></div>
+        </article>
+
+        <article class="sw-service-card">
+          <span class="sw-service-index">03 / BACKEND</span>
+          <span class="sw-service-icon">⚙</span>
+          <h3>Backend & APIs</h3>
+          <p>Serverseitige Logik, Datenverarbeitung und Schnittstellen zwischen Anwendungen.</p>
+          <div class="sw-tags"><span>APIs</span><span>Server</span><span>Data</span></div>
+        </article>
+
+        <article class="sw-service-card">
+          <span class="sw-service-index">04 / AUTOMATION</span>
+          <span class="sw-service-icon">↗</span>
+          <h3>Prozessautomatisierung</h3>
+          <p>Software zur Vereinfachung wiederkehrender Arbeitsabläufe und Datenübertragungen.</p>
+          <div class="sw-tags"><span>Workflow</span><span>Automation</span><span>Integration</span></div>
+        </article>
+
+        <article class="sw-service-card">
+          <span class="sw-service-index">05 / INTEGRATION</span>
+          <span class="sw-service-icon">◇</span>
+          <h3>Systemintegration</h3>
+          <p>Verbinde Softwareprodukte, Datenquellen und bestehende digitale Systeme.</p>
+          <div class="sw-tags"><span>REST</span><span>Webhooks</span><span>Systems</span></div>
+        </article>
+
+        <article class="sw-service-card">
+          <span class="sw-service-index">06 / ENGINEERING</span>
+          <span class="sw-service-icon">✦</span>
+          <h3>Wartung & Erweiterung</h3>
+          <p>Weiterentwicklung, Verbesserung und technische Modernisierung von Softwarelösungen.</p>
+          <div class="sw-tags"><span>Refactoring</span><span>Testing</span><span>Updates</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SOFTWARE-TYPEN / INTERAKTIVE TABS
+       ========================================== -->
+
+  <section class="sw-section sw-solutions" id="loesungen">
+    <div class="container">
+      <div class="sw-heading">
+        <span class="sw-eyebrow">SOFTWARE NACH DEINEM BEDARF</span>
+        <h2>Die passende Lösung<br><em>für jede Herausforderung.</em></h2>
+        <p>Entdecke unterschiedliche Anwendungstypen und ihre Möglichkeiten.</p>
+      </div>
+
+      <div class="sw-tabs" role="tablist" aria-label="Softwaretypen">
+        <button type="button" class="sw-tab is-active"
+                role="tab" id="sw-tab-platform"
+                aria-selected="true" aria-controls="sw-panel-platform"
+                tabindex="0" data-sw-tab>
+          Webplattformen
+        </button>
+
+        <button type="button" class="sw-tab"
+                role="tab" id="sw-tab-desktop"
+                aria-selected="false" aria-controls="sw-panel-desktop"
+                tabindex="-1" data-sw-tab>
+          Desktop-Apps
+        </button>
+
+        <button type="button" class="sw-tab"
+                role="tab" id="sw-tab-internal"
+                aria-selected="false" aria-controls="sw-panel-internal"
+                tabindex="-1" data-sw-tab>
+          Business Tools
+        </button>
+
+        <button type="button" class="sw-tab"
+                role="tab" id="sw-tab-api"
+                aria-selected="false" aria-controls="sw-panel-api"
+                tabindex="-1" data-sw-tab>
+          APIs & Integrationen
+        </button>
+      </div>
+
+      <div class="sw-panels">
+        <article id="sw-panel-platform"
+                 class="sw-panel is-active"
+                 role="tabpanel" aria-labelledby="sw-tab-platform">
+          <div class="sw-panel-art sw-panel-art-platform">
+            <div class="sw-panel-showcase">
+              <span>GRIDMIND PLATFORM · CONCEPT</span>
+              <h3>Connect.<br><em>Create.</em></h3>
+              <div class="sw-panel-blocks"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="sw-panel-copy">
+            <span class="sw-eyebrow">WEB APPLICATIONS</span>
+            <h3>Digitale Plattformen mit individuellen Funktionen.</h3>
+            <p>Webplattformen verbinden Benutzeroberflächen, Daten und serverseitige Funktionen in einer Anwendung.</p>
+            <ul>
+              <li>Benutzerbereiche und interaktive Oberflächen</li>
+              <li>Datenverwaltung und API-Schnittstellen</li>
+              <li>Erweiterbare Softwarearchitektur</li>
+            </ul>
+            <a href="../unternehmen/kontakt.html" class="sw-text-link">Projekt besprechen ↗</a>
+          </div>
+        </article>
+
+        <article id="sw-panel-desktop"
+                 class="sw-panel" hidden
+                 role="tabpanel" aria-labelledby="sw-tab-desktop">
+          <div class="sw-panel-art sw-panel-art-desktop">
+            <div class="sw-panel-showcase">
+              <span>GRIDMIND DESKTOP · CONCEPT</span>
+              <h3>Work.<br><em>Smarter.</em></h3>
+              <div class="sw-panel-blocks"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="sw-panel-copy">
+            <span class="sw-eyebrow">DESKTOP SOFTWARE</span>
+            <h3>Software, die den Arbeitsalltag unterstützt.</h3>
+            <p>Desktopanwendungen bieten individuelle Werkzeuge und eine auf den Einsatzzweck ausgerichtete Oberfläche.</p>
+            <ul>
+              <li>Benutzerfreundliche Desktop-Oberflächen</li>
+              <li>Lokale Funktionen und Dateiverarbeitung</li>
+              <li>Integration externer Schnittstellen</li>
+            </ul>
+            <a href="../unternehmen/kontakt.html" class="sw-text-link">Desktop-App anfragen ↗</a>
+          </div>
+        </article>
+
+        <article id="sw-panel-internal"
+                 class="sw-panel" hidden
+                 role="tabpanel" aria-labelledby="sw-tab-internal">
+          <div class="sw-panel-art sw-panel-art-internal">
+            <div class="sw-panel-showcase">
+              <span>BUSINESS SYSTEMS · CONCEPT</span>
+              <h3>Manage.<br><em>Improve.</em></h3>
+              <div class="sw-panel-blocks"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="sw-panel-copy">
+            <span class="sw-eyebrow">INTERNAL BUSINESS TOOLS</span>
+            <h3>Interne Tools für klare Prozesse.</h3>
+            <p>Individuelle Anwendungen können Informationen zentralisieren und wiederkehrende Arbeitsschritte vereinfachen.</p>
+            <ul>
+              <li>Dashboards und Datenübersichten</li>
+              <li>Interne Verwaltungsoberflächen</li>
+              <li>Automatisierte Geschäftsprozesse</li>
+            </ul>
+            <a href="../unternehmen/kontakt.html" class="sw-text-link">Business Tool anfragen ↗</a>
+          </div>
+        </article>
+
+        <article id="sw-panel-api"
+                 class="sw-panel" hidden
+                 role="tabpanel" aria-labelledby="sw-tab-api">
+          <div class="sw-panel-art sw-panel-art-api">
+            <div class="sw-panel-showcase">
+              <span>API CONNECTIONS · CONCEPT</span>
+              <h3>Systems.<br><em>Connected.</em></h3>
+              <div class="sw-panel-blocks"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="sw-panel-copy">
+            <span class="sw-eyebrow">APIS & SYSTEM INTEGRATION</span>
+            <h3>Damit deine Systeme zusammenarbeiten.</h3>
+            <p>Über Schnittstellen können Anwendungen Informationen austauschen und zusammenhängende Abläufe unterstützen.</p>
+            <ul>
+              <li>REST-APIs und Webhooks</li>
+              <li>Datenübertragung und Validierung</li>
+              <li>Integration bestehender Software</li>
+            </ul>
+            <a href="../unternehmen/kontakt.html" class="sw-text-link">Integration anfragen ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="sw-concept-note">
+        Die gezeigten Oberflächen sind illustrative Softwarekonzepte.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ENTWICKLUNGSPROZESS – SECHS PHASEN
+       ========================================== -->
+
+  <section class="sw-section sw-process" id="projektablauf">
+    <div class="container">
+      <div class="sw-heading">
+        <span class="sw-eyebrow">SOFTWARE ENGINEERING</span>
+        <h2>Von der ersten Idee<br><em>zur digitalen Lösung.</em></h2>
+        <p>Sechs Schritte verbinden Planung, Entwicklung und Qualitätssicherung zu einem klaren Projektablauf.</p>
+      </div>
+
+      <div class="sw-process-track">
+        <div class="sw-process-line" aria-hidden="true">
+          <div class="sw-process-progress"></div>
+        </div>
+
+        <article class="sw-phase">
+          <div class="sw-phase-copy">
+            <span class="sw-phase-label">PHASE 01 · DISCOVERY</span>
+            <h3>Wir verstehen<br><em>deine Anforderungen.</em></h3>
+            <p>Der erste Schritt ist die Analyse deiner Idee, deiner Ziele und der benötigten Funktionen.</p>
+            <div class="sw-phase-checks">
+              <span>✓ Anforderungen klären</span>
+              <span>✓ Nutzer und Prozesse verstehen</span>
+              <span>✓ Projektumfang definieren</span>
+            </div>
+          </div>
+          <div class="sw-phase-marker">01</div>
+          <div class="sw-phase-modules">
+            <div class="sw-module"><h4>Anforderungsanalyse</h4><p>Funktionen, Benutzergruppen und Ziele.</p></div>
+            <div class="sw-module"><h4>Projektkonzept</h4><p>Umfang, Prioritäten und Vorgehensweise.</p></div>
+          </div>
+        </article>
+
+        <article class="sw-phase">
+          <div class="sw-phase-copy">
+            <span class="sw-phase-label">PHASE 02 · ARCHITECTURE</span>
+            <h3>Wir schaffen<br><em>eine stabile Grundlage.</em></h3>
+            <p>Die technische Architektur legt fest, wie Komponenten, Daten und Schnittstellen zusammenspielen.</p>
+            <div class="sw-phase-checks">
+              <span>✓ Komponenten strukturieren</span>
+              <span>✓ Datenflüsse modellieren</span>
+              <span>✓ Technologien auswählen</span>
+            </div>
+          </div>
+          <div class="sw-phase-marker">02</div>
+          <div class="sw-phase-modules">
+            <div class="sw-module"><h4>Systemarchitektur</h4><p>Frontend, Backend, Daten und Schnittstellen.</p></div>
+            <div class="sw-module"><h4>Technologieplanung</h4><p>Passende Frameworks und Infrastruktur.</p></div>
+          </div>
+        </article>
+
+        <article class="sw-phase">
+          <div class="sw-phase-copy">
+            <span class="sw-phase-label">PHASE 03 · DESIGN</span>
+            <h3>Wir gestalten<br><em>intuitive Oberflächen.</em></h3>
+            <p>Benutzeroberflächen werden auf die Aufgaben und Bedürfnisse der späteren Anwender ausgerichtet.</p>
+            <div class="sw-phase-checks">
+              <span>✓ Nutzerführung entwickeln</span>
+              <span>✓ UI-Komponenten definieren</span>
+              <span>✓ Designs abstimmen</span>
+            </div>
+          </div>
+          <div class="sw-phase-marker">03</div>
+          <div class="sw-phase-modules">
+            <div class="sw-module"><h4>UX-Konzept</h4><p>Interaktion und Benutzerführung.</p></div>
+            <div class="sw-module"><h4>UI Design</h4><p>Layouts, Komponenten und visuelle Details.</p></div>
+          </div>
+        </article>
+
+        <article class="sw-phase">
+          <div class="sw-phase-copy">
+            <span class="sw-phase-label">PHASE 04 · DEVELOPMENT</span>
+            <h3>Wir bringen<br><em>den Code zum Leben.</em></h3>
+            <p>Die Anwendung wird in nachvollziehbaren Schritten entwickelt und um vereinbarte Funktionen ergänzt.</p>
+            <div class="sw-phase-checks">
+              <span>✓ Frontend und Backend entwickeln</span>
+              <span>✓ Datenmodelle und APIs integrieren</span>
+              <span>✓ Funktionen schrittweise prüfen</span>
+            </div>
+          </div>
+          <div class="sw-phase-marker">04</div>
+          <div class="sw-phase-modules">
+            <div class="sw-module"><h4>Implementierung</h4><p>Anwendungslogik und Benutzeroberflächen.</p></div>
+            <div class="sw-module"><h4>Integration</h4><p>Datenbanken und externe Systeme.</p></div>
+          </div>
+        </article>
+
+        <article class="sw-phase">
+          <div class="sw-phase-copy">
+            <span class="sw-phase-label">PHASE 05 · QUALITY</span>
+            <h3>Wir testen<br><em>und optimieren.</em></h3>
+            <p>Funktion, Bedienbarkeit, Sicherheit und Leistung werden anhand der Anforderungen überprüft.</p>
+            <div class="sw-phase-checks">
+              <span>✓ Funktionen testen</span>
+              <span>✓ Fehler beheben</span>
+              <span>✓ Sicherheit berücksichtigen</span>
+            </div>
+          </div>
+          <div class="sw-phase-marker">05</div>
+          <div class="sw-phase-modules">
+            <div class="sw-module"><h4>Testing</h4><p>Funktionstests und technische Qualitätsprüfung.</p></div>
+            <div class="sw-module"><h4>Optimierung</h4><p>Fehlerkorrekturen, Performance und Usability.</p></div>
+          </div>
+        </article>
+
+        <article class="sw-phase sw-phase-last">
+          <div class="sw-phase-copy">
+            <span class="sw-phase-label">PHASE 06 · DEPLOYMENT</span>
+            <h3>Deine Software<br><em>geht in Betrieb.</em></h3>
+            <p>Nach der finalen Prüfung folgen Bereitstellung, Übergabe und die mögliche weitere Entwicklung.</p>
+            <div class="sw-phase-checks">
+              <span>✓ Veröffentlichung vorbereiten</span>
+              <span>✓ Anwendung bereitstellen</span>
+              <span>✓ Weiterentwicklung ermöglichen</span>
+            </div>
+          </div>
+          <div class="sw-phase-marker">06</div>
+          <div class="sw-phase-modules">
+            <div class="sw-module"><h4>Release</h4><p>Deployment und abschließende Prüfung.</p></div>
+            <div class="sw-phase-finish"><span>✓</span><strong>Ready for production</strong></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="sw-process-cta">
+        <h3>Du hast eine Softwareidee?</h3>
+        <p>Wir besprechen gemeinsam den passenden technischen Ansatz.</p>
+        <a href="../unternehmen/kontakt.html"
+           class="btn btn-primary hero-button">
+          Softwareprojekt besprechen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BEISPIELPROJEKTE
+       ========================================== -->
+
+  <section class="sw-section sw-projects">
+    <div class="container">
+      <div class="sw-heading">
+        <span class="sw-eyebrow">SOFTWARE IN DER PRAXIS</span>
+        <h2>Digitale Ideen.<br><em>Konkrete Anwendungen.</em></h2>
+        <p>Drei Beispiele zeigen, welche Aufgaben individuelle Softwarelösungen übernehmen können.</p>
+      </div>
+
+      <div class="sw-project-grid">
+        <article class="sw-project-card">
+          <div class="sw-project-visual sw-project-visual-one">
+            <div class="sw-mini-window">
+              <span>OPERATIONS HUB</span>
+              <h3>Project Overview</h3>
+              <div class="sw-mini-bars"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="sw-project-copy">
+            <span>USE CASE 01</span>
+            <h3>Management Dashboard</h3>
+            <p>Eine zentrale Oberfläche für Projekte, Informationen und übersichtliche Auswertungen.</p>
+            <div class="sw-tags"><span>Dashboard</span><span>Data</span><span>Web-App</span></div>
+          </div>
+        </article>
+
+        <article class="sw-project-card">
+          <div class="sw-project-visual sw-project-visual-two">
+            <div class="sw-mini-window">
+              <span>AUTOMATION FLOW</span>
+              <h3>Connected Systems</h3>
+              <div class="sw-mini-flow"><i>API</i><b>→</b><i>DATA</i><b>→</b><i>APP</i></div>
+            </div>
+          </div>
+          <div class="sw-project-copy">
+            <span>USE CASE 02</span>
+            <h3>Automatisierter Datenfluss</h3>
+            <p>Eine Integration zur Übertragung, Prüfung und Verarbeitung von Daten zwischen Anwendungen.</p>
+            <div class="sw-tags"><span>API</span><span>Automation</span><span>Workflow</span></div>
+          </div>
+        </article>
+
+        <article class="sw-project-card">
+          <div class="sw-project-visual sw-project-visual-three">
+            <div class="sw-mini-window">
+              <span>DESKTOP WORKSPACE</span>
+              <h3>Creative Studio</h3>
+              <div class="sw-mini-workspace"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="sw-project-copy">
+            <span>USE CASE 03</span>
+            <h3>Individuelle Desktop-App</h3>
+            <p>Ein Desktop-Werkzeug mit Dateioperationen, Benutzeroberfläche und individuellen Funktionen.</p>
+            <div class="sw-tags"><span>Desktop</span><span>Electron</span><span>UI</span></div>
+          </div>
+        </article>
+      </div>
+
+      <p class="sw-concept-note">
+        Diese Darstellungen sind illustrative Anwendungsbeispiele und keine Kundenreferenzen.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TECHNOLOGIEN
+       ========================================== -->
+
+  <section class="sw-section sw-technologies">
+    <div class="container sw-split">
+      <div>
+        <span class="sw-eyebrow">UNSER TECHNOLOGISCHER ANSATZ</span>
+        <h2>Die passende Technik<br><em>für jedes Projekt.</em></h2>
+        <p class="sw-lead">
+          Ob Webanwendung, Desktopsoftware oder
+          Schnittstellenintegration – entscheidend
+          sind die Anforderungen und eine gut
+          durchdachte technische Architektur.
+        </p>
+        <a href="../services/ki-integration.html" class="sw-text-link">
+          KI-Integration entdecken ↗
+        </a>
+      </div>
+
+      <div class="sw-tech-list">
+        <article><span>⌘</span><div><h3>Frontend Development</h3><p>Moderne Benutzeroberflächen mit HTML, CSS, JavaScript und TypeScript.</p></div></article>
+        <article><span>⚙</span><div><h3>Backend & APIs</h3><p>Serverseitige Prozesse, Anwendungslogik und strukturierter Datenaustausch.</p></div></article>
+        <article><span>▣</span><div><h3>Desktop & Cross-Platform</h3><p>Anwendungen mit eigener Benutzeroberfläche und passender Systemintegration.</p></div></article>
+        <article><span>☁</span><div><h3>Cloud & Deployment</h3><p>Bereitstellung, Konfiguration und technische Weiterentwicklung von Anwendungen.</p></div></article>
+        <article><span>◈</span><div><h3>Testing & Security</h3><p>Qualität, Berechtigungen und Sicherheitsprüfungen im Entwicklungsprozess.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BRANCHEN MARQUEE
+       ========================================== -->
+
+  <section class="sw-section sw-industries">
+    <div class="sw-heading">
+      <span class="sw-eyebrow">VIELFÄLTIGE EINSATZBEREICHE</span>
+      <h2>Software verbindet<br><em>Menschen und Branchen.</em></h2>
+      <p>Digitale Anwendungen unterstützen Unternehmen und Organisationen in ganz unterschiedlichen Bereichen.</p>
+    </div>
+
+    <div class="sw-marquee" aria-label="Einsatzbereiche individueller Software">
+      <div class="sw-marquee-row">
+        <div class="sw-marquee-track">
+          <div class="sw-marquee-group">
+            <span>🏢 Unternehmenssoftware</span>
+            <span>📊 Datenanalyse</span>
+            <span>🛍 E-Commerce</span>
+            <span>⚙ Automatisierung</span>
+            <span>💡 Start-ups</span>
+            <span>☁ Cloud Services</span>
+          </div>
+          <div class="sw-marquee-group" aria-hidden="true">
+            <span>🏢 Unternehmenssoftware</span>
+            <span>📊 Datenanalyse</span>
+            <span>🛍 E-Commerce</span>
+            <span>⚙ Automatisierung</span>
+            <span>💡 Start-ups</span>
+            <span>☁ Cloud Services</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sw-marquee-row sw-marquee-reverse">
+        <div class="sw-marquee-track">
+          <div class="sw-marquee-group">
+            <span>⚕ Gesundheit</span>
+            <span>📚 Bildung</span>
+            <span>💼 Beratung</span>
+            <span>🏭 Industrie</span>
+            <span>📱 Technologie</span>
+            <span>🌱 Nachhaltigkeit</span>
+          </div>
+          <div class="sw-marquee-group" aria-hidden="true">
+            <span>⚕ Gesundheit</span>
+            <span>📚 Bildung</span>
+            <span>💼 Beratung</span>
+            <span>🏭 Industrie</span>
+            <span>📱 Technologie</span>
+            <span>🌱 Nachhaltigkeit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GRÜNDE FÜR GRIDMIND
+       ========================================== -->
+
+  <section class="sw-section sw-benefits">
+    <div class="container">
+      <div class="sw-heading">
+        <span class="sw-eyebrow">UNSER ANSPRUCH</span>
+        <h2>Software mit Struktur.<br><em>Entwicklung mit Weitblick.</em></h2>
+      </div>
+
+      <div class="sw-benefits-grid">
+        <article><span>01</span><h3>Individuelle Lösungen</h3><p>Die Anwendung orientiert sich an deinem tatsächlichen Einsatzzweck.</p></article>
+        <article><span>02</span><h3>Klare Architektur</h3><p>Nachvollziehbare Strukturen für Wartbarkeit und Erweiterungen.</p></article>
+        <article><span>03</span><h3>Modernes Design</h3><p>Benutzeroberflächen, die verständlich und angenehm zu bedienen sind.</p></article>
+        <article><span>04</span><h3>Technische Qualität</h3><p>Tests, Sicherheitsaspekte und Performance werden bewusst berücksichtigt.</p></article>
+        <article><span>05</span><h3>Flexible Integration</h3><p>Bestehende Systeme können über geeignete Schnittstellen verbunden werden.</p></article>
+        <article><span>06</span><h3>Weiterentwicklung</h3><p>Eine Lösung kann mit neuen Anforderungen und Ideen wachsen.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ
+       ========================================== -->
+
+  <section class="sw-section sw-faq" id="faq">
+    <div class="container sw-split">
+      <div>
+        <span class="sw-eyebrow">HÄUFIGE FRAGEN</span>
+        <h2>Deine Fragen.<br><em>Unsere Antworten.</em></h2>
+        <p class="sw-lead">
+          Wissenswertes rund um individuelle
+          Softwareentwicklung und digitale Projekte.
+        </p>
+      </div>
+
+      <div class="sw-faq-list">
+        <details>
+          <summary>Was versteht man unter individueller Softwareentwicklung?</summary>
+          <p>Individuelle Software wird auf konkrete Anforderungen zugeschnitten. Funktionen, Benutzeroberflächen und technische Architektur richten sich nach dem jeweiligen Einsatzzweck.</p>
+        </details>
+        <details>
+          <summary>Welche Arten von Software entwickelt Gridmind?</summary>
+          <p>Unser Leistungsbereich umfasst Webanwendungen, Desktopprogramme, Backend-Systeme, APIs und Integrationen. Die passende technische Lösung ergibt sich aus den Anforderungen deines Projekts.</p>
+        </details>
+        <details>
+          <summary>Was kostet eine individuelle Softwarelösung?</summary>
+          <p>Die Kosten hängen von Funktionsumfang, technischer Komplexität, Design und Integrationen ab. Nach einer Anforderungsbesprechung lässt sich ein individuelles Angebot erstellen.</p>
+        </details>
+        <details>
+          <summary>Wie lange dauert ein Softwareprojekt?</summary>
+          <p>Die Dauer richtet sich nach Umfang und Komplexität. Kleine Anwendungen benötigen andere Entwicklungsphasen als umfangreiche Plattformen mit mehreren Schnittstellen.</p>
+        </details>
+        <details>
+          <summary>Können bestehende Systeme integriert werden?</summary>
+          <p>Viele Anwendungen bieten Schnittstellen zur Integration. Welche Verbindung möglich ist, hängt von den verfügbaren APIs, Datenformaten und Berechtigungen ab.</p>
+        </details>
+        <details>
+          <summary>Ist eine spätere Erweiterung möglich?</summary>
+          <p>Ja. Mit einer geeigneten Architektur können Funktionen und Komponenten ergänzt oder angepasst werden.</p>
+        </details>
+        <details>
+          <summary>Ist meine Software sicher?</summary>
+          <p>Sicherheitsanforderungen werden im Projekt berücksichtigt. Dazu gehören beispielsweise Berechtigungskonzepte, sichere Datenverarbeitung und technische Prüfungen. Eine absolute Sicherheit kann nicht garantiert werden.</p>
+        </details>
+        <details>
+          <summary>Kann Gridmind KI in eine Software integrieren?</summary>
+          <p>KI-Funktionen können je nach Einsatzzweck über geeignete Modelle, APIs und Automationslösungen eingebunden werden. Mehr dazu findest du bei unserer KI-Integration.</p>
+        </details>
+        <details>
+          <summary>Wie starte ich ein Projekt?</summary>
+          <p>Beschreibe uns deine Idee über die Kontaktseite. Gemeinsam klären wir Anforderungen, Funktionen und die nächsten Schritte.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FINAL CTA
+       ========================================== -->
+
+  <section class="sw-final">
+    <div class="container sw-final-inner">
+      <span class="sw-eyebrow">GRIDMIND TECHNOLOGIES</span>
+      <h2>Deine Vision verdient<br><em>starke Software.</em></h2>
+      <p>
+        Von der ersten Idee bis zur individuellen Anwendung –
+        bring dein Softwareprojekt mit Gridmind voran.
+      </p>
+      <a href="../unternehmen/kontakt.html"
+         class="btn btn-primary hero-button">
+        Jetzt Softwareprojekt anfragen
+        <span class="arrow-circle" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- ==========================================
+     GEMEINSAMER GRIDMIND FOOTER
+     ========================================== -->
+
+<footer class="site-footer">
+  <svg class="footer-wave" viewBox="0 0 1440 125"
+       preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z"
+          fill="#092f2b"/>
+  </svg>
+
+  <div class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <img src="../assets/logo.png" width="280" height="94"
+               alt="Gridmind Technologies">
+        </a>
+        <p>Wir verbinden Menschen, Ideen und Technologie – von deinem ersten IT-Projekt bis zur digitalen Zukunft.</p>
+        <a href="../unternehmen/kontakt.html" class="footer-contact">
+          Kontakt zu Gridmind ↗
+        </a>
+        <div class="footer-social" aria-label="Weitere Informationen">
+          <a href="../unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+          <a href="../unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+          <a href="../unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Bildungsangebote</h3>
+        <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+        <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+        <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+        <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+        <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Produkte & Services</h3>
+        <a href="../services/websites.html">Website-Erstellung</a>
+        <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+        <a href="../services/ki-integration.html">KI-Integration</a>
+        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        <a href="../produkte/gridphone.html">GridPhone</a>
+        <a href="../produkte/gridtab.html">GridTab</a>
+        <a href="../produkte/gridwatch.html">GridWatch</a>
+        <a href="../produkte/gridmac.html">GridMac</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Unternehmen</h3>
+        <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+        <a href="../unternehmen/team.html">Unser Team</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+        <h3 class="footer-subtitle">Rechtliches</h3>
+        <a href="../rechtliches/impressum.html">Impressum</a>
+        <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+        <a href="../rechtliches/agb.html">AGB</a>
+        <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+        <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+        <a href="../rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <button class="footer-text-button" type="button" data-open-cookie>
+          Cookie-Einstellungen
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Gridmind Technologies</span>
+      <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==========================================
+     COOKIE-DIALOG
+     ========================================== -->
+
+<div class="cookie-overlay" id="cookie-overlay" hidden></div>
+
+<section class="cookie-banner" id="cookie-banner"
+         role="dialog" aria-modal="true"
+         aria-labelledby="cookie-title"
+         aria-describedby="cookie-description"
+         tabindex="-1" hidden>
+  <div class="cookie-heading">
+    <span class="cookie-icon">◈</span>
+    <div>
+      <span class="cookie-brand">GRIDMIND PRIVACY</span>
+      <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+    </div>
+  </div>
+
+  <p id="cookie-description">
+    Wir verwenden notwendige Speichertechnologien für die Funktion
+    dieser Website. Zusätzliche Technologien aktivieren wir nur
+    mit deiner Einwilligung.
+  </p>
+
+  <div class="cookie-details" id="cookie-details" hidden>
+    <label class="cookie-option">
+      <span><strong>Notwendig</strong><small>Grundlegende Funktionen und deine Auswahl.</small></span>
+      <input type="checkbox" checked disabled>
+    </label>
+    <label class="cookie-option">
+      <span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span>
+      <input type="checkbox" id="consent-functional">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span>
+      <input type="checkbox" id="consent-analytics">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span>
+      <input type="checkbox" id="consent-marketing">
+    </label>
+  </div>
+
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept" type="button"
+            id="cookie-accept">Alle akzeptieren</button>
+    <button class="cookie-btn cookie-reject" type="button"
+            id="cookie-reject">Nur notwendige</button>
+    <button class="cookie-btn cookie-settings" type="button"
+            id="cookie-settings">Einstellungen</button>
+    <button class="cookie-btn cookie-save" type="button"
+            id="cookie-save" hidden>Auswahl speichern</button>
+  </div>
+
+  <div class="cookie-legal">
+    <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+    <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+    <a href="../rechtliches/impressum.html">Impressum</a>
+  </div>
+</section>
+
+<!-- ==========================================
+     PAGE JAVASCRIPT
+     Typewriter / Tabs / Timeline
+     ========================================== -->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  /* HERO TYPEWRITER */
+  const output = document.getElementById("sw-typewriter");
+  const phrases = [
+    "begeistert.",
+    "verbindet.",
+    "automatisiert.",
+    "Möglichkeiten schafft."
+  ];
+
+  if (output && !reducedMotion) {
+    let phraseIndex = 0;
+    let charIndex = phrases[0].length;
+    let deleting = true;
+
+    function typeTick() {
+      const current = Array.from(phrases[phraseIndex]);
+      charIndex += deleting ? -1 : 1;
+      charIndex = Math.max(0, Math.min(current.length, charIndex));
+
+      output.textContent = current.slice(0, charIndex).join("");
+
+      let delay = deleting ? 46 : 86;
+
+      if (deleting && charIndex === 0) {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        deleting = false;
+        delay = 350;
+      } else if (!deleting &&
+                 charIndex === Array.from(phrases[phraseIndex]).length) {
+        deleting = true;
+        delay = 1900;
+      }
+
+      window.setTimeout(typeTick, delay);
+    }
+
+    window.setTimeout(typeTick, 1900);
+  }
+
+  /* INTERACTIVE SOFTWARE TABS */
+  const tabs = Array.from(
+    document.querySelectorAll("[data-sw-tab]")
+  );
+
+  function activateTab(index, focus = false) {
+    tabs.forEach((tab, i) => {
+      const active = i === index;
+      const panel = document.getElementById(
+        tab.getAttribute("aria-controls")
+      );
+
+      tab.classList.toggle("is-active", active);
+      tab.setAttribute("aria-selected", String(active));
+      tab.tabIndex = active ? 0 : -1;
+
+      if (panel) {
+        panel.hidden = !active;
+        panel.classList.toggle("is-active", active);
+      }
+    });
+
+    if (focus) tabs[index].focus();
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => activateTab(index));
+
+    tab.addEventListener("keydown", event => {
+      let next = index;
+
+      if (event.key === "ArrowRight") {
+        next = (index + 1) % tabs.length;
+      } else if (event.key === "ArrowLeft") {
+        next = (index - 1 + tabs.length) % tabs.length;
+      } else if (event.key === "Home") {
+        next = 0;
+      } else if (event.key === "End") {
+        next = tabs.length - 1;
+      } else {
+        return;
+      }
+
+      event.preventDefault();
+      activateTab(next, true);
+    });
+  });
+
+  if (tabs.length) activateTab(0);
+
+  /* ANIMATED PROCESS TIMELINE */
+  const roadmap = document.querySelector(".sw-process");
+  const line = document.querySelector(".sw-process-line");
+  const progress = document.querySelector(".sw-process-progress");
+  const phases = Array.from(document.querySelectorAll(".sw-phase"));
+
+  if (!roadmap || !line || !progress) return;
+
+  if (reducedMotion) {
+    phases.forEach(phase => phase.classList.add("is-visible"));
+    progress.style.height = "100%";
+    return;
+  }
+
+  if ("IntersectionObserver" in window) {
+    roadmap.classList.add("sw-process-js");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.05,
+      rootMargin: "0px 0px -5% 0px"
+    });
+
+    phases.forEach(phase => observer.observe(phase));
+  } else {
+    phases.forEach(phase => phase.classList.add("is-visible"));
+  }
+
+  let scheduled = false;
+
+  function updateRoadmap() {
+    const rect = line.getBoundingClientRect();
+    const trigger = window.innerHeight * 0.65;
+
+    const amount = Math.max(
+      0,
+      Math.min(rect.height, trigger - rect.top)
+    );
+
+    progress.style.height = amount + "px";
+    scheduled = false;
+  }
+
+  function requestUpdate() {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(updateRoadmap);
+  }
+
+  window.addEventListener("scroll", requestUpdate, {
+    passive: true
+  });
+  window.addEventListener("resize", requestUpdate);
+  requestUpdate();
+
+});
+</script>
+
+</body>
+</html>

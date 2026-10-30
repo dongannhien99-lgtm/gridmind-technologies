@@ -1,0 +1,1351 @@
+
+/* ==============================================
+   GRIDMIND GRIDMAC – COMPLETE PRODUCT CSS
+   ============================================== */
+
+.gridmind-gridmac {
+  --gm-green: #138a57;
+  --gm-dark: #103d34;
+  --gm-muted: #637b70;
+  --gm-device-color: #548f7e;
+  font-family: "Figtree", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.gridmind-gridmac main { overflow: clip; }
+.gridmind-gridmac .gm-section { padding: 110px 0 120px; }
+
+.gridmind-gridmac .gm-eyebrow {
+  display: block;
+  color: #138a57;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  margin-bottom: 20px;
+}
+
+.gridmind-gridmac .gm-heading {
+  max-width: 820px;
+  margin: 0 auto 62px;
+  text-align: center;
+}
+
+.gridmind-gridmac .gm-heading h2,
+.gridmind-gridmac .gm-section-copy h2 {
+  color: #103d34;
+  font-size: clamp(37px,5vw,64px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  margin: 0 0 23px;
+}
+
+.gridmind-gridmac .gm-heading h2 em,
+.gridmind-gridmac .gm-section-copy h2 em {
+  color: #138a57;
+  font-style: normal;
+}
+
+.gridmind-gridmac .gm-heading p,
+.gridmind-gridmac .gm-section-copy p {
+  color: #637b70;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.gridmind-gridmac .gm-heading p {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.gridmind-gridmac .gm-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.gridmind-gridmac .gm-inline-link {
+  display: inline-flex;
+  color: #138a57;
+  text-decoration: none;
+  font-weight: 850;
+  margin-top: 16px;
+}
+
+.gridmind-gridmac .gm-inline-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* BUTTON */
+
+.gridmind-gridmac .hero-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #138a57;
+  color: white;
+  animation: gmMacButtonBreathe 3.5s ease-in-out infinite;
+}
+
+.gridmind-gridmac .hero-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,transparent 30%,
+    rgba(255,255,255,.42) 50%,transparent 70%
+  );
+  transform: translateX(-130%);
+  animation: gmMacButtonShimmer 3.8s ease-in-out 1s infinite;
+}
+
+.gridmind-gridmac .hero-button > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes gmMacButtonBreathe {
+  0%,100% { box-shadow: 0 14px 35px -10px rgba(19,138,87,.5); }
+  50% {
+    box-shadow:
+      0 18px 45px -10px rgba(19,138,87,.7),
+      0 0 0 6px rgba(19,138,87,.12);
+  }
+}
+
+@keyframes gmMacButtonShimmer {
+  0% { transform: translateX(-130%); }
+  60%,100% { transform: translateX(130%); }
+}
+
+/* PRODUCT SUBNAV */
+
+.gridmind-gridmac .gm-subnav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid #dce9e1;
+}
+
+.gridmind-gridmac .gm-subnav-inner {
+  min-height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.gridmind-gridmac .gm-subnav-inner > strong {
+  font-size: 19px;
+  font-weight: 900;
+  color: #153e33;
+}
+
+.gridmind-gridmac .gm-subnav-inner > div {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.gridmind-gridmac .gm-subnav a {
+  color: #476255;
+  font-size: 13px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.gridmind-gridmac .gm-subnav a:hover { color: #138a57; }
+
+.gridmind-gridmac .gm-subnav .gm-small-buy {
+  background: #138a57;
+  color: white;
+  padding: 9px 17px;
+  border-radius: 30px;
+}
+
+/* HERO */
+
+.gridmind-gridmac .gm-hero {
+  text-align: center;
+  padding: 108px 0 90px;
+  background:
+    radial-gradient(ellipse at 50% 85%,#dff4e7,transparent 63%),
+    linear-gradient(#fff,#f5faf7);
+  overflow: hidden;
+}
+
+.gridmind-gridmac .gm-hero h1 {
+  font-size: clamp(83px,13vw,165px);
+  line-height: .96;
+  letter-spacing: -.085em;
+  font-weight: 900;
+  color: #103d34;
+  margin: 20px 0 26px;
+}
+
+.gridmind-gridmac .gm-hero h1 span { color: #138a57; }
+
+.gridmind-gridmac .gm-hero-slogan {
+  font-size: clamp(25px,4vw,48px);
+  font-weight: 850;
+  letter-spacing: -.04em;
+  color: #183f35;
+  min-height: 1.6em;
+  margin-bottom: 22px;
+}
+
+.gridmind-gridmac #gm-typewriter { color: #138a57; }
+
+.gridmind-gridmac .gm-hero-slogan i {
+  display: inline-block;
+  width: 4px;
+  height: .83em;
+  background: #19b474;
+  margin-left: 4px;
+  animation: gmMacBlink .85s steps(1) infinite;
+}
+
+.gridmind-gridmac .gm-hero-description {
+  max-width: 640px;
+  margin: 0 auto 30px;
+  color: #637c6e;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.gridmind-gridmac .gm-hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+@keyframes gmMacBlink {
+  0%,49% { opacity: 1; }
+  50%,100% { opacity: 0; }
+}
+
+/* ==============================================
+   EINHEITLICHE COMPUTER-KOMPONENTE
+   Nur die Variable --gm-width verändert die Größe.
+   ============================================== */
+
+.gridmind-gridmac .gm-computer {
+  --gm-width: 560px;
+  position: relative;
+  width: var(--gm-width);
+  aspect-ratio: 1.23;
+  flex: none;
+  isolation: isolate;
+}
+
+.gridmind-gridmac .gm-monitor {
+  position: absolute;
+  inset: 0 0 16% 0;
+  overflow: hidden;
+  border-radius: 3.2%;
+  background: var(--gm-device-color);
+  box-shadow:
+    0 35px 60px rgba(11,70,51,.22),
+    inset 0 0 0 2px rgba(0,0,0,.13);
+  transition: background .3s ease;
+}
+
+.gridmind-gridmac .gm-monitor-frame {
+  position: absolute;
+  top: 1.6%;
+  left: 1.6%;
+  width: 96.8%;
+  height: 85%;
+  padding: 2.1%;
+  box-sizing: border-box;
+  border-radius: 2.4%;
+  background: #07191c;
+}
+
+.gridmind-gridmac .gm-webcam {
+  position: absolute;
+  width: 1.5%;
+  aspect-ratio: 1;
+  top: .6%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #253d4c;
+  border: 1px solid #52677a;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.gridmind-gridmac .gm-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 1%;
+  overflow: hidden;
+  background: #082933;
+}
+
+.gridmind-gridmac .gm-wallpaper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg,#081e3b,#12666d,#20ba87);
+}
+
+.gridmind-gridmac .gm-wallpaper-orb {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.gridmind-gridmac .gm-orb-one {
+  width: 90%;
+  aspect-ratio: 1;
+  left: 34%;
+  top: 8%;
+  background: radial-gradient(circle at 36% 30%,#b2f9d7,#2bca9a,#0b7679);
+}
+
+.gridmind-gridmac .gm-orb-two {
+  width: 100%;
+  aspect-ratio: 1;
+  bottom: -96%;
+  left: -22%;
+  background: #075456;
+}
+
+.gridmind-gridmac .gm-orb-three {
+  width: 80%;
+  aspect-ratio: 1;
+  bottom: -75%;
+  right: -30%;
+  background: #063b42;
+}
+
+.gridmind-gridmac .gm-monitor-chin {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 13.5%;
+  display: grid;
+  place-items: center;
+}
+
+.gridmind-gridmac .gm-monitor-chin img {
+  display: block;
+  height: 45%;
+  width: auto;
+  max-width: 12%;
+  object-fit: contain;
+  opacity: .78;
+}
+
+/* Ein Standfuß für alle Ansichten */
+
+.gridmind-gridmac .gm-stand-neck {
+  position: absolute;
+  top: 83%;
+  left: 45%;
+  width: 10%;
+  height: 11%;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,.2),
+    rgba(255,255,255,.22) 32%,
+    transparent 70%
+  ),var(--gm-device-color);
+  clip-path: polygon(12% 0,88% 0,100% 100%,0 100%);
+  z-index: -1;
+}
+
+.gridmind-gridmac .gm-stand-foot {
+  position: absolute;
+  left: 30%;
+  top: 93%;
+  width: 40%;
+  height: 4.5%;
+  background: linear-gradient(180deg,#bdd5c9,var(--gm-device-color));
+  border-radius: 50% 50% 12px 12px;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+}
+
+/* Desktop screenshot – same for all devices */
+
+.gridmind-gridmac .gm-desktop-menubar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  padding: 0 3%;
+  background: rgba(4,20,28,.48);
+  color: white;
+  font-size: calc(var(--gm-width) * .019);
+  z-index: 3;
+}
+
+.gridmind-gridmac .gm-desktop-menubar strong {
+  font-weight: 900;
+}
+
+.gridmind-gridmac .gm-desktop-menubar small {
+  margin-left: auto;
+  font-size: inherit;
+}
+
+.gridmind-gridmac .gm-desktop-window {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 19%;
+  width: 62%;
+  height: 54%;
+  border-radius: 3%;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0,0,0,.3);
+}
+
+.gridmind-gridmac .gm-window-top {
+  height: 18%;
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  padding: 0 5%;
+  background: #f1f5f2;
+  color: #47685a;
+  font-size: calc(var(--gm-width) * .018);
+}
+
+.gridmind-gridmac .gm-window-dots {
+  display: flex;
+  gap: 3px;
+}
+
+.gridmind-gridmac .gm-window-dots i {
+  display: block;
+  width: calc(var(--gm-width) * .013);
+  height: calc(var(--gm-width) * .013);
+  background: #f68178;
+  border-radius: 50%;
+}
+
+.gridmind-gridmac .gm-window-dots i:nth-child(2) { background: #facf72; }
+.gridmind-gridmac .gm-window-dots i:nth-child(3) { background: #6adba2; }
+
+.gridmind-gridmac .gm-window-body {
+  display: flex;
+  height: 82%;
+}
+
+.gridmind-gridmac .gm-window-sidebar {
+  width: 21%;
+  display: grid;
+  align-content: start;
+  gap: 9%;
+  padding: 9%;
+  box-sizing: border-box;
+  background: #e6f1ea;
+}
+
+.gridmind-gridmac .gm-window-sidebar i {
+  display: block;
+  width: 100%;
+  height: calc(var(--gm-width) * .013);
+  background: #a8cdb8;
+  border-radius: 10px;
+}
+
+.gridmind-gridmac .gm-window-content {
+  flex: 1;
+  min-width: 0;
+  padding: 7%;
+  color: #153e33;
+}
+
+.gridmind-gridmac .gm-window-content small {
+  display: block;
+  font-size: calc(var(--gm-width) * .014);
+  letter-spacing: .05em;
+  color: #138a57;
+  font-weight: 900;
+  margin-bottom: 7%;
+}
+
+.gridmind-gridmac .gm-window-content > strong {
+  display: block;
+  font-size: calc(var(--gm-width) * .039);
+  line-height: 1.1;
+}
+
+.gridmind-gridmac .gm-window-cards {
+  display: flex;
+  gap: 6%;
+  margin-top: 10%;
+}
+
+.gridmind-gridmac .gm-window-cards i {
+  display: block;
+  flex: 1;
+  height: calc(var(--gm-width) * .052);
+  background: #d8efe1;
+  border-radius: 5px;
+}
+
+.gridmind-gridmac .gm-desktop-dock {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 3%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: calc(var(--gm-width) * .014);
+  padding: calc(var(--gm-width) * .012);
+  background: rgba(255,255,255,.22);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.gridmind-gridmac .gm-desktop-dock span {
+  display: grid;
+  place-items: center;
+  width: calc(var(--gm-width) * .055);
+  height: calc(var(--gm-width) * .055);
+  border-radius: 7px;
+  background: rgba(255,255,255,.45);
+  color: #0c6f55;
+  font-size: calc(var(--gm-width) * .029);
+  font-weight: 900;
+}
+
+/* ==============================================
+   HERO PRODUCT PLACEMENT
+   ============================================== */
+
+.gridmind-gridmac .gm-hero-stage {
+  position: relative;
+  height: 600px;
+  max-width: 1120px;
+  margin: 60px auto 0;
+  isolation: isolate;
+}
+
+.gridmind-gridmac .gm-stage-glow {
+  position: absolute;
+  inset: 10% 10%;
+  z-index: -1;
+  background: radial-gradient(ellipse,#c0ebd2,transparent 68%);
+  border-radius: 50%;
+}
+
+.gridmind-gridmac .gm-hero-computer {
+  --gm-width: 820px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  animation: gmMacFloat 9s ease-in-out infinite;
+}
+
+.gridmind-gridmac .gm-desk-accessories {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.gridmind-gridmac .gm-keyboard {
+  width: 255px;
+  height: 24px;
+  border-radius: 5px 5px 13px 13px;
+  background: repeating-linear-gradient(
+    90deg,#e3ece6 0 14px,#b5c9bc 15px 16px
+  );
+  border: 4px solid #d8e5dd;
+  box-shadow: 0 12px 15px rgba(0,0,0,.1);
+}
+
+.gridmind-gridmac .gm-mouse {
+  width: 33px;
+  height: 43px;
+  border-radius: 55% 55% 35% 35%;
+  background: #e1eee5;
+  border: 2px solid #b8cec1;
+  transform: rotate(-12deg);
+}
+
+.gridmind-gridmac .gm-stage-caption {
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #86a18e;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: .14em;
+}
+
+@keyframes gmMacFloat {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-11px); }
+}
+
+/* ==============================================
+   HIGHLIGHTS
+   ============================================== */
+
+.gridmind-gridmac .gm-highlights {
+  padding: 45px 0 75px;
+  background: #f5faf7;
+}
+
+.gridmind-gridmac .gm-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 20px;
+}
+
+.gridmind-gridmac .gm-highlight-grid article {
+  padding: 25px;
+  border-top: 1px solid #d7e8dd;
+}
+
+.gridmind-gridmac .gm-highlight-grid article > span {
+  display: block;
+  color: #138a57;
+  font-weight: 900;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.gridmind-gridmac .gm-highlight-grid strong {
+  display: block;
+  color: #143d32;
+  font-size: 31px;
+  letter-spacing: -.035em;
+}
+
+.gridmind-gridmac .gm-highlight-grid p {
+  color: #748e7e;
+  font-size: 14px;
+  margin: 8px 0 0;
+}
+
+/* ==============================================
+   DESIGN
+   ============================================== */
+
+.gridmind-gridmac .gm-design {
+  background: white;
+}
+
+.gridmind-gridmac .gm-design-stage {
+  position: relative;
+  min-height: 490px;
+  display: grid;
+  place-items: center;
+  border-radius: 35px;
+  background: #eaf6ee;
+  overflow: hidden;
+}
+
+.gridmind-gridmac .gm-design-circle {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: #d2ebdb;
+}
+
+.gridmind-gridmac .gm-design-computer {
+  --gm-width: 430px;
+  transform: rotate(-5deg);
+}
+
+.gridmind-gridmac .gm-design-stage .gm-stage-caption {
+  bottom: 17px;
+}
+
+/* ==============================================
+   CONFIGURATOR
+   ============================================== */
+
+.gridmind-gridmac .gm-config-section {
+  background: #f3f8f5;
+}
+
+.gridmind-gridmac .gm-config-layout {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.gridmind-gridmac .gm-config-stage {
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+  border-radius: 35px;
+  background: radial-gradient(circle,#d3f1de,#eaf5ed 70%);
+  overflow: hidden;
+}
+
+.gridmind-gridmac .gm-config-computer {
+  --gm-width: 490px;
+}
+
+.gridmind-gridmac .gm-config-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  color: #799184;
+  margin-bottom: 15px;
+}
+
+.gridmind-gridmac .gm-config h3 {
+  font-size: 32px;
+  color: #163f34;
+  margin: 0 0 25px;
+}
+
+.gridmind-gridmac .gm-swatches {
+  display: flex;
+  gap: 13px;
+}
+
+.gridmind-gridmac .gm-swatch {
+  width: 53px;
+  height: 53px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.gridmind-gridmac .gm-swatch span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #548f7e;
+}
+
+.gridmind-gridmac .gm-swatch[data-gm-color="midnight"] span { background: #334b57; }
+.gridmind-gridmac .gm-swatch[data-gm-color="silver"] span { background: #becbd0; }
+.gridmind-gridmac .gm-swatch[data-gm-color="sky"] span { background: #8aafc9; }
+.gridmind-gridmac .gm-swatch.is-selected { border-color: #138a57; }
+
+.gridmind-gridmac .gm-divider {
+  height: 1px;
+  margin: 33px 0;
+  background: #d6e7db;
+}
+
+.gridmind-gridmac .gm-option-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gridmind-gridmac .gm-option {
+  padding: 14px 18px;
+  border: 2px solid #d5e5db;
+  border-radius: 14px;
+  background: white;
+  color: #355c47;
+  font: 850 14px "Figtree",sans-serif;
+  cursor: pointer;
+}
+
+.gridmind-gridmac .gm-option.is-selected {
+  border-color: #138a57;
+  background: #e3f5e9;
+  color: #0d764b;
+}
+
+.gridmind-gridmac .gm-selection {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #637d6d;
+  margin: 29px 0 25px;
+}
+
+.gridmind-gridmac .gm-selection strong {
+  color: #143f33;
+}
+
+/* ==============================================
+   DISPLAY
+   ============================================== */
+
+.gridmind-gridmac .gm-display {
+  background:
+    radial-gradient(ellipse at 50% 65%,rgba(25,146,102,.22),transparent 65%),
+    #081e2a;
+  color: white;
+  overflow: hidden;
+}
+
+.gridmind-gridmac .gm-heading-dark .gm-eyebrow { color: #9aeac4; }
+.gridmind-gridmac .gm-heading-dark h2 { color: white; }
+.gridmind-gridmac .gm-heading-dark h2 em { color: #9bebc5; }
+.gridmind-gridmac .gm-heading-dark p { color: #bdd9d2; }
+
+.gridmind-gridmac .gm-display-stage {
+  display: flex;
+  justify-content: center;
+  height: 520px;
+  overflow: hidden;
+}
+
+.gridmind-gridmac .gm-display-computer {
+  --gm-width: 720px;
+}
+
+.gridmind-gridmac .gm-display-stats {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.gridmind-gridmac .gm-display-stats article {
+  padding: 22px;
+  border-top: 1px solid rgba(255,255,255,.23);
+}
+
+.gridmind-gridmac .gm-display-stats strong {
+  display: block;
+  font-size: 31px;
+  color: #a0efc9;
+  margin-bottom: 10px;
+}
+
+.gridmind-gridmac .gm-display-stats span {
+  color: #bed7d0;
+  font-size: 14px;
+}
+
+/* ==============================================
+   PERFORMANCE
+   ============================================== */
+
+.gridmind-gridmac .gm-performance {
+  background: #f3f8f5;
+}
+
+.gridmind-gridmac .gm-performance-art {
+  position: relative;
+  min-height: 440px;
+  display: grid;
+  place-items: center;
+  border-radius: 35px;
+  background: radial-gradient(circle,#d2f0de,#e8f5eb);
+  overflow: hidden;
+}
+
+.gridmind-gridmac .gm-chip-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(17,142,89,.1) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(17,142,89,.1) 1px,transparent 1px);
+  background-size: 30px 30px;
+  mask-image: radial-gradient(circle,#000,transparent 75%);
+}
+
+.gridmind-gridmac .gm-chip {
+  position: relative;
+  z-index: 2;
+  width: 225px;
+  height: 225px;
+  border: 12px solid #256c58;
+  border-radius: 38px;
+  background: linear-gradient(135deg,#092e30,#0b7855);
+  box-shadow: 0 28px 65px rgba(10,76,47,.28);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.gridmind-gridmac .gm-chip > span {
+  color: #b8eed1;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.gridmind-gridmac .gm-chip > strong {
+  font-size: 93px;
+  line-height: 1.1;
+  letter-spacing: -.07em;
+}
+
+.gridmind-gridmac .gm-chip > small {
+  color: #b8e4d0;
+  font-size: 9px;
+  letter-spacing: .08em;
+}
+
+/* ==============================================
+   WORKFLOW CARDS
+   ============================================== */
+
+.gridmind-gridmac .gm-workflows { background: white; }
+
+.gridmind-gridmac .gm-workflow-grid,
+.gridmind-gridmac .gm-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 23px;
+}
+
+.gridmind-gridmac .gm-workflow-grid article,
+.gridmind-gridmac .gm-feature-grid article {
+  min-height: 235px;
+  padding: 30px;
+  border: 1px solid #dceae0;
+  border-radius: 25px;
+  background: #f6faf7;
+}
+
+.gridmind-gridmac .gm-workflow-grid article > span,
+.gridmind-gridmac .gm-feature-grid article > span {
+  display: block;
+  font-size: 34px;
+  color: #138a57;
+  margin-bottom: 24px;
+}
+
+.gridmind-gridmac .gm-workflow-grid h3,
+.gridmind-gridmac .gm-feature-grid h3 {
+  font-size: 22px;
+  color: #164336;
+  margin-bottom: 11px;
+}
+
+.gridmind-gridmac .gm-workflow-grid p,
+.gridmind-gridmac .gm-feature-grid p {
+  color: #637d70;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ==============================================
+   PORTS
+   ============================================== */
+
+.gridmind-gridmac .gm-connectivity { background: #f3f8f5; }
+
+.gridmind-gridmac .gm-ports-art {
+  display: grid;
+  place-items: center;
+  position: relative;
+  min-height: 410px;
+  background: #e2f2e8;
+  border-radius: 35px;
+}
+
+.gridmind-gridmac .gm-ports-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 90%;
+  min-height: 110px;
+  padding: 22px;
+  border-radius: 25px;
+  background: var(--gm-device-color);
+  box-shadow: 0 24px 45px rgba(0,0,0,.16);
+}
+
+.gridmind-gridmac .gm-port {
+  display: block;
+  border: 5px solid #213a39;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.8);
+}
+
+.gridmind-gridmac .gm-port-usbc {
+  width: 32px;
+  height: 18px;
+  border-radius: 9px;
+  background: #07171b;
+}
+
+.gridmind-gridmac .gm-port-audio {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #07171b;
+}
+
+.gridmind-gridmac .gm-ports-art > span {
+  position: absolute;
+  bottom: 28px;
+  color: #769888;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .13em;
+}
+
+/* ==============================================
+   FEATURES
+   ============================================== */
+
+.gridmind-gridmac .gm-features { background: white; }
+
+/* ==============================================
+   SPECS
+   ============================================== */
+
+.gridmind-gridmac .gm-specs { background: #f3f8f5; }
+
+.gridmind-gridmac .gm-spec-table {
+  max-width: 940px;
+  margin: 0 auto;
+  border-top: 1px solid #d8e8dd;
+}
+
+.gridmind-gridmac .gm-spec-row {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 15px;
+  padding: 23px 17px;
+  border-bottom: 1px solid #d8e8dd;
+}
+
+.gridmind-gridmac .gm-spec-row strong {
+  color: #174334;
+  font-size: 16px;
+}
+
+.gridmind-gridmac .gm-spec-row span {
+  color: #637b6f;
+  font-size: 16px;
+}
+
+.gridmind-gridmac .gm-spec-note {
+  max-width: 940px;
+  margin: 25px auto 0;
+  color: #82998c;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ==============================================
+   ECOSYSTEM
+   ============================================== */
+
+.gridmind-gridmac .gm-ecosystem { background: white; }
+
+.gridmind-gridmac .gm-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 23px;
+}
+
+.gridmind-gridmac .gm-ecosystem-grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 260px;
+  padding: 34px;
+  border-radius: 25px;
+  border: 1px solid #dceae1;
+  background: #f5faf7;
+  text-decoration: none;
+  transition: transform .25s ease;
+}
+
+.gridmind-gridmac .gm-ecosystem-grid a:hover {
+  transform: translateY(-6px);
+}
+
+.gridmind-gridmac .gm-ecosystem-grid a > span {
+  color: #138a57;
+  font-size: 47px;
+  margin-bottom: 24px;
+}
+
+.gridmind-gridmac .gm-ecosystem-grid h3 {
+  color: #174334;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.gridmind-gridmac .gm-ecosystem-grid p {
+  color: #647d70;
+  font-size: 15px;
+  flex: 1;
+}
+
+.gridmind-gridmac .gm-ecosystem-grid strong {
+  color: #138a57;
+  font-size: 14px;
+}
+
+/* ==============================================
+   FAQ
+   ============================================== */
+
+.gridmind-gridmac .gm-faq { background: #f3f8f5; }
+
+.gridmind-gridmac .gm-faq-list {
+  display: grid;
+  align-content: start;
+}
+
+.gridmind-gridmac .gm-faq-list details {
+  padding: 22px 0;
+  border-bottom: 1px solid #d5e6da;
+}
+
+.gridmind-gridmac .gm-faq-list summary {
+  color: #174535;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 850;
+}
+
+.gridmind-gridmac .gm-faq-list summary:hover {
+  color: #138a57;
+}
+
+.gridmind-gridmac .gm-faq-list details p {
+  color: #637b6e;
+  line-height: 1.75;
+  font-size: 15px;
+  margin: 14px 0 0;
+}
+
+/* ==============================================
+   FINAL CTA
+   ============================================== */
+
+.gridmind-gridmac .gm-final {
+  text-align: center;
+  padding: 120px 20px 130px;
+  color: white;
+  background:
+    radial-gradient(ellipse at 80% 5%,
+      rgba(91,219,159,.22),transparent 55%),
+    linear-gradient(135deg,#092b31,#0d7655);
+}
+
+.gridmind-gridmac .gm-final .gm-eyebrow {
+  color: #a3f0c9;
+}
+
+.gridmind-gridmac .gm-final h2 {
+  color: white;
+  font-size: clamp(44px,6vw,80px);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  margin: 20px auto 25px;
+}
+
+.gridmind-gridmac .gm-final h2 em {
+  font-style: normal;
+  color: #a7f0c8;
+}
+
+.gridmind-gridmac .gm-final p {
+  color: #d9f2e6;
+  font-size: 18px;
+  margin: 0 auto 30px;
+}
+
+/* ==============================================
+   COOKIE BANNER
+   ============================================== */
+
+.gridmind-gridmac .cookie-overlay {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  z-index: 9998;
+}
+
+.gridmind-gridmac .cookie-banner {
+  background: white;
+  color: #173f33;
+  z-index: 9999 !important;
+}
+
+.gridmind-gridmac .cookie-overlay[hidden],
+.gridmind-gridmac .cookie-banner[hidden] {
+  display: none !important;
+}
+
+/* ==============================================
+   RESPONSIVE TABLET
+   ============================================== */
+
+@media (max-width: 1100px) {
+  .gridmind-gridmac .gm-split { gap: 45px; }
+  .gridmind-gridmac .gm-config-layout { gap: 30px; }
+  .gridmind-gridmac .gm-hero-computer { --gm-width: 690px; }
+  .gridmind-gridmac .gm-hero-stage { height: 530px; }
+  .gridmind-gridmac .gm-config-computer { --gm-width: 390px; }
+  .gridmind-gridmac .gm-design-computer { --gm-width: 370px; }
+}
+
+@media (max-width: 800px) {
+  .gridmind-gridmac .gm-section { padding: 80px 0 90px; }
+
+  .gridmind-gridmac .gm-split,
+  .gridmind-gridmac .gm-config-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-gridmac .gm-subnav-inner > div { gap: 14px; }
+  .gridmind-gridmac .gm-subnav a:not(.gm-small-buy) { display: none; }
+
+  .gridmind-gridmac .gm-hero-computer { --gm-width: 560px; }
+  .gridmind-gridmac .gm-hero-stage { height: 450px; }
+
+  .gridmind-gridmac .gm-config-stage { min-height: 460px; }
+  .gridmind-gridmac .gm-config-computer { --gm-width: 480px; }
+  .gridmind-gridmac .gm-design-computer { --gm-width: 480px; }
+
+  .gridmind-gridmac .gm-highlight-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .gridmind-gridmac .gm-feature-grid,
+  .gridmind-gridmac .gm-workflow-grid,
+  .gridmind-gridmac .gm-ecosystem-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .gridmind-gridmac .gm-display-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==============================================
+   MOBILE
+   ============================================== */
+
+@media (max-width: 600px) {
+  .gridmind-gridmac .gm-hero { padding-top: 75px; }
+
+  .gridmind-gridmac .gm-hero h1 {
+    font-size: clamp(71px,16vw,104px);
+  }
+
+  .gridmind-gridmac .gm-hero-slogan {
+    font-size: 25px;
+    min-height: 2.5em;
+  }
+
+  .gridmind-gridmac .gm-hero-description {
+    font-size: 16px;
+  }
+
+  .gridmind-gridmac .gm-hero-stage {
+    height: 300px;
+    margin-top: 40px;
+  }
+
+  .gridmind-gridmac .gm-hero-computer {
+    --gm-width: min(94vw,390px);
+  }
+
+  .gridmind-gridmac .gm-desk-accessories { bottom: 17px; gap: 12px; }
+  .gridmind-gridmac .gm-keyboard { width: 155px; height: 15px; }
+  .gridmind-gridmac .gm-mouse { width: 20px; height: 25px; }
+  .gridmind-gridmac .gm-stage-caption { font-size: 8px; }
+
+  .gridmind-gridmac .gm-highlight-grid { gap: 6px; }
+  .gridmind-gridmac .gm-highlight-grid article { padding: 18px 7px; }
+  .gridmind-gridmac .gm-highlight-grid strong { font-size: 23px; }
+
+  .gridmind-gridmac .gm-design-stage,
+  .gridmind-gridmac .gm-config-stage {
+    min-height: 335px;
+  }
+
+  .gridmind-gridmac .gm-design-circle {
+    width: 310px;
+    height: 310px;
+  }
+
+  .gridmind-gridmac .gm-design-computer,
+  .gridmind-gridmac .gm-config-computer {
+    --gm-width: min(85vw,355px);
+  }
+
+  .gridmind-gridmac .gm-display-stage {
+    height: 300px;
+  }
+
+  .gridmind-gridmac .gm-display-computer {
+    --gm-width: min(92vw,400px);
+  }
+
+  .gridmind-gridmac .gm-performance-art,
+  .gridmind-gridmac .gm-ports-art {
+    min-height: 350px;
+  }
+
+  .gridmind-gridmac .gm-chip {
+    width: 185px;
+    height: 185px;
+  }
+
+  .gridmind-gridmac .gm-chip > strong {
+    font-size: 74px;
+  }
+
+  .gridmind-gridmac .gm-workflow-grid,
+  .gridmind-gridmac .gm-feature-grid,
+  .gridmind-gridmac .gm-ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-gridmac .gm-spec-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 19px 10px;
+  }
+
+  .gridmind-gridmac .gm-spec-row span {
+    font-size: 14px;
+  }
+
+  .gridmind-gridmac .gm-ports-panel { gap: 9px; }
+  .gridmind-gridmac .gm-port-usbc { width: 25px; height: 15px; }
+}
+
+/* ==============================================
+   REDUCED MOTION
+   ============================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .gridmind-gridmac .hero-button,
+  .gridmind-gridmac .hero-button::before,
+  .gridmind-gridmac .gm-hero-slogan i,
+  .gridmind-gridmac .gm-hero-computer {
+    animation: none !important;
+  }
+}

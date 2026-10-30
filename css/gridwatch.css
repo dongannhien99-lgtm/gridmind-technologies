@@ -1,0 +1,1361 @@
+
+/* ============================================
+   GRIDMIND GRIDWATCH
+   COMPLETE PRODUCT STYLESHEET
+   ============================================ */
+
+.gridmind-gridwatch {
+  --gw-green: #138a57;
+  --gw-dark: #103d34;
+  --gw-muted: #637b6e;
+  --gw-strap-color: #367b66;
+  --gw-case-color: #3e7465;
+
+  font-family: "Figtree", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.gridmind-gridwatch main {
+  overflow: clip;
+}
+
+.gridmind-gridwatch .gw-section {
+  padding: 112px 0 122px;
+}
+
+.gridmind-gridwatch .gw-eyebrow {
+  display: block;
+  color: #138a57;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  margin-bottom: 20px;
+}
+
+.gridmind-gridwatch .gw-heading {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 65px;
+}
+
+.gridmind-gridwatch .gw-heading h2,
+.gridmind-gridwatch .gw-section-copy h2 {
+  color: #103d34;
+  font-size: clamp(37px, 5vw, 65px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  margin: 0 0 24px;
+}
+
+.gridmind-gridwatch .gw-heading h2 em,
+.gridmind-gridwatch .gw-section-copy h2 em {
+  color: #138a57;
+  font-style: normal;
+}
+
+.gridmind-gridwatch .gw-heading p,
+.gridmind-gridwatch .gw-section-copy p {
+  color: #637b6e;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.gridmind-gridwatch .gw-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.gridmind-gridwatch .gw-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.gridmind-gridwatch .gw-inline-link {
+  color: #138a57;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.gridmind-gridwatch .gw-inline-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* ============================================
+   GRIDMIND BUTTON ANIMATION
+   ============================================ */
+
+.gridmind-gridwatch .hero-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #138a57;
+  color: white;
+  animation: gwButtonBreathe 3.5s ease-in-out infinite;
+}
+
+.gridmind-gridwatch .hero-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    rgba(255,255,255,.42) 50%,
+    transparent 70%
+  );
+  transform: translateX(-130%);
+  animation: gwButtonShimmer 3.8s ease-in-out 1s infinite;
+}
+
+.gridmind-gridwatch .hero-button > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes gwButtonBreathe {
+  0%, 100% {
+    box-shadow: 0 14px 35px -10px rgba(19,138,87,.5);
+  }
+  50% {
+    box-shadow:
+      0 18px 45px -10px rgba(19,138,87,.7),
+      0 0 0 6px rgba(19,138,87,.12);
+  }
+}
+
+@keyframes gwButtonShimmer {
+  0% { transform: translateX(-130%); }
+  60%, 100% { transform: translateX(130%); }
+}
+
+/* ============================================
+   PRODUCT SUBNAV
+   ============================================ */
+
+.gridmind-gridwatch .gw-subnav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid #dce9e1;
+  backdrop-filter: blur(17px);
+}
+
+.gridmind-gridwatch .gw-subnav-inner {
+  min-height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.gridmind-gridwatch .gw-subnav-inner > strong {
+  color: #143d33;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.gridmind-gridwatch .gw-subnav-inner > div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.gridmind-gridwatch .gw-subnav a {
+  color: #436253;
+  font-size: 13px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.gridmind-gridwatch .gw-subnav a:hover {
+  color: #138a57;
+}
+
+.gridmind-gridwatch .gw-subnav .gw-small-buy {
+  padding: 9px 18px;
+  border-radius: 30px;
+  background: #138a57;
+  color: white;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+
+.gridmind-gridwatch .gw-hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  padding: 105px 0 80px;
+  background:
+    radial-gradient(ellipse at 50% 68%, #d9f4e4, transparent 62%),
+    linear-gradient(#fff, #f4faf6);
+}
+
+.gridmind-gridwatch .gw-hero h1 {
+  color: #103d34;
+  font-size: clamp(75px, 12vw, 155px);
+  font-weight: 900;
+  line-height: .96;
+  letter-spacing: -.085em;
+  margin: 18px 0 25px;
+}
+
+.gridmind-gridwatch .gw-hero h1 span {
+  color: #138a57;
+}
+
+.gridmind-gridwatch .gw-hero-slogan {
+  color: #174337;
+  font-size: clamp(25px, 4vw, 48px);
+  font-weight: 850;
+  letter-spacing: -.035em;
+  min-height: 1.5em;
+  margin-bottom: 22px;
+}
+
+.gridmind-gridwatch #gw-typewriter {
+  color: #138a57;
+}
+
+.gridmind-gridwatch .gw-hero-slogan i {
+  display: inline-block;
+  width: 4px;
+  height: .83em;
+  margin-left: 5px;
+  background: #1aaf72;
+  animation: gwCursorBlink .85s steps(1) infinite;
+}
+
+.gridmind-gridwatch .gw-hero-description {
+  max-width: 620px;
+  margin: 0 auto 29px;
+  color: #657c70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.gridmind-gridwatch .gw-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gwCursorBlink {
+  0%,49% { opacity: 1; }
+  50%,100% { opacity: 0; }
+}
+
+/* ============================================
+   EINHEITLICHE GRIDWATCH-KOMPONENTE
+   Alle Uhren nutzen identischen HTML-Aufbau.
+   Änderungen hier wirken überall.
+   ============================================ */
+
+.gridmind-gridwatch .gw-watch {
+  --gw-width: 260px;
+
+  position: relative;
+  flex: none;
+  width: var(--gw-width);
+  height: calc(var(--gw-width) * 1.55);
+  isolation: isolate;
+}
+
+/* ARMBAND OBEN UND UNTEN */
+
+.gridmind-gridwatch .gw-strap {
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.16),
+      rgba(255,255,255,.15) 18%,
+      transparent 50%,
+      rgba(0,0,0,.13) 100%
+    ),
+    var(--gw-strap-color);
+
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.12);
+  transition: background .3s ease;
+}
+
+.gridmind-gridwatch .gw-strap-top {
+  z-index: 0;
+  top: 0;
+  height: 37%;
+  border-radius: 24% 24% 13% 13% / 20% 20% 8% 8%;
+}
+
+.gridmind-gridwatch .gw-strap-bottom {
+  z-index: 0;
+  bottom: 0;
+  height: 39%;
+  border-radius: 12% 12% 27% 27% / 8% 8% 23% 23%;
+}
+
+.gridmind-gridwatch .gw-strap-detail {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  width: 44%;
+  height: 4%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background: rgba(0,0,0,.13);
+}
+
+.gridmind-gridwatch .gw-strap-holes {
+  position: absolute;
+  bottom: 13%;
+  left: 50%;
+  display: grid;
+  gap: calc(var(--gw-width) * .027);
+  transform: translateX(-50%);
+}
+
+.gridmind-gridwatch .gw-strap-holes i {
+  display: block;
+  width: calc(var(--gw-width) * .038);
+  height: calc(var(--gw-width) * .023);
+  border-radius: 50%;
+  background: rgba(8,37,35,.35);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+}
+
+/* GEHÄUSE */
+
+.gridmind-gridwatch .gw-case {
+  position: absolute;
+  z-index: 2;
+  left: 4%;
+  right: 4%;
+  top: 23%;
+  height: 54%;
+
+  padding: 5.5%;
+  box-sizing: border-box;
+
+  border-radius: 27%;
+  border: calc(var(--gw-width) * .025) solid rgba(10,47,42,.6);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.32),
+      transparent 35%,
+      rgba(0,0,0,.16)
+    ),
+    var(--gw-case-color);
+
+  box-shadow:
+    inset 0 2px 0 rgba(255,255,255,.35),
+    0 25px 43px rgba(10,57,43,.3);
+  transition: background .3s ease;
+}
+
+.gridmind-gridwatch .gw-crown {
+  position: absolute;
+  z-index: -1;
+  right: -9%;
+  top: 26%;
+  width: 10%;
+  height: 16%;
+  border-radius: 35%;
+  border: 2px solid rgba(0,0,0,.25);
+  background: var(--gw-case-color);
+  box-shadow: 3px 2px 5px rgba(0,0,0,.2);
+}
+
+.gridmind-gridwatch .gw-side-button {
+  position: absolute;
+  z-index: -1;
+  right: -6.5%;
+  top: 53%;
+  width: 6%;
+  height: 13%;
+  border-radius: 30%;
+  background: var(--gw-case-color);
+}
+
+/* DISPLAY */
+
+.gridmind-gridwatch .gw-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 23%;
+  background: #061b23;
+  border: 2px solid rgba(3,16,20,.8);
+  box-shadow: inset 0 0 16px rgba(0,0,0,.8);
+}
+
+.gridmind-gridwatch .gw-face {
+  position: absolute;
+  inset: 0;
+  padding: 10%;
+  color: white;
+  background:
+    radial-gradient(circle at 65% 30%, rgba(61,209,153,.16),transparent 50%),
+    linear-gradient(145deg,#0a2130,#063c40,#07282d);
+}
+
+.gridmind-gridwatch .gw-face-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  color: #bcddcf;
+  font-size: calc(var(--gw-width) * .034);
+  letter-spacing: .08em;
+  font-weight: 900;
+}
+
+.gridmind-gridwatch .gw-face-dot {
+  color: #69dfaa;
+  font-size: calc(var(--gw-width) * .046);
+}
+
+.gridmind-gridwatch .gw-face-time {
+  margin-top: 19%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.gridmind-gridwatch .gw-face-time strong {
+  color: #fff;
+  font-size: calc(var(--gw-width) * .17);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.07em;
+}
+
+.gridmind-gridwatch .gw-face-time > span {
+  color: #9ce8c0;
+  font-size: calc(var(--gw-width) * .04);
+  font-weight: 850;
+}
+
+.gridmind-gridwatch .gw-face-rings {
+  position: relative;
+  width: 62%;
+  height: 27%;
+  margin: 9% auto 0;
+}
+
+.gridmind-gridwatch .gw-face-rings i {
+  position: absolute;
+  top: 0;
+  width: 42%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: calc(var(--gw-width) * .017) solid #5be5ad;
+  box-sizing: border-box;
+}
+
+.gridmind-gridwatch .gw-face-rings i:nth-child(1) {
+  left: 0;
+  border-right-color: rgba(91,229,173,.16);
+}
+
+.gridmind-gridwatch .gw-face-rings i:nth-child(2) {
+  left: 29%;
+  border-color: #8ed7f1;
+  border-bottom-color: rgba(142,215,241,.15);
+}
+
+.gridmind-gridwatch .gw-face-rings i:nth-child(3) {
+  right: 0;
+  border-color: #c5acfa;
+  border-left-color: rgba(197,172,250,.18);
+}
+
+.gridmind-gridwatch .gw-face-bottom {
+  position: absolute;
+  left: 11%;
+  right: 11%;
+  bottom: 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gridmind-gridwatch .gw-face-bottom img {
+  width: 17%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.gridmind-gridwatch .gw-face-bottom > span {
+  color: #a5cfc0;
+  font-size: calc(var(--gw-width) * .027);
+  font-weight: 850;
+  letter-spacing: .045em;
+}
+
+/* ============================================
+   HERO WATCH
+   ============================================ */
+
+.gridmind-gridwatch .gw-hero-stage {
+  position: relative;
+  height: 610px;
+  max-width: 850px;
+  margin: 45px auto 0;
+  isolation: isolate;
+}
+
+.gridmind-gridwatch .gw-stage-glow {
+  position: absolute;
+  inset: 5% 12%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(ellipse,#c5edd6,transparent 69%);
+}
+
+.gridmind-gridwatch .gw-hero-watch {
+  --gw-width: 320px;
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  transform: translateX(-50%) rotate(-10deg);
+  animation: gwHeroFloat 8s ease-in-out infinite;
+}
+
+.gridmind-gridwatch .gw-stage-caption {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #88a694;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: .14em;
+}
+
+@keyframes gwHeroFloat {
+  0%,100% {
+    transform: translateX(-50%) rotate(-10deg) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) rotate(-10deg) translateY(-14px);
+  }
+}
+
+/* ============================================
+   HIGHLIGHTS
+   ============================================ */
+
+.gridmind-gridwatch .gw-highlights {
+  background: #f4f9f6;
+  padding: 40px 0 70px;
+}
+
+.gridmind-gridwatch .gw-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 20px;
+}
+
+.gridmind-gridwatch .gw-highlight-grid article {
+  padding: 25px;
+  border-top: 1px solid #d4e6db;
+}
+
+.gridmind-gridwatch .gw-highlight-grid article > span {
+  display: block;
+  color: #138a57;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 17px;
+}
+
+.gridmind-gridwatch .gw-highlight-grid strong {
+  display: block;
+  color: #143e32;
+  font-size: 30px;
+  letter-spacing: -.035em;
+}
+
+.gridmind-gridwatch .gw-highlight-grid p {
+  font-size: 14px;
+  color: #748c7e;
+  margin: 9px 0 0;
+}
+
+/* ============================================
+   DESIGN
+   ============================================ */
+
+.gridmind-gridwatch .gw-design {
+  background: white;
+}
+
+.gridmind-gridwatch .gw-design-stage {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  min-height: 550px;
+  border-radius: 35px;
+  background: #e9f6ee;
+}
+
+.gridmind-gridwatch .gw-design-circle {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background: #ccebd9;
+}
+
+.gridmind-gridwatch .gw-design-watch {
+  --gw-width: 260px;
+  transform: rotate(10deg);
+}
+
+.gridmind-gridwatch .gw-design-stage .gw-stage-caption {
+  bottom: 20px;
+}
+
+/* ============================================
+   COLOR CONFIGURATOR
+   ============================================ */
+
+.gridmind-gridwatch .gw-colors {
+  background: #f3f8f5;
+}
+
+.gridmind-gridwatch .gw-config-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.gridmind-gridwatch .gw-config-stage {
+  min-height: 550px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 35px;
+  background: radial-gradient(circle,#d5f1e0,#e8f3ec 72%);
+}
+
+.gridmind-gridwatch .gw-config-watch {
+  --gw-width: 260px;
+  transform: rotate(-8deg);
+  transition: width .3s ease,height .3s ease;
+}
+
+.gridmind-gridwatch.gw-large-selected .gw-config-watch {
+  --gw-width: 282px;
+}
+
+.gridmind-gridwatch .gw-config-label {
+  display: block;
+  color: #7a9183;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  margin-bottom: 16px;
+}
+
+.gridmind-gridwatch .gw-config h3 {
+  color: #164333;
+  font-size: 33px;
+  margin: 0 0 23px;
+}
+
+.gridmind-gridwatch .gw-option-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.gridmind-gridwatch .gw-option {
+  padding: 15px 20px;
+  background: white;
+  border: 2px solid #d6e7dc;
+  border-radius: 14px;
+  font: 850 14px "Figtree",sans-serif;
+  color: #355b47;
+  cursor: pointer;
+}
+
+.gridmind-gridwatch .gw-option.is-selected {
+  background: #e4f5e9;
+  border-color: #138a57;
+  color: #0e7850;
+}
+
+.gridmind-gridwatch .gw-swatches {
+  display: flex;
+  gap: 13px;
+}
+
+.gridmind-gridwatch .gw-swatch {
+  width: 54px;
+  height: 54px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.gridmind-gridwatch .gw-swatch > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #367b66;
+}
+
+.gridmind-gridwatch .gw-swatch[data-gw-color="midnight"] span {
+  background: #273f4b;
+}
+
+.gridmind-gridwatch .gw-swatch[data-gw-color="sand"] span {
+  background: #c7bda7;
+}
+
+.gridmind-gridwatch .gw-swatch[data-gw-color="sky"] span {
+  background: #87b6d4;
+}
+
+.gridmind-gridwatch .gw-swatch.is-selected {
+  border-color: #138a57;
+}
+
+.gridmind-gridwatch .gw-divider {
+  height: 1px;
+  background: #d5e6d9;
+  margin: 34px 0;
+}
+
+.gridmind-gridwatch .gw-selection {
+  color: #657c6e;
+  margin: 28px 0 24px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.gridmind-gridwatch .gw-selection strong {
+  color: #154333;
+}
+
+/* ============================================
+   DARK DISPLAY SECTION
+   ============================================ */
+
+.gridmind-gridwatch .gw-display {
+  background:
+    radial-gradient(ellipse at 50% 70%,
+      rgba(35,145,111,.23),transparent 60%),
+    #081e29;
+  color: white;
+  overflow: hidden;
+}
+
+.gridmind-gridwatch .gw-heading-dark .gw-eyebrow {
+  color: #99e9c0;
+}
+
+.gridmind-gridwatch .gw-heading-dark h2 {
+  color: white;
+}
+
+.gridmind-gridwatch .gw-heading-dark h2 em {
+  color: #91ebbd;
+}
+
+.gridmind-gridwatch .gw-heading-dark p {
+  color: #bdd8d2;
+}
+
+.gridmind-gridwatch .gw-display-stage {
+  height: 550px;
+  display: grid;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.gridmind-gridwatch .gw-display-watch {
+  --gw-width: 305px;
+}
+
+.gridmind-gridwatch .gw-display-stats {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 25px;
+  margin-top: 43px;
+}
+
+.gridmind-gridwatch .gw-display-stats article {
+  padding: 22px;
+  border-top: 1px solid rgba(255,255,255,.23);
+}
+
+.gridmind-gridwatch .gw-display-stats strong {
+  display: block;
+  color: #96edc2;
+  font-size: 31px;
+  margin-bottom: 10px;
+}
+
+.gridmind-gridwatch .gw-display-stats span {
+  color: #bdd6d0;
+  font-size: 14px;
+}
+
+/* ============================================
+   FITNESS
+   ============================================ */
+
+.gridmind-gridwatch .gw-fitness {
+  background: white;
+}
+
+.gridmind-gridwatch .gw-fitness-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 470px;
+  border-radius: 35px;
+  background: #eaf7ee;
+}
+
+.gridmind-gridwatch .gw-activity-circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  padding: 24px;
+  background: conic-gradient(
+    #138a57 0 76%,
+    #caebd8 76% 100%
+  );
+  box-shadow: 0 25px 50px rgba(13,88,52,.14);
+}
+
+.gridmind-gridwatch .gw-activity-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.gridmind-gridwatch .gw-activity-inner small {
+  color: #7f9987;
+  font-size: 11px;
+  letter-spacing: .09em;
+  font-weight: 900;
+}
+
+.gridmind-gridwatch .gw-activity-inner strong {
+  color: #124536;
+  font-size: 48px;
+  margin: 12px 0;
+}
+
+.gridmind-gridwatch .gw-activity-inner span {
+  color: #138a57;
+  font-size: 13px;
+}
+
+.gridmind-gridwatch .gw-fitness-tags {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  bottom: 25px;
+}
+
+.gridmind-gridwatch .gw-fitness-tags span {
+  padding: 9px 13px;
+  background: white;
+  color: #168153;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+/* ============================================
+   LIFESTYLE FEATURES
+   ============================================ */
+
+.gridmind-gridwatch .gw-lifestyle {
+  background: #f3f8f5;
+}
+
+.gridmind-gridwatch .gw-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 23px;
+}
+
+.gridmind-gridwatch .gw-feature-grid article {
+  min-height: 245px;
+  background: white;
+  border: 1px solid #deebe1;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.gridmind-gridwatch .gw-feature-grid article > span {
+  display: block;
+  color: #138a57;
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+.gridmind-gridwatch .gw-feature-grid h3 {
+  color: #164336;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.gridmind-gridwatch .gw-feature-grid p {
+  color: #657c70;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   BATTERY
+   ============================================ */
+
+.gridmind-gridwatch .gw-battery {
+  background: white;
+}
+
+.gridmind-gridwatch .gw-battery-visual {
+  min-height: 440px;
+  display: grid;
+  place-items: center;
+  border-radius: 35px;
+  background: #eaf7ef;
+}
+
+.gridmind-gridwatch .gw-battery-ring {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #138a57 0 84%,
+    #c7ead5 84% 100%
+  );
+  padding: 25px;
+}
+
+.gridmind-gridwatch .gw-battery-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+}
+
+.gridmind-gridwatch .gw-battery-inner > span {
+  color: #138a57;
+  font-size: 36px;
+}
+
+.gridmind-gridwatch .gw-battery-inner strong {
+  color: #154636;
+  font-size: 54px;
+  margin: 10px 0;
+}
+
+.gridmind-gridwatch .gw-battery-inner small {
+  color: #799382;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+/* ============================================
+   SPECIFICATIONS
+   ============================================ */
+
+.gridmind-gridwatch .gw-specs {
+  background: #f3f8f5;
+}
+
+.gridmind-gridwatch .gw-spec-table {
+  max-width: 940px;
+  margin: 0 auto;
+  border-top: 1px solid #d9e9de;
+}
+
+.gridmind-gridwatch .gw-spec-row {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 15px;
+  padding: 24px 18px;
+  border-bottom: 1px solid #d9e9de;
+}
+
+.gridmind-gridwatch .gw-spec-row strong {
+  color: #154335;
+  font-size: 16px;
+}
+
+.gridmind-gridwatch .gw-spec-row span {
+  color: #617b6e;
+  font-size: 16px;
+}
+
+.gridmind-gridwatch .gw-spec-note {
+  max-width: 940px;
+  margin: 25px auto 0;
+  color: #829889;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   ECOSYSTEM
+   ============================================ */
+
+.gridmind-gridwatch .gw-ecosystem {
+  background: white;
+}
+
+.gridmind-gridwatch .gw-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 23px;
+}
+
+.gridmind-gridwatch .gw-ecosystem-grid a {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 34px;
+  border-radius: 25px;
+  border: 1px solid #dceae1;
+  background: #f6faf7;
+  text-decoration: none;
+  transition: transform .25s ease;
+}
+
+.gridmind-gridwatch .gw-ecosystem-grid a:hover {
+  transform: translateY(-6px);
+}
+
+.gridmind-gridwatch .gw-ecosystem-grid a > span {
+  color: #138a57;
+  font-size: 46px;
+  margin-bottom: 25px;
+}
+
+.gridmind-gridwatch .gw-ecosystem-grid h3 {
+  color: #164335;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.gridmind-gridwatch .gw-ecosystem-grid p {
+  color: #647d70;
+  font-size: 15px;
+  flex: 1;
+}
+
+.gridmind-gridwatch .gw-ecosystem-grid strong {
+  color: #138a57;
+  font-size: 14px;
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+
+.gridmind-gridwatch .gw-faq {
+  background: #f3f8f5;
+}
+
+.gridmind-gridwatch .gw-faq-list {
+  display: grid;
+  align-content: start;
+}
+
+.gridmind-gridwatch .gw-faq-list details {
+  padding: 22px 0;
+  border-bottom: 1px solid #d7e7dd;
+}
+
+.gridmind-gridwatch .gw-faq-list summary {
+  cursor: pointer;
+  color: #174636;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 850;
+}
+
+.gridmind-gridwatch .gw-faq-list summary:hover {
+  color: #138a57;
+}
+
+.gridmind-gridwatch .gw-faq-list details p {
+  color: #647c70;
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 14px 0 0;
+}
+
+/* ============================================
+   FINAL CTA
+   ============================================ */
+
+.gridmind-gridwatch .gw-final {
+  text-align: center;
+  color: white;
+  padding: 120px 20px 130px;
+  background:
+    radial-gradient(
+      ellipse at 80% 10%,
+      rgba(104,226,166,.2),
+      transparent 55%
+    ),
+    linear-gradient(135deg,#082b30,#0c7153);
+}
+
+.gridmind-gridwatch .gw-final .gw-eyebrow {
+  color: #a6efc7;
+}
+
+.gridmind-gridwatch .gw-final h2 {
+  color: white;
+  font-size: clamp(44px,6vw,82px);
+  line-height: 1.07;
+  letter-spacing: -.055em;
+  margin: 20px auto 25px;
+}
+
+.gridmind-gridwatch .gw-final h2 em {
+  color: #a4f1c8;
+  font-style: normal;
+}
+
+.gridmind-gridwatch .gw-final p {
+  color: #d6f0e3;
+  font-size: 18px;
+  margin: 0 auto 30px;
+}
+
+/* ============================================
+   COOKIE BANNER
+   ============================================ */
+
+.gridmind-gridwatch .cookie-overlay {
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  z-index: 9998;
+}
+
+.gridmind-gridwatch .cookie-banner {
+  background: white;
+  color: #173e33;
+  z-index: 9999 !important;
+}
+
+.gridmind-gridwatch .cookie-overlay[hidden],
+.gridmind-gridwatch .cookie-banner[hidden] {
+  display: none !important;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1050px) {
+  .gridmind-gridwatch .gw-split {
+    gap: 45px;
+  }
+
+  .gridmind-gridwatch .gw-config-layout {
+    gap: 35px;
+  }
+
+  .gridmind-gridwatch .gw-design-watch,
+  .gridmind-gridwatch .gw-config-watch {
+    --gw-width: 230px;
+  }
+}
+
+@media (max-width: 800px) {
+  .gridmind-gridwatch .gw-section {
+    padding: 80px 0 90px;
+  }
+
+  .gridmind-gridwatch .gw-split,
+  .gridmind-gridwatch .gw-config-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-gridwatch .gw-subnav-inner > div {
+    gap: 14px;
+  }
+
+  .gridmind-gridwatch .gw-subnav a:not(.gw-small-buy) {
+    display: none;
+  }
+
+  .gridmind-gridwatch .gw-highlight-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .gridmind-gridwatch .gw-feature-grid,
+  .gridmind-gridwatch .gw-ecosystem-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .gridmind-gridwatch .gw-display-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-gridwatch .gw-design-stage,
+  .gridmind-gridwatch .gw-config-stage {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gridmind-gridwatch .gw-hero {
+    padding: 75px 0 75px;
+  }
+
+  .gridmind-gridwatch .gw-hero h1 {
+    font-size: clamp(60px,14vw,95px);
+  }
+
+  .gridmind-gridwatch .gw-hero-slogan {
+    font-size: 25px;
+    min-height: 2.5em;
+  }
+
+  .gridmind-gridwatch .gw-hero-description {
+    font-size: 16px;
+  }
+
+  .gridmind-gridwatch .gw-hero-stage {
+    height: 455px;
+  }
+
+  .gridmind-gridwatch .gw-hero-watch {
+    --gw-width: 225px;
+    top: 4%;
+  }
+
+  .gridmind-gridwatch .gw-highlight-grid {
+    gap: 7px;
+  }
+
+  .gridmind-gridwatch .gw-highlight-grid article {
+    padding: 17px 8px;
+  }
+
+  .gridmind-gridwatch .gw-highlight-grid strong {
+    font-size: 22px;
+  }
+
+  .gridmind-gridwatch .gw-design-stage,
+  .gridmind-gridwatch .gw-config-stage {
+    min-height: 430px;
+  }
+
+  .gridmind-gridwatch .gw-design-circle {
+    width: 320px;
+    height: 320px;
+  }
+
+  .gridmind-gridwatch .gw-design-watch,
+  .gridmind-gridwatch .gw-config-watch {
+    --gw-width: 210px;
+  }
+
+  .gridmind-gridwatch.gw-large-selected .gw-config-watch {
+    --gw-width: 227px;
+  }
+
+  .gridmind-gridwatch .gw-display-stage {
+    height: 425px;
+  }
+
+  .gridmind-gridwatch .gw-display-watch {
+    --gw-width: 225px;
+  }
+
+  .gridmind-gridwatch .gw-fitness-visual,
+  .gridmind-gridwatch .gw-battery-visual {
+    min-height: 365px;
+  }
+
+  .gridmind-gridwatch .gw-activity-circle,
+  .gridmind-gridwatch .gw-battery-ring {
+    width: 225px;
+    height: 225px;
+    padding: 19px;
+  }
+
+  .gridmind-gridwatch .gw-activity-inner strong {
+    font-size: 36px;
+  }
+
+  .gridmind-gridwatch .gw-battery-inner strong {
+    font-size: 40px;
+  }
+
+  .gridmind-gridwatch .gw-feature-grid,
+  .gridmind-gridwatch .gw-ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-gridwatch .gw-spec-row {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 19px 10px;
+  }
+
+  .gridmind-gridwatch .gw-spec-row span {
+    font-size: 14px;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .gridmind-gridwatch .hero-button,
+  .gridmind-gridwatch .hero-button::before,
+  .gridmind-gridwatch .gw-hero-slogan i,
+  .gridmind-gridwatch .gw-hero-watch {
+    animation: none !important;
+  }
+}

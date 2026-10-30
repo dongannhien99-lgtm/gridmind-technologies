@@ -1,0 +1,2099 @@
+
+/* ==============================================
+   GRIDMIND AI – PRODUCT PAGE
+   css/gridmind-ai.css
+   ============================================== */
+
+.gridmind-ai-product {
+  --gai-navy: #081e2b;
+  --gai-green: #138a57;
+  --gai-mint: #91eec8;
+  --gai-dark: #103d35;
+  --gai-light: #f3f8f5;
+  --gai-muted: #637b70;
+  --gai-border: #dcebe2;
+  font-family: "Figtree", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.gridmind-ai-product main { overflow: clip; }
+.gridmind-ai-product .gai-section { padding: 112px 0 122px; }
+
+.gridmind-ai-product .gai-eyebrow {
+  display: block;
+  color: #138a57;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  margin-bottom: 20px;
+}
+
+.gridmind-ai-product .gai-heading {
+  text-align: center;
+  max-width: 830px;
+  margin: 0 auto 62px;
+}
+
+.gridmind-ai-product .gai-heading h2,
+.gridmind-ai-product .gai-split h2 {
+  color: #103d35;
+  font-size: clamp(36px,4.7vw,61px);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  font-weight: 900;
+  margin: 0 0 23px;
+}
+
+.gridmind-ai-product .gai-heading h2 em,
+.gridmind-ai-product .gai-split h2 em {
+  color: #138a57;
+  font-style: normal;
+}
+
+.gridmind-ai-product .gai-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #637b70;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.gridmind-ai-product .gai-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.gridmind-ai-product .gai-lead {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #637b70;
+}
+
+.gridmind-ai-product .gai-text-link {
+  display: inline-flex;
+  color: #138a57;
+  font-weight: 850;
+  text-decoration: none;
+  margin-top: 17px;
+}
+
+.gridmind-ai-product .gai-text-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.gridmind-ai-product .gai-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+
+/* ==============================================
+   GRIDMIND SHIMMER BUTTON
+   ============================================== */
+
+.gridmind-ai-product .hero-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #138a57;
+  color: white;
+  animation: gaiButtonBreathe 3.5s ease-in-out infinite;
+}
+
+.gridmind-ai-product .hero-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,transparent 30%,
+    rgba(255,255,255,.42) 50%,transparent 70%
+  );
+  transform: translateX(-130%);
+  animation: gaiButtonShimmer 3.8s ease-in-out 1s infinite;
+}
+
+.gridmind-ai-product .hero-button > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes gaiButtonBreathe {
+  0%,100% {
+    box-shadow: 0 14px 36px -10px rgba(19,138,87,.5);
+  }
+  50% {
+    box-shadow:
+      0 18px 45px -10px rgba(19,138,87,.7),
+      0 0 0 6px rgba(19,138,87,.12);
+  }
+}
+
+@keyframes gaiButtonShimmer {
+  0% { transform: translateX(-130%); }
+  60%,100% { transform: translateX(130%); }
+}
+
+/* ==============================================
+   PRODUCT SUBNAV
+   ============================================== */
+
+.gridmind-ai-product .gai-subnav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(255,255,255,.97);
+  border-bottom: 1px solid #dce9e1;
+  backdrop-filter: blur(15px);
+}
+
+.gridmind-ai-product .gai-subnav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 61px;
+  gap: 18px;
+}
+
+.gridmind-ai-product .gai-subnav-inner > strong {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: 19px;
+  color: #143f35;
+}
+
+.gridmind-ai-product .gai-subnav-inner > strong span {
+  color: #138a57;
+}
+
+.gridmind-ai-product .gai-subnav-inner > div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.gridmind-ai-product .gai-subnav a {
+  font-size: 13px;
+  font-weight: 750;
+  color: #4b655a;
+  text-decoration: none;
+}
+
+.gridmind-ai-product .gai-subnav a:hover {
+  color: #138a57;
+}
+
+.gridmind-ai-product .gai-subnav .gai-subnav-cta {
+  color: white;
+  background: #138a57;
+  border-radius: 30px;
+  padding: 9px 17px;
+}
+
+.gridmind-ai-product .gai-subnav .gai-subnav-cta:hover {
+  color: white;
+  background: #0b7148;
+}
+
+/* ==============================================
+   DARK HERO
+   ============================================== */
+
+.gridmind-ai-product .gai-hero {
+  position: relative;
+  padding: 105px 0 125px;
+  overflow: hidden;
+  color: white;
+  background:
+    radial-gradient(ellipse at 78% 33%,
+      rgba(56,176,142,.23),transparent 53%),
+    radial-gradient(ellipse at 13% 88%,
+      rgba(94,94,180,.12),transparent 50%),
+    linear-gradient(135deg,#081e2b,#10313b);
+}
+
+.gridmind-ai-product .gai-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(142,222,185,.038) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(142,222,185,.038) 1px,transparent 1px);
+  background-size: 56px 56px;
+}
+
+.gridmind-ai-product .gai-hero-layout {
+  display: grid;
+  grid-template-columns: .96fr 1.04fr;
+  align-items: center;
+  gap: 42px;
+  position: relative;
+  z-index: 1;
+}
+
+.gridmind-ai-product .gai-hero-copy {
+  position: relative;
+  z-index: 5;
+  min-width: 0;
+}
+
+.gridmind-ai-product .gai-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(145,238,200,.26);
+  background: rgba(145,238,200,.075);
+  border-radius: 30px;
+  padding: 11px 16px;
+  color: #a6eeca;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .09em;
+  margin-bottom: 29px;
+}
+
+.gridmind-ai-product .gai-kicker i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #91eec8;
+  box-shadow: 0 0 0 5px rgba(145,238,200,.12);
+  animation: gaiPulse 2.6s ease-in-out infinite;
+}
+
+.gridmind-ai-product .gai-hero h1 {
+  color: white;
+  font-size: clamp(45px,5.2vw,74px);
+  line-height: 1.08;
+  letter-spacing: -.048em;
+  font-weight: 900;
+  margin: 0 0 26px;
+}
+
+.gridmind-ai-product .gai-hero-type {
+  display: block;
+  min-height: 2.25em;
+  overflow-wrap: anywhere;
+}
+
+.gridmind-ai-product #gai-typewriter {
+  color: #91eec8;
+}
+
+.gridmind-ai-product .gai-hero-type > i {
+  display: inline-block;
+  width: 4px;
+  height: .82em;
+  background: #adffdd;
+  margin-left: 4px;
+  animation: gaiBlink .8s steps(1) infinite;
+}
+
+.gridmind-ai-product .gai-hero-lead {
+  color: #c7deda;
+  font-size: 18px;
+  line-height: 1.75;
+  max-width: 550px;
+  margin-bottom: 24px;
+}
+
+.gridmind-ai-product .gai-hero-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  color: #b3efd0;
+  font-size: 13px;
+  font-weight: 750;
+  margin-bottom: 30px;
+}
+
+.gridmind-ai-product .gai-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  align-items: center;
+}
+
+.gridmind-ai-product .gai-hero-secondary {
+  color: #b5ebd5;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* ==============================================
+   ANIMATED HERO WINDOW
+   ============================================== */
+
+.gridmind-ai-product .gai-hero-visual {
+  min-height: 565px;
+  position: relative;
+  isolation: isolate;
+}
+
+.gridmind-ai-product .gai-hero-glow {
+  position: absolute;
+  inset: 20px -25px;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,rgba(46,190,138,.24),transparent 70%
+  );
+  z-index: -1;
+}
+
+.gridmind-ai-product .gai-hero-window {
+  position: absolute;
+  left: 3%;
+  top: 75px;
+  width: 95%;
+  overflow: hidden;
+  border: 1px solid rgba(140,233,191,.3);
+  border-radius: 23px;
+  background: #f9fffc;
+  box-shadow: 0 32px 75px rgba(0,0,0,.29);
+  animation: gaiWindowFloat 9s ease-in-out infinite;
+}
+
+.gridmind-ai-product .gai-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+  background: #16333c;
+  color: #c8e0d8;
+  font: 11px Consolas,monospace;
+}
+
+.gridmind-ai-product .gai-window-bar > small {
+  margin-left: auto;
+  color: #91eec8;
+}
+
+.gridmind-ai-product .gai-window-dots {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.gridmind-ai-product .gai-window-dots i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fa7771;
+}
+
+.gridmind-ai-product .gai-window-dots i:nth-child(2) {
+  background: #f8c96c;
+}
+
+.gridmind-ai-product .gai-window-dots i:nth-child(3) {
+  background: #62d9a2;
+}
+
+.gridmind-ai-product .gai-window-layout {
+  display: flex;
+  min-height: 400px;
+}
+
+.gridmind-ai-product .gai-window-sidebar {
+  flex: 0 0 62px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 19px;
+  background: #edf5ef;
+  padding: 19px 0;
+  color: #48816b;
+  font-size: 23px;
+}
+
+.gridmind-ai-product .gai-mini-logo {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  background: #d6f1e2;
+  border-radius: 12px;
+}
+
+.gridmind-ai-product .gai-mini-logo img {
+  width: 29px;
+  height: 29px;
+  object-fit: contain;
+}
+
+.gridmind-ai-product .gai-window-content {
+  min-width: 0;
+  flex: 1;
+  padding: 22px;
+}
+
+.gridmind-ai-product .gai-window-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #e3eee7;
+  padding-bottom: 15px;
+  margin-bottom: 26px;
+}
+
+.gridmind-ai-product .gai-window-heading > span {
+  color: #138a57;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.gridmind-ai-product .gai-window-heading small {
+  color: #81998c;
+  font-size: 10px;
+}
+
+.gridmind-ai-product .gai-window-message {
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 14px 17px;
+  border-radius: 15px;
+}
+
+.gridmind-ai-product .gai-window-user {
+  background: #e8f4eb;
+  color: #315c46;
+  max-width: 78%;
+  margin-left: auto;
+}
+
+.gridmind-ai-product .gai-window-assistant {
+  color: #345c49;
+  margin-top: 18px;
+  background: #f5faf7;
+  border: 1px solid #e2eee6;
+}
+
+.gridmind-ai-product .gai-window-assistant > strong {
+  color: #138a57;
+}
+
+.gridmind-ai-product .gai-window-assistant p {
+  margin: 9px 0 14px;
+  color: #476c56;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.gridmind-ai-product .gai-mini-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.gridmind-ai-product .gai-mini-steps span {
+  padding: 7px 9px;
+  background: #e3f4e9;
+  border-radius: 9px;
+  color: #18865a;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.gridmind-ai-product .gai-window-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 17px;
+  border: 1px solid #deebe3;
+  border-radius: 14px;
+  padding: 13px;
+  color: #9bad9e;
+  font-size: 11px;
+}
+
+.gridmind-ai-product .gai-window-input b {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  background: #138a57;
+  color: white;
+  font-size: 14px;
+}
+
+.gridmind-ai-product .gai-float-card {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #dcefe3;
+  box-shadow: 0 18px 40px rgba(0,0,0,.2);
+  animation: gaiCardFloat 7s ease-in-out infinite;
+}
+
+.gridmind-ai-product .gai-float-card > span {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  background: #e2f6e9;
+  color: #138a57;
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+.gridmind-ai-product .gai-float-card strong {
+  display: block;
+  color: #194a39;
+  font-size: 12px;
+}
+
+.gridmind-ai-product .gai-float-card small {
+  color: #879d90;
+  display: block;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.gridmind-ai-product .gai-float-writing {
+  left: -5%;
+  top: 8px;
+}
+
+.gridmind-ai-product .gai-float-code {
+  right: -4%;
+  top: 19px;
+  animation-delay: -2s;
+}
+
+.gridmind-ai-product .gai-float-knowledge {
+  bottom: 4px;
+  right: 4%;
+  animation-delay: -4s;
+}
+
+.gridmind-ai-product .gai-spark {
+  position: absolute;
+  color: #9af3ce;
+  font-size: 27px;
+  animation: gaiTwinkle 3s ease-in-out infinite;
+}
+
+.gridmind-ai-product .gai-spark-one {
+  top: 5px;
+  left: 37%;
+}
+
+.gridmind-ai-product .gai-spark-two {
+  right: 5%;
+  bottom: 98px;
+  animation-delay: -1s;
+}
+
+.gridmind-ai-product .gai-spark-three {
+  left: 2%;
+  bottom: 80px;
+  animation-delay: -2s;
+}
+
+@keyframes gaiWindowFloat {
+  0%,100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-13px) rotate(-2deg); }
+}
+
+@keyframes gaiCardFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes gaiTwinkle {
+  0%,100% { opacity: .35; transform: scale(.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes gaiBlink {
+  0%,49% { opacity: 1; }
+  50%,100% { opacity: 0; }
+}
+
+@keyframes gaiPulse {
+  0%,100% { opacity: 1; }
+  50% { opacity: .4; }
+}
+
+/* ==============================================
+   HIGHLIGHTS
+   ============================================== */
+
+.gridmind-ai-product .gai-highlights {
+  padding: 42px 0 74px;
+  background: #f3f8f5;
+}
+
+.gridmind-ai-product .gai-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 20px;
+}
+
+.gridmind-ai-product .gai-highlight-grid article {
+  padding: 25px;
+  border-top: 1px solid #d5e7da;
+}
+
+.gridmind-ai-product .gai-highlight-grid article > span {
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  color: #138a57;
+  margin-bottom: 17px;
+}
+
+.gridmind-ai-product .gai-highlight-grid strong {
+  display: block;
+  color: #143e33;
+  font-size: 23px;
+  margin-bottom: 9px;
+}
+
+.gridmind-ai-product .gai-highlight-grid p {
+  color: #728c7c;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ==============================================
+   INTRO
+   ============================================== */
+
+.gridmind-ai-product .gai-intro {
+  background: white;
+}
+
+.gridmind-ai-product .gai-intro .gai-split > div:first-child > p:not(.gai-lead) {
+  color: #637b70;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.gridmind-ai-product .gai-intro-list,
+.gridmind-ai-product .gai-design-list {
+  display: grid;
+  gap: 27px;
+}
+
+.gridmind-ai-product .gai-intro-list article,
+.gridmind-ai-product .gai-design-list article {
+  display: flex;
+  gap: 18px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dcebe2;
+}
+
+.gridmind-ai-product .gai-intro-list article > span,
+.gridmind-ai-product .gai-design-list article > span {
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  flex: 0 0 55px;
+  border-radius: 17px;
+  background: #e0f3e8;
+  color: #138a57;
+  font-size: 25px;
+}
+
+.gridmind-ai-product .gai-intro-list h3,
+.gridmind-ai-product .gai-design-list h3 {
+  color: #164334;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.gridmind-ai-product .gai-intro-list p,
+.gridmind-ai-product .gai-design-list p {
+  color: #627b6f;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ==============================================
+   FEATURES
+   ============================================== */
+
+.gridmind-ai-product .gai-features {
+  background: #f3f8f5;
+}
+
+.gridmind-ai-product .gai-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 22px;
+}
+
+.gridmind-ai-product .gai-feature-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 335px;
+  border-radius: 25px;
+  padding: 30px;
+  background: white;
+  border: 1px solid #dcebe2;
+  transition: transform .3s ease,box-shadow .3s ease;
+}
+
+.gridmind-ai-product .gai-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(12,81,50,.1);
+}
+
+.gridmind-ai-product .gai-feature-index {
+  color: #819b89;
+  font: 800 11px Consolas,monospace;
+}
+
+.gridmind-ai-product .gai-feature-icon {
+  display: grid;
+  place-items: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 18px;
+  background: #e2f5e9;
+  color: #138a57;
+  font-size: 29px;
+  margin: 28px 0 22px;
+}
+
+.gridmind-ai-product .gai-feature-card h3 {
+  color: #143e33;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.gridmind-ai-product .gai-feature-card p {
+  color: #637b70;
+  font-size: 15px;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.gridmind-ai-product .gai-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 19px;
+}
+
+.gridmind-ai-product .gai-tags span {
+  background: #e9f7ed;
+  color: #148653;
+  border-radius: 20px;
+  padding: 8px 11px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* ==============================================
+   INTERACTIVE DEMO
+   ============================================== */
+
+.gridmind-ai-product .gai-demo-section {
+  background:
+    radial-gradient(ellipse at 80% 10%,
+      rgba(52,156,124,.17),transparent 52%),
+    #081e2b;
+}
+
+.gridmind-ai-product .gai-heading-dark .gai-eyebrow {
+  color: #a0ecc7;
+}
+
+.gridmind-ai-product .gai-heading-dark h2 {
+  color: white;
+}
+
+.gridmind-ai-product .gai-heading-dark h2 em {
+  color: #91eec8;
+}
+
+.gridmind-ai-product .gai-heading-dark > p {
+  color: #c6dcd8;
+}
+
+.gridmind-ai-product .gai-demo {
+  display: grid;
+  grid-template-columns: 245px minmax(0,1fr);
+  min-height: 650px;
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid rgba(150,220,189,.24);
+  background: white;
+  box-shadow: 0 30px 80px rgba(0,0,0,.28);
+}
+
+.gridmind-ai-product .gai-demo-sidebar {
+  background: #10353b;
+  color: white;
+  padding: 23px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.gridmind-ai-product .gai-demo-brand {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  margin-bottom: 35px;
+  padding: 0 10px;
+}
+
+.gridmind-ai-product .gai-demo-brand img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.gridmind-ai-product .gai-demo-brand strong {
+  color: white;
+  font-size: 18px;
+}
+
+.gridmind-ai-product .gai-demo-sidebar-label {
+  color: #80aaa5;
+  font-size: 10px;
+  letter-spacing: .11em;
+  font-weight: 900;
+  margin: 0 10px 15px;
+}
+
+.gridmind-ai-product .gai-demo-category {
+  display: block;
+  text-align: left;
+  padding: 15px 17px;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  background: transparent;
+  color: #bddcd3;
+  font: 750 14px "Figtree",sans-serif;
+  cursor: pointer;
+}
+
+.gridmind-ai-product .gai-demo-category:hover,
+.gridmind-ai-product .gai-demo-category.is-active {
+  background: #1c514d;
+  color: white;
+  border-color: rgba(154,242,196,.13);
+}
+
+.gridmind-ai-product .gai-demo-sidebar-bottom {
+  margin-top: auto;
+  padding: 18px 10px 0;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.gridmind-ai-product .gai-demo-sidebar-bottom span {
+  display: block;
+  color: #a0ebc7;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.gridmind-ai-product .gai-demo-sidebar-bottom small {
+  display: block;
+  color: #9ab6b0;
+  font-size: 10px;
+  margin-top: 7px;
+}
+
+.gridmind-ai-product .gai-demo-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #fbfefc;
+}
+
+.gridmind-ai-product .gai-demo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 21px 28px;
+  border-bottom: 1px solid #e4eee7;
+}
+
+.gridmind-ai-product .gai-demo-header strong {
+  display: block;
+  color: #164738;
+  font-size: 18px;
+}
+
+.gridmind-ai-product .gai-demo-header > div > span {
+  display: block;
+  color: #84998c;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.gridmind-ai-product .gai-demo-status {
+  color: #138a57;
+  background: #e4f5e9;
+  padding: 9px 12px;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.gridmind-ai-product .gai-demo-conversation {
+  flex: 1;
+  min-height: 335px;
+  max-height: 450px;
+  overflow-y: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gridmind-ai-product .gai-demo-welcome {
+  text-align: center;
+  margin: auto;
+  max-width: 530px;
+}
+
+.gridmind-ai-product .gai-demo-welcome-icon {
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 25px;
+  border-radius: 21px;
+  background: #def4e8;
+  color: #138a57;
+  font-size: 33px;
+}
+
+.gridmind-ai-product .gai-demo-welcome h3 {
+  color: #164235;
+  font-size: clamp(22px,3vw,31px);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.gridmind-ai-product .gai-demo-welcome p {
+  color: #718a7b;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.gridmind-ai-product .gai-chat-message {
+  max-width: 83%;
+  padding: 17px 20px;
+  border-radius: 18px;
+}
+
+.gridmind-ai-product .gai-chat-message p {
+  line-height: 1.75;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 0;
+  font-size: 14px;
+}
+
+.gridmind-ai-product .gai-chat-user {
+  align-self: flex-end;
+  background: #e6f2e9;
+  color: #315b46;
+  border-bottom-right-radius: 5px;
+}
+
+.gridmind-ai-product .gai-chat-assistant {
+  align-self: flex-start;
+  background: white;
+  border: 1px solid #e0ede4;
+  color: #385b48;
+  border-bottom-left-radius: 5px;
+}
+
+.gridmind-ai-product .gai-chat-assistant strong {
+  display: block;
+  color: #138a57;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.gridmind-ai-product .gai-demo-bottom {
+  border-top: 1px solid #e4eee7;
+  padding: 20px 28px 24px;
+}
+
+.gridmind-ai-product .gai-demo-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+
+.gridmind-ai-product .gai-demo-suggestions button {
+  border: 1px solid #d8e9df;
+  border-radius: 22px;
+  padding: 10px 14px;
+  background: #f5faf7;
+  color: #276047;
+  font: 750 12px "Figtree",sans-serif;
+  cursor: pointer;
+}
+
+.gridmind-ai-product .gai-demo-suggestions button:hover {
+  background: #e0f3e7;
+}
+
+.gridmind-ai-product .gai-demo-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #d9e9de;
+  border-radius: 17px;
+  background: white;
+}
+
+.gridmind-ai-product .gai-demo-form input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 12px;
+  color: #214b39;
+  font: 14px "Figtree",sans-serif;
+}
+
+.gridmind-ai-product .gai-demo-form button {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 13px;
+  background: #138a57;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.gridmind-ai-product .gai-demo-disclaimer {
+  display: block;
+  color: #8ca396;
+  font-size: 10px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+/* ==============================================
+   INTERACTIVE USE CASE TABS
+   ============================================== */
+
+.gridmind-ai-product .gai-usecases {
+  background: #f3f8f5;
+}
+
+.gridmind-ai-product .gai-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-bottom: 25px;
+}
+
+.gridmind-ai-product .gai-tab {
+  border: 1px solid #d3e5d9;
+  border-radius: 30px;
+  padding: 15px 21px;
+  background: white;
+  color: #2d5b46;
+  font: 850 14px "Figtree",sans-serif;
+  cursor: pointer;
+}
+
+.gridmind-ai-product .gai-tab:hover,
+.gridmind-ai-product .gai-tab.is-active {
+  background: #138a57;
+  color: white;
+  border-color: #138a57;
+}
+
+.gridmind-ai-product .gai-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 445px;
+  overflow: hidden;
+  border: 1px solid #dcebe2;
+  border-radius: 29px;
+  background: white;
+  animation: gaiPanelIn .35s ease;
+}
+
+.gridmind-ai-product .gai-panel[hidden] {
+  display: none !important;
+}
+
+.gridmind-ai-product .gai-panel-art {
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  background: linear-gradient(135deg,#0d4d45,#23a873);
+}
+
+.gridmind-ai-product .gai-art-code {
+  background: linear-gradient(135deg,#123a54,#397c9f);
+}
+
+.gridmind-ai-product .gai-art-learn {
+  background: linear-gradient(135deg,#1d5261,#4396a1);
+}
+
+.gridmind-ai-product .gai-art-creative {
+  background: linear-gradient(135deg,#413266,#986fbd);
+}
+
+.gridmind-ai-product .gai-panel-card {
+  width: min(100%,365px);
+  min-height: 305px;
+  padding: 34px;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 25px 55px rgba(0,0,0,.2);
+  transform: rotate(-4deg);
+}
+
+.gridmind-ai-product .gai-panel-card > span {
+  color: #718d7d;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.gridmind-ai-product .gai-panel-card h3 {
+  color: #143f33;
+  font-size: clamp(34px,4vw,53px);
+  line-height: 1.07;
+  margin: 32px 0;
+}
+
+.gridmind-ai-product .gai-panel-card h3 em {
+  color: #148b5b;
+  font-style: normal;
+}
+
+.gridmind-ai-product .gai-panel-task {
+  border-radius: 10px;
+  padding: 11px;
+  background: #e9f7ed;
+  color: #258258;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 9px;
+}
+
+.gridmind-ai-product .gai-panel-code-card code {
+  display: block;
+  color: #1c5a4c;
+  background: #eff7f2;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.gridmind-ai-product .gai-panel-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 47px;
+}
+
+.gridmind-ai-product .gai-panel-copy h3 {
+  color: #143f33;
+  font-size: clamp(29px,3.1vw,41px);
+  line-height: 1.13;
+  margin-bottom: 21px;
+}
+
+.gridmind-ai-product .gai-panel-copy p {
+  color: #637b70;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.gridmind-ai-product .gai-panel-copy ul {
+  color: #355e48;
+  font-size: 15px;
+  line-height: 1.9;
+  padding-left: 22px;
+  margin-bottom: 26px;
+}
+
+.gridmind-ai-product .gai-panel-copy .gai-text-link {
+  margin-top: auto;
+}
+
+@keyframes gaiPanelIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==============================================
+   TIMELINE
+   ============================================== */
+
+.gridmind-ai-product .gai-workflow {
+  background: white;
+}
+
+.gridmind-ai-product .gai-timeline {
+  position: relative;
+}
+
+.gridmind-ai-product .gai-timeline-line {
+  position: absolute;
+  top: 55px;
+  bottom: 110px;
+  left: 50%;
+  width: 3px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background: #cfe6d8;
+}
+
+.gridmind-ai-product .gai-timeline-progress {
+  width: 100%;
+  height: 0;
+  border-radius: inherit;
+  background: linear-gradient(#88dfb8,#138a57,#0c6d53);
+  box-shadow: 0 0 15px rgba(19,138,87,.22);
+}
+
+.gridmind-ai-product .gai-phase {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 90px minmax(0,1fr);
+  gap: 30px;
+  padding-bottom: 125px;
+  align-items: start;
+  position: relative;
+}
+
+.gridmind-ai-product .gai-phase-last {
+  padding-bottom: 45px;
+}
+
+.gridmind-ai-product .gai-phase-copy {
+  padding-top: 50px;
+}
+
+.gridmind-ai-product .gai-phase-label {
+  display: block;
+  color: #138a57;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  margin-bottom: 18px;
+}
+
+.gridmind-ai-product .gai-phase-copy h3 {
+  color: #143f33;
+  font-size: clamp(29px,3vw,42px);
+  line-height: 1.14;
+  letter-spacing: -.035em;
+  margin-bottom: 21px;
+}
+
+.gridmind-ai-product .gai-phase-copy h3 em {
+  display: block;
+  font-style: normal;
+  color: #138a57;
+}
+
+.gridmind-ai-product .gai-phase-copy > p {
+  color: #637b70;
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.gridmind-ai-product .gai-phase-checks {
+  display: grid;
+  gap: 12px;
+}
+
+.gridmind-ai-product .gai-phase-checks span {
+  color: #365d48;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.gridmind-ai-product .gai-phase-marker {
+  position: relative;
+  z-index: 2;
+  justify-self: center;
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #c8e5d1;
+  border-radius: 50%;
+  background: white;
+  color: #83a693;
+  font-size: 23px;
+  font-weight: 900;
+  transition: background .4s,color .4s,transform .4s;
+}
+
+.gridmind-ai-product .gai-phase.is-visible .gai-phase-marker {
+  background: #138a57;
+  color: white;
+  border-color: #a5e9c2;
+  transform: scale(1.07);
+  box-shadow: 0 0 0 9px rgba(19,138,87,.09);
+}
+
+.gridmind-ai-product .gai-phase-modules {
+  display: grid;
+  gap: 20px;
+  padding-top: 6px;
+}
+
+.gridmind-ai-product .gai-module {
+  padding: 23px;
+  border: 1px solid #dcebe2;
+  border-radius: 21px;
+  background: #f5f9f6;
+  transition: transform .25s;
+}
+
+.gridmind-ai-product .gai-module:hover {
+  transform: translateY(-4px);
+}
+
+.gridmind-ai-product .gai-module h4 {
+  color: #164333;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.gridmind-ai-product .gai-module p {
+  color: #637a70;
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.gridmind-ai-product .gai-phase-finish {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 23px;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(135deg,#0d7757,#23a976);
+}
+
+.gridmind-ai-product .gai-phase-finish span {
+  font-size: 29px;
+}
+
+.gridmind-ai-product .gai-phase-finish strong {
+  font-size: 18px;
+}
+
+.gridmind-ai-product .gai-timeline-cta {
+  max-width: 740px;
+  margin: 25px auto 0;
+  padding: 44px 25px;
+  text-align: center;
+  background: #f3f8f5;
+  border: 1px solid #dcebe2;
+  border-radius: 28px;
+}
+
+.gridmind-ai-product .gai-timeline-cta h3 {
+  color: #143f33;
+  font-size: 29px;
+  margin-bottom: 12px;
+}
+
+.gridmind-ai-product .gai-timeline-cta p {
+  color: #647d70;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .gridmind-ai-product .gai-timeline-js .gai-phase-copy,
+  .gridmind-ai-product .gai-timeline-js .gai-phase-modules {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity .7s ease,transform .7s ease;
+  }
+
+  .gridmind-ai-product
+  .gai-timeline-js .gai-phase.is-visible .gai-phase-copy,
+  .gridmind-ai-product
+  .gai-timeline-js .gai-phase.is-visible .gai-phase-modules {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==============================================
+   EXAMPLE CARDS
+   ============================================== */
+
+.gridmind-ai-product .gai-examples {
+  background: #f3f8f5;
+}
+
+.gridmind-ai-product .gai-example-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 23px;
+}
+
+.gridmind-ai-product .gai-example-card {
+  border: 1px solid #dcebe2;
+  border-radius: 26px;
+  background: white;
+  overflow: hidden;
+  transition: transform .3s,box-shadow .3s;
+}
+
+.gridmind-ai-product .gai-example-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 43px rgba(12,80,49,.1);
+}
+
+.gridmind-ai-product .gai-example-art {
+  display: grid;
+  place-items: center;
+  height: 240px;
+  padding: 25px;
+}
+
+.gridmind-ai-product .gai-example-writing {
+  background: #e0f3e9;
+}
+
+.gridmind-ai-product .gai-example-coding {
+  background: #e2eff8;
+}
+
+.gridmind-ai-product .gai-example-planning {
+  background: #eee8f8;
+}
+
+.gridmind-ai-product .gai-example-window {
+  width: 100%;
+  max-width: 300px;
+  min-height: 170px;
+  padding: 20px;
+  border-radius: 17px;
+  background: white;
+  box-shadow: 0 15px 34px rgba(11,75,47,.13);
+  transform: rotate(-3deg);
+}
+
+.gridmind-ai-product .gai-example-window > small {
+  display: block;
+  color: #168b5d;
+  font-size: 10px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.gridmind-ai-product .gai-example-window h3 {
+  color: #164334;
+  font-size: 21px;
+  margin-bottom: 17px;
+}
+
+.gridmind-ai-product .gai-example-window > i {
+  display: block;
+  height: 9px;
+  margin: 8px 0;
+  background: #e0eee6;
+  border-radius: 10px;
+}
+
+.gridmind-ai-product .gai-example-window > i:nth-of-type(2) {
+  width: 80%;
+}
+
+.gridmind-ai-product .gai-example-window > i:nth-of-type(3) {
+  width: 55%;
+}
+
+.gridmind-ai-product .gai-example-code-window {
+  background: #12383f;
+}
+
+.gridmind-ai-product .gai-example-code-window > small {
+  color: #94edc1;
+}
+
+.gridmind-ai-product .gai-example-code-window code {
+  display: block;
+  color: #d8f3e5;
+  font-size: 11px;
+  line-height: 1.8;
+  white-space: pre;
+}
+
+.gridmind-ai-product .gai-example-task {
+  background: #e5f4ea;
+  color: #227b53;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 7px 0;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.gridmind-ai-product .gai-example-copy {
+  padding: 28px;
+}
+
+.gridmind-ai-product .gai-example-copy > span {
+  color: #138a57;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .09em;
+}
+
+.gridmind-ai-product .gai-example-copy h3 {
+  color: #164134;
+  font-size: 23px;
+  margin: 13px 0;
+}
+
+.gridmind-ai-product .gai-example-copy p {
+  color: #647b70;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ==============================================
+   DESIGN & PRIVACY
+   ============================================== */
+
+.gridmind-ai-product .gai-design {
+  background: white;
+}
+
+.gridmind-ai-product .gai-design .gai-split > div:first-child > p:not(.gai-lead) {
+  color: #637b70;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* ==============================================
+   FAQ
+   ============================================== */
+
+.gridmind-ai-product .gai-faq {
+  background: #f3f8f5;
+}
+
+.gridmind-ai-product .gai-faq-list {
+  display: grid;
+  align-content: start;
+}
+
+.gridmind-ai-product .gai-faq-list details {
+  padding: 22px 0;
+  border-bottom: 1px solid #d8e8de;
+}
+
+.gridmind-ai-product .gai-faq-list summary {
+  color: #174535;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.gridmind-ai-product .gai-faq-list summary:hover {
+  color: #138a57;
+}
+
+.gridmind-ai-product .gai-faq-list details p {
+  color: #637b70;
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 14px 0 0;
+}
+
+/* ==============================================
+   FINAL CTA
+   ============================================== */
+
+.gridmind-ai-product .gai-final {
+  padding: 120px 20px 130px;
+  text-align: center;
+  color: white;
+  background:
+    radial-gradient(ellipse at 80% 10%,
+      rgba(74,196,144,.22),transparent 55%),
+    linear-gradient(135deg,#081e2b,#0e6a51);
+}
+
+.gridmind-ai-product .gai-final .gai-eyebrow {
+  color: #a3f0cb;
+}
+
+.gridmind-ai-product .gai-final h2 {
+  color: white;
+  font-size: clamp(42px,5.8vw,76px);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  margin: 20px auto 25px;
+}
+
+.gridmind-ai-product .gai-final h2 em {
+  color: #a1efc8;
+  font-style: normal;
+}
+
+.gridmind-ai-product .gai-final p {
+  max-width: 590px;
+  margin: 0 auto 30px;
+  color: #d5eee4;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+/* ==============================================
+   COOKIE BANNER
+   ============================================== */
+
+.gridmind-ai-product .cookie-overlay {
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  z-index: 9998;
+}
+
+.gridmind-ai-product .cookie-banner {
+  background: white;
+  color: #174133;
+  z-index: 9999 !important;
+}
+
+.gridmind-ai-product .cookie-overlay[hidden],
+.gridmind-ai-product .cookie-banner[hidden] {
+  display: none !important;
+}
+
+/* ==============================================
+   RESPONSIVE TABLET
+   ============================================== */
+
+@media (max-width: 1050px) {
+  .gridmind-ai-product .gai-hero-layout {
+    gap: 20px;
+  }
+
+  .gridmind-ai-product .gai-hero h1 {
+    font-size: 54px;
+  }
+
+  .gridmind-ai-product .gai-split {
+    gap: 45px;
+  }
+
+  .gridmind-ai-product .gai-phase {
+    grid-template-columns: minmax(0,1fr) 70px minmax(0,1fr);
+    gap: 20px;
+  }
+
+  .gridmind-ai-product .gai-demo {
+    grid-template-columns: 200px minmax(0,1fr);
+  }
+
+  .gridmind-ai-product .gai-float-card {
+    padding: 9px;
+  }
+}
+
+/* ==============================================
+   TABLET / SMALL DEVICES
+   ============================================== */
+
+@media (max-width: 800px) {
+  .gridmind-ai-product .gai-section {
+    padding: 82px 0 93px;
+  }
+
+  .gridmind-ai-product .gai-hero {
+    padding: 75px 0 95px;
+  }
+
+  .gridmind-ai-product .gai-hero-layout,
+  .gridmind-ai-product .gai-split,
+  .gridmind-ai-product .gai-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-ai-product .gai-hero-copy {
+    text-align: center;
+  }
+
+  .gridmind-ai-product .gai-hero h1 {
+    font-size: clamp(42px,7.5vw,63px);
+  }
+
+  .gridmind-ai-product .gai-hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gridmind-ai-product .gai-hero-benefits,
+  .gridmind-ai-product .gai-hero-actions {
+    justify-content: center;
+  }
+
+  .gridmind-ai-product .gai-hero-visual {
+    width: min(590px,100%);
+    margin: 25px auto 0;
+  }
+
+  .gridmind-ai-product .gai-demo {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-ai-product .gai-demo-sidebar {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 17px;
+  }
+
+  .gridmind-ai-product .gai-demo-brand {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .gridmind-ai-product .gai-demo-sidebar-label,
+  .gridmind-ai-product .gai-demo-sidebar-bottom {
+    display: none;
+  }
+
+  .gridmind-ai-product .gai-demo-category {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .gridmind-ai-product .gai-demo-conversation {
+    min-height: 280px;
+  }
+
+  .gridmind-ai-product .gai-panel-art {
+    min-height: 315px;
+  }
+
+  .gridmind-ai-product .gai-panel-copy {
+    padding: 35px;
+  }
+
+  .gridmind-ai-product .gai-phase {
+    grid-template-columns: 65px minmax(0,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-bottom: 95px;
+  }
+
+  .gridmind-ai-product .gai-timeline-line {
+    left: 32px;
+    transform: none;
+  }
+
+  .gridmind-ai-product .gai-phase-marker {
+    grid-column: 1;
+    grid-row: 1;
+    width: 64px;
+    height: 64px;
+  }
+
+  .gridmind-ai-product .gai-phase-copy {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 0;
+  }
+
+  .gridmind-ai-product .gai-phase-modules {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .gridmind-ai-product .gai-feature-grid,
+  .gridmind-ai-product .gai-example-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .gridmind-ai-product .gai-highlight-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+/* ==============================================
+   SMALL MOBILE
+   ============================================== */
+
+@media (max-width: 600px) {
+  .gridmind-ai-product .gai-section {
+    padding: 75px 0 85px;
+  }
+
+  .gridmind-ai-product .gai-hero h1 {
+    font-size: clamp(37px,8.1vw,51px);
+  }
+
+  .gridmind-ai-product .gai-hero-type {
+    min-height: 2.7em;
+  }
+
+  .gridmind-ai-product .gai-hero-lead {
+    font-size: 16px;
+  }
+
+  .gridmind-ai-product .gai-kicker {
+    font-size: 9px;
+  }
+
+  .gridmind-ai-product .gai-hero-visual {
+    min-height: 470px;
+  }
+
+  .gridmind-ai-product .gai-hero-window {
+    top: 75px;
+    left: 0;
+    width: 100%;
+  }
+
+  .gridmind-ai-product .gai-window-bar {
+    padding: 11px;
+    font-size: 9px;
+  }
+
+  .gridmind-ai-product .gai-window-layout {
+    min-height: 340px;
+  }
+
+  .gridmind-ai-product .gai-window-sidebar {
+    flex-basis: 40px;
+    gap: 16px;
+    font-size: 16px;
+  }
+
+  .gridmind-ai-product .gai-mini-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .gridmind-ai-product .gai-mini-logo img {
+    width: 21px;
+    height: 21px;
+  }
+
+  .gridmind-ai-product .gai-window-content {
+    padding: 13px;
+  }
+
+  .gridmind-ai-product .gai-window-heading small {
+    display: none;
+  }
+
+  .gridmind-ai-product .gai-window-message {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .gridmind-ai-product .gai-window-assistant p {
+    font-size: 10px;
+  }
+
+  .gridmind-ai-product .gai-mini-steps span {
+    font-size: 8px;
+    padding: 5px;
+  }
+
+  .gridmind-ai-product .gai-float-card {
+    padding: 8px;
+  }
+
+  .gridmind-ai-product .gai-float-card > span {
+    width: 26px;
+    height: 26px;
+    font-size: 17px;
+  }
+
+  .gridmind-ai-product .gai-float-card strong {
+    font-size: 9px;
+  }
+
+  .gridmind-ai-product .gai-float-card small {
+    font-size: 8px;
+  }
+
+  .gridmind-ai-product .gai-float-writing {
+    left: 0;
+  }
+
+  .gridmind-ai-product .gai-float-code {
+    right: 0;
+  }
+
+  .gridmind-ai-product .gai-float-knowledge {
+    bottom: 0;
+  }
+
+  .gridmind-ai-product .gai-feature-grid,
+  .gridmind-ai-product .gai-example-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-ai-product .gai-feature-card {
+    min-height: 0;
+  }
+
+  .gridmind-ai-product .gai-highlight-grid {
+    gap: 7px;
+  }
+
+  .gridmind-ai-product .gai-highlight-grid article {
+    padding: 18px 8px;
+  }
+
+  .gridmind-ai-product .gai-highlight-grid strong {
+    font-size: 19px;
+  }
+
+  .gridmind-ai-product .gai-demo-header {
+    padding: 16px;
+  }
+
+  .gridmind-ai-product .gai-demo-header strong {
+    font-size: 15px;
+  }
+
+  .gridmind-ai-product .gai-demo-conversation {
+    padding: 16px;
+  }
+
+  .gridmind-ai-product .gai-chat-message {
+    max-width: 95%;
+    padding: 13px;
+  }
+
+  .gridmind-ai-product .gai-demo-bottom {
+    padding: 15px;
+  }
+
+  .gridmind-ai-product .gai-demo-form input {
+    font-size: 12px;
+    padding: 9px;
+  }
+
+  .gridmind-ai-product .gai-tabs {
+    flex-direction: column;
+  }
+
+  .gridmind-ai-product .gai-tab {
+    text-align: left;
+  }
+
+  .gridmind-ai-product .gai-panel-art {
+    min-height: 280px;
+    padding: 20px;
+  }
+
+  .gridmind-ai-product .gai-panel-card {
+    min-height: 265px;
+    padding: 24px;
+  }
+
+  .gridmind-ai-product .gai-panel-copy {
+    padding: 25px;
+  }
+
+  .gridmind-ai-product .gai-phase {
+    grid-template-columns: 46px minmax(0,1fr);
+    column-gap: 14px;
+    row-gap: 16px;
+  }
+
+  .gridmind-ai-product .gai-timeline-line {
+    left: 23px;
+    top: 35px;
+    bottom: 100px;
+  }
+
+  .gridmind-ai-product .gai-phase-marker {
+    width: 46px;
+    height: 46px;
+    font-size: 15px;
+  }
+
+  .gridmind-ai-product .gai-phase-copy h3 {
+    font-size: 28px;
+  }
+
+  .gridmind-ai-product .gai-phase-copy p {
+    font-size: 14px;
+  }
+
+  .gridmind-ai-product .gai-module {
+    padding: 18px;
+  }
+
+  .gridmind-ai-product .gai-module h4 {
+    font-size: 16px;
+  }
+}
+
+/* ==============================================
+   ACCESSIBILITY
+   ============================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .gridmind-ai-product .hero-button,
+  .gridmind-ai-product .hero-button::before,
+  .gridmind-ai-product .gai-kicker i,
+  .gridmind-ai-product .gai-hero-type > i,
+  .gridmind-ai-product .gai-hero-window,
+  .gridmind-ai-product .gai-float-card,
+  .gridmind-ai-product .gai-spark {
+    animation: none !important;
+  }
+
+  .gridmind-ai-product .gai-phase-copy,
+  .gridmind-ai-product .gai-phase-modules {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .gridmind-ai-product .gai-timeline-progress {
+    height: 100% !important;
+  }
+}

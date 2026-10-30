@@ -1,0 +1,877 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2c2b">
+  <meta name="description" content="GridPhone von Gridmind Technologies – elegantes Smartphone-Konzept mit hochwertigem Design, leistungsfähiger Kamera und intuitiver Bedienung.">
+  <title>GridPhone | Gridmind Technologies</title>
+
+  <link rel="icon" href="../assets/logo-icon.png" type="image/png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/gridphone.css">
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body class="gridmind-gridphone">
+<a href="#main-content" class="skip-link">Zum Hauptinhalt</a>
+
+<!-- GEMEINSAMER GRIDMIND HEADER -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"
+       aria-label="Gridmind Technologies – Startseite">
+      <img src="../assets/logo.png" width="280" height="94"
+           alt="Gridmind Technologies">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-offers">
+          Unsere Angebote
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown" id="nav-offers">
+          <span class="dropdown-title">Ausbildung & Karriere</span>
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+          <span class="dropdown-title">Digitale Dienstleistungen</span>
+          <a href="../services/websites.html">Websites erstellen lassen</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-devices">
+          Geräte & Software
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown" id="nav-devices">
+          <a href="../produkte/gridphone.html" aria-current="page">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </div>
+
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="kaufen.html" class="header-cta">
+        GridPhone kaufen <span aria-hidden="true">↗</span>
+      </a>
+      <button class="hamburger" id="hamburger" type="button"
+              aria-label="Menü öffnen"
+              aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu"
+       aria-label="Mobiles Menü" inert>
+    <div class="mobile-menu-inner">
+      <a href="../index.html">Startseite</a>
+      <details>
+        <summary>Bildungsangebote</summary>
+        <div class="mobile-submenu">
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+      </details>
+      <details>
+        <summary>Websites & Software</summary>
+        <div class="mobile-submenu">
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </details>
+      <details>
+        <summary>Grid-Geräte</summary>
+        <div class="mobile-submenu">
+          <a href="../produkte/gridphone.html" aria-current="page">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </details>
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+      <a href="../unternehmen/kontakt.html">Kontakt</a>
+      <a href="kaufen.html" class="mobile-cta">GridPhone kaufen →</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- PRODUKT-SUBNAV -->
+  <nav class="gp-subnav" aria-label="GridPhone Navigation">
+    <div class="container gp-subnav-inner">
+      <strong>GridPhone</strong>
+      <div>
+        <a href="#design">Design</a>
+        <a href="#display">Display</a>
+        <a href="#kamera">Kamera</a>
+        <a href="#technik">Technische Daten</a>
+        <a href="kaufen.html" class="gp-small-buy">Kaufen</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="gp-hero">
+    <div class="container gp-hero-inner">
+      <span class="gp-eyebrow">GRIDMIND TECHNOLOGIES PRESENTS</span>
+      <h1>GridPhone<span>.</span></h1>
+      <p class="gp-hero-slogan">
+        Entwickelt für <span id="gp-typewriter">deinen Alltag.</span><i></i>
+      </p>
+
+      <p class="gp-hero-description">
+        Ein klares Design. Eine intuitive Bedienung.
+        Und die Technologie, die dich durch deinen Tag begleitet.
+      </p>
+
+      <div class="gp-hero-actions">
+        <a href="kaufen.html" class="btn btn-primary hero-button">
+          GridPhone kaufen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+        <a href="#entdecken" class="gp-hero-more">GridPhone entdecken ↓</a>
+      </div>
+
+      <div class="gp-device-stage" aria-label="Illustrativer GridPhone-Bildplatzhalter">
+        <span class="gp-stage-glow"></span>
+
+        <!-- RÜCKSEITE -->
+        <div class="gp-phone gp-phone-back">
+          <div class="gp-camera-island">
+            <span class="gp-camera-lens gp-lens-one"></span>
+            <span class="gp-camera-lens gp-lens-two"></span>
+            <span class="gp-camera-flash"></span>
+          </div>
+          <div class="gp-back-logo">
+            <img src="../assets/logo-icon.png" alt="">
+          </div>
+          <span class="gp-back-label">GRIDMIND</span>
+        </div>
+
+        <!-- VORDERSEITE -->
+        <div class="gp-phone gp-phone-front">
+          <div class="gp-screen">
+            <span class="gp-screen-island"></span>
+            <div class="gp-screen-top">
+              <span>9:41</span><span>●●● ▰</span>
+            </div>
+            <div class="gp-screen-clock">
+              <small>FRIDAY · 30 OCTOBER</small>
+              <strong>09:41</strong>
+            </div>
+            <div class="gp-screen-landscape">
+              <span class="gp-landscape-orb"></span>
+              <span class="gp-landscape-hill gp-hill-one"></span>
+              <span class="gp-landscape-hill gp-hill-two"></span>
+            </div>
+            <div class="gp-screen-bottom">
+              <span>◉</span><span>⌾</span>
+            </div>
+          </div>
+        </div>
+
+        <span class="gp-stage-caption">GRIDPHONE · PRODUKTVISUALISIERUNG</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- KURZÜBERBLICK -->
+  <section class="gp-highlights" id="entdecken">
+    <div class="container">
+      <div class="gp-highlight-grid">
+        <article>
+          <span>01</span>
+          <strong>6,1"</strong>
+          <p>OLED Display</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>48 MP</strong>
+          <p>Hauptkamera-Konzept</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>~170 g</strong>
+          <p>Leichtes Design</p>
+        </article>
+        <article>
+          <span>04</span>
+          <strong>USB-C</strong>
+          <p>Universeller Anschluss</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN -->
+  <section class="gp-section gp-design" id="design">
+    <div class="container gp-split">
+      <div class="gp-section-copy">
+        <span class="gp-eyebrow">DESIGN</span>
+        <h2>Weniger Ablenkung.<br><em>Mehr Persönlichkeit.</em></h2>
+        <p>
+          GridPhone setzt auf eine reduzierte Formensprache,
+          sanfte Rundungen und eine harmonische Verbindung
+          von Display und Gehäuse.
+        </p>
+        <p>
+          Das kompakte Format liegt angenehm in der Hand.
+          Die klare Gestaltung macht das Gerät zu einem
+          Begleiter für Arbeit, Kreativität und Freizeit.
+        </p>
+        <a href="#farben" class="gp-inline-link">Entdecke die Farben ↗</a>
+      </div>
+
+      <div class="gp-design-art">
+        <div class="gp-design-disc"></div>
+        <div class="gp-design-device">
+          <div class="gp-design-cameras"><i></i><i></i></div>
+          <img src="../assets/logo-icon.png" alt="">
+        </div>
+        <span>DESIGNED BY GRIDMIND</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FARBVARIANTEN -->
+  <section class="gp-section gp-colors" id="farben">
+    <div class="container">
+      <div class="gp-section-heading">
+        <span class="gp-eyebrow">FINDE DEINEN LOOK</span>
+        <h2>Ein Smartphone.<br><em>Dein Stil.</em></h2>
+        <p>Wähle deine bevorzugte Farbvariante und entdecke das GridPhone-Konzept.</p>
+      </div>
+
+      <div class="gp-config-layout">
+        <div class="gp-color-preview">
+          <div class="gp-color-device">
+            <div class="gp-color-camera">
+              <i></i><i></i><span></span>
+            </div>
+            <img src="../assets/logo-icon.png" alt="">
+            <small>GRIDPHONE</small>
+          </div>
+        </div>
+
+        <div class="gp-config">
+          <span class="gp-config-label">FARBE</span>
+          <h3 id="gp-color-name">Forest Green</h3>
+
+          <div class="gp-swatches" role="group" aria-label="GridPhone Farbe">
+            <button type="button" class="gp-swatch is-selected"
+                    data-gp-color="forest" aria-pressed="true"
+                    aria-label="Forest Green" title="Forest Green">
+              <span></span>
+            </button>
+            <button type="button" class="gp-swatch"
+                    data-gp-color="midnight" aria-pressed="false"
+                    aria-label="Midnight" title="Midnight">
+              <span></span>
+            </button>
+            <button type="button" class="gp-swatch"
+                    data-gp-color="silver" aria-pressed="false"
+                    aria-label="Silver" title="Silver">
+              <span></span>
+            </button>
+            <button type="button" class="gp-swatch"
+                    data-gp-color="sky" aria-pressed="false"
+                    aria-label="Sky Blue" title="Sky Blue">
+              <span></span>
+            </button>
+          </div>
+
+          <div class="gp-config-divider"></div>
+
+          <span class="gp-config-label">SPEICHER</span>
+          <div class="gp-storage-options" role="group"
+               aria-label="Speichervariante">
+            <button type="button" class="gp-storage is-selected"
+                    data-storage="128" aria-pressed="true">128 GB</button>
+            <button type="button" class="gp-storage"
+                    data-storage="256" aria-pressed="false">256 GB</button>
+            <button type="button" class="gp-storage"
+                    data-storage="512" aria-pressed="false">512 GB</button>
+          </div>
+
+          <p class="gp-config-selection">
+            Deine Auswahl: <strong id="gp-selection">
+              Forest Green · 128 GB
+            </strong>
+          </p>
+
+          <a id="gp-config-buy" class="btn btn-primary hero-button"
+             href="kaufen.html">
+            Jetzt kaufen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+
+          <p class="gp-config-note">
+            Farb- und Speicheroptionen dienen der Produktkonfiguration
+            dieses Designentwurfs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISPLAY -->
+  <section class="gp-section gp-display" id="display">
+    <div class="container">
+      <div class="gp-section-heading gp-heading-light">
+        <span class="gp-eyebrow">DISPLAY</span>
+        <h2>Mehr sehen.<br><em>Mehr erleben.</em></h2>
+        <p>
+          Eine großzügige OLED-Anzeige in einem
+          kompakten Smartphone-Format.
+          Klare Details und kräftige Kontraste
+          stehen im Mittelpunkt unseres Display-Konzepts.
+        </p>
+      </div>
+
+      <div class="gp-display-art">
+        <div class="gp-display-phone">
+          <div class="gp-display-screen">
+            <span class="gp-display-island"></span>
+            <div class="gp-display-orbit gp-orbit-one"></div>
+            <div class="gp-display-orbit gp-orbit-two"></div>
+            <div class="gp-display-orbit gp-orbit-three"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gp-display-stats">
+        <article><strong>6,1"</strong><span>OLED Display</span></article>
+        <article><strong>~460 ppi</strong><span>Pixeldichte als Entwurfsziel</span></article>
+        <article><strong>HDR</strong><span>Darstellungskonzept</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- KAMERA -->
+  <section class="gp-section gp-camera" id="kamera">
+    <div class="container gp-split">
+      <div class="gp-section-copy">
+        <span class="gp-eyebrow">FOTOGRAFIE</span>
+        <h2>Für Momente,<br><em>die bleiben.</em></h2>
+        <p>
+          Ob Alltag, Urlaub oder besondere Augenblicke:
+          Das GridPhone-Kamerakonzept verbindet
+          eine hochauflösende Hauptkamera
+          mit einer zusätzlichen Ultraweitwinkel-Perspektive.
+        </p>
+        <div class="gp-camera-details">
+          <article><strong>48 MP</strong><span>Hauptkamera</span></article>
+          <article><strong>12 MP</strong><span>Ultraweitwinkel</span></article>
+          <article><strong>4K</strong><span>Videokonzept</span></article>
+        </div>
+      </div>
+
+      <div class="gp-camera-art">
+        <div class="gp-camera-plate">
+          <div class="gp-camera-giant-lens"><i></i></div>
+          <div class="gp-camera-giant-lens gp-lens-secondary"><i></i></div>
+          <div class="gp-camera-light"></div>
+        </div>
+        <span class="gp-camera-caption">GRIDPHONE CAMERA SYSTEM · KONZEPT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEISTUNG -->
+  <section class="gp-section gp-performance">
+    <div class="container gp-split">
+      <div class="gp-performance-art">
+        <div class="gp-chip">
+          <span>GRIDMIND</span>
+          <strong>G1</strong>
+          <small>PERFORMANCE CONCEPT</small>
+        </div>
+        <span class="gp-chip-line gp-chip-line-one"></span>
+        <span class="gp-chip-line gp-chip-line-two"></span>
+      </div>
+
+      <div class="gp-section-copy">
+        <span class="gp-eyebrow">PERFORMANCE</span>
+        <h2>Bereit für<br><em>deine Ideen.</em></h2>
+        <p>
+          Apps, Multitasking, Medien und tägliche
+          Aufgaben verlangen nach einem
+          ausgewogenen Zusammenspiel von
+          Rechenleistung und Energieeffizienz.
+        </p>
+        <p>
+          Das GridPhone-G1-Konzept steht für
+          eine leistungsorientierte Plattform
+          mit klarer, schneller Bedienung.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="gp-section gp-features">
+    <div class="container">
+      <div class="gp-section-heading">
+        <span class="gp-eyebrow">SMARTPHONE-ERLEBNIS</span>
+        <h2>Alles Wichtige.<br><em>Einfach durchdacht.</em></h2>
+      </div>
+
+      <div class="gp-feature-grid">
+        <article>
+          <span>☁</span>
+          <h3>Schnelle Verbindungen</h3>
+          <p>5G und Wi-Fi als Grundlage für Kommunikation und vernetzte Anwendungen.</p>
+        </article>
+        <article>
+          <span>⚡</span>
+          <h3>USB-C</h3>
+          <p>Ein universeller Anschluss für Energieversorgung und Datenübertragung.</p>
+        </article>
+        <article>
+          <span>◈</span>
+          <h3>Privatsphäre</h3>
+          <p>Durchdachte Berechtigungen und moderne Sicherheitsfunktionen als Entwicklungsziel.</p>
+        </article>
+        <article>
+          <span>✦</span>
+          <h3>Intuitive Bedienung</h3>
+          <p>Eine aufgeräumte Oberfläche, bei der deine Inhalte im Mittelpunkt stehen.</p>
+        </article>
+        <article>
+          <span>▣</span>
+          <h3>Großartiges Display</h3>
+          <p>OLED-Technologie für starke Kontraste und lebendige Medieninhalte.</p>
+        </article>
+        <article>
+          <span>↗</span>
+          <h3>Viel Speicher</h3>
+          <p>Verschiedene Speicherkapazitäten für Fotos, Videos und Anwendungen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNISCHE DATEN -->
+  <section class="gp-section gp-specs" id="technik">
+    <div class="container">
+      <div class="gp-section-heading">
+        <span class="gp-eyebrow">AUF EINEN BLICK</span>
+        <h2>GridPhone.<br><em>Die technischen Details.</em></h2>
+        <p>Technische Zielwerte und beispielhafte Ausstattung für die GridPhone-Produktgestaltung.</p>
+      </div>
+
+      <div class="gp-spec-table">
+        <div class="gp-spec-row">
+          <strong>Display</strong>
+          <span>6,1 Zoll OLED · ca. 2556 × 1179 Pixel</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Abmessungen</strong>
+          <span>ca. 147,6 × 71,6 × 7,8 mm</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Gewicht</strong>
+          <span>ca. 170 g</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Speicher</strong>
+          <span>128 GB / 256 GB / 512 GB</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Hauptkamera</strong>
+          <span>48 MP · Kamerakonzept</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Ultraweitwinkel</strong>
+          <span>12 MP · Kamerakonzept</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Video</strong>
+          <span>4K-Aufzeichnung als Entwicklungsziel</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Mobilfunk</strong>
+          <span>5G-Konzept</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>WLAN</strong>
+          <span>Wi-Fi · geplante Konnektivität</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Anschluss</strong>
+          <span>USB-C</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Plattform</strong>
+          <span>Gridmind G1 · Konzeptbezeichnung</span>
+        </div>
+        <div class="gp-spec-row">
+          <strong>Farben</strong>
+          <span>Forest Green, Midnight, Silver, Sky Blue</span>
+        </div>
+      </div>
+
+      <p class="gp-spec-disclaimer">
+        Die dargestellten technischen Werte und Produktansichten sind
+        Entwurfsangaben. Sie sind keine bestätigte Produktspezifikation.
+      </p>
+    </div>
+  </section>
+
+  <!-- VERGLEICH / WEITERE PRODUKTE -->
+  <section class="gp-section gp-ecosystem">
+    <div class="container">
+      <div class="gp-section-heading">
+        <span class="gp-eyebrow">GRIDMIND ECOSYSTEM</span>
+        <h2>Ein Gerät ist<br><em>erst der Anfang.</em></h2>
+        <p>Entdecke weitere Produkte aus der Gridmind-Welt.</p>
+      </div>
+
+      <div class="gp-ecosystem-grid">
+        <a href="../produkte/gridtab.html">
+          <span>▣</span><h3>GridTab</h3><p>Mehr Platz für deine Ideen.</p>
+          <strong>Entdecken ↗</strong>
+        </a>
+        <a href="../produkte/gridwatch.html">
+          <span>◉</span><h3>GridWatch</h3><p>Dein Alltag am Handgelenk.</p>
+          <strong>Entdecken ↗</strong>
+        </a>
+        <a href="../produkte/gridmac.html">
+          <span>⌘</span><h3>GridMac</h3><p>Ein Arbeitsplatz für Kreativität.</p>
+          <strong>Entdecken ↗</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="gp-section gp-faq" id="faq">
+    <div class="container gp-split">
+      <div class="gp-section-copy">
+        <span class="gp-eyebrow">HÄUFIGE FRAGEN</span>
+        <h2>Fragen zum<br><em>GridPhone?</em></h2>
+        <p>Informationen zum Produktkonzept und zur Auswahl deiner bevorzugten Variante.</p>
+      </div>
+
+      <div class="gp-faq-list">
+        <details>
+          <summary>Wie groß ist das GridPhone?</summary>
+          <p>Unser Designentwurf orientiert sich an einem kompakten Smartphone mit 6,1-Zoll-Display und ungefähr 147,6 × 71,6 × 7,8 mm Gehäusegröße.</p>
+        </details>
+        <details>
+          <summary>Welche Speichergrößen kann ich auswählen?</summary>
+          <p>In der Produktvorschau kannst du zwischen 128 GB, 256 GB und 512 GB wechseln.</p>
+        </details>
+        <details>
+          <summary>Welche Farben gibt es?</summary>
+          <p>Der Produktkonfigurator zeigt Forest Green, Midnight, Silver und Sky Blue.</p>
+        </details>
+        <details>
+          <summary>Ist die Rückseite bereits ein echtes Produktfoto?</summary>
+          <p>Nein. Die Darstellung wird mit CSS erzeugt und dient als austauschbarer Bildplatzhalter für das GridPhone-Design.</p>
+        </details>
+        <details>
+          <summary>Wohin führt der Kaufen-Button?</summary>
+          <p>Zur Gridmind-Produktbestellseite. Die Kaufseite wird als eigener Bereich unter kaufen.html aufgebaut.</p>
+        </details>
+        <details>
+          <summary>Was bedeutet Gridmind G1?</summary>
+          <p>Gridmind G1 ist eine Konzeptbezeichnung für die im Entwurf dargestellte Leistungsplattform.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="gp-final">
+    <div class="container gp-final-inner">
+      <span class="gp-eyebrow">GRIDMIND TECHNOLOGIES</span>
+      <h2>Dein Alltag.<br><em>Dein GridPhone.</em></h2>
+      <p>Entdecke deine bevorzugte Farbe und Speichervariante.</p>
+      <a href="kaufen.html" class="btn btn-primary hero-button">
+        GridPhone kaufen
+        <span class="arrow-circle" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- GEMEINSAMER GRIDMIND FOOTER -->
+<footer class="site-footer">
+  <svg class="footer-wave" viewBox="0 0 1440 125"
+       preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z"
+          fill="#092f2b"/>
+  </svg>
+
+  <div class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <img src="../assets/logo.png" width="280" height="94"
+               alt="Gridmind Technologies">
+        </a>
+        <p>Wir verbinden Menschen, Ideen und Technologie – von deinem ersten IT-Projekt bis zur digitalen Zukunft.</p>
+        <a href="../unternehmen/kontakt.html" class="footer-contact">Kontakt zu Gridmind ↗</a>
+        <div class="footer-social" aria-label="Weitere Informationen">
+          <a href="../unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+          <a href="../unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+          <a href="../unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Bildungsangebote</h3>
+        <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+        <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+        <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+        <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+        <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Produkte & Services</h3>
+        <a href="../services/websites.html">Website-Erstellung</a>
+        <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+        <a href="../services/ki-integration.html">KI-Integration</a>
+        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        <a href="../produkte/gridphone.html">GridPhone</a>
+        <a href="../produkte/gridtab.html">GridTab</a>
+        <a href="../produkte/gridwatch.html">GridWatch</a>
+        <a href="../produkte/gridmac.html">GridMac</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Unternehmen</h3>
+        <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+        <a href="../unternehmen/team.html">Unser Team</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+        <h3 class="footer-subtitle">Rechtliches</h3>
+        <a href="../rechtliches/impressum.html">Impressum</a>
+        <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+        <a href="../rechtliches/agb.html">AGB</a>
+        <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+        <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+        <a href="../rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <button class="footer-text-button" type="button" data-open-cookie>
+          Cookie-Einstellungen
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Gridmind Technologies</span>
+      <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE-DIALOG -->
+<div class="cookie-overlay" id="cookie-overlay" hidden></div>
+<section class="cookie-banner" id="cookie-banner"
+         role="dialog" aria-modal="true"
+         aria-labelledby="cookie-title"
+         aria-describedby="cookie-description"
+         tabindex="-1" hidden>
+  <div class="cookie-heading">
+    <span class="cookie-icon">◈</span>
+    <div>
+      <span class="cookie-brand">GRIDMIND PRIVACY</span>
+      <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+    </div>
+  </div>
+  <p id="cookie-description">
+    Wir verwenden notwendige Speichertechnologien für die Funktion dieser Website.
+    Zusätzliche Technologien aktivieren wir nur mit deiner Einwilligung.
+  </p>
+  <div class="cookie-details" id="cookie-details" hidden>
+    <label class="cookie-option">
+      <span><strong>Notwendig</strong><small>Grundlegende Funktionen und deine Auswahl.</small></span>
+      <input type="checkbox" checked disabled>
+    </label>
+    <label class="cookie-option">
+      <span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span>
+      <input type="checkbox" id="consent-functional">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span>
+      <input type="checkbox" id="consent-analytics">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span>
+      <input type="checkbox" id="consent-marketing">
+    </label>
+  </div>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept" id="cookie-accept"
+            type="button">Alle akzeptieren</button>
+    <button class="cookie-btn cookie-reject" id="cookie-reject"
+            type="button">Nur notwendige</button>
+    <button class="cookie-btn cookie-settings" id="cookie-settings"
+            type="button">Einstellungen</button>
+    <button class="cookie-btn cookie-save" id="cookie-save"
+            type="button" hidden>Auswahl speichern</button>
+  </div>
+  <div class="cookie-legal">
+    <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+    <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+    <a href="../rechtliches/impressum.html">Impressum</a>
+  </div>
+</section>
+
+<!-- PAGE JAVASCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  // TYPEWRITER
+  const typeOutput = document.getElementById("gp-typewriter");
+  const phrases = [
+    "deinen Alltag.",
+    "deine Ideen.",
+    "deine Momente.",
+    "dich."
+  ];
+
+  if (typeOutput && !reduceMotion) {
+    let phraseIndex = 0;
+    let charIndex = phrases[0].length;
+    let deleting = true;
+
+    function typeTick() {
+      const chars = Array.from(phrases[phraseIndex]);
+      charIndex += deleting ? -1 : 1;
+      charIndex = Math.max(0, Math.min(chars.length, charIndex));
+      typeOutput.textContent = chars.slice(0, charIndex).join("");
+
+      let delay = deleting ? 55 : 100;
+      if (deleting && charIndex === 0) {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        deleting = false;
+        delay = 330;
+      } else if (!deleting &&
+                 charIndex === Array.from(phrases[phraseIndex]).length) {
+        deleting = true;
+        delay = 1900;
+      }
+      window.setTimeout(typeTick, delay);
+    }
+
+    window.setTimeout(typeTick, 2000);
+  }
+
+  // COLOR & STORAGE CONFIGURATOR
+  const colors = {
+    forest: {name: "Forest Green", value: "#367b66"},
+    midnight: {name: "Midnight", value: "#293b4b"},
+    silver: {name: "Silver", value: "#c7d1d7"},
+    sky: {name: "Sky Blue", value: "#8dbbd8"}
+  };
+
+  let selectedColor = "forest";
+  let selectedStorage = "128";
+
+  const colorButtons = Array.from(
+    document.querySelectorAll("[data-gp-color]")
+  );
+  const storageButtons = Array.from(
+    document.querySelectorAll("[data-storage]")
+  );
+
+  const colorName = document.getElementById("gp-color-name");
+  const selection = document.getElementById("gp-selection");
+
+  function updateSelection() {
+    const color = colors[selectedColor];
+    if (colorName) colorName.textContent = color.name;
+    if (selection) {
+      selection.textContent = color.name + " · " + selectedStorage + " GB";
+    }
+    document.body.style.setProperty("--gp-device-color", color.value);
+
+    const buyLink = document.getElementById("gp-config-buy");
+    if (buyLink) {
+      const params = new URLSearchParams({
+        produkt: "gridphone",
+        farbe: selectedColor,
+        speicher: selectedStorage
+      });
+      buyLink.setAttribute("href", "kaufen.html?" + params.toString());
+    }
+  }
+
+  colorButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const color = button.dataset.gpColor;
+      if (!Object.hasOwn(colors, color)) return;
+      selectedColor = color;
+      colorButtons.forEach(item => {
+        const active = item === button;
+        item.classList.toggle("is-selected", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      updateSelection();
+    });
+  });
+
+  storageButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      selectedStorage = button.dataset.storage;
+      storageButtons.forEach(item => {
+        const active = item === button;
+        item.classList.toggle("is-selected", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      updateSelection();
+    });
+  });
+
+  updateSelection();
+});
+</script>
+</body>
+</html>

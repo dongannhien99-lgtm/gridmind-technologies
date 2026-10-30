@@ -1,0 +1,1540 @@
+
+/* =============================================
+   GRIDMIND TECHNOLOGIES – WEBSITES SERVICE
+   css/websites.css
+   ============================================= */
+
+.gridmind-websites {
+  --ws-green: #138a57;
+  --ws-dark: #103d34;
+  --ws-muted: #60776e;
+  --ws-pale: #f3f8f5;
+  --ws-border: #dceae1;
+  font-family: "Figtree", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.gridmind-websites main { overflow: clip; }
+.gridmind-websites .ws-section { padding: 110px 0 120px; }
+
+.gridmind-websites .ws-eyebrow {
+  display: block;
+  color: var(--ws-green);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  margin-bottom: 20px;
+}
+
+.gridmind-websites .ws-heading {
+  max-width: 830px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.gridmind-websites .ws-heading h2,
+.gridmind-websites .ws-split h2 {
+  color: var(--ws-dark);
+  font-size: clamp(36px, 4.7vw, 61px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  margin: 0 0 22px;
+}
+
+.gridmind-websites .ws-heading h2 em,
+.gridmind-websites .ws-split h2 em {
+  color: var(--ws-green);
+  font-style: normal;
+}
+
+.gridmind-websites .ws-heading p {
+  max-width: 640px;
+  margin: 0 auto;
+  color: var(--ws-muted);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.gridmind-websites .ws-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.gridmind-websites .ws-lead {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ws-muted);
+}
+
+.gridmind-websites .ws-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.gridmind-websites .ws-text-link,
+.gridmind-websites .ws-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  color: #138a57;
+  font-size: 15px;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.gridmind-websites .ws-text-link:hover,
+.gridmind-websites .ws-secondary-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* =============================================
+   SHIMMER / BREATHE
+   ============================================= */
+
+.gridmind-websites .hero-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #138a57;
+  color: #fff;
+  animation: gmButtonBreathe 3.4s ease-in-out infinite;
+}
+
+.gridmind-websites .hero-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    rgba(255,255,255,.42) 50%,
+    transparent 70%
+  );
+  transform: translateX(-130%);
+  animation: gmButtonShimmer 3.6s ease-in-out 1.2s infinite;
+  pointer-events: none;
+}
+
+.gridmind-websites .hero-button > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes gmButtonShimmer {
+  0% { transform: translateX(-130%); }
+  60%, 100% { transform: translateX(130%); }
+}
+
+@keyframes gmButtonBreathe {
+  0%, 100% {
+    box-shadow:
+      0 14px 36px -10px rgba(19,138,87,.55),
+      inset 0 1px 0 rgba(255,255,255,.18);
+  }
+  50% {
+    box-shadow:
+      0 18px 44px -10px rgba(19,138,87,.75),
+      0 0 0 6px rgba(19,138,87,.12),
+      inset 0 1px 0 rgba(255,255,255,.18);
+  }
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+
+.gridmind-websites .ws-hero {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 80% 35%,
+      rgba(111,224,151,.2), transparent 53%),
+    #fff;
+  padding: 105px 0 125px;
+  overflow: hidden;
+}
+
+.gridmind-websites .ws-hero-layout {
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.gridmind-websites .ws-hero-copy {
+  position: relative;
+  z-index: 5;
+}
+
+.gridmind-websites .ws-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  padding: 11px 17px;
+  background: #ecf9f0;
+  border: 1px solid #c9e9d5;
+  color: #11774b;
+  font-size: 11px;
+  letter-spacing: .085em;
+  font-weight: 850;
+  margin-bottom: 28px;
+}
+
+.gridmind-websites .ws-eyebrow-pill i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #21c277;
+  box-shadow: 0 0 0 5px #d8f4e3;
+  animation: wsPulse 2.7s ease-in-out infinite;
+}
+
+.gridmind-websites .ws-hero h1 {
+  font-size: clamp(49px, 5.45vw, 77px);
+  line-height: 1.06;
+  letter-spacing: -.05em;
+  font-weight: 900;
+  color: var(--ws-dark);
+  margin-bottom: 25px;
+}
+
+.gridmind-websites .ws-type-line {
+  display: block;
+  min-height: 1.32em;
+  color: #138a57;
+  overflow-wrap: anywhere;
+}
+
+.gridmind-websites .ws-type-line > i {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 4px;
+  height: .82em;
+  margin-left: 4px;
+  background: #23b874;
+  animation: wsBlink .8s steps(1) infinite;
+}
+
+.gridmind-websites .ws-hero-lead {
+  max-width: 550px;
+  color: #5b776b;
+  font-size: 18px;
+  line-height: 1.75;
+  margin-bottom: 23px;
+}
+
+.gridmind-websites .ws-hero-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 19px;
+  color: #168354;
+  font-size: 13px;
+  font-weight: 750;
+  margin-bottom: 31px;
+}
+
+.gridmind-websites .ws-hero-actions {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* =============================================
+   DESKTOP BROWSER / PHONE
+   ============================================= */
+
+.gridmind-websites .ws-hero-art {
+  position: relative;
+  min-height: 555px;
+  isolation: isolate;
+}
+
+.gridmind-websites .ws-hero-glow {
+  position: absolute;
+  inset: 20px -20px;
+  background: radial-gradient(
+    ellipse, rgba(86,210,142,.29),
+    rgba(215,248,228,.35) 45%, transparent 75%
+  );
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.gridmind-websites .ws-browser {
+  position: absolute;
+  top: 70px;
+  left: -2%;
+  width: 86%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #d7eadf;
+  border-radius: 20px;
+  box-shadow: 0 28px 70px rgba(11,81,49,.19);
+  animation: wsBrowserFloat 9s ease-in-out infinite;
+}
+
+.gridmind-websites .ws-browser-bar {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  padding: 14px 17px;
+  background: #f5f8f6;
+  color: #708a7d;
+  font: 10px Consolas, monospace;
+}
+
+.gridmind-websites .ws-browser-dots {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.gridmind-websites .ws-browser-dots i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fa8076;
+}
+
+.gridmind-websites .ws-browser-dots i:nth-child(2) {
+  background: #fac965;
+}
+
+.gridmind-websites .ws-browser-dots i:nth-child(3) {
+  background: #5edc99;
+}
+
+.gridmind-websites .ws-browser-lock {
+  margin-left: auto;
+  color: #138a57;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.gridmind-websites .ws-demo-page {
+  min-height: 376px;
+  background: #fffefa;
+}
+
+.gridmind-websites .ws-demo-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+  padding: 20px 24px;
+}
+
+.gridmind-websites .ws-demo-nav > strong {
+  font-size: 15px;
+  color: #173d32;
+  letter-spacing: -.02em;
+}
+
+.gridmind-websites .ws-demo-nav > strong span {
+  color: #1f9e6a;
+}
+
+.gridmind-websites .ws-demo-nav > div {
+  display: flex;
+  gap: 14px;
+  font-size: 9px;
+  color: #547065;
+}
+
+.gridmind-websites .ws-demo-nav > b {
+  font-size: 9px;
+  padding: 9px 11px;
+  border-radius: 20px;
+  color: white;
+  background: #153d35;
+}
+
+.gridmind-websites .ws-demo-hero {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  min-height: 270px;
+  padding: 26px;
+  gap: 10px;
+  align-items: center;
+}
+
+.gridmind-websites .ws-demo-copy > small {
+  color: #198f63;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+
+.gridmind-websites .ws-demo-copy h3 {
+  font-size: clamp(23px, 3vw, 40px);
+  line-height: 1.05;
+  color: #163e33;
+  margin: 15px 0;
+  letter-spacing: -.05em;
+}
+
+.gridmind-websites .ws-demo-copy h3 em {
+  color: #1bb77a;
+  font-style: normal;
+}
+
+.gridmind-websites .ws-demo-copy p {
+  color: #7a9284;
+  font-size: 10px;
+  max-width: 195px;
+  line-height: 1.5;
+}
+
+.gridmind-websites .ws-demo-button {
+  display: inline-block;
+  background: #138a57;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 13px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-top: 7px;
+}
+
+.gridmind-websites .ws-demo-shape {
+  position: relative;
+  height: 200px;
+  display: grid;
+  place-items: center;
+}
+
+.gridmind-websites .ws-demo-shape > span {
+  width: 175px;
+  height: 175px;
+  border-radius: 38% 62% 62% 38%;
+  background: linear-gradient(135deg,#98e9bd,#138a57);
+  transform: rotate(-25deg);
+  box-shadow: 18px 20px 0 #d9f6e5;
+}
+
+.gridmind-websites .ws-demo-shape > i {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 20px solid #edfef4;
+}
+
+.gridmind-websites .ws-demo-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 19px 15px;
+  border-top: 1px solid #e4eee7;
+  font-size: 9px;
+  font-weight: 900;
+  color: #6d8a7c;
+  letter-spacing: .04em;
+}
+
+/* PHONE */
+
+.gridmind-websites .ws-phone {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 180px;
+  width: 180px;
+  height: 328px;
+  padding: 20px 15px;
+  border: 7px solid #164638;
+  border-radius: 31px;
+  background: #f9fdf9;
+  box-shadow: 0 26px 55px rgba(13,81,49,.23);
+  animation: wsPhoneFloat 8s ease-in-out -2s infinite;
+}
+
+.gridmind-websites .ws-phone-notch {
+  width: 58px;
+  height: 12px;
+  border-radius: 0 0 12px 12px;
+  background: #164638;
+  position: absolute;
+  left: 50%;
+  top: -1px;
+  transform: translateX(-50%);
+}
+
+.gridmind-websites .ws-phone-brand {
+  margin: 17px 0 30px;
+  font-size: 10px;
+  font-weight: 900;
+  color: #154637;
+}
+
+.gridmind-websites .ws-phone-brand span {
+  color: #13a66a;
+}
+
+.gridmind-websites .ws-phone-eyebrow {
+  display: block;
+  font-size: 8px;
+  font-weight: 850;
+  color: #1a9867;
+}
+
+.gridmind-websites .ws-phone > strong {
+  display: block;
+  margin: 13px 0;
+  font-size: 25px;
+  line-height: 1.05;
+  color: #163f34;
+}
+
+.gridmind-websites .ws-phone > strong em {
+  color: #16a969;
+  font-style: normal;
+}
+
+.gridmind-websites .ws-phone-image {
+  height: 55px;
+  border-radius: 12px;
+  background: linear-gradient(120deg,#b8eed0,#1fa76c);
+}
+
+.gridmind-websites .ws-phone-button {
+  display: inline-block;
+  margin-top: 13px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  background: #154d3a;
+  color: white;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+/* FLOATING CHIPS */
+
+.gridmind-websites .ws-floating-chip {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 17px;
+  border: 1px solid #deede4;
+  border-radius: 17px;
+  background: white;
+  box-shadow: 0 17px 42px rgba(11,86,49,.14);
+}
+
+.gridmind-websites .ws-floating-chip > span {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 12px;
+  background: #e1f5e8;
+  color: #148c5b;
+  font-size: 23px;
+}
+
+.gridmind-websites .ws-floating-chip strong {
+  display: block;
+  color: #194e38;
+  font-size: 12px;
+}
+
+.gridmind-websites .ws-floating-chip small {
+  display: block;
+  color: #8a9c91;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.gridmind-websites .ws-chip-responsive {
+  top: 5px;
+  left: 4%;
+  animation: wsCardFloat 7s ease-in-out infinite;
+}
+
+.gridmind-websites .ws-chip-performance {
+  bottom: 10px;
+  left: 16%;
+  animation: wsCardFloat 9s ease-in-out -2s infinite;
+}
+
+.gridmind-websites .ws-spark {
+  position: absolute;
+  color: #36c581;
+  font-size: 28px;
+  animation: wsTwinkle 3s ease-in-out infinite;
+}
+
+.gridmind-websites .ws-spark-a { top: 25px; right: 15%; }
+.gridmind-websites .ws-spark-b {
+  left: 3%; bottom: 100px; animation-delay: -1.2s;
+}
+
+@keyframes wsBrowserFloat {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-16px) rotate(-2deg); }
+}
+@keyframes wsPhoneFloat {
+  0%, 100% { transform: translateY(0) rotate(5deg); }
+  50% { transform: translateY(-17px) rotate(5deg); }
+}
+@keyframes wsCardFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+@keyframes wsTwinkle {
+  0%, 100% { opacity: .3; transform: scale(.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@keyframes wsBlink {
+  0%,49% { opacity: 1; }
+  50%,100% { opacity: 0; }
+}
+@keyframes wsPulse {
+  0%,100% { opacity: 1; }
+  50% { opacity: .45; }
+}
+
+/* =============================================
+   INTRO
+   ============================================= */
+
+.gridmind-websites .ws-intro { background: #f3f8f5; }
+.gridmind-websites .ws-value-list { display: grid; gap: 28px; }
+
+.gridmind-websites .ws-value-list article {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d6e6dc;
+}
+
+.gridmind-websites .ws-value-list article:last-child { border: 0; }
+
+.gridmind-websites .ws-value-icon {
+  flex: 0 0 55px;
+  display: grid;
+  place-items: center;
+  height: 55px;
+  border-radius: 17px;
+  color: #138a57;
+  background: #e0f4e6;
+  font-size: 27px;
+}
+
+.gridmind-websites .ws-value-list h3 {
+  color: #164735;
+  font-size: 21px;
+  margin-bottom: 9px;
+}
+
+.gridmind-websites .ws-value-list p {
+  color: #637c6d;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* =============================================
+   SERVICE CARDS
+   ============================================= */
+
+.gridmind-websites .ws-services { background: white; }
+
+.gridmind-websites .ws-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 22px;
+}
+
+.gridmind-websites .ws-service-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
+  padding: 31px;
+  background: #f7faf8;
+  border: 1px solid #e1ede5;
+  border-radius: 25px;
+  transition: transform .3s ease,box-shadow .3s ease;
+}
+
+.gridmind-websites .ws-service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 45px rgba(12,89,49,.1);
+}
+
+.gridmind-websites .ws-service-number {
+  font: 800 11px Consolas,monospace;
+  color: #849d8f;
+}
+
+.gridmind-websites .ws-service-icon {
+  width: 61px;
+  height: 61px;
+  margin: 29px 0 23px;
+  display: grid;
+  place-items: center;
+  background: #def3e6;
+  border-radius: 19px;
+  color: #138a57;
+  font-size: 31px;
+}
+
+.gridmind-websites .ws-service-card h3 {
+  color: #123e30;
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.gridmind-websites .ws-service-card p {
+  color: #637b6e;
+  line-height: 1.7;
+  font-size: 15px;
+  flex: 1;
+}
+
+.gridmind-websites .ws-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+}
+
+.gridmind-websites .ws-tags span {
+  padding: 8px 12px;
+  background: #e9f6ed;
+  border-radius: 20px;
+  color: #138653;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* =============================================
+   INTERACTIVE WEBSITE TYPES
+   ============================================= */
+
+.gridmind-websites .ws-types { background: #f3f8f5; }
+
+.gridmind-websites .ws-type-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-bottom: 26px;
+}
+
+.gridmind-websites .ws-type-tab {
+  border: 1px solid #d0e4d7;
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: white;
+  color: #245740;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .2s,color .2s;
+}
+
+.gridmind-websites .ws-type-tab:hover,
+.gridmind-websites .ws-type-tab.is-active {
+  background: #138a57;
+  color: white;
+  border-color: #138a57;
+}
+
+.gridmind-websites .ws-type-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  min-height: 440px;
+  border: 1px solid #dbe9df;
+  border-radius: 29px;
+  background: white;
+  animation: wsPanelIn .35s ease;
+}
+
+.gridmind-websites .ws-type-panel[hidden] {
+  display: none !important;
+}
+
+.gridmind-websites .ws-type-visual {
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background: linear-gradient(135deg,#0c6349,#28b178);
+}
+
+.gridmind-websites .ws-visual-landing {
+  background: linear-gradient(135deg,#0c4565,#4e9ed3);
+}
+.gridmind-websites .ws-visual-portfolio {
+  background: linear-gradient(135deg,#5a386b,#b076bd);
+}
+.gridmind-websites .ws-visual-platform {
+  background: linear-gradient(135deg,#0f3947,#379d9a);
+}
+
+.gridmind-websites .ws-showcase-window {
+  width: min(100%,360px);
+  min-height: 310px;
+  padding: 35px;
+  border-radius: 20px;
+  background: #fefefa;
+  transform: rotate(-4deg);
+  box-shadow: 0 25px 50px rgba(0,0,0,.18);
+}
+
+.gridmind-websites .ws-showcase-top {
+  color: #5d806e;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .09em;
+}
+
+.gridmind-websites .ws-showcase-window h3 {
+  font-size: clamp(33px,4vw,51px);
+  line-height: 1.07;
+  color: #143e33;
+  margin: 31px 0;
+}
+
+.gridmind-websites .ws-showcase-window h3 em {
+  color: #159762;
+  font-style: normal;
+}
+
+.gridmind-websites .ws-showcase-blocks {
+  display: flex;
+  gap: 11px;
+}
+
+.gridmind-websites .ws-showcase-blocks i {
+  height: 57px;
+  background: #d5efde;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.gridmind-websites .ws-type-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px;
+}
+
+.gridmind-websites .ws-type-copy h3 {
+  font-size: clamp(29px,3.1vw,42px);
+  line-height: 1.12;
+  color: #143d32;
+  margin-bottom: 20px;
+}
+
+.gridmind-websites .ws-type-copy > p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #607a6c;
+}
+
+.gridmind-websites .ws-type-copy ul {
+  color: #315f47;
+  line-height: 1.9;
+  padding-left: 22px;
+  margin-bottom: 26px;
+  font-size: 15px;
+}
+
+.gridmind-websites .ws-type-copy .ws-text-link {
+  margin-top: auto;
+}
+
+.gridmind-websites .ws-demo-disclaimer {
+  text-align: center;
+  font-size: 12px;
+  color: #8aa095;
+  margin: 25px 0 0;
+}
+
+@keyframes wsPanelIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================================
+   PROJECT PROCESS TIMELINE
+   ============================================= */
+
+.gridmind-websites .ws-process { background: white; }
+
+.gridmind-websites .ws-process-track {
+  position: relative;
+}
+
+.gridmind-websites .ws-process-line {
+  position: absolute;
+  top: 55px;
+  bottom: 105px;
+  left: 50%;
+  width: 3px;
+  transform: translateX(-50%);
+  background: #d2e6d9;
+  border-radius: 5px;
+}
+
+.gridmind-websites .ws-process-progress {
+  height: 0;
+  width: 100%;
+  border-radius: inherit;
+  background: linear-gradient(#6cdfa4,#138a57,#0b6852);
+  box-shadow: 0 0 15px rgba(19,138,87,.22);
+}
+
+.gridmind-websites .ws-process-step {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 90px minmax(0,1fr);
+  gap: 31px;
+  align-items: start;
+  padding-bottom: 125px;
+  position: relative;
+}
+
+.gridmind-websites .ws-process-last {
+  padding-bottom: 45px;
+}
+
+.gridmind-websites .ws-process-copy { padding-top: 50px; }
+
+.gridmind-websites .ws-process-eyebrow {
+  display: block;
+  color: #138a57;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .09em;
+  margin-bottom: 18px;
+}
+
+.gridmind-websites .ws-process-copy h3 {
+  color: #143e32;
+  font-size: clamp(29px,3vw,42px);
+  line-height: 1.13;
+  letter-spacing: -.03em;
+  margin-bottom: 21px;
+}
+
+.gridmind-websites .ws-process-copy h3 em {
+  display: block;
+  font-style: normal;
+  color: #138a57;
+}
+
+.gridmind-websites .ws-process-copy > p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #657c6f;
+  margin-bottom: 24px;
+}
+
+.gridmind-websites .ws-process-checks {
+  display: grid;
+  gap: 12px;
+}
+
+.gridmind-websites .ws-process-checks span {
+  color: #365f49;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.gridmind-websites .ws-process-marker {
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 2;
+  justify-self: center;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #c6e4d1;
+  border-radius: 50%;
+  background: white;
+  color: #82a590;
+  font-size: 23px;
+  font-weight: 900;
+  transition: background .4s,color .4s,transform .4s;
+}
+
+.gridmind-websites .ws-process-step.is-visible .ws-process-marker {
+  background: #138a57;
+  color: #fff;
+  transform: scale(1.07);
+  box-shadow: 0 0 0 9px rgba(19,138,87,.1);
+}
+
+.gridmind-websites .ws-process-modules {
+  display: grid;
+  gap: 20px;
+  padding-top: 6px;
+}
+
+.gridmind-websites .ws-process-module {
+  background: #f5f9f6;
+  border: 1px solid #dcebe1;
+  padding: 23px;
+  border-radius: 21px;
+  transition: transform .25s ease;
+}
+
+.gridmind-websites .ws-process-module:hover {
+  transform: translateY(-4px);
+}
+
+.gridmind-websites .ws-process-module h4 {
+  font-size: 19px;
+  color: #153f32;
+  margin-bottom: 12px;
+}
+
+.gridmind-websites .ws-process-module p {
+  font-size: 14px;
+  color: #617b6b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.gridmind-websites .ws-process-finish {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px;
+  background: linear-gradient(135deg,#0b7553,#1caa6f);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 22px;
+}
+
+.gridmind-websites .ws-process-finish strong { font-size: 17px; }
+
+.gridmind-websites .ws-process-cta {
+  text-align: center;
+  max-width: 730px;
+  padding: 45px 25px;
+  margin: 25px auto 0;
+  border-radius: 29px;
+  background: #f3f8f5;
+  border: 1px solid #dcebe1;
+}
+
+.gridmind-websites .ws-process-cta h3 {
+  font-size: 30px;
+  color: #143e32;
+  margin-bottom: 12px;
+}
+
+.gridmind-websites .ws-process-cta p {
+  color: #617a6e;
+  margin-bottom: 26px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .gridmind-websites .ws-process-js .ws-process-copy,
+  .gridmind-websites .ws-process-js .ws-process-modules {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity .7s ease,transform .7s ease;
+  }
+
+  .gridmind-websites
+  .ws-process-js .ws-process-step.is-visible .ws-process-copy,
+  .gridmind-websites
+  .ws-process-js .ws-process-step.is-visible .ws-process-modules {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============================================
+   TECH SECTION
+   ============================================= */
+
+.gridmind-websites .ws-tech { background: #f3f8f5; }
+.gridmind-websites .ws-tech .ws-text-link { margin-top: 17px; }
+.gridmind-websites .ws-tech-list { display: grid; gap: 27px; }
+
+.gridmind-websites .ws-tech-list article {
+  display: flex;
+  gap: 18px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d5e6dc;
+}
+
+.gridmind-websites .ws-tech-list article > span {
+  flex: 0 0 55px;
+  display: grid;
+  place-items: center;
+  height: 55px;
+  color: #138a57;
+  background: #dff2e6;
+  border-radius: 17px;
+  font-size: 25px;
+}
+
+.gridmind-websites .ws-tech-list h3 {
+  font-size: 21px;
+  color: #173e32;
+  margin-bottom: 8px;
+}
+
+.gridmind-websites .ws-tech-list p {
+  margin: 0;
+  color: #637b6d;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =============================================
+   MARQUEE
+   ============================================= */
+
+.gridmind-websites .ws-industries {
+  background: white;
+  overflow: hidden;
+}
+
+.gridmind-websites .ws-industries .ws-heading {
+  padding: 0 25px;
+}
+
+.gridmind-websites .ws-marquee {
+  display: grid;
+  gap: 15px;
+}
+
+.gridmind-websites .ws-marquee-row {
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(
+    to right,transparent,#000 8%,#000 92%,transparent);
+  mask-image: linear-gradient(
+    to right,transparent,#000 8%,#000 92%,transparent);
+}
+
+.gridmind-websites .ws-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: wsMarqueeLeft 43s linear infinite;
+}
+
+.gridmind-websites .ws-marquee-reverse .ws-marquee-track {
+  animation-name: wsMarqueeRight;
+  animation-duration: 48s;
+}
+
+.gridmind-websites .ws-marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 14px;
+  padding-right: 14px;
+}
+
+.gridmind-websites .ws-marquee-group > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  height: 72px;
+  padding: 0 25px;
+  border: 1px solid #dcebe1;
+  border-radius: 16px;
+  background: #f7faf8;
+  color: #315a47;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.gridmind-websites .ws-marquee-row:hover .ws-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes wsMarqueeLeft {
+  to { transform: translateX(-50%); }
+}
+@keyframes wsMarqueeRight {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+/* =============================================
+   BENEFITS
+   ============================================= */
+
+.gridmind-websites .ws-benefits { background: #f3f8f5; }
+
+.gridmind-websites .ws-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 30px;
+}
+
+.gridmind-websites .ws-benefits-grid article {
+  border-top: 1px solid #d5e6dc;
+  padding: 27px 0;
+}
+
+.gridmind-websites .ws-benefits-grid article > span {
+  display: block;
+  font-size: 16px;
+  font-weight: 900;
+  color: #138a57;
+  margin-bottom: 24px;
+}
+
+.gridmind-websites .ws-benefits-grid h3 {
+  color: #143f32;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.gridmind-websites .ws-benefits-grid p {
+  color: #617b6d;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =============================================
+   FAQ
+   ============================================= */
+
+.gridmind-websites .ws-faq { background: white; }
+.gridmind-websites .ws-faq-list { display: grid; align-content: start; }
+
+.gridmind-websites .ws-faq-list details {
+  padding: 21px 0;
+  border-bottom: 1px solid #dcebe1;
+}
+
+.gridmind-websites .ws-faq-list summary {
+  color: #153f32;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 850;
+  line-height: 1.5;
+}
+
+.gridmind-websites .ws-faq-list summary:hover {
+  color: #138a57;
+}
+
+.gridmind-websites .ws-faq-list details p {
+  color: #637a6c;
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 14px 0 0;
+}
+
+/* =============================================
+   FINAL CTA
+   ============================================= */
+
+.gridmind-websites .ws-final {
+  text-align: center;
+  padding: 118px 20px 130px;
+  background:
+    radial-gradient(ellipse at 80% 0%,
+      rgba(106,225,156,.2),transparent 55%),
+    linear-gradient(135deg,#083b32,#0d8054);
+  color: white;
+}
+
+.gridmind-websites .ws-final .ws-eyebrow { color: #a0efc0; }
+
+.gridmind-websites .ws-final h2 {
+  color: white;
+  font-size: clamp(40px,5vw,69px);
+  line-height: 1.1;
+  letter-spacing: -.04em;
+  max-width: 850px;
+  margin: 20px auto 25px;
+}
+
+.gridmind-websites .ws-final h2 em {
+  color: #a6f2c6;
+  font-style: normal;
+}
+
+.gridmind-websites .ws-final p {
+  color: #d8f4e5;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* =============================================
+   COOKIE BANNER
+   ============================================= */
+
+.gridmind-websites .cookie-overlay {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  z-index: 9998;
+}
+
+.gridmind-websites .cookie-banner {
+  z-index: 9999 !important;
+  background: white;
+  color: #193f35;
+  box-shadow: 0 20px 60px rgba(5,58,37,.18);
+}
+
+.gridmind-websites .cookie-overlay[hidden],
+.gridmind-websites .cookie-banner[hidden] {
+  display: none !important;
+}
+
+/* =============================================
+   RESPONSIVE TABLET
+   ============================================= */
+
+@media (max-width: 1050px) {
+  .gridmind-websites .ws-hero-layout { gap: 20px; }
+  .gridmind-websites .ws-hero h1 { font-size: 54px; }
+  .gridmind-websites .ws-split { gap: 45px; }
+  .gridmind-websites .ws-browser { width: 90%; }
+  .gridmind-websites .ws-phone { right: -8px; }
+  .gridmind-websites .ws-process-step {
+    grid-template-columns: minmax(0,1fr) 70px minmax(0,1fr);
+    gap: 19px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE MOBILE
+   ============================================= */
+
+@media (max-width: 800px) {
+  .gridmind-websites .ws-hero { padding: 75px 0 90px; }
+  .gridmind-websites .ws-hero-layout,
+  .gridmind-websites .ws-split,
+  .gridmind-websites .ws-type-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-websites .ws-hero-copy { text-align: center; }
+  .gridmind-websites .ws-hero h1 {
+    font-size: clamp(43px,7.8vw,64px);
+  }
+
+  .gridmind-websites .ws-hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gridmind-websites .ws-hero-benefits,
+  .gridmind-websites .ws-hero-actions {
+    justify-content: center;
+  }
+
+  .gridmind-websites .ws-hero-art {
+    width: min(590px,100%);
+    margin: 25px auto 0;
+  }
+
+  .gridmind-websites .ws-type-visual { min-height: 310px; }
+  .gridmind-websites .ws-type-copy { padding: 35px; }
+
+  .gridmind-websites .ws-process-step {
+    grid-template-columns: 65px minmax(0,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-bottom: 95px;
+  }
+
+  .gridmind-websites .ws-process-line {
+    left: 32px;
+    transform: none;
+  }
+
+  .gridmind-websites .ws-process-marker {
+    grid-column: 1;
+    grid-row: 1;
+    width: 64px;
+    height: 64px;
+  }
+  .gridmind-websites .ws-process-copy {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 0;
+  }
+  .gridmind-websites .ws-process-modules {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .gridmind-websites .ws-service-grid,
+  .gridmind-websites .ws-benefits-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .gridmind-websites .ws-section {
+    padding: 75px 0 85px;
+  }
+
+  .gridmind-websites .ws-hero h1 {
+    font-size: clamp(38px,8.5vw,53px);
+  }
+
+  .gridmind-websites .ws-hero-lead { font-size: 16px; }
+  .gridmind-websites .ws-eyebrow-pill { font-size: 9px; }
+
+  .gridmind-websites .ws-hero-art {
+    min-height: 440px;
+  }
+
+  .gridmind-websites .ws-browser {
+    width: 92%;
+    left: 0;
+    top: 77px;
+  }
+
+  .gridmind-websites .ws-browser-bar {
+    padding: 11px;
+    font-size: 9px;
+  }
+  .gridmind-websites .ws-browser-lock { display: none; }
+
+  .gridmind-websites .ws-demo-nav { padding: 14px; }
+  .gridmind-websites .ws-demo-nav > div { display: none; }
+  .gridmind-websites .ws-demo-hero {
+    min-height: 210px;
+    padding: 16px;
+  }
+  .gridmind-websites .ws-demo-copy h3 { font-size: 26px; }
+  .gridmind-websites .ws-demo-copy p { font-size: 9px; }
+  .gridmind-websites .ws-demo-shape { height: 125px; }
+  .gridmind-websites .ws-demo-shape > span {
+    height: 103px;
+    width: 103px;
+  }
+  .gridmind-websites .ws-demo-shape > i {
+    height: 46px;
+    width: 46px;
+    border-width: 12px;
+  }
+  .gridmind-websites .ws-demo-bottom {
+    padding: 12px;
+    font-size: 8px;
+  }
+  .gridmind-websites .ws-demo-page { min-height: 285px; }
+
+  .gridmind-websites .ws-phone {
+    top: 155px;
+    right: 0;
+    width: 120px;
+    height: 234px;
+    padding: 15px 10px;
+    border-width: 5px;
+    border-radius: 23px;
+  }
+  .gridmind-websites .ws-phone-brand { margin: 15px 0 19px; }
+  .gridmind-websites .ws-phone > strong { font-size: 18px; }
+  .gridmind-websites .ws-phone-image { height: 35px; }
+
+  .gridmind-websites .ws-floating-chip {
+    padding: 8px 10px;
+  }
+  .gridmind-websites .ws-floating-chip > span {
+    width: 28px; height: 28px; font-size: 18px;
+  }
+  .gridmind-websites .ws-floating-chip strong { font-size: 10px; }
+  .gridmind-websites .ws-floating-chip small { font-size: 8px; }
+  .gridmind-websites .ws-chip-performance {
+    bottom: 0;
+    left: 3%;
+  }
+
+  .gridmind-websites .ws-service-grid,
+  .gridmind-websites .ws-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .gridmind-websites .ws-service-card { min-height: auto; }
+
+  .gridmind-websites .ws-type-tabs { flex-direction: column; }
+  .gridmind-websites .ws-type-tab { text-align: left; }
+  .gridmind-websites .ws-type-copy { padding: 25px; }
+  .gridmind-websites .ws-type-visual { padding: 22px; }
+  .gridmind-websites .ws-showcase-window { min-height: 260px; }
+
+  .gridmind-websites .ws-process-step {
+    grid-template-columns: 46px minmax(0,1fr);
+    column-gap: 14px;
+  }
+  .gridmind-websites .ws-process-line {
+    left: 23px;
+    top: 35px;
+    bottom: 100px;
+  }
+  .gridmind-websites .ws-process-marker {
+    width: 46px; height: 46px; font-size: 15px;
+  }
+  .gridmind-websites .ws-process-copy h3 { font-size: 28px; }
+  .gridmind-websites .ws-process-copy p { font-size: 14px; }
+  .gridmind-websites .ws-process-module { padding: 18px; }
+  .gridmind-websites .ws-process-module h4 { font-size: 16px; }
+
+  .gridmind-websites .ws-marquee-group > span {
+    height: 62px;
+    padding: 0 18px;
+    font-size: 12px;
+  }
+}
+
+/* =============================================
+   ACCESSIBILITY
+   ============================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .gridmind-websites .hero-button,
+  .gridmind-websites .hero-button::before,
+  .gridmind-websites .ws-eyebrow-pill i,
+  .gridmind-websites .ws-type-line > i,
+  .gridmind-websites .ws-browser,
+  .gridmind-websites .ws-phone,
+  .gridmind-websites .ws-floating-chip,
+  .gridmind-websites .ws-spark {
+    animation: none !important;
+  }
+
+  .gridmind-websites .ws-process-copy,
+  .gridmind-websites .ws-process-modules {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .gridmind-websites .ws-process-progress {
+    height: 100% !important;
+  }
+
+  .gridmind-websites .ws-marquee-track {
+    animation: none !important;
+  }
+
+  .gridmind-websites .ws-marquee-row {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .gridmind-websites .ws-marquee-group[aria-hidden="true"] {
+    display: none;
+  }
+}

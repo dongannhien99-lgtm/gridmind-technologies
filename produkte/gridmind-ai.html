@@ -1,0 +1,2105 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081e2b">
+  <meta name="description" content="Gridmind AI – dein intelligenter Workspace für Schreiben, Programmieren, Lernen, Recherche und kreative Ideen.">
+  <title>Gridmind AI | Gridmind Technologies</title>
+
+  <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/gridmind-ai.css">
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body class="gridmind-ai-product">
+<a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
+
+<!-- =============================================
+     GEMEINSAMER GRIDMIND HEADER
+     ============================================= -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"
+       aria-label="Gridmind Technologies – Startseite">
+      <img src="../assets/logo.png" width="280" height="94"
+           alt="Gridmind Technologies">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-offers">
+          Unsere Angebote
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="nav-dropdown" id="nav-offers">
+          <span class="dropdown-title">Ausbildung & Karriere</span>
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+
+          <span class="dropdown-title">Digitale Dienstleistungen</span>
+          <a href="../services/websites.html">Websites erstellen lassen</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-devices">
+          Geräte & Software
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="nav-dropdown" id="nav-devices">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html"
+             aria-current="page">Gridmind AI</a>
+        </div>
+      </div>
+
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-cta" href="#ausprobieren">
+        Gridmind AI öffnen <span aria-hidden="true">↗</span>
+      </a>
+
+      <button class="hamburger" id="hamburger"
+              type="button" aria-label="Menü öffnen"
+              aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobiles Menü">
+    <div class="mobile-menu-inner">
+      <a href="../index.html">Startseite</a>
+
+      <details>
+        <summary>Bildungsangebote</summary>
+        <div class="mobile-submenu">
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Websites & Software</summary>
+        <div class="mobile-submenu">
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Grid-Geräte</summary>
+        <div class="mobile-submenu">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html"
+             aria-current="page">Gridmind AI</a>
+        </div>
+      </details>
+
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+      <a href="../unternehmen/kontakt.html">Kontakt</a>
+      <a href="#ausprobieren" class="mobile-cta">
+        Gridmind AI öffnen →
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- =============================================
+       PRODUKTNAVIGATION
+       ============================================= -->
+  <nav class="gai-subnav" aria-label="Gridmind AI Produktnavigation">
+    <div class="container gai-subnav-inner">
+      <strong><span>✦</span> Gridmind AI</strong>
+      <div>
+        <a href="#funktionen">Funktionen</a>
+        <a href="#ausprobieren">AI Workspace</a>
+        <a href="#workflow">Arbeitsablauf</a>
+        <a href="#faq">FAQ</a>
+        <a href="#ausprobieren" class="gai-subnav-cta">
+          AI öffnen
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =============================================
+       HERO
+       ============================================= -->
+  <section class="gai-hero" aria-labelledby="gai-hero-title">
+    <div class="container gai-hero-layout">
+      <div class="gai-hero-copy">
+        <span class="gai-kicker">
+          <i></i> GRIDMIND INTELLIGENCE
+        </span>
+
+        <h1 id="gai-hero-title">
+          Gridmind AI.
+          <span class="gai-hero-type">
+            Für
+            <span id="gai-typewriter" aria-hidden="true">deine Ideen.</span><i aria-hidden="true"></i>
+          </span>
+        </h1>
+
+        <p class="gai-sr-only">
+          Gridmind AI – für Ideen, Schreiben, Code,
+          Wissen und kreative Projekte.
+        </p>
+
+        <p class="gai-hero-lead">
+          Frag. Entdecke. Erschaffe.
+          Ein intelligenter Workspace für deine
+          Texte, Programmierung, Projekte
+          und kreativen Herausforderungen.
+        </p>
+
+        <div class="gai-hero-benefits">
+          <span>✓ Schreiben & Ideen</span>
+          <span>✓ Code & Technik</span>
+          <span>✓ Wissen strukturieren</span>
+        </div>
+
+        <div class="gai-hero-actions">
+          <a href="#ausprobieren" class="btn btn-primary hero-button">
+            Gridmind AI öffnen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#funktionen" class="gai-hero-secondary">
+            Funktionen entdecken ↘
+          </a>
+        </div>
+      </div>
+
+      <!-- GRIDMIND AI PRODUKTANSICHT -->
+      <div class="gai-hero-visual">
+        <div class="gai-hero-glow"></div>
+
+        <div class="gai-hero-window">
+          <div class="gai-window-bar">
+            <span class="gai-window-dots">
+              <i></i><i></i><i></i>
+            </span>
+            <span>Gridmind AI / Workspace</span>
+            <small>GRIDMIND AI</small>
+          </div>
+
+          <div class="gai-window-layout">
+            <div class="gai-window-sidebar">
+              <div class="gai-mini-logo">
+                <img src="../assets/logo-icon.png" alt="">
+              </div>
+              <span>⌕</span>
+              <span>✦</span>
+              <span>▤</span>
+              <span>⌘</span>
+            </div>
+
+            <div class="gai-window-content">
+              <div class="gai-window-heading">
+                <span>✦ GRIDMIND AI</span>
+                <small>Intelligent Workspace</small>
+              </div>
+
+              <div class="gai-window-message gai-window-user">
+                Erstelle einen Plan für mein nächstes Projekt.
+              </div>
+
+              <div class="gai-window-message gai-window-assistant">
+                <strong>✦ Gridmind AI</strong>
+                <p>
+                  Beginnen wir mit deinem Ziel und
+                  teilen das Projekt in überschaubare
+                  Schritte auf.
+                </p>
+                <div class="gai-mini-steps">
+                  <span>01 · Planen</span>
+                  <span>02 · Entwickeln</span>
+                  <span>03 · Testen</span>
+                </div>
+              </div>
+
+              <div class="gai-window-input">
+                <span>Nachricht an Gridmind AI ...</span>
+                <b>➤</b>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gai-float-card gai-float-writing">
+          <span>✎</span>
+          <div>
+            <strong>Creative Writing</strong>
+            <small>Ideas into words</small>
+          </div>
+        </div>
+
+        <div class="gai-float-card gai-float-code">
+          <span>⌘</span>
+          <div>
+            <strong>Code Assistant</strong>
+            <small>Build & understand</small>
+          </div>
+        </div>
+
+        <div class="gai-float-card gai-float-knowledge">
+          <span>▤</span>
+          <div>
+            <strong>Knowledge</strong>
+            <small>Explore information</small>
+          </div>
+        </div>
+
+        <span class="gai-spark gai-spark-one" aria-hidden="true">✦</span>
+        <span class="gai-spark gai-spark-two" aria-hidden="true">✧</span>
+        <span class="gai-spark gai-spark-three" aria-hidden="true">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       HIGHLIGHTS
+       ============================================= -->
+  <section class="gai-highlights">
+    <div class="container gai-highlight-grid">
+      <article>
+        <span>01</span>
+        <strong>Schreiben</strong>
+        <p>Ideen in Texte verwandeln</p>
+      </article>
+
+      <article>
+        <span>02</span>
+        <strong>Programmieren</strong>
+        <p>Code verstehen und entwickeln</p>
+      </article>
+
+      <article>
+        <span>03</span>
+        <strong>Lernen</strong>
+        <p>Komplexe Themen erschließen</p>
+      </article>
+
+      <article>
+        <span>04</span>
+        <strong>Organisieren</strong>
+        <p>Projekte strukturiert angehen</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- =============================================
+       PRODUKTVORSTELLUNG
+       ============================================= -->
+  <section class="gai-section gai-intro">
+    <div class="container gai-split">
+      <div>
+        <span class="gai-eyebrow">DEIN DIGITALER WORKSPACE</span>
+
+        <h2>
+          Aus Fragen werden<br>
+          <em>neue Perspektiven.</em>
+        </h2>
+
+        <p class="gai-lead">
+          Manchmal brauchst du eine neue Idee.
+          Manchmal eine verständliche Erklärung.
+          Und manchmal einfach einen guten
+          Ausgangspunkt für dein nächstes Projekt.
+        </p>
+
+        <p>
+          Gridmind AI verbindet intelligente
+          Arbeitsbereiche in einer klaren,
+          modernen Benutzeroberfläche.
+        </p>
+      </div>
+
+      <div class="gai-intro-list">
+        <article>
+          <span>✦</span>
+          <div>
+            <h3>Ideen entwickeln</h3>
+            <p>
+              Neue Perspektiven finden,
+              Gedanken sortieren und kreative
+              Aufgaben angehen.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>⌘</span>
+          <div>
+            <h3>Technik verstehen</h3>
+            <p>
+              Programmierkonzepte erklären,
+              Code untersuchen und Lösungen planen.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>▤</span>
+          <div>
+            <h3>Wissen aufbereiten</h3>
+            <p>
+              Informationen zusammenfassen,
+              strukturieren und verständlich darstellen.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FUNKTIONEN
+       ============================================= -->
+  <section class="gai-section gai-features" id="funktionen">
+    <div class="container">
+      <div class="gai-heading">
+        <span class="gai-eyebrow">ENTDECKE DIE MÖGLICHKEITEN</span>
+        <h2>
+          Ein Workspace.<br>
+          <em>Viele Fähigkeiten.</em>
+        </h2>
+        <p>
+          Schreiben, Programmieren, Lernen und
+          Organisieren in einer zusammenhängenden
+          digitalen Arbeitsumgebung.
+        </p>
+      </div>
+
+      <div class="gai-feature-grid">
+        <article class="gai-feature-card">
+          <span class="gai-feature-index">01 / WRITING</span>
+          <span class="gai-feature-icon">✎</span>
+          <h3>Schreiben & Formulieren</h3>
+          <p>
+            Texte strukturieren, verschiedene
+            Formulierungen entwickeln und neue
+            Schreibideen entdecken.
+          </p>
+          <div class="gai-tags">
+            <span>Writing</span>
+            <span>Editing</span>
+            <span>Ideas</span>
+          </div>
+        </article>
+
+        <article class="gai-feature-card">
+          <span class="gai-feature-index">02 / CODING</span>
+          <span class="gai-feature-icon">⌘</span>
+          <h3>Programmieren</h3>
+          <p>
+            Codebeispiele erklären, Softwarekonzepte
+            verstehen und technische Aufgaben bearbeiten.
+          </p>
+          <div class="gai-tags">
+            <span>Code</span>
+            <span>Debug</span>
+            <span>Explain</span>
+          </div>
+        </article>
+
+        <article class="gai-feature-card">
+          <span class="gai-feature-index">03 / LEARNING</span>
+          <span class="gai-feature-icon">◇</span>
+          <h3>Lernen & Verstehen</h3>
+          <p>
+            Schwierige Themen in verständliche
+            Schritte aufteilen und neue
+            Zusammenhänge erschließen.
+          </p>
+          <div class="gai-tags">
+            <span>Learning</span>
+            <span>Explain</span>
+            <span>Practice</span>
+          </div>
+        </article>
+
+        <article class="gai-feature-card">
+          <span class="gai-feature-index">04 / ORGANIZE</span>
+          <span class="gai-feature-icon">▣</span>
+          <h3>Planung & Organisation</h3>
+          <p>
+            Ideen, Aufgaben und Projekte sinnvoll
+            gliedern und daraus übersichtliche
+            Arbeitspläne erstellen.
+          </p>
+          <div class="gai-tags">
+            <span>Planning</span>
+            <span>Tasks</span>
+            <span>Projects</span>
+          </div>
+        </article>
+
+        <article class="gai-feature-card">
+          <span class="gai-feature-index">05 / RESEARCH</span>
+          <span class="gai-feature-icon">▤</span>
+          <h3>Recherche & Analyse</h3>
+          <p>
+            Informationen aus bereitgestellten
+            Inhalten ordnen, Fragen entwickeln
+            und Erkenntnisse herausarbeiten.
+          </p>
+          <div class="gai-tags">
+            <span>Research</span>
+            <span>Analysis</span>
+            <span>Summary</span>
+          </div>
+        </article>
+
+        <article class="gai-feature-card">
+          <span class="gai-feature-index">06 / CREATIVITY</span>
+          <span class="gai-feature-icon">✦</span>
+          <h3>Kreative Projekte</h3>
+          <p>
+            Brainstorming, Konzepte, Namen und neue
+            Ansätze für Produkte und digitale Erlebnisse.
+          </p>
+          <div class="gai-tags">
+            <span>Creative</span>
+            <span>Concepts</span>
+            <span>Explore</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       GRIDMIND AI WORKSPACE
+       ============================================= -->
+  <section class="gai-section gai-demo-section" id="ausprobieren">
+    <div class="container">
+
+      <div class="gai-heading gai-heading-dark">
+        <span class="gai-eyebrow">GRIDMIND INTELLIGENCE</span>
+
+        <h2>
+          Deine Ideen.<br>
+          <em>Dein AI Workspace.</em>
+        </h2>
+
+        <p>
+          Entdecke intelligente Arbeitsbereiche für
+          Schreiben, Programmieren, Lernen und
+          Projektplanung. Wähle eine Aufgabe,
+          um die Funktionen kennenzulernen.
+        </p>
+      </div>
+
+      <!-- Bestehende CSS-Klassen beibehalten -->
+      <div class="gai-demo" aria-label="Gridmind AI Workspace">
+
+        <aside class="gai-demo-sidebar"
+               aria-label="AI-Arbeitsbereiche">
+
+          <div class="gai-demo-brand">
+            <img src="../assets/logo-icon.png" alt="">
+            <strong>Gridmind AI</strong>
+          </div>
+
+          <span class="gai-demo-sidebar-label">
+            AI WORKSPACES
+          </span>
+
+          <button type="button"
+                  class="gai-demo-category is-active"
+                  data-gai-category="writing"
+                  aria-pressed="true">
+            ✎ Schreiben
+          </button>
+
+          <button type="button"
+                  class="gai-demo-category"
+                  data-gai-category="coding"
+                  aria-pressed="false">
+            ⌘ Programmieren
+          </button>
+
+          <button type="button"
+                  class="gai-demo-category"
+                  data-gai-category="learning"
+                  aria-pressed="false">
+            ◇ Lernen
+          </button>
+
+          <button type="button"
+                  class="gai-demo-category"
+                  data-gai-category="planning"
+                  aria-pressed="false">
+            ▣ Planung
+          </button>
+
+          <div class="gai-demo-sidebar-bottom">
+            <span>✦ Gridmind Intelligence</span>
+            <small>Additional access required</small>
+          </div>
+        </aside>
+
+        <div class="gai-demo-main">
+
+          <div class="gai-demo-header">
+            <div>
+              <strong id="gai-demo-title">
+                Writing Assistant
+              </strong>
+              <span>
+                Gridmind AI · Intelligent Workspace
+              </span>
+            </div>
+
+            <span class="gai-demo-status">
+              ● LIMITED ACCESS
+            </span>
+          </div>
+
+          <div class="gai-demo-conversation"
+               id="gai-demo-conversation"
+               aria-live="polite"
+               aria-relevant="additions text">
+
+            <div class="gai-demo-welcome">
+              <div class="gai-demo-welcome-icon">✦</div>
+              <h3>Was möchtest du heute erschaffen?</h3>
+              <p>
+                Entdecke die Arbeitsbereiche von
+                Gridmind AI und wähle eine Aufgabe.
+              </p>
+            </div>
+          </div>
+
+          <div class="gai-demo-bottom">
+
+            <div class="gai-demo-suggestions"
+                 id="gai-demo-suggestions">
+              <button type="button" data-gai-example="0">
+                Schreibe eine kreative Einleitung
+              </button>
+              <button type="button" data-gai-example="1">
+                Verbessere einen Text
+              </button>
+              <button type="button" data-gai-example="2">
+                Finde drei neue Ideen
+              </button>
+            </div>
+
+            <form class="gai-demo-form" id="gai-demo-form">
+              <label class="gai-sr-only"
+                     for="gai-demo-input">
+                Nachricht an Gridmind AI
+              </label>
+
+              <input id="gai-demo-input"
+                     type="text"
+                     maxlength="250"
+                     placeholder="Nachricht an Gridmind AI ..."
+                     autocomplete="off">
+
+              <button type="submit"
+                      aria-label="Nachricht senden">
+                ➤
+              </button>
+            </form>
+
+            <small class="gai-demo-disclaimer">
+              Erweiterte AI-Funktionen erfordern
+              einen freigeschalteten Zugang.
+              Diese öffentliche Oberfläche bietet
+              ausgewählte Beispielinteraktionen.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ANWENDUNGSBEREICHE
+       ============================================= -->
+  <section class="gai-section gai-usecases">
+    <div class="container">
+
+      <div class="gai-heading">
+        <span class="gai-eyebrow">DEIN EINSATZBEREICH</span>
+        <h2>
+          Für deine Aufgaben.<br>
+          <em>Für deinen Workflow.</em>
+        </h2>
+        <p>
+          Entdecke die vielseitigen Arbeitsbereiche
+          von Gridmind AI.
+        </p>
+      </div>
+
+      <div class="gai-tabs" role="tablist"
+           aria-label="Anwendungsbereiche">
+        <button class="gai-tab is-active"
+                type="button"
+                role="tab"
+                id="gai-tab-work"
+                aria-controls="gai-panel-work"
+                aria-selected="true"
+                tabindex="0">
+          Produktivität
+        </button>
+
+        <button class="gai-tab"
+                type="button"
+                role="tab"
+                id="gai-tab-code"
+                aria-controls="gai-panel-code"
+                aria-selected="false"
+                tabindex="-1">
+          Development
+        </button>
+
+        <button class="gai-tab"
+                type="button"
+                role="tab"
+                id="gai-tab-learn"
+                aria-controls="gai-panel-learn"
+                aria-selected="false"
+                tabindex="-1">
+          Lernen
+        </button>
+
+        <button class="gai-tab"
+                type="button"
+                role="tab"
+                id="gai-tab-creative"
+                aria-controls="gai-panel-creative"
+                aria-selected="false"
+                tabindex="-1">
+          Kreativität
+        </button>
+      </div>
+
+      <div class="gai-panels">
+
+        <article class="gai-panel is-active"
+                 id="gai-panel-work"
+                 role="tabpanel"
+                 aria-labelledby="gai-tab-work">
+
+          <div class="gai-panel-art gai-art-work">
+            <div class="gai-panel-card">
+              <span>PRODUCTIVITY WORKSPACE</span>
+              <h3>Plan.<br><em>Focus.</em></h3>
+              <div class="gai-panel-task">
+                ✓ Projektziele definieren
+              </div>
+              <div class="gai-panel-task">
+                ✓ Aufgaben priorisieren
+              </div>
+            </div>
+          </div>
+
+          <div class="gai-panel-copy">
+            <span class="gai-eyebrow">WORK SMARTER</span>
+            <h3>Mehr Struktur für deinen Arbeitsalltag.</h3>
+            <p>
+              Organisiere Gedanken, entwickle Projektpläne
+              und verwandle umfangreiche Aufgaben
+              in nachvollziehbare Schritte.
+            </p>
+            <ul>
+              <li>Aufgaben strukturieren</li>
+              <li>Ideen in Pläne umwandeln</li>
+              <li>Zusammenfassungen erstellen</li>
+            </ul>
+            <a href="#ausprobieren" class="gai-text-link">
+              Gridmind AI öffnen ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="gai-panel"
+                 id="gai-panel-code"
+                 role="tabpanel"
+                 aria-labelledby="gai-tab-code"
+                 hidden>
+
+          <div class="gai-panel-art gai-art-code">
+            <div class="gai-panel-card gai-panel-code-card">
+              <span>CODE WORKSPACE</span>
+              <h3>Build.<br><em>Debug.</em></h3>
+              <code>const idea = "Gridmind";</code>
+              <code>console.log(idea);</code>
+            </div>
+          </div>
+
+          <div class="gai-panel-copy">
+            <span class="gai-eyebrow">DEVELOPMENT</span>
+            <h3>Code verständlich machen.</h3>
+            <p>
+              Von einfachen Programmierkonzepten
+              bis zur systematischen Fehlersuche –
+              intelligente Werkzeuge helfen dabei,
+              Software besser zu verstehen.
+            </p>
+            <ul>
+              <li>Code erklären lassen</li>
+              <li>Fehlerursachen eingrenzen</li>
+              <li>Technische Konzepte planen</li>
+            </ul>
+            <a href="#ausprobieren" class="gai-text-link">
+              Coding AI öffnen ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="gai-panel"
+                 id="gai-panel-learn"
+                 role="tabpanel"
+                 aria-labelledby="gai-tab-learn"
+                 hidden>
+
+          <div class="gai-panel-art gai-art-learn">
+            <div class="gai-panel-card">
+              <span>LEARNING WORKSPACE</span>
+              <h3>Ask.<br><em>Understand.</em></h3>
+              <div class="gai-panel-task">
+                01 · Grundlagen
+              </div>
+              <div class="gai-panel-task">
+                02 · Beispiele
+              </div>
+            </div>
+          </div>
+
+          <div class="gai-panel-copy">
+            <span class="gai-eyebrow">LEARNING</span>
+            <h3>Komplexe Themen leichter erschließen.</h3>
+            <p>
+              Strukturiere neue Themen, beschäftige dich
+              mit verständlichen Erklärungen und
+              entwickle eigene Lernpläne.
+            </p>
+            <ul>
+              <li>Begriffe verständlich erklären</li>
+              <li>Beispiele und Analogien entwickeln</li>
+              <li>Lernpläne und Übungen erstellen</li>
+            </ul>
+            <a href="#ausprobieren" class="gai-text-link">
+              Learning AI öffnen ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="gai-panel"
+                 id="gai-panel-creative"
+                 role="tabpanel"
+                 aria-labelledby="gai-tab-creative"
+                 hidden>
+
+          <div class="gai-panel-art gai-art-creative">
+            <div class="gai-panel-card">
+              <span>CREATIVE WORKSPACE</span>
+              <h3>Imagine.<br><em>Create.</em></h3>
+              <div class="gai-panel-task">
+                ✦ Neue Perspektiven
+              </div>
+              <div class="gai-panel-task">
+                ✦ Originelle Konzepte
+              </div>
+            </div>
+          </div>
+
+          <div class="gai-panel-copy">
+            <span class="gai-eyebrow">CREATIVE THINKING</span>
+            <h3>Gib deiner Kreativität neuen Raum.</h3>
+            <p>
+              Entwickle Namen, Geschichten,
+              Designideen und Konzepte –
+              von der ersten Inspiration
+              bis zu einem ausgereiften Entwurf.
+            </p>
+            <ul>
+              <li>Brainstorming und Ideenentwicklung</li>
+              <li>Schreibstile und Varianten</li>
+              <li>Konzeptplanung</li>
+            </ul>
+            <a href="#ausprobieren" class="gai-text-link">
+              Creative AI öffnen ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SECHSPHASIGE TIMELINE
+       ============================================= -->
+  <section class="gai-section gai-workflow" id="workflow">
+    <div class="container">
+
+      <div class="gai-heading">
+        <span class="gai-eyebrow">DEIN ARBEITSABLAUF</span>
+        <h2>
+          Von der ersten Frage<br>
+          <em>zum fertigen Entwurf.</em>
+        </h2>
+        <p>
+          Sechs Schritte für einen klar
+          strukturierten KI-gestützten Arbeitsprozess.
+        </p>
+      </div>
+
+      <div class="gai-timeline">
+        <div class="gai-timeline-line" aria-hidden="true">
+          <div class="gai-timeline-progress"></div>
+        </div>
+
+        <!-- PHASE 1 -->
+        <article class="gai-phase">
+          <div class="gai-phase-copy">
+            <span class="gai-phase-label">
+              PHASE 01 · IDEA
+            </span>
+            <h3>Alles beginnt<br><em>mit deiner Idee.</em></h3>
+            <p>
+              Beschreibe, was du erreichen möchtest,
+              und formuliere deine Aufgabe möglichst klar.
+            </p>
+            <div class="gai-phase-checks">
+              <span>✓ Ziel festlegen</span>
+              <span>✓ Aufgabe formulieren</span>
+              <span>✓ Wichtige Informationen ergänzen</span>
+            </div>
+          </div>
+
+          <div class="gai-phase-marker">01</div>
+
+          <div class="gai-phase-modules">
+            <div class="gai-module">
+              <h4>Dein Ziel</h4>
+              <p>Was soll am Ende entstehen?</p>
+            </div>
+            <div class="gai-module">
+              <h4>Deine Eingabe</h4>
+              <p>Aufgabe und Kontext verständlich beschreiben.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 2 -->
+        <article class="gai-phase">
+          <div class="gai-phase-copy">
+            <span class="gai-phase-label">
+              PHASE 02 · EXPLORE
+            </span>
+            <h3>Entdecke<br><em>verschiedene Ansätze.</em></h3>
+            <p>
+              Betrachte unterschiedliche Ideen und
+              Möglichkeiten, bevor du dich für
+              eine Richtung entscheidest.
+            </p>
+            <div class="gai-phase-checks">
+              <span>✓ Lösungsansätze sammeln</span>
+              <span>✓ Alternativen vergleichen</span>
+              <span>✓ Fragen präzisieren</span>
+            </div>
+          </div>
+
+          <div class="gai-phase-marker">02</div>
+
+          <div class="gai-phase-modules">
+            <div class="gai-module">
+              <h4>Brainstorming</h4>
+              <p>Neue Möglichkeiten entwickeln.</p>
+            </div>
+            <div class="gai-module">
+              <h4>Varianten</h4>
+              <p>Unterschiedliche Perspektiven betrachten.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 3 -->
+        <article class="gai-phase">
+          <div class="gai-phase-copy">
+            <span class="gai-phase-label">
+              PHASE 03 · STRUCTURE
+            </span>
+            <h3>Bringe Ordnung<br><em>in deine Gedanken.</em></h3>
+            <p>
+              Strukturiere Inhalte und zerlege
+              größere Aufgaben in nachvollziehbare
+              Teilaufgaben.
+            </p>
+            <div class="gai-phase-checks">
+              <span>✓ Inhalte ordnen</span>
+              <span>✓ Schritte definieren</span>
+              <span>✓ Prioritäten festlegen</span>
+            </div>
+          </div>
+
+          <div class="gai-phase-marker">03</div>
+
+          <div class="gai-phase-modules">
+            <div class="gai-module">
+              <h4>Struktur</h4>
+              <p>Kapitel, Themen oder Aufgaben gliedern.</p>
+            </div>
+            <div class="gai-module">
+              <h4>Plan</h4>
+              <p>Eine sinnvolle Reihenfolge erstellen.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 4 -->
+        <article class="gai-phase">
+          <div class="gai-phase-copy">
+            <span class="gai-phase-label">
+              PHASE 04 · CREATE
+            </span>
+            <h3>Mach aus Ideen<br><em>konkrete Ergebnisse.</em></h3>
+            <p>
+              Erstelle einen Textentwurf,
+              eine Programmstruktur
+              oder ein erstes Konzept.
+            </p>
+            <div class="gai-phase-checks">
+              <span>✓ Erste Version erstellen</span>
+              <span>✓ Beispiele ausarbeiten</span>
+              <span>✓ Inhalte ergänzen</span>
+            </div>
+          </div>
+
+          <div class="gai-phase-marker">04</div>
+
+          <div class="gai-phase-modules">
+            <div class="gai-module">
+              <h4>Entwurf</h4>
+              <p>Aus einem Plan wird ein Ergebnis.</p>
+            </div>
+            <div class="gai-module">
+              <h4>Ausarbeitung</h4>
+              <p>Details gezielt ergänzen.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 5 -->
+        <article class="gai-phase">
+          <div class="gai-phase-copy">
+            <span class="gai-phase-label">
+              PHASE 05 · REVIEW
+            </span>
+            <h3>Überprüfe<br><em>und verbessere.</em></h3>
+            <p>
+              Kontrolliere Ergebnisse auf Richtigkeit,
+              Verständlichkeit und Eignung
+              für deinen Zweck.
+            </p>
+            <div class="gai-phase-checks">
+              <span>✓ Aussagen prüfen</span>
+              <span>✓ Fehler und Lücken finden</span>
+              <span>✓ Änderungen einarbeiten</span>
+            </div>
+          </div>
+
+          <div class="gai-phase-marker">05</div>
+
+          <div class="gai-phase-modules">
+            <div class="gai-module">
+              <h4>Qualitätskontrolle</h4>
+              <p>Inhalte selbstständig überprüfen.</p>
+            </div>
+            <div class="gai-module">
+              <h4>Verbesserung</h4>
+              <p>Das Ergebnis weiterentwickeln.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 6 -->
+        <article class="gai-phase gai-phase-last">
+          <div class="gai-phase-copy">
+            <span class="gai-phase-label">
+              PHASE 06 · FINISH
+            </span>
+            <h3>Dein Ergebnis.<br><em>Dein nächster Schritt.</em></h3>
+            <p>
+              Bringe den Entwurf in eine nutzbare Form
+              und entscheide, wie du damit
+              weiterarbeiten möchtest.
+            </p>
+            <div class="gai-phase-checks">
+              <span>✓ Ergebnis finalisieren</span>
+              <span>✓ Wichtige Erkenntnisse sichern</span>
+              <span>✓ Nächste Schritte planen</span>
+            </div>
+          </div>
+
+          <div class="gai-phase-marker">06</div>
+
+          <div class="gai-phase-modules">
+            <div class="gai-module">
+              <h4>Fertiger Entwurf</h4>
+              <p>Ein Ergebnis, mit dem du weiterarbeiten kannst.</p>
+            </div>
+            <div class="gai-phase-finish">
+              <span>✦</span>
+              <strong>Keep creating.</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="gai-timeline-cta">
+        <h3>Eine gute Idee verdient einen guten Anfang.</h3>
+        <p>
+          Entdecke Gridmind AI und
+          seine intelligenten Arbeitsbereiche.
+        </p>
+        <a href="#ausprobieren" class="btn btn-primary hero-button">
+          AI Workspace öffnen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       PRODUKTBEISPIELE
+       ============================================= -->
+  <section class="gai-section gai-examples">
+    <div class="container">
+
+      <div class="gai-heading">
+        <span class="gai-eyebrow">IDEEN FÜR DEINEN ALLTAG</span>
+        <h2>Stell dir vor,<br><em>was möglich wird.</em></h2>
+        <p>
+          Entdecke verschiedene Möglichkeiten,
+          mit Gridmind AI an Aufgaben und
+          kreativen Projekten zu arbeiten.
+        </p>
+      </div>
+
+      <div class="gai-example-grid">
+        <article class="gai-example-card">
+          <div class="gai-example-art gai-example-writing">
+            <div class="gai-example-window">
+              <small>WRITING STUDIO</small>
+              <h3>Your next great idea.</h3>
+              <i></i><i></i><i></i>
+            </div>
+          </div>
+
+          <div class="gai-example-copy">
+            <span>USE CASE 01</span>
+            <h3>Von Stichpunkten zum Text</h3>
+            <p>
+              Ordne Ideen, finde einen passenden
+              Einstieg und entwickle einen
+              verständlichen Textentwurf.
+            </p>
+            <div class="gai-tags">
+              <span>Writing</span>
+              <span>Ideas</span>
+              <span>Structure</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gai-example-card">
+          <div class="gai-example-art gai-example-coding">
+            <div class="gai-example-window gai-example-code-window">
+              <small>CODE STUDIO</small>
+              <code>function hello() {</code>
+              <code>  return "Gridmind";</code>
+              <code>}</code>
+            </div>
+          </div>
+
+          <div class="gai-example-copy">
+            <span>USE CASE 02</span>
+            <h3>Programmierung verstehen</h3>
+            <p>
+              Beschäftige dich mit Codebeispielen,
+              Fehlermeldungen und technischen
+              Fragestellungen.
+            </p>
+            <div class="gai-tags">
+              <span>Code</span>
+              <span>Debugging</span>
+              <span>Learning</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gai-example-card">
+          <div class="gai-example-art gai-example-planning">
+            <div class="gai-example-window">
+              <small>PROJECT WORKSPACE</small>
+              <h3>Project roadmap</h3>
+              <div class="gai-example-task">✓ Research</div>
+              <div class="gai-example-task">✓ Planning</div>
+              <div class="gai-example-task">○ Delivery</div>
+            </div>
+          </div>
+
+          <div class="gai-example-copy">
+            <span>USE CASE 03</span>
+            <h3>Aufgaben einfacher planen</h3>
+            <p>
+              Erstelle einen nachvollziehbaren
+              Arbeitsplan mit Teilaufgaben,
+              Prioritäten und nächsten Schritten.
+            </p>
+            <div class="gai-tags">
+              <span>Planning</span>
+              <span>Projects</span>
+              <span>Workflow</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       DESIGN UND PRIVATSPHÄRE
+       ============================================= -->
+  <section class="gai-section gai-design">
+    <div class="container gai-split">
+
+      <div>
+        <span class="gai-eyebrow">DESIGN & VERANTWORTUNG</span>
+
+        <h2>
+          Einfach zu bedienen.<br>
+          <em>Bewusst entwickelt.</em>
+        </h2>
+
+        <p class="gai-lead">
+          Eine übersichtliche Oberfläche hilft dabei,
+          sich auf die eigentliche Aufgabe
+          zu konzentrieren. Ebenso wichtig
+          sind Transparenz, Datenschutz
+          und die Überprüfung von Ergebnissen.
+        </p>
+
+        <p>
+          Gridmind AI verbindet verständliche
+          Interaktionen mit klar getrennten
+          Arbeitsbereichen und einem
+          bewussten Umgang mit Informationen.
+        </p>
+      </div>
+
+      <div class="gai-design-list">
+        <article>
+          <span>▣</span>
+          <div>
+            <h3>Klare Benutzeroberfläche</h3>
+            <p>
+              Eine verständliche Navigation
+              zwischen unterschiedlichen Arbeitsbereichen.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>◈</span>
+          <div>
+            <h3>Datenschutz mitdenken</h3>
+            <p>
+              Datensparsamkeit und geeignete
+              Sicherheitsmaßnahmen als wichtige Anforderungen.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>⌘</span>
+          <div>
+            <h3>Ergebnisse überprüfen</h3>
+            <p>
+              KI-Inhalte sollten vor ihrer Verwendung
+              sachlich und technisch geprüft werden.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>↗</span>
+          <div>
+            <h3>Flexibel weiterentwickeln</h3>
+            <p>
+              Ein modularer Aufbau ermöglicht
+              neue Funktionen und Arbeitsbereiche.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FAQ
+       ============================================= -->
+  <section class="gai-section gai-faq" id="faq">
+    <div class="container gai-split">
+
+      <div>
+        <span class="gai-eyebrow">HÄUFIGE FRAGEN</span>
+        <h2>Fragen zu<br><em>Gridmind AI?</em></h2>
+        <p class="gai-lead">
+          Alles über die Arbeitsbereiche,
+          Funktionen und Zugangsmöglichkeiten.
+        </p>
+      </div>
+
+      <div class="gai-faq-list">
+        <details>
+          <summary>Was ist Gridmind AI?</summary>
+          <p>
+            Gridmind AI ist eine intelligente
+            Workspace-Oberfläche für Aufgaben
+            rund um Schreiben, Programmierung,
+            Lernen und Projektorganisation.
+          </p>
+        </details>
+
+        <details>
+          <summary>Wie kann ich Gridmind AI nutzen?</summary>
+          <p>
+            Auf dieser Seite kannst du ausgewählte
+            Interaktionen kennenlernen. Für zusätzliche
+            Funktionen kannst du einen Zugang anfragen.
+            Informationen dazu erhältst du über Gridmind.
+          </p>
+        </details>
+
+        <details>
+          <summary>Wie erhalte ich den vollständigen Zugang?</summary>
+          <p>
+            Für die Freischaltung zusätzlicher Funktionen
+            kannst du dich an Gridmind wenden und
+            dein Interesse an einem vollständigen
+            Zugang mitteilen.
+          </p>
+        </details>
+
+        <details>
+          <summary>Kann ich eigene Fragen eingeben?</summary>
+          <p>
+            Die öffentliche Oberfläche unterstützt
+            ausgewählte Fragen und Aufgaben.
+            Andere Eingaben führen zu Informationen
+            über den erweiterten Zugang.
+          </p>
+        </details>
+
+        <details>
+          <summary>Bei welchen Aufgaben kann Gridmind AI helfen?</summary>
+          <p>
+            Zu den vorgesehenen Arbeitsbereichen gehören
+            Schreiben, Ideenfindung, Programmierhilfe,
+            Lernen, Informationsstrukturierung
+            und Projektplanung.
+          </p>
+        </details>
+
+        <details>
+          <summary>Kann künstliche Intelligenz Fehler machen?</summary>
+          <p>
+            Ja. KI-generierte Antworten können
+            unvollständige oder falsche Informationen
+            enthalten. Deshalb sollten wichtige Inhalte
+            und insbesondere Programmcode überprüft werden.
+          </p>
+        </details>
+
+        <details>
+          <summary>Wie werden meine Eingaben verarbeitet?</summary>
+          <p>
+            Die derzeitige öffentliche Oberfläche
+            zeigt ausgewählte, lokal hinterlegte Antworten.
+            Für diese Interaktionen wird kein
+            externes KI-Modell aufgerufen.
+          </p>
+        </details>
+
+        <details>
+          <summary>Kann Gridmind KI in Unternehmen integrieren?</summary>
+          <p>
+            Informationen zu KI-Integration, APIs
+            und Automatisierung findest du in unserem
+            Bereich für digitale Dienstleistungen.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FINAL CTA
+       ============================================= -->
+  <section class="gai-final">
+    <div class="container gai-final-inner">
+      <span class="gai-eyebrow">GRIDMIND AI</span>
+
+      <h2>
+        Mehr Möglichkeiten.<br>
+        <em>Mit deinen Ideen.</em>
+      </h2>
+
+      <p>
+        Entdecke die intelligenten Arbeitsbereiche
+        von Gridmind AI.
+      </p>
+
+      <a href="#ausprobieren" class="btn btn-primary hero-button">
+        Gridmind AI öffnen
+        <span class="arrow-circle" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- =============================================
+     GEMEINSAMER GRIDMIND FOOTER
+     ============================================= -->
+<footer class="site-footer">
+  <svg class="footer-wave"
+       viewBox="0 0 1440 125"
+       preserveAspectRatio="none"
+       aria-hidden="true">
+    <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z"
+          fill="#092f2b"/>
+  </svg>
+
+  <div class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <img src="../assets/logo.png" width="280" height="94"
+               alt="Gridmind Technologies">
+        </a>
+
+        <p>
+          Wir verbinden Menschen, Ideen und Technologie –
+          von deinem ersten IT-Projekt
+          bis zur digitalen Zukunft.
+        </p>
+
+        <a href="../unternehmen/kontakt.html"
+           class="footer-contact">
+          Kontakt zu Gridmind ↗
+        </a>
+
+        <div class="footer-social" aria-label="Weitere Informationen">
+          <a href="../unternehmen/blog.html"
+             aria-label="Gridmind Blog">B</a>
+          <a href="../unternehmen/karriere.html"
+             aria-label="Gridmind Karriere">K</a>
+          <a href="../unternehmen/kontakt.html"
+             aria-label="Gridmind Kontakt">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Bildungsangebote</h3>
+        <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+        <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+        <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+        <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+        <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Produkte & Services</h3>
+        <a href="../services/websites.html">Website-Erstellung</a>
+        <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+        <a href="../services/ki-integration.html">KI-Integration</a>
+        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        <a href="../produkte/gridphone.html">GridPhone</a>
+        <a href="../produkte/gridtab.html">GridTab</a>
+        <a href="../produkte/gridwatch.html">GridWatch</a>
+        <a href="../produkte/gridmac.html">GridMac</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Unternehmen</h3>
+        <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+        <a href="../unternehmen/team.html">Unser Team</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+        <h3 class="footer-subtitle">Rechtliches</h3>
+        <a href="../rechtliches/impressum.html">Impressum</a>
+        <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+        <a href="../rechtliches/agb.html">AGB</a>
+        <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+        <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+        <a href="../rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+
+        <button type="button"
+                class="footer-text-button"
+                data-open-cookie>
+          Cookie-Einstellungen
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Gridmind Technologies</span>
+      <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+    </div>
+  </div>
+</footer>
+
+<!-- =============================================
+     COOKIE-DIALOG
+     ============================================= -->
+<div class="cookie-overlay" id="cookie-overlay" hidden></div>
+
+<section class="cookie-banner" id="cookie-banner"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="cookie-title"
+         aria-describedby="cookie-description"
+         tabindex="-1"
+         hidden>
+
+  <div class="cookie-heading">
+    <span class="cookie-icon">◈</span>
+    <div>
+      <span class="cookie-brand">GRIDMIND PRIVACY</span>
+      <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+    </div>
+  </div>
+
+  <p id="cookie-description">
+    Wir verwenden notwendige Speichertechnologien
+    für die Funktion dieser Website.
+    Zusätzliche Technologien aktivieren wir
+    nur mit deiner Einwilligung.
+  </p>
+
+  <div class="cookie-details" id="cookie-details" hidden>
+    <label class="cookie-option">
+      <span>
+        <strong>Notwendig</strong>
+        <small>Grundlegende Funktionen und deine Auswahl.</small>
+      </span>
+      <input type="checkbox" checked disabled>
+    </label>
+
+    <label class="cookie-option">
+      <span>
+        <strong>Funktional</strong>
+        <small>Zusätzliche Komfortfunktionen.</small>
+      </span>
+      <input type="checkbox" id="consent-functional">
+    </label>
+
+    <label class="cookie-option">
+      <span>
+        <strong>Statistik</strong>
+        <small>Optionale Auswertung der Website-Nutzung.</small>
+      </span>
+      <input type="checkbox" id="consent-analytics">
+    </label>
+
+    <label class="cookie-option">
+      <span>
+        <strong>Marketing</strong>
+        <small>Optionale Marketingtechnologien.</small>
+      </span>
+      <input type="checkbox" id="consent-marketing">
+    </label>
+  </div>
+
+  <div class="cookie-actions">
+    <button type="button"
+            class="cookie-btn cookie-accept"
+            id="cookie-accept">
+      Alle akzeptieren
+    </button>
+
+    <button type="button"
+            class="cookie-btn cookie-reject"
+            id="cookie-reject">
+      Nur notwendige
+    </button>
+
+    <button type="button"
+            class="cookie-btn cookie-settings"
+            id="cookie-settings">
+      Einstellungen
+    </button>
+
+    <button type="button"
+            class="cookie-btn cookie-save"
+            id="cookie-save"
+            hidden>
+      Auswahl speichern
+    </button>
+  </div>
+
+  <div class="cookie-legal">
+    <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+    <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+    <a href="../rechtliches/impressum.html">Impressum</a>
+  </div>
+</section>
+
+<!-- =============================================
+     GRIDMIND AI INTERACTIONS
+     ============================================= -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  /* =============================================
+     1. HERO TYPEWRITER
+     ============================================= */
+
+  const output = document.getElementById("gai-typewriter");
+
+  const phrases = [
+    "deine Ideen.",
+    "deinen Code.",
+    "dein Wissen.",
+    "deine Projekte."
+  ];
+
+  if (output && !reducedMotion) {
+    let phraseIndex = 0;
+    let charIndex = phrases[0].length;
+    let deleting = true;
+
+    function tick() {
+      const letters = Array.from(phrases[phraseIndex]);
+
+      charIndex += deleting ? -1 : 1;
+      charIndex = Math.max(
+        0,
+        Math.min(letters.length, charIndex)
+      );
+
+      output.textContent = letters.slice(0, charIndex).join("");
+
+      let delay = deleting ? 49 : 91;
+
+      if (deleting && charIndex === 0) {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        deleting = false;
+        delay = 380;
+      } else if (
+        !deleting &&
+        charIndex === Array.from(phrases[phraseIndex]).length
+      ) {
+        deleting = true;
+        delay = 1850;
+      }
+
+      window.setTimeout(tick, delay);
+    }
+
+    window.setTimeout(tick, 2000);
+  }
+
+  /* =============================================
+     2. GRIDMIND AI WORKSPACE
+     ============================================= */
+
+  const scenarios = {
+    writing: {
+      title: "Writing Assistant",
+      examples: [
+        {
+          question: "Schreibe eine kreative Einleitung",
+          answer:
+            "Jede große Idee beginnt mit einer kleinen Frage. " +
+            "Manchmal reicht ein einziger Gedanke, um neue Wege " +
+            "zu entdecken. Entscheidend ist der Mut, diesen " +
+            "ersten Schritt zu machen."
+        },
+        {
+          question: "Verbessere einen Text",
+          answer:
+            "Ein guter Text ist klar, verständlich und auf " +
+            "seine Zielgruppe ausgerichtet. Streiche unnötige " +
+            "Wiederholungen, verwende präzise Verben und bringe " +
+            "deine wichtigste Botschaft an den Anfang."
+        },
+        {
+          question: "Finde drei neue Ideen",
+          answer:
+            "1. Eine digitale Plattform zum Sammeln kreativer Ideen.\n" +
+            "2. Ein interaktiver Lernassistent für Programmieranfänger.\n" +
+            "3. Ein Tool, das größere Projekte in überschaubare " +
+            "Aufgaben gliedert."
+        }
+      ]
+    },
+
+    coding: {
+      title: "Code Assistant",
+      examples: [
+        {
+          question: "Was macht eine JavaScript-Funktion?",
+          answer:
+            "Eine Funktion fasst Anweisungen zusammen, " +
+            "die du wiederholt aufrufen kannst.\n\n" +
+            "Beispiel:\n" +
+            "function greet(name) {\n" +
+            "  return 'Hallo ' + name;\n" +
+            "}\n\n" +
+            "Mit greet('Alex') erhältst du 'Hallo Alex'."
+        },
+        {
+          question: "Erkläre HTML und CSS",
+          answer:
+            "HTML beschreibt die Struktur einer Webseite: " +
+            "Überschriften, Texte, Bilder und Links.\n\n" +
+            "CSS bestimmt die Gestaltung: Farben, Größen, " +
+            "Abstände und Layouts."
+        },
+        {
+          question: "Wie finde ich einen Fehler im Code?",
+          answer:
+            "Prüfe zuerst die Fehlermeldung und reproduziere " +
+            "das Problem. Untersuche die betroffene Codezeile, " +
+            "kontrolliere Variablen und Bedingungen und teste " +
+            "anschließend eine gezielte Änderung."
+        }
+      ]
+    },
+
+    learning: {
+      title: "Learning Assistant",
+      examples: [
+        {
+          question: "Erkläre künstliche Intelligenz",
+          answer:
+            "Künstliche Intelligenz bezeichnet Computersysteme, " +
+            "die Aufgaben übernehmen, bei denen beispielsweise " +
+            "Mustererkennung, Vorhersagen oder Sprachverarbeitung " +
+            "eine Rolle spielen. Sprachmodelle erzeugen Antworten " +
+            "anhand erlernter statistischer Zusammenhänge."
+        },
+        {
+          question: "Erstelle einen Lernplan",
+          answer:
+            "Woche 1: Grundlagen verstehen.\n" +
+            "Woche 2: Einfache Übungen bearbeiten.\n" +
+            "Woche 3: Ein kleines Projekt erstellen.\n" +
+            "Woche 4: Wissen wiederholen und das Projekt verbessern."
+        },
+        {
+          question: "Was ist ein Algorithmus?",
+          answer:
+            "Ein Algorithmus ist eine eindeutige Folge von Schritten " +
+            "zur Lösung einer Aufgabe. Ein Kochrezept ist eine gute " +
+            "Analogie: Zutaten vorbereiten, einzelne Schritte " +
+            "ausführen und das Ergebnis überprüfen."
+        }
+      ]
+    },
+
+    planning: {
+      title: "Planning Assistant",
+      examples: [
+        {
+          question: "Plane ein Website-Projekt",
+          answer:
+            "1. Ziel und Zielgruppe festlegen.\n" +
+            "2. Seitenstruktur entwerfen.\n" +
+            "3. Design entwickeln.\n" +
+            "4. Inhalte erstellen.\n" +
+            "5. Website programmieren.\n" +
+            "6. Funktionen testen und veröffentlichen."
+        },
+        {
+          question: "Ordne meine Aufgaben",
+          answer:
+            "Sortiere Aufgaben nach Wichtigkeit und Dringlichkeit. " +
+            "Wähle zuerst eine konkrete Hauptaufgabe, teile große " +
+            "Vorhaben in kleinere Schritte und überprüfe " +
+            "deinen Fortschritt regelmäßig."
+        },
+        {
+          question: "Erstelle einen Tagesplan",
+          answer:
+            "09:00 Prioritäten festlegen.\n" +
+            "09:30 Hauptaufgabe bearbeiten.\n" +
+            "11:00 Ergebnisse überprüfen.\n" +
+            "13:00 Zweite Aufgabe angehen.\n" +
+            "15:00 Offene Punkte und nächste Schritte festhalten."
+        }
+      ]
+    }
+  };
+
+  let activeCategory = "writing";
+
+  const categories = [
+    ...document.querySelectorAll("[data-gai-category]")
+  ];
+
+  const conversation = document.getElementById(
+    "gai-demo-conversation"
+  );
+  const suggestions = document.getElementById(
+    "gai-demo-suggestions"
+  );
+  const title = document.getElementById(
+    "gai-demo-title"
+  );
+  const input = document.getElementById(
+    "gai-demo-input"
+  );
+  const form = document.getElementById(
+    "gai-demo-form"
+  );
+
+  function addMessage(kind, value) {
+    if (!conversation) return;
+
+    const element = document.createElement("div");
+
+    element.className =
+      "gai-chat-message gai-chat-" + kind;
+
+    if (kind === "assistant") {
+      const heading = document.createElement("strong");
+      heading.textContent = "✦ Gridmind AI";
+      element.appendChild(heading);
+    }
+
+    const body = document.createElement("p");
+    body.textContent = value;
+    element.appendChild(body);
+
+    conversation.appendChild(element);
+    conversation.scrollTop = conversation.scrollHeight;
+  }
+
+  function showExample(index) {
+    const scenario = scenarios[activeCategory];
+    const example = scenario.examples[index];
+
+    if (!example || !conversation) return;
+
+    conversation.replaceChildren();
+
+    addMessage("user", example.question);
+    addMessage("assistant", example.answer);
+  }
+
+  function renderCategory(category) {
+    if (!Object.prototype.hasOwnProperty.call(
+      scenarios, category
+    )) return;
+
+    activeCategory = category;
+
+    const scenario = scenarios[category];
+
+    categories.forEach(button => {
+      const active = button.dataset.gaiCategory === category;
+
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+
+    if (title) {
+      title.textContent = scenario.title;
+    }
+
+    if (conversation) {
+      conversation.replaceChildren();
+
+      const welcome = document.createElement("div");
+      welcome.className = "gai-demo-welcome";
+
+      const icon = document.createElement("div");
+      icon.className = "gai-demo-welcome-icon";
+      icon.textContent = "✦";
+
+      const heading = document.createElement("h3");
+      heading.textContent =
+        "Was möchtest du heute erschaffen?";
+
+      const text = document.createElement("p");
+      text.textContent =
+        "Wähle einen Arbeitsbereich und entdecke " +
+        "die Möglichkeiten von Gridmind AI.";
+
+      welcome.append(icon, heading, text);
+      conversation.appendChild(welcome);
+    }
+
+    if (suggestions) {
+      suggestions.replaceChildren();
+
+      scenario.examples.forEach((example, index) => {
+        const button = document.createElement("button");
+
+        button.type = "button";
+        button.textContent = example.question;
+
+        button.addEventListener("click", () => {
+          showExample(index);
+        });
+
+        suggestions.appendChild(button);
+      });
+    }
+
+    if (input) {
+      input.value = "";
+    }
+  }
+
+  categories.forEach(button => {
+    button.addEventListener("click", () => {
+      renderCategory(button.dataset.gaiCategory);
+    });
+  });
+
+  if (form && input) {
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+
+      const query = input.value.trim();
+
+      if (!query || !conversation) return;
+
+      const scenario = scenarios[activeCategory];
+
+      const foundIndex = scenario.examples.findIndex(
+        example =>
+          example.question.toLowerCase() === query.toLowerCase()
+      );
+
+      if (foundIndex !== -1) {
+        showExample(foundIndex);
+      } else {
+        conversation.replaceChildren();
+
+        addMessage("user", query);
+
+        addMessage(
+          "assistant",
+          "Für diese Anfrage benötigst du erweiterten Zugang " +
+          "zu Gridmind AI. Du kannst eine Freischaltung " +
+          "über Gridmind anfragen. Bis dahin stehen dir " +
+          "die ausgewählten Aufgaben dieses Workspaces " +
+          "zur Verfügung."
+        );
+      }
+
+      input.value = "";
+    });
+  }
+
+  renderCategory("writing");
+
+  /* =============================================
+     3. INTERAKTIVE ANWENDUNGS-TABS
+     ============================================= */
+
+  const tabs = [
+    ...document.querySelectorAll(".gai-tab")
+  ];
+
+  function activateTab(index, focus = false) {
+    tabs.forEach((tab, i) => {
+      const active = i === index;
+
+      const panel = document.getElementById(
+        tab.getAttribute("aria-controls")
+      );
+
+      tab.classList.toggle("is-active", active);
+      tab.setAttribute("aria-selected", String(active));
+      tab.tabIndex = active ? 0 : -1;
+
+      if (panel) {
+        panel.hidden = !active;
+        panel.classList.toggle("is-active", active);
+      }
+    });
+
+    if (focus) {
+      tabs[index].focus();
+    }
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      activateTab(index);
+    });
+
+    tab.addEventListener("keydown", event => {
+      let next = index;
+
+      if (event.key === "ArrowRight") {
+        next = (index + 1) % tabs.length;
+      } else if (event.key === "ArrowLeft") {
+        next = (index - 1 + tabs.length) % tabs.length;
+      } else if (event.key === "Home") {
+        next = 0;
+      } else if (event.key === "End") {
+        next = tabs.length - 1;
+      } else {
+        return;
+      }
+
+      event.preventDefault();
+      activateTab(next, true);
+    });
+  });
+
+  if (tabs.length) {
+    activateTab(0);
+  }
+
+  /* =============================================
+     4. SCROLL TIMELINE
+     ============================================= */
+
+  const timeline = document.querySelector(".gai-timeline");
+  const line = document.querySelector(".gai-timeline-line");
+  const progress = document.querySelector(".gai-timeline-progress");
+
+  const phases = [
+    ...document.querySelectorAll(".gai-phase")
+  ];
+
+  if (!timeline || !line || !progress) return;
+
+  if (reducedMotion) {
+    phases.forEach(phase => {
+      phase.classList.add("is-visible");
+    });
+
+    progress.style.height = "100%";
+    return;
+  }
+
+  if ("IntersectionObserver" in window) {
+    timeline.classList.add("gai-timeline-js");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.05,
+      rootMargin: "0px 0px -5% 0px"
+    });
+
+    phases.forEach(phase => {
+      observer.observe(phase);
+    });
+  } else {
+    phases.forEach(phase => {
+      phase.classList.add("is-visible");
+    });
+  }
+
+  let scheduled = false;
+
+  function updateTimeline() {
+    const rect = line.getBoundingClientRect();
+    const trigger = window.innerHeight * 0.65;
+
+    progress.style.height = Math.max(
+      0,
+      Math.min(rect.height, trigger - rect.top)
+    ) + "px";
+
+    scheduled = false;
+  }
+
+  function requestTimelineUpdate() {
+    if (scheduled) return;
+
+    scheduled = true;
+    requestAnimationFrame(updateTimeline);
+  }
+
+  window.addEventListener(
+    "scroll",
+    requestTimelineUpdate,
+    {passive: true}
+  );
+
+  window.addEventListener(
+    "resize",
+    requestTimelineUpdate
+  );
+
+  requestTimelineUpdate();
+
+});
+</script>
+
+</body>
+</html>

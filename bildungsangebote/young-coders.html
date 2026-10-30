@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#124758">
+  <meta name="description"
+    content="Young Coders von Gridmind: Entdecke Programmieren, Webentwicklung, kleine Spiele und die Welt der IT. Ein Bildungskonzept für Jugendliche.">
+  <title>Young Coders | Gridmind Technologies</title>
+
+  <link rel="icon" href="../assets/logo-icon.png" type="image/png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/young-coders.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/young-coders.js" defer></script>
+</head>
+
+<body class="gridmind-young-coders">
+  <a href="#main-content" class="skip-link">Zum Hauptinhalt</a>
+
+  <!-- ==========================================
+     GEMEINSAMER GRIDMIND HEADER
+     ========================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Gridmind Technologies – Startseite">
+        <img src="../assets/logo.png" width="280" height="94" alt="Gridmind Technologies">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <div class="nav-group">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-offers">
+            Unsere Angebote
+            <svg viewBox="0 0 12 8" width="12" height="8" fill="none" aria-hidden="true">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="nav-dropdown" id="nav-offers">
+            <span class="dropdown-title">Ausbildung & Karriere</span>
+            <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+            <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+            <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+            <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+            <a href="../bildungsangebote/young-coders.html" aria-current="page">Young Coders</a>
+            <span class="dropdown-title">Digitale Dienstleistungen</span>
+            <a href="../services/websites.html">Websites erstellen lassen</a>
+            <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+            <a href="../services/ki-integration.html">KI-Integration</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-devices">
+            Geräte & Software
+            <svg viewBox="0 0 12 8" width="12" height="8" fill="none" aria-hidden="true">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="nav-dropdown" id="nav-devices">
+            <a href="../produkte/gridphone.html">GridPhone</a>
+            <a href="../produkte/gridtab.html">GridTab</a>
+            <a href="../produkte/gridwatch.html">GridWatch</a>
+            <a href="../produkte/gridmac.html">GridMac</a>
+            <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+          </div>
+        </div>
+
+        <a href="../unternehmen/ueber-uns.html">Über uns</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="../unternehmen/kontakt.html" class="header-cta">
+          Beratung anfragen <span aria-hidden="true">↗</span>
+        </a>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-controls="mobile-menu"
+          aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobiles Menü" inert>
+      <div class="mobile-menu-inner">
+        <a href="../index.html">Startseite</a>
+        <details>
+          <summary>Bildungsangebote</summary>
+          <div class="mobile-submenu">
+            <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+            <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+            <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+            <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+            <a href="../bildungsangebote/young-coders.html" aria-current="page">Young Coders</a>
+          </div>
+        </details>
+        <details>
+          <summary>Websites & Software</summary>
+          <div class="mobile-submenu">
+            <a href="../services/websites.html">Website-Erstellung</a>
+            <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+            <a href="../services/ki-integration.html">KI-Integration</a>
+          </div>
+        </details>
+        <details>
+          <summary>Grid-Geräte</summary>
+          <div class="mobile-submenu">
+            <a href="../produkte/gridphone.html">GridPhone</a>
+            <a href="../produkte/gridtab.html">GridTab</a>
+            <a href="../produkte/gridwatch.html">GridWatch</a>
+            <a href="../produkte/gridmac.html">GridMac</a>
+            <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+          </div>
+        </details>
+        <a href="../unternehmen/ueber-uns.html">Über uns</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+        <a href="../unternehmen/kontakt.html" class="mobile-cta">
+          Beratung anfragen →
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==========================================
+       HERO – YOUNG CODERS
+       ========================================== -->
+    <section class="yc-hero" aria-labelledby="yc-hero-title">
+      <div class="container yc-hero-layout">
+
+        <div class="yc-hero-copy">
+          <span class="yc-kicker">✦ GRIDMIND YOUNG CODERS</span>
+
+          <h1 id="yc-hero-title">
+            Entdecke die Welt
+            des <em>Programmierens!</em>
+          </h1>
+
+          <p class="yc-hero-lead">
+            Du findest Technik spannend?
+            Möchtest du eigene Websites,
+            kleine Spiele oder Apps entwickeln?
+            Dann entdecke, was mit Code alles möglich ist!
+          </p>
+
+          <div class="yc-typing-wrap">
+            <span>Ich möchte</span>
+            <strong id="yc-typewriter" aria-hidden="true">Websites bauen</strong>
+            <span class="yc-cursor" aria-hidden="true"></span>
+          </div>
+          <p class="yc-sr-only">
+            Entdecke Websites, Spiele, Apps und kreative Programmierprojekte.
+          </p>
+
+          <div class="yc-hero-checks">
+            <span>✓ Einstieg ohne Vorkenntnisse</span>
+            <span>✓ Kreative Projektideen</span>
+            <span>✓ IT-Berufe entdecken</span>
+          </div>
+
+          <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button yc-primary-cta">
+            Mehr über Young Coders erfahren
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+
+          <small class="yc-hero-note">
+            Geplantes Orientierungsangebot für Jugendliche
+          </small>
+        </div>
+
+        <!-- ANIMIERTE PROGRAMMIERWELT -->
+        <div class="yc-hero-world" aria-label="Illustration einer kreativen Programmierumgebung">
+          <div class="yc-world-glow"></div>
+
+          <div class="yc-browser yc-float-browser">
+            <div class="yc-browser-top">
+              <span class="yc-dots"><i></i><i></i><i></i></span>
+              <span>my-first-game.html</span>
+            </div>
+            <div class="yc-browser-stage">
+              <div class="yc-game-score">
+                <span>MY FIRST GAME</span>
+                <span>⭐ 120</span>
+              </div>
+              <div class="yc-game-cloud yc-cloud-one"></div>
+              <div class="yc-game-cloud yc-cloud-two"></div>
+              <div class="yc-game-player">▲</div>
+              <div class="yc-game-platform"></div>
+              <div class="yc-game-message">LEVEL 01</div>
+            </div>
+          </div>
+
+          <div class="yc-code-card yc-float-code">
+            <div><span>const</span> game = {</div>
+            <div>&nbsp;&nbsp;player: <em>"You"</em>,</div>
+            <div>&nbsp;&nbsp;level: <strong>1</strong>,</div>
+            <div>&nbsp;&nbsp;fun: <strong>true</strong></div>
+            <div>};</div>
+          </div>
+
+          <div class="yc-floating-chip yc-chip-html">
+            <b>H</b> HTML
+          </div>
+          <div class="yc-floating-chip yc-chip-css">
+            <b>C</b> CSS
+          </div>
+          <div class="yc-floating-chip yc-chip-js">
+            <b>JS</b> JavaScript
+          </div>
+
+          <div class="yc-win-card yc-float-win">
+            <span>🏆</span>
+            <div>
+              <strong>Erstes Projekt!</strong>
+              <small>Du hast es geschafft</small>
+            </div>
+          </div>
+
+          <span class="yc-star yc-star-a" aria-hidden="true">✦</span>
+          <span class="yc-star yc-star-b" aria-hidden="true">✧</span>
+          <span class="yc-star yc-star-c" aria-hidden="true">★</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       SELFCHECK
+       ========================================== -->
+    <section class="yc-section yc-selfcheck" id="selfcheck">
+      <div class="container yc-two-columns">
+
+        <div>
+          <span class="yc-eyebrow">FINDE ES HERAUS</span>
+          <h2>Ist Programmieren<br><em>dein Ding?</em></h2>
+          <p class="yc-section-lead">
+            Du musst noch nichts können.
+            Vielleicht erkennst du dich aber
+            in einigen dieser Fragen wieder.
+          </p>
+
+          <div class="yc-selfcheck-list">
+            <label><input type="checkbox" class="yc-selfcheck-input"><span>Ich würde gerne verstehen, wie Spiele und
+                Apps funktionieren.</span></label>
+            <label><input type="checkbox" class="yc-selfcheck-input"><span>Ich probiere gerne neue Dinge am Computer
+                aus.</span></label>
+            <label><input type="checkbox" class="yc-selfcheck-input"><span>Ich löse gerne Rätsel und knifflige
+                Aufgaben.</span></label>
+            <label><input type="checkbox" class="yc-selfcheck-input"><span>Ich möchte eigene Ideen mit Technik
+                umsetzen.</span></label>
+          </div>
+        </div>
+
+        <div class="yc-selfcheck-result">
+          <span class="yc-result-sparkle">✦</span>
+          <span class="yc-result-label">DEIN SELFCHECK</span>
+          <h3>Neugierig? Das ist ein guter Anfang!</h3>
+          <p id="yc-check-result" aria-live="polite">
+            Wähle die Aussagen aus, die zu dir passen.
+            Es gibt keine falschen Antworten.
+          </p>
+          <div class="yc-check-meter">
+            <span id="yc-check-meter-fill"></span>
+          </div>
+          <small>Nur ein spielerischer Interessencheck, kein Eignungstest.</small>
+          <a href="#lernweg" class="yc-text-link">Entdecke den Lernpfad ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       KONZEPT
+       ========================================== -->
+    <section class="yc-section yc-introduction">
+      <div class="container">
+        <div class="yc-section-heading">
+          <span class="yc-eyebrow">WILLKOMMEN BEI YOUNG CODERS</span>
+          <h2>Von der Idee<br><em>zum eigenen Projekt.</em></h2>
+          <p>
+            Programmieren ist wie ein Werkzeugkasten
+            für kreative Ideen. Mit den richtigen
+            Grundlagen kannst du selbst etwas bauen.
+          </p>
+        </div>
+
+        <div class="yc-concept-grid">
+          <article class="yc-concept-card">
+            <span class="yc-concept-icon">🎮</span>
+            <h3>Entwickle Spiele</h3>
+            <p>Experimentiere mit Bewegung, Punkten, Regeln und interaktiven Elementen.</p>
+          </article>
+          <article class="yc-concept-card">
+            <span class="yc-concept-icon">🎨</span>
+            <h3>Gestalte Websites</h3>
+            <p>Entscheide, wie deine eigene Website aussieht und wie sie funktioniert.</p>
+          </article>
+          <article class="yc-concept-card">
+            <span class="yc-concept-icon">🧠</span>
+            <h3>Denke wie ein Entwickler</h3>
+            <p>Lerne, Probleme in kleine Schritte aufzuteilen und Lösungen auszuprobieren.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       INTERAKTIVES CODE-LAB
+       ========================================== -->
+    <section class="yc-section yc-code-lab" id="code-lab">
+      <div class="container yc-two-columns">
+        <div>
+          <span class="yc-eyebrow">PROBIER ES SELBST AUS</span>
+          <h2>Dein erstes<br><em>Mini-Code-Lab.</em></h2>
+          <p class="yc-section-lead">
+            Wie aus wenigen Zeilen Code ein sichtbares Ergebnis wird,
+            kannst du hier direkt entdecken.
+            Wähle eine Farbe und ändere die Vorschau.
+          </p>
+          <p>
+            Diese kleine interaktive Demonstration ist bereits
+            funktionsfähig. Sie zeigt die Idee, auf der
+            viele kreative Programmierprojekte aufbauen.
+          </p>
+          <div class="yc-lab-actions" role="group" aria-label="Farbe für die Beispielvorschau">
+            <button type="button" data-yc-color="#138a57" aria-pressed="true">Grün</button>
+            <button type="button" data-yc-color="#397be8" aria-pressed="false">Blau</button>
+            <button type="button" data-yc-color="#a154d4" aria-pressed="false">Lila</button>
+          </div>
+        </div>
+
+        <div class="yc-lab">
+          <div class="yc-lab-top">
+            <span class="yc-dots"><i></i><i></i><i></i></span>
+            <span>style.css · Live Preview</span>
+          </div>
+          <div class="yc-lab-code">
+            <div>.mein-button {</div>
+            <div>&nbsp;&nbsp;background: <span id="yc-code-color">#138a57</span>;</div>
+            <div>&nbsp;&nbsp;border-radius: 16px;</div>
+            <div>&nbsp;&nbsp;color: white;</div>
+            <div>}</div>
+          </div>
+          <div class="yc-lab-preview">
+            <small>LIVE-VORSCHAU</small>
+            <span class="yc-demo-button" id="yc-demo-button">Mein erster Button ✦</span>
+            <p>Du änderst den Stil – die Vorschau passt sich an.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       LERNPFAD – TIMELINE
+       ========================================== -->
+    <section class="yc-section yc-roadmap" id="lernweg">
+      <div class="container">
+        <div class="yc-section-heading">
+          <span class="yc-eyebrow">DEIN LERNPFAD</span>
+          <h2>Vier Schritte in<br><em>die Welt des Codes.</em></h2>
+          <p>Vom ersten HTML-Element bis zu deinem eigenen kleinen Projekt.</p>
+        </div>
+
+        <div class="yc-roadmap-track">
+          <div class="yc-roadmap-line" aria-hidden="true">
+            <div class="yc-roadmap-progress"></div>
+          </div>
+
+          <article class="yc-phase">
+            <div class="yc-phase-copy">
+              <span class="yc-phase-label">PHASE 01 · ENTDECKEN</span>
+              <h3>Verstehe, wie<br><em>das Web funktioniert.</em></h3>
+              <p>Was ist eine Website? Wie sehen Browser Code? Und wie werden aus Texten digitale Seiten?</p>
+              <div class="yc-phase-checks">
+                <span>✓ Webseiten verstehen</span>
+                <span>✓ HTML kennenlernen</span>
+                <span>✓ Erste Elemente erstellen</span>
+              </div>
+            </div>
+            <div class="yc-phase-marker" aria-hidden="true">01</div>
+            <div class="yc-phase-modules">
+              <div class="yc-module">
+                <h4>Deine erste Website</h4>
+                <div class="yc-tags"><span>HTML</span><span>Headings</span><span>Links</span></div>
+              </div>
+              <div class="yc-module">
+                <h4>Das Internet entdecken</h4>
+                <div class="yc-tags"><span>Browser</span><span>Web</span><span>Struktur</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="yc-phase">
+            <div class="yc-phase-copy">
+              <span class="yc-phase-label">PHASE 02 · GESTALTEN</span>
+              <h3>Mach deine Ideen<br><em>bunt und kreativ.</em></h3>
+              <p>Mit CSS bestimmst du Farben, Abstände, Schriften und das Aussehen deiner Webseite.</p>
+              <div class="yc-phase-checks">
+                <span>✓ Farben und Schriften wählen</span>
+                <span>✓ Eigene Layouts gestalten</span>
+                <span>✓ Kleine Animationen nutzen</span>
+              </div>
+            </div>
+            <div class="yc-phase-marker" aria-hidden="true">02</div>
+            <div class="yc-phase-modules">
+              <div class="yc-module">
+                <h4>CSS Grundlagen</h4>
+                <div class="yc-tags"><span>Colors</span><span>Fonts</span><span>Layout</span></div>
+              </div>
+              <div class="yc-module">
+                <h4>Designprojekt</h4>
+                <div class="yc-tags"><span>Buttons</span><span>Cards</span><span>Animation</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="yc-phase">
+            <div class="yc-phase-copy">
+              <span class="yc-phase-label">PHASE 03 · PROGRAMMIEREN</span>
+              <h3>Gib deiner Website<br><em>Superkräfte.</em></h3>
+              <p>Lerne, mit JavaScript auf Klicks zu reagieren und eigene Programmabläufe zu entwickeln.</p>
+              <div class="yc-phase-checks">
+                <span>✓ Variablen und Bedingungen</span>
+                <span>✓ Auf Ereignisse reagieren</span>
+                <span>✓ Einfache Spielregeln entwickeln</span>
+              </div>
+            </div>
+            <div class="yc-phase-marker" aria-hidden="true">03</div>
+            <div class="yc-phase-modules">
+              <div class="yc-module">
+                <h4>JavaScript entdecken</h4>
+                <div class="yc-tags"><span>JS</span><span>Events</span><span>Logic</span></div>
+              </div>
+              <div class="yc-module">
+                <h4>Mini-Spiel entwickeln</h4>
+                <div class="yc-tags"><span>Score</span><span>Click</span><span>Game</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="yc-phase yc-phase-last">
+            <div class="yc-phase-copy">
+              <span class="yc-phase-label">PHASE 04 · DEIN PROJEKT</span>
+              <h3>Zeige, was<br><em>du erschaffen hast.</em></h3>
+              <p>Verbinde dein neues Wissen zu einer kleinen Website oder interaktiven Anwendung.</p>
+              <div class="yc-phase-checks">
+                <span>✓ Projekt planen</span>
+                <span>✓ Code testen und verbessern</span>
+                <span>✓ Ergebnisse präsentieren</span>
+              </div>
+            </div>
+            <div class="yc-phase-marker" aria-hidden="true">04</div>
+            <div class="yc-phase-modules">
+              <div class="yc-module">
+                <h4>Abschlussprojekt</h4>
+                <div class="yc-tags"><span>Website</span><span>Game</span><span>Portfolio</span></div>
+              </div>
+              <div class="yc-roadmap-finish">
+                <span>🏆</span>
+                <div><strong>Dein eigenes Projekt</strong><small>Zeig, was du gelernt hast</small></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="yc-roadmap-cta">
+          <h3>Eine Zeile Code kann der Anfang von etwas Großem sein.</h3>
+          <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button">
+            Young Coders entdecken
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       KURSÜBERBLICK
+       ========================================== -->
+    <section class="yc-section yc-overview">
+      <div class="container yc-two-columns">
+        <div>
+          <span class="yc-eyebrow">AUF EINEN BLICK</span>
+          <h2>Das Wichtigste<br><em>für deinen Einstieg.</em></h2>
+          <div class="yc-overview-list">
+            <p><span>✓</span> Gedacht für Jugendliche mit Interesse an Technik</p>
+            <p><span>✓</span> Einstieg in HTML, CSS und JavaScript</p>
+            <p><span>✓</span> Kein Programmierwissen vorausgesetzt</p>
+            <p><span>✓</span> Kleine kreative Übungsprojekte</p>
+            <p><span>✓</span> Einblicke in IT-Berufe und mögliche Bildungswege</p>
+          </div>
+          <div class="yc-overview-note">
+            Kursformat, Altersgrenzen, Dauer, Kosten und mögliche Zertifikate sind noch nicht verbindlich festgelegt.
+          </div>
+          <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button">
+            Informationen anfragen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="yc-overview-visual">
+          <div class="yc-overview-computer">
+            <div class="yc-overview-screen">
+              <span>GRIDMIND LAB</span>
+              <strong>Hello,<br>Young Coder!</strong>
+              <div class="yc-screen-code">
+                &gt; run project<br>
+                <span>✓ Ready to create!</span>
+              </div>
+            </div>
+            <div class="yc-overview-stand"></div>
+          </div>
+          <span class="yc-overview-decor">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       PROJEKTBEISPIELE
+       ========================================== -->
+    <section class="yc-section yc-projects">
+      <div class="container">
+        <div class="yc-section-heading">
+          <span class="yc-eyebrow">DEINE KREATIVEN IDEEN</span>
+          <h2>Was kannst du<br><em>programmieren?</em></h2>
+          <p>Diese drei Beispiele zeigen, was bereits mit einfachen Webtechnologien möglich ist.</p>
+        </div>
+
+        <div class="yc-project-grid">
+          <article class="yc-project-card">
+            <div class="yc-project-visual yc-project-v1">🎮</div>
+            <div class="yc-project-body">
+              <span>PROJEKT 01</span>
+              <h3>Ein Klick-Spiel</h3>
+              <p>Erstelle ein Spiel mit Punkten, Regeln und einer kleinen Herausforderung.</p>
+              <div class="yc-tags"><span>JavaScript</span><span>Events</span></div>
+            </div>
+          </article>
+          <article class="yc-project-card">
+            <div class="yc-project-visual yc-project-v2">🌎</div>
+            <div class="yc-project-body">
+              <span>PROJEKT 02</span>
+              <h3>Deine persönliche Website</h3>
+              <p>Baue eine Webseite über deine Interessen und gestalte sie ganz nach deinem Geschmack.</p>
+              <div class="yc-tags"><span>HTML</span><span>CSS</span></div>
+            </div>
+          </article>
+          <article class="yc-project-card">
+            <div class="yc-project-visual yc-project-v3">🧩</div>
+            <div class="yc-project-body">
+              <span>PROJEKT 03</span>
+              <h3>Ein interaktives Quiz</h3>
+              <p>Programmiere Fragen, Antworten und einen eigenen Ergebnisbildschirm.</p>
+              <div class="yc-tags"><span>Logic</span><span>JavaScript</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       BRANCHEN MARQUEE
+       ========================================== -->
+    <section class="yc-section yc-marquee-section">
+      <div class="yc-section-heading">
+        <span class="yc-eyebrow">ENTDECKE DEINE MÖGLICHKEITEN</span>
+        <h2>Technik steckt in<br><em>so vielen spannenden Dingen.</em></h2>
+        <p>Mit Programmierkenntnissen kannst du später in verschiedenen Bereichen arbeiten.</p>
+      </div>
+
+      <div class="yc-marquee" aria-label="IT-Themen und kreative Bereiche">
+        <div class="yc-marquee-row">
+          <div class="yc-marquee-track">
+            <div class="yc-marquee-group">
+              <span>🎮 Spieleentwicklung</span><span>🌐 Webentwicklung</span>
+              <span>🤖 Künstliche Intelligenz</span><span>📱 App-Entwicklung</span>
+              <span>🎨 Digital Design</span><span>⚙ Automatisierung</span>
+            </div>
+            <div class="yc-marquee-group" aria-hidden="true">
+              <span>🎮 Spieleentwicklung</span><span>🌐 Webentwicklung</span>
+              <span>🤖 Künstliche Intelligenz</span><span>📱 App-Entwicklung</span>
+              <span>🎨 Digital Design</span><span>⚙ Automatisierung</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="yc-marquee-row yc-marquee-reverse">
+          <div class="yc-marquee-track">
+            <div class="yc-marquee-group">
+              <span>🔐 Cybersecurity</span><span>🧩 Problemlösen</span>
+              <span>☁ Cloud</span><span>💻 Softwareentwicklung</span>
+              <span>🛠 Robotik</span><span>🌟 Kreative Projekte</span>
+            </div>
+            <div class="yc-marquee-group" aria-hidden="true">
+              <span>🔐 Cybersecurity</span><span>🧩 Problemlösen</span>
+              <span>☁ Cloud</span><span>💻 Softwareentwicklung</span>
+              <span>🛠 Robotik</span><span>🌟 Kreative Projekte</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       MENTOR / BEISPIELPROFIL
+       ========================================== -->
+    <section class="yc-section yc-mentor">
+      <div class="container yc-two-columns">
+        <div class="yc-mentor-visual">
+          <div class="yc-mentor-avatar">
+            <div class="yc-mentor-avatar-inner">
+              <span>AW</span>
+              <small>YOUNG CODERS</small>
+            </div>
+          </div>
+          <div class="yc-mentor-badge">✦ Kreativ programmieren</div>
+        </div>
+
+        <div class="yc-mentor-copy">
+          <span class="yc-eyebrow">DEINE LERNBEGLEITUNG</span>
+          <h2>Programmieren lernen<br><em>mit Alex Winter.</em></h2>
+          <p class="yc-mentor-placeholder">
+            Lerne Alex Winter kennen – deine beispielhafte Lernbegleitung bei Young Coders.
+          </p>
+          <p>
+            Stell dir eine Lernbegleitung vor, die komplizierte
+            technische Themen verständlich erklärt, gemeinsam mit
+            Jugendlichen kreative Projekte entwickelt und Lust
+            auf selbstständiges Ausprobieren macht.
+          </p>
+          <p>
+            Genau an diesem Ansatz orientiert sich das geplante
+            Young-Coders-Konzept von Gridmind: verständliche
+            Grundlagen, kreative Aufgaben und Raum für Fragen.
+          </p>
+          <a href="../unternehmen/team.html" class="yc-text-link">
+            Mehr über das Gridmind-Team erfahren ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       FRAGEN FÜR ELTERN
+       ========================================== -->
+    <section class="yc-section yc-parents">
+      <div class="container yc-parents-inner">
+        <div>
+          <span class="yc-eyebrow">FÜR ELTERN UND ERZIEHUNGSBERECHTIGTE</span>
+          <h2>Neugier fördern.<br><em>Digitales Wissen aufbauen.</em></h2>
+          <p>
+            Young Coders soll Jugendlichen einen verständlichen
+            Einstieg in die Programmierung ermöglichen.
+            Fragen zu Alter, Betreuung, Datenschutz und
+            Teilnahmebedingungen sind uns besonders wichtig.
+          </p>
+        </div>
+        <div class="yc-parents-card">
+          <span>✉</span>
+          <h3>Fragen zum Angebot?</h3>
+          <p>Kontaktieren Sie Gridmind, um sich über den aktuellen Planungsstand zu informieren.</p>
+          <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button">
+            Kontakt aufnehmen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       FAQ
+       ========================================== -->
+    <section class="yc-section yc-faq" id="faq">
+
+      <div class="container yc-two-columns">
+        <div>
+          <span class="yc-eyebrow">HÄUFIGE FRAGEN</span>
+
+          <h2>
+            Du hast Fragen?<br>
+            <em>Hier sind Antworten.</em>
+          </h2>
+
+          <p class="yc-section-lead">
+            Hier findest du alles Wichtige über Young Coders,
+            unsere Lerninhalte und deinen Einstieg
+            in die spannende Welt des Programmierens.
+          </p>
+        </div>
+
+        <div class="yc-faq-list">
+
+          <details>
+            <summary>Brauche ich Vorkenntnisse?</summary>
+            <p>
+              Nein! Young Coders richtet sich auch an Jugendliche,
+              die noch nie programmiert haben. Du startest mit den
+              Grundlagen und lernst Schritt für Schritt, eigene
+              Websites und interaktive Anwendungen zu entwickeln.
+            </p>
+          </details>
+
+          <details>
+            <summary>Für welches Alter ist Young Coders geeignet?</summary>
+            <p>
+              Young Coders richtet sich an technikinteressierte
+              Schülerinnen und Schüler. Die Lerninhalte vermitteln
+              einen verständlichen Einstieg in die Programmierung
+              und sind besonders für Jugendliche geeignet.
+            </p>
+          </details>
+
+          <details>
+            <summary>Welche Technik benötige ich?</summary>
+            <p>
+              Zum Programmieren benötigst du einen Computer
+              oder Laptop mit Internetzugang und einem aktuellen
+              Webbrowser. Für viele Übungen kannst du einen
+              kostenlosen Code-Editor wie Visual Studio Code
+              verwenden.
+            </p>
+          </details>
+
+          <details>
+            <summary>Kann ich eigene Spiele programmieren?</summary>
+            <p>
+              Ja! Du lernst die Grundlagen von HTML, CSS
+              und JavaScript kennen und kannst damit
+              eigene kleine Spiele, interaktive Websites
+              und kreative Programmierprojekte entwickeln.
+            </p>
+          </details>
+
+          <details>
+            <summary>Wie ist der Lernweg aufgebaut?</summary>
+            <p>
+              Der Lernweg besteht aus vier aufeinander
+              aufbauenden Bereichen: Web-Grundlagen,
+              kreatives Webdesign, JavaScript und
+              eigene Programmierprojekte.
+              So kannst du deine Kenntnisse Schritt
+              für Schritt erweitern.
+            </p>
+          </details>
+
+          <details>
+            <summary>Wie viel kostet Young Coders?</summary>
+            <p>
+              Alle Informationen zu Preisen und
+              Teilnahmebedingungen erhältst du über
+              unsere persönliche Beratung.
+              Kontaktiere uns, um mehr über Young Coders
+              zu erfahren.
+            </p>
+          </details>
+
+          <details>
+            <summary>Bekomme ich ein Zertifikat?</summary>
+            <p>
+              Bei Young Coders steht vor allem im Mittelpunkt,
+              dass du selbst programmieren lernst und
+              eigene Projekte entwickeln kannst.
+              Informationen zu Abschlussnachweisen
+              und Teilnahmebestätigungen erhältst du
+              über unsere Beratung.
+            </p>
+          </details>
+
+          <details>
+            <summary>Wie werde ich beim Lernen unterstützt?</summary>
+            <p>
+              Young Coders legt Wert auf verständliche
+              Erklärungen, einen klaren Lernweg und
+              praxisorientierte Übungen. Du entwickelst
+              Schritt für Schritt deine Fähigkeiten
+              und lernst, Programmierprobleme
+              selbstständig zu lösen.
+            </p>
+          </details>
+
+          <details>
+            <summary>Kann ich später in der IT arbeiten?</summary>
+            <p>
+              Young Coders vermittelt dir erste Kenntnisse
+              und zeigt dir verschiedene Bereiche der IT.
+              So kannst du herausfinden, ob eine Ausbildung,
+              ein Studium oder eine spätere Tätigkeit
+              in der Softwareentwicklung zu deinen
+              Interessen passt.
+            </p>
+          </details>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+       FINAL CTA
+       ========================================== -->
+    <section class="yc-final">
+      <div class="container yc-final-inner">
+        <span class="yc-eyebrow">GRIDMIND YOUNG CODERS</span>
+        <h2>Deine Ideen können<br><em>die Zukunft gestalten!</em></h2>
+        <p>
+          Beginne deine Entdeckungsreise in die
+          Welt des Programmierens.
+        </p>
+        <a href="../unternehmen/kontakt.html" class="btn btn-primary hero-button">
+          Mehr erfahren
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+     GEMEINSAMER GRIDMIND FOOTER
+     ========================================== -->
+  <footer class="site-footer">
+    <svg class="footer-wave" viewBox="0 0 1440 125" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z" fill="#092f2b" />
+    </svg>
+
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">
+            <img src="../assets/logo.png" width="280" height="94" alt="Gridmind Technologies">
+          </a>
+          <p>Wir verbinden Menschen, Ideen und Technologie – von deinem ersten IT-Projekt bis zur digitalen Zukunft.</p>
+          <a href="../unternehmen/kontakt.html" class="footer-contact">
+            Kontakt zu Gridmind ↗
+          </a>
+          <div class="footer-social" aria-label="Weitere Informationen">
+            <a href="../unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+            <a href="../unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+            <a href="../unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Bildungsangebote</h3>
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Produkte & Services</h3>
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Unternehmen</h3>
+          <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+          <a href="../unternehmen/team.html">Unser Team</a>
+          <a href="../unternehmen/karriere.html">Karriere</a>
+          <a href="../unternehmen/blog.html">Blog</a>
+          <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+          <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+          <h3 class="footer-subtitle">Rechtliches</h3>
+          <a href="../rechtliches/impressum.html">Impressum</a>
+          <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+          <a href="../rechtliches/agb.html">AGB</a>
+          <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+          <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+          <a href="../rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+          <button type="button" class="footer-text-button" data-open-cookie>Cookie-Einstellungen</button>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© 2026 Gridmind Technologies</span>
+        <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GEMEINSAMER COOKIE-DIALOG -->
+  <div class="cookie-overlay" id="cookie-overlay" hidden></div>
+  <section class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="true" aria-labelledby="cookie-title"
+    aria-describedby="cookie-description" tabindex="-1" hidden>
+    <div class="cookie-heading">
+      <span class="cookie-icon">◈</span>
+      <div>
+        <span class="cookie-brand">GRIDMIND PRIVACY</span>
+        <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+      </div>
+    </div>
+    <p id="cookie-description">
+      Wir verwenden notwendige Speichertechnologien für die Funktion
+      dieser Website. Zusätzliche Technologien aktivieren wir nur
+      mit deiner Einwilligung.
+    </p>
+    <div class="cookie-details" id="cookie-details" hidden>
+      <label class="cookie-option">
+        <span><strong>Notwendig</strong><small>Grundlegende Funktionen und deine Auswahl.</small></span>
+        <input type="checkbox" checked disabled>
+      </label>
+      <label class="cookie-option">
+        <span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span>
+        <input type="checkbox" id="consent-functional">
+      </label>
+      <label class="cookie-option">
+        <span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span>
+        <input type="checkbox" id="consent-analytics">
+      </label>
+      <label class="cookie-option">
+        <span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span>
+        <input type="checkbox" id="consent-marketing">
+      </label>
+    </div>
+
+    <div class="cookie-actions">
+      <button type="button" class="cookie-btn cookie-accept" id="cookie-accept">Alle akzeptieren</button>
+      <button type="button" class="cookie-btn cookie-reject" id="cookie-reject">Nur notwendige</button>
+      <button type="button" class="cookie-btn cookie-settings" id="cookie-settings">Einstellungen</button>
+      <button type="button" class="cookie-btn cookie-save" id="cookie-save" hidden>Auswahl speichern</button>
+    </div>
+    <div class="cookie-legal">
+      <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+      <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+      <a href="../rechtliches/impressum.html">Impressum</a>
+    </div>
+  </section>
+
+</body>
+
+</html>

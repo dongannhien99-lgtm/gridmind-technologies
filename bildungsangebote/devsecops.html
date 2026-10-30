@@ -1,0 +1,1583 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08182c">
+  <meta name="description" content="DevSecOps bei Gridmind Technologies: Linux, Cloud, IT-Sicherheit, Docker, CI/CD und sichere Softwareentwicklung kennenlernen.">
+  <title>DevSecOps Engineer | Gridmind Technologies</title>
+
+  <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/devsecops.css">
+
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body class="gridmind-devsecops">
+
+<a class="skip-link" href="#main-content">
+  Zum Hauptinhalt
+</a>
+
+<!-- ==========================================
+     GRIDMIND HEADER
+     Identische Struktur zu den Bildungsseiten
+     ========================================== -->
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="../index.html"
+       aria-label="Gridmind Technologies – Startseite">
+      <img
+        src="../assets/logo.png"
+        width="280"
+        height="94"
+        alt="Gridmind Technologies">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false"
+                aria-controls="nav-offers">
+          Unsere Angebote
+          <svg viewBox="0 0 12 8"
+               width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="nav-dropdown" id="nav-offers">
+          <span class="dropdown-title">
+            Ausbildung & Karriere
+          </span>
+
+          <a href="../bildungsangebote/ki-softwareentwickler.html">
+            KI-Softwareentwickler
+          </a>
+
+          <a href="../bildungsangebote/ki-automation.html">
+            KI-Automation
+          </a>
+
+          <a href="../bildungsangebote/webentwicklung.html">
+            Webentwicklung
+          </a>
+
+          <a href="../bildungsangebote/devsecops.html"
+             aria-current="page">
+            DevSecOps
+          </a>
+
+          <a href="../bildungsangebote/young-coders.html">
+            Young Coders
+          </a>
+
+          <span class="dropdown-title">
+            Digitale Dienstleistungen
+          </span>
+
+          <a href="../services/websites.html">
+            Websites erstellen lassen
+          </a>
+
+          <a href="../services/softwareentwicklung.html">
+            Softwareentwicklung
+          </a>
+
+          <a href="../services/ki-integration.html">
+            KI-Integration
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false"
+                aria-controls="nav-devices">
+          Geräte & Software
+          <svg viewBox="0 0 12 8"
+               width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="nav-dropdown" id="nav-devices">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </div>
+
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="../unternehmen/kontakt.html"
+         class="header-cta">
+        Beratung anfragen
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Menü öffnen"
+        aria-controls="mobile-menu"
+        aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu"
+       aria-label="Mobiles Menü" inert>
+    <div class="mobile-menu-inner">
+
+      <a href="../index.html">Startseite</a>
+
+      <details>
+        <summary>Bildungsangebote</summary>
+        <div class="mobile-submenu">
+          <a href="../bildungsangebote/ki-softwareentwickler.html">
+            KI-Softwareentwickler
+          </a>
+          <a href="../bildungsangebote/ki-automation.html">
+            KI-Automation
+          </a>
+          <a href="../bildungsangebote/webentwicklung.html">
+            Webentwicklung
+          </a>
+          <a href="../bildungsangebote/devsecops.html"
+             aria-current="page">
+            DevSecOps
+          </a>
+          <a href="../bildungsangebote/young-coders.html">
+            Young Coders
+          </a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Websites & Software</summary>
+        <div class="mobile-submenu">
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html">
+            Softwareentwicklung
+          </a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Grid-Geräte</summary>
+        <div class="mobile-submenu">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </details>
+
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+      <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+      <a href="../unternehmen/kontakt.html"
+         class="mobile-cta">
+        Beratung anfragen →
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- ==========================================
+       HERO – DARK BLUE / TYPEWRITER
+       ========================================== -->
+
+  <section class="sec-hero" aria-labelledby="sec-hero-title">
+    <div class="container sec-hero-layout">
+
+      <div class="sec-hero-copy">
+
+        <span class="sec-kicker">
+          <span class="sec-live-dot"></span>
+          GRIDMIND LEARNING · DEVSECOPS
+        </span>
+
+        <h1 id="sec-hero-title">
+          Werde professioneller
+          <span class="sec-typewriter-line">
+            <span
+              id="sec-typewriter"
+              class="sec-typewriter"
+              aria-hidden="true">IT-Security Experte</span>
+            <span class="sec-type-cursor"
+                  aria-hidden="true"></span>
+          </span>
+        </h1>
+
+        <p class="sec-typewriter-accessible">
+          Entdecke die Berufsfelder IT-Security Experte,
+          Cloud Engineer und DevSecOps Specialist.
+        </p>
+
+        <p class="sec-hero-description">
+          Lerne Linux, Cloud, Automatisierung und
+          moderne IT-Sicherheit. Verstehe, wie
+          Software sicher entwickelt, getestet
+          und bereitgestellt wird.
+        </p>
+
+        <div class="sec-hero-features">
+          <span>✓ Linux & Cloud</span>
+          <span>✓ Security by Design</span>
+          <span>✓ Docker & CI/CD</span>
+        </div>
+
+        <a href="../unternehmen/kontakt.html"
+           class="btn btn-primary hero-button sec-primary-button">
+          Jetzt Beratung anfragen
+          <span class="arrow-circle"
+                aria-hidden="true">→</span>
+        </a>
+
+        <div class="sec-hero-small-note">
+          Informationen zum geplanten Gridmind-Lernangebot
+        </div>
+      </div>
+
+      <!-- ANIMIERTE DEVSECOPS-VISUALISIERUNG -->
+
+      <div class="sec-hero-art"
+           aria-label="Illustration einer sicheren CI/CD-Pipeline">
+
+        <div class="sec-art-glow"></div>
+
+        <div class="sec-art-grid" aria-hidden="true"></div>
+
+        <!-- ZENTRALES TERMINAL -->
+
+        <div class="sec-terminal sec-float-terminal">
+
+          <div class="sec-terminal-top">
+            <div class="sec-window-dots" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
+            <span>gridmind / secure-pipeline.yml</span>
+            <small>● ACTIVE</small>
+          </div>
+
+          <div class="sec-terminal-body">
+            <div>
+              <span class="sec-code-number">01</span>
+              <span class="sec-code-blue">name:</span>
+              Secure Deployment
+            </div>
+
+            <div>
+              <span class="sec-code-number">02</span>
+              <span class="sec-code-blue">on:</span>
+              push
+            </div>
+
+            <div>
+              <span class="sec-code-number">03</span>
+              <span class="sec-code-blue">jobs:</span>
+            </div>
+
+            <div>
+              <span class="sec-code-number">04</span>
+              &nbsp;&nbsp;build:
+            </div>
+
+            <div>
+              <span class="sec-code-number">05</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="sec-code-gold">npm run build</span>
+            </div>
+
+            <div>
+              <span class="sec-code-number">06</span>
+              &nbsp;&nbsp;security:
+            </div>
+
+            <div>
+              <span class="sec-code-number">07</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="sec-code-gold">scan dependencies</span>
+            </div>
+
+            <div>
+              <span class="sec-code-number">08</span>
+              &nbsp;&nbsp;deploy:
+            </div>
+
+            <div>
+              <span class="sec-code-number">09</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="sec-code-green">production ✓</span>
+            </div>
+          </div>
+
+          <div class="sec-terminal-result">
+            <span>✓</span>
+            åPipeline erfolgreich
+            <i></i>
+          </div>
+        </div>
+
+        <!-- SECURITY-KARTE -->
+
+        <div class="sec-floating-card sec-scan-card">
+          <span class="sec-floating-icon">◈</span>
+          <div>
+            <strong>Security Scan</strong>
+            <small>Prüfung bestanden</small>
+          </div>
+          <span class="sec-card-check">✓</span>
+        </div>
+
+        <!-- CLOUD-KARTE -->
+
+        <div class="sec-floating-card sec-cloud-card">
+          <span class="sec-floating-icon sec-blue-icon">☁</span>
+          <div>
+            <strong>Cloud Deployment</strong>
+            <small>Release vorbereitet</small>
+          </div>
+          <span class="sec-card-check">✓</span>
+        </div>
+
+        <!-- GROSSES SCHILD -->
+
+        <div class="sec-shield">
+          <svg viewBox="0 0 100 116"
+               aria-hidden="true"
+               fill="none">
+            <path
+              d="M50 4L92 20V55C92 81 75 99 50 111C25 99 8 81 8 55V20L50 4Z"
+              fill="#173E65"
+              stroke="#6BC9FF"
+              stroke-width="4"/>
+            <path
+              d="M29 56L44 71L73 40"
+              stroke="#70E7B4"
+              stroke-width="8"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <!-- PIPELINE -->
+
+        <div class="sec-pipeline">
+          <div class="sec-pipeline-node">
+            <span>⌘</span>
+            <strong>CODE</strong>
+          </div>
+
+          <div class="sec-pipeline-connector">
+            <i></i>
+          </div>
+
+          <div class="sec-pipeline-node">
+            <span>⚙</span>
+            <strong>BUILD</strong>
+          </div>
+
+          <div class="sec-pipeline-connector">
+            <i></i>
+          </div>
+
+          <div class="sec-pipeline-node">
+            <span>◈</span>
+            <strong>SCAN</strong>
+          </div>
+
+          <div class="sec-pipeline-connector">
+            <i></i>
+          </div>
+
+          <div class="sec-pipeline-node">
+            <span>↗</span>
+            <strong>DEPLOY</strong>
+          </div>
+        </div>
+
+        <span class="sec-star sec-star-one" aria-hidden="true">✦</span>
+        <span class="sec-star sec-star-two" aria-hidden="true">✧</span>
+        <span class="sec-star sec-star-three" aria-hidden="true">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WARUM DEVSECOPS?
+       ========================================== -->
+
+  <section class="sec-why" id="warum-devsecops">
+    <div class="container sec-two-columns">
+
+      <div>
+        <span class="sec-label">WARUM DEVSECOPS?</span>
+
+        <h2>
+          Eine Karriere mit
+          <em>Zukunft.</em>
+        </h2>
+
+        <p class="sec-lead">
+          Sichere Anwendungen und zuverlässige
+          Cloud-Systeme sind wichtige Bestandteile
+          moderner IT. DevSecOps bringt Entwicklung,
+          Betrieb und Sicherheitsmaßnahmen zusammen.
+        </p>
+      </div>
+
+      <div class="sec-why-list">
+
+        <article>
+          <span class="sec-why-icon">⌘</span>
+          <div>
+            <h3>DevSecOps Engineer</h3>
+            <p>
+              Integriere automatisierte Sicherheitsprüfungen
+              und Tests in Entwicklungsprozesse.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="sec-why-icon">☁</span>
+          <div>
+            <h3>Cloud Security Engineer</h3>
+            <p>
+              Beschäftige dich mit Cloud-Infrastruktur,
+              Berechtigungen, Monitoring und sicheren
+              Bereitstellungen.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="sec-why-icon">◈</span>
+          <div>
+            <h3>Security Automation Specialist</h3>
+            <p>
+              Automatisiere wiederkehrende Prüfungen,
+              erkenne Fehlkonfigurationen und unterstütze
+              sichere Software-Releases.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LERNINHALTE – VIER KARTEN
+       ========================================== -->
+
+  <section class="sec-skills">
+    <div class="container">
+
+      <div class="sec-section-heading">
+        <span class="sec-label">DEINE FÄHIGKEITEN</span>
+        <h2>
+          Sicherheit beginnt
+          <em>mit Wissen.</em>
+        </h2>
+        <p>
+          Das geplante Curriculum verbindet technische
+          Grundlagen, Cloud-Technologien und
+          sichere Softwareentwicklung.
+        </p>
+      </div>
+
+      <div class="sec-skill-grid">
+
+        <article class="sec-skill-card">
+          <span class="sec-skill-index">01 / SYSTEMS</span>
+          <span class="sec-skill-symbol">⌘</span>
+          <h3>Linux & Netzwerke</h3>
+          <p>
+            Verstehe Betriebssysteme, die Kommandozeile,
+            Netzwerkgrundlagen und wichtige Dienste.
+          </p>
+          <div class="sec-skill-tags">
+            <span>Linux</span>
+            <span>Shell</span>
+            <span>Networking</span>
+          </div>
+        </article>
+
+        <article class="sec-skill-card">
+          <span class="sec-skill-index">02 / DEVELOPMENT</span>
+          <span class="sec-skill-symbol">⚙</span>
+          <h3>CI/CD & Automation</h3>
+          <p>
+            Automatisiere Builds, Tests und Releases
+            mithilfe moderner Entwicklungswerkzeuge.
+          </p>
+          <div class="sec-skill-tags">
+            <span>Git</span>
+            <span>CI/CD</span>
+            <span>Actions</span>
+          </div>
+        </article>
+
+        <article class="sec-skill-card">
+          <span class="sec-skill-index">03 / INFRASTRUCTURE</span>
+          <span class="sec-skill-symbol">☁</span>
+          <h3>Docker & Cloud</h3>
+          <p>
+            Beschäftige dich mit Containern,
+            Infrastrukturkonfiguration und
+            cloudbasiertem Betrieb.
+          </p>
+          <div class="sec-skill-tags">
+            <span>Docker</span>
+            <span>Cloud</span>
+            <span>IaC</span>
+          </div>
+        </article>
+
+        <article class="sec-skill-card">
+          <span class="sec-skill-index">04 / SECURITY</span>
+          <span class="sec-skill-symbol">◈</span>
+          <h3>Cybersecurity</h3>
+          <p>
+            Lerne Security by Design,
+            Berechtigungskonzepte, Abhängigkeitsanalysen
+            und Sicherheitsprüfungen kennen.
+          </p>
+          <div class="sec-skill-tags">
+            <span>Security</span>
+            <span>Scanning</span>
+            <span>IAM</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ANIMIERTE LERNPFAD-TIMELINE
+       ========================================== -->
+
+  <section class="sec-roadmap" id="lernweg">
+    <div class="container">
+
+      <div class="sec-section-heading">
+        <span class="sec-label">DEIN LERNPFAD</span>
+
+        <h2>
+          Schritt für Schritt zum
+          <em>DevSecOps Engineer.</em>
+        </h2>
+
+        <p>
+          Entdecke vier Lernphasen vom
+          Linux-Einstieg bis zum eigenen
+          sicheren Cloud-Projekt.
+        </p>
+      </div>
+
+      <div class="sec-roadmap-track">
+
+        <div class="sec-roadmap-line" aria-hidden="true">
+          <div class="sec-roadmap-line-progress"></div>
+        </div>
+
+        <!-- PHASE 1 -->
+
+        <article class="sec-phase">
+          <div class="sec-phase-copy">
+            <span class="sec-phase-kicker">PHASE 01 · FUNDAMENTALS</span>
+
+            <h3>
+              Entdecke Linux
+              <em>und Netzwerke.</em>
+            </h3>
+
+            <p>
+              Beginne mit den Grundlagen von
+              Betriebssystemen, Netzwerken
+              und sicherer Administration.
+            </p>
+
+            <div class="sec-phase-checks">
+              <span>✓ Terminal sicher bedienen</span>
+              <span>✓ Netzwerkdienste verstehen</span>
+              <span>✓ Benutzer und Rechte verwalten</span>
+            </div>
+          </div>
+
+          <div class="sec-phase-marker">01</div>
+
+          <div class="sec-phase-modules">
+            <div class="sec-module">
+              <h4>Linux & Kommandozeile</h4>
+              <div class="sec-module-tags">
+                <span>Linux</span>
+                <span>Bash</span>
+                <span>Shell</span>
+              </div>
+            </div>
+
+            <div class="sec-module">
+              <h4>Netzwerkgrundlagen</h4>
+              <div class="sec-module-tags">
+                <span>TCP/IP</span>
+                <span>DNS</span>
+                <span>HTTP</span>
+              </div>
+            </div>
+
+            <div class="sec-module">
+              <h4>Systemadministration</h4>
+              <div class="sec-module-tags">
+                <span>SSH</span>
+                <span>Permissions</span>
+                <span>Logs</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 2 -->
+
+        <article class="sec-phase">
+          <div class="sec-phase-copy">
+            <span class="sec-phase-kicker">PHASE 02 · DEVOPS</span>
+
+            <h3>
+              Automatisiere
+              <em>deine Entwicklung.</em>
+            </h3>
+
+            <p>
+              Verwende Versionskontrolle und
+              automatisierte Pipelines,
+              um Code zu testen und bereitzustellen.
+            </p>
+
+            <div class="sec-phase-checks">
+              <span>✓ Mit Git arbeiten</span>
+              <span>✓ CI/CD-Pipelines erstellen</span>
+              <span>✓ Automatisierte Tests ausführen</span>
+            </div>
+          </div>
+
+          <div class="sec-phase-marker">02</div>
+
+          <div class="sec-phase-modules">
+            <div class="sec-module">
+              <h4>Version Control</h4>
+              <div class="sec-module-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Branches</span>
+              </div>
+            </div>
+
+            <div class="sec-module">
+              <h4>Build & Deploy</h4>
+              <div class="sec-module-tags">
+                <span>CI/CD</span>
+                <span>Actions</span>
+                <span>Testing</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 3 -->
+
+        <article class="sec-phase">
+          <div class="sec-phase-copy">
+            <span class="sec-phase-kicker">PHASE 03 · CLOUD & SECURITY</span>
+
+            <h3>
+              Baue sichere
+              <em>Cloud-Systeme.</em>
+            </h3>
+
+            <p>
+              Erkunde Container, Cloud-Architekturen
+              und automatisierte Sicherheitsprüfungen.
+              Verbinde Geschwindigkeit und Schutz.
+            </p>
+
+            <div class="sec-phase-checks">
+              <span>✓ Anwendungen containerisieren</span>
+              <span>✓ Sicherheitschecks integrieren</span>
+              <span>✓ Infrastruktur konfigurieren</span>
+            </div>
+          </div>
+
+          <div class="sec-phase-marker">03</div>
+
+          <div class="sec-phase-modules">
+            <div class="sec-module">
+              <h4>Container & Infrastruktur</h4>
+              <div class="sec-module-tags">
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>IaC</span>
+              </div>
+            </div>
+
+            <div class="sec-module">
+              <h4>Security by Design</h4>
+              <div class="sec-module-tags">
+                <span>SAST</span>
+                <span>SCA</span>
+                <span>Secrets</span>
+              </div>
+            </div>
+
+            <div class="sec-module">
+              <h4>Cloud-Sicherheit</h4>
+              <div class="sec-module-tags">
+                <span>IAM</span>
+                <span>Monitoring</span>
+                <span>Cloud</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 4 -->
+
+        <article class="sec-phase sec-phase-last">
+          <div class="sec-phase-copy">
+            <span class="sec-phase-kicker">PHASE 04 · REAL PROJECTS</span>
+
+            <h3>
+              Setze dein Wissen
+              <em>in Projekten um.</em>
+            </h3>
+
+            <p>
+              Verbinde Entwicklung, Security
+              und Betrieb in einer eigenen
+              DevSecOps-Projektumgebung.
+            </p>
+
+            <div class="sec-phase-checks">
+              <span>✓ Sichere Pipeline entwickeln</span>
+              <span>✓ Monitoring einrichten</span>
+              <span>✓ Projekte dokumentieren</span>
+            </div>
+          </div>
+
+          <div class="sec-phase-marker">04</div>
+
+          <div class="sec-phase-modules">
+            <div class="sec-module">
+              <h4>Praxisprojekt</h4>
+              <div class="sec-module-tags">
+                <span>CI/CD</span>
+                <span>Security</span>
+                <span>Docker</span>
+              </div>
+            </div>
+
+            <div class="sec-module">
+              <h4>Portfolio & Karriere</h4>
+              <div class="sec-module-tags">
+                <span>GitHub</span>
+                <span>Portfolio</span>
+                <span>Interview</span>
+              </div>
+            </div>
+
+            <div class="sec-finish-card">
+              <span>⚑</span>
+              <div>
+                <strong>Dein DevSecOps-Portfolio</strong>
+                <small>Projekte als Arbeitsproben</small>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="sec-roadmap-cta">
+        <h3>Dein Weg beginnt mit den Grundlagen.</h3>
+        <p>Entdecke das geplante Gridmind-DevSecOps-Programm.</p>
+
+        <a href="../unternehmen/kontakt.html"
+           class="btn btn-primary hero-button">
+          Lernweg besprechen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PRAXISPROJEKTE
+       ========================================== -->
+
+  <section class="sec-projects">
+    <div class="container">
+
+      <div class="sec-section-heading">
+        <span class="sec-label">LEARNING BY BUILDING</span>
+        <h2>
+          Werde sicher durch
+          <em>echte Praxis.</em>
+        </h2>
+        <p>
+          Beispiele für praxisorientierte Projekte
+          innerhalb eines DevSecOps-Lernpfads.
+        </p>
+      </div>
+
+      <div class="sec-project-grid">
+
+        <article class="sec-project-card">
+          <span class="sec-project-icon">⌘</span>
+          <span class="sec-project-index">PROJECT 01</span>
+          <h3>Linux-Labor</h3>
+          <p>
+            Richte eine eigene Testumgebung ein.
+            Beschäftige dich mit Benutzerrechten,
+            SSH und Systemprotokollen.
+          </p>
+          <div class="sec-project-tags">
+            <span>Linux</span>
+            <span>SSH</span>
+            <span>Logs</span>
+          </div>
+        </article>
+
+        <article class="sec-project-card">
+          <span class="sec-project-icon">⚙</span>
+          <span class="sec-project-index">PROJECT 02</span>
+          <h3>Secure CI/CD</h3>
+          <p>
+            Entwickle eine Pipeline, die
+            Anwendungscode baut, testet und
+            Abhängigkeiten überprüft.
+          </p>
+          <div class="sec-project-tags">
+            <span>Git</span>
+            <span>CI/CD</span>
+            <span>Scanning</span>
+          </div>
+        </article>
+
+        <article class="sec-project-card">
+          <span class="sec-project-icon">☁</span>
+          <span class="sec-project-index">PROJECT 03</span>
+          <h3>Cloud Deployment</h3>
+          <p>
+            Verpacke eine Anwendung in einem
+            Container und übe kontrollierte
+            Releases in einer Testumgebung.
+          </p>
+          <div class="sec-project-tags">
+            <span>Docker</span>
+            <span>Cloud</span>
+            <span>Deploy</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BRANCHEN MARQUEE
+       ========================================== -->
+
+  <section class="sec-industries" aria-labelledby="sec-industries-title">
+
+    <div class="sec-section-heading">
+      <span class="sec-label">KARRIEREPERSPEKTIVEN</span>
+      <h2 id="sec-industries-title">
+        DevSecOps-Wissen in
+        <em>vielen Branchen.</em>
+      </h2>
+      <p>
+        IT-Sicherheit, Cloud und Automatisierung
+        werden in unterschiedlichen Bereichen eingesetzt.
+      </p>
+    </div>
+
+    <div class="sec-marquee" aria-label="Mögliche Tätigkeitsfelder">
+
+      <div class="sec-marquee-row">
+        <div class="sec-marquee-track">
+          <div class="sec-marquee-group">
+            <span class="sec-industry">◈ Cybersecurity</span>
+            <span class="sec-industry">☁ Cloud Computing</span>
+            <span class="sec-industry">⌘ Softwareentwicklung</span>
+            <span class="sec-industry">⚙ DevOps</span>
+            <span class="sec-industry">▣ Infrastruktur</span>
+            <span class="sec-industry">✦ IT-Beratung</span>
+          </div>
+          <div class="sec-marquee-group" aria-hidden="true">
+            <span class="sec-industry">◈ Cybersecurity</span>
+            <span class="sec-industry">☁ Cloud Computing</span>
+            <span class="sec-industry">⌘ Softwareentwicklung</span>
+            <span class="sec-industry">⚙ DevOps</span>
+            <span class="sec-industry">▣ Infrastruktur</span>
+            <span class="sec-industry">✦ IT-Beratung</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-marquee-row sec-marquee-reverse">
+        <div class="sec-marquee-track">
+          <div class="sec-marquee-group">
+            <span class="sec-industry">◇ FinTech</span>
+            <span class="sec-industry">◎ HealthTech</span>
+            <span class="sec-industry">↗ E-Commerce</span>
+            <span class="sec-industry">▤ Unternehmens-IT</span>
+            <span class="sec-industry">⚙ Automation</span>
+            <span class="sec-industry">✦ Cloud Security</span>
+          </div>
+          <div class="sec-marquee-group" aria-hidden="true">
+            <span class="sec-industry">◇ FinTech</span>
+            <span class="sec-industry">◎ HealthTech</span>
+            <span class="sec-industry">↗ E-Commerce</span>
+            <span class="sec-industry">▤ Unternehmens-IT</span>
+            <span class="sec-industry">⚙ Automation</span>
+            <span class="sec-industry">✦ Cloud Security</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="sec-industries-note">
+      Diese Branchen sind Beispiele für mögliche
+      Tätigkeitsfelder, keine Arbeitgeberreferenzen
+      oder Stellenzusagen.
+    </p>
+  </section>
+
+  <!-- ==========================================
+       WARUM GRIDMIND?
+       ========================================== -->
+
+  <section class="sec-benefits">
+    <div class="container">
+
+      <div class="sec-section-heading">
+        <span class="sec-label">UNSER LERNKONZEPT</span>
+        <h2>
+          Theorie verstehen.
+          <em>Praxis anwenden.</em>
+        </h2>
+      </div>
+
+      <div class="sec-benefits-grid">
+        <article>
+          <span>01</span>
+          <h3>Strukturierter Lernweg</h3>
+          <p>Von Linux-Grundlagen bis zum eigenen Cloud-Projekt.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Security by Design</h3>
+          <p>Sicherheit in jeder Phase der Softwareentwicklung berücksichtigen.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Moderne Technologien</h3>
+          <p>Werkzeuge wie Git, Docker und CI/CD verstehen und anwenden.</p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Praxisnahe Aufgaben</h3>
+          <p>Technische Kenntnisse durch eigene Projekte vertiefen.</p>
+        </article>
+
+        <article>
+          <span>05</span>
+          <h3>Cloud-Kompetenz</h3>
+          <p>Grundlagen moderner Infrastruktur und sicherer Bereitstellung erlernen.</p>
+        </article>
+
+        <article>
+          <span>06</span>
+          <h3>Karriereorientierung</h3>
+          <p>Projekte dokumentieren und den beruflichen Einstieg vorbereiten.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       KOSTEN & FINANZIERUNG
+       ========================================== -->
+
+  <section class="sec-financing">
+    <div class="container sec-two-columns">
+
+      <div>
+        <span class="sec-label">KOSTEN & FINANZIERUNG</span>
+        <h2>
+          Investiere in
+          <em>deine Zukunft.</em>
+        </h2>
+        <p class="sec-lead">
+          Für das geplante Gridmind-Angebot
+          stehen verbindliche Preise,
+          Kursdauer und mögliche Förderzulassungen
+          noch nicht fest.
+        </p>
+
+        <a href="../unternehmen/kontakt.html"
+           class="btn btn-primary hero-button">
+          Informationen anfragen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="sec-financing-list">
+
+        <article>
+          <span>€</span>
+          <div>
+            <h3>Eigenfinanzierung</h3>
+            <p>
+              Informiere dich über die späteren
+              Teilnahmebedingungen und Kosten.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>⌂</span>
+          <div>
+            <h3>Unterstützung durch Arbeitgeber</h3>
+            <p>
+              Eine berufliche Weiterbildung kann
+              gegebenenfalls mit dem eigenen
+              Arbeitgeber besprochen werden.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>▤</span>
+          <div>
+            <h3>Mögliche öffentliche Förderung</h3>
+            <p>
+              Ob eine Maßnahme förderfähig ist,
+              hängt von den jeweiligen Zulassungen
+              und gesetzlichen Voraussetzungen ab.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ
+       ========================================== -->
+
+  <section class="sec-faq" id="faq">
+    <div class="container sec-two-columns">
+
+      <div>
+        <span class="sec-label">HÄUFIGE FRAGEN</span>
+        <h2>
+          Noch Fragen
+          <em>zu DevSecOps?</em>
+        </h2>
+        <p>
+          Hier findest du Antworten zu den
+          wichtigsten Grundlagen und zu unserem
+          geplanten Lernangebot.
+        </p>
+      </div>
+
+      <div class="sec-faq-items">
+        <details>
+          <summary>Was ist DevSecOps?</summary>
+          <p>
+            DevSecOps integriert Sicherheit
+            in die Prozesse der Softwareentwicklung
+            und des IT-Betriebs. Dazu gehören
+            automatisierte Tests, Sicherheitsprüfungen
+            und sichere Bereitstellungen.
+          </p>
+        </details>
+
+        <details>
+          <summary>Brauche ich Programmierkenntnisse?</summary>
+          <p>
+            Technische Grundlagen sind hilfreich.
+            Der geplante Lernpfad beginnt mit Linux,
+            Netzwerken und Entwicklungswerkzeugen.
+          </p>
+        </details>
+
+        <details>
+          <summary>Welche Tools lerne ich kennen?</summary>
+          <p>
+            Geplant sind unter anderem Linux, Git,
+            GitHub Actions, Docker, Grundlagen der
+            Cloud-Infrastruktur und Sicherheitsprüfungen.
+          </p>
+        </details>
+
+        <details>
+          <summary>Ist DevSecOps dasselbe wie Hacking?</summary>
+          <p>
+            Nein. DevSecOps beschäftigt sich vor allem
+            mit der Integration von Sicherheitsmaßnahmen
+            in Entwicklung und Betrieb. Sicherheitsübungen
+            sollten nur in eigenen oder ausdrücklich
+            autorisierten Testumgebungen stattfinden.
+          </p>
+        </details>
+
+        <details>
+          <summary>Ist ein IT-Job garantiert?</summary>
+          <p>
+            Nein. Berufliche Perspektiven hängen von
+            Vorkenntnissen, praktischer Erfahrung,
+            Bewerbungen und dem Arbeitsmarkt ab.
+          </p>
+        </details>
+
+        <details>
+          <summary>Wann beginnt das Gridmind-Programm?</summary>
+          <p>
+            Ein verbindlicher Beginn, die Dauer
+            und die Teilnahmebedingungen sind
+            noch nicht veröffentlicht.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FINAL CTA
+       ========================================== -->
+
+  <section class="sec-final">
+    <div class="container sec-final-inner">
+
+      <span class="sec-label">GRIDMIND DEVSECOPS</span>
+
+      <h2>
+        Bereit, die digitale Welt
+        <em>sicherer zu machen?</em>
+      </h2>
+
+      <p>
+        Entdecke deinen möglichen Einstieg
+        in Cloud, Security und DevSecOps.
+      </p>
+
+      <a href="../unternehmen/kontakt.html"
+         class="btn btn-primary hero-button">
+        Jetzt Kontakt aufnehmen
+        <span class="arrow-circle" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================
+     GEMEINSAMER GRIDMIND FOOTER
+     ========================================== -->
+
+<footer class="site-footer">
+
+  <svg class="footer-wave"
+       viewBox="0 0 1440 125"
+       preserveAspectRatio="none"
+       aria-hidden="true">
+    <path
+      d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z"
+      fill="#092f2b"/>
+  </svg>
+
+  <div class="footer-main">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <img src="../assets/logo.png"
+               width="280" height="94"
+               alt="Gridmind Technologies">
+        </a>
+
+        <p>
+          Wir verbinden Menschen, Ideen und Technologie –
+          von deinem ersten IT-Projekt bis zur
+          digitalen Zukunft.
+        </p>
+
+        <a href="../unternehmen/kontakt.html"
+           class="footer-contact">
+          Kontakt zu Gridmind ↗
+        </a>
+
+        <div class="footer-social"
+             aria-label="Weitere Informationen">
+          <a href="../unternehmen/blog.html"
+             aria-label="Gridmind Blog">B</a>
+          <a href="../unternehmen/karriere.html"
+             aria-label="Gridmind Karriere">K</a>
+          <a href="../unternehmen/kontakt.html"
+             aria-label="Gridmind Kontakt">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Bildungsangebote</h3>
+
+        <a href="../bildungsangebote/ki-softwareentwickler.html">
+          KI-Softwareentwickler
+        </a>
+        <a href="../bildungsangebote/ki-automation.html">
+          KI-Automation
+        </a>
+        <a href="../bildungsangebote/webentwicklung.html">
+          Webentwicklung
+        </a>
+        <a href="../bildungsangebote/devsecops.html">
+          DevSecOps
+        </a>
+        <a href="../bildungsangebote/young-coders.html">
+          Young Coders
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Produkte & Services</h3>
+
+        <a href="../services/websites.html">Website-Erstellung</a>
+        <a href="../services/softwareentwicklung.html">
+          Softwareentwicklung
+        </a>
+        <a href="../services/ki-integration.html">KI-Integration</a>
+        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        <a href="../produkte/gridphone.html">GridPhone</a>
+        <a href="../produkte/gridtab.html">GridTab</a>
+        <a href="../produkte/gridwatch.html">GridWatch</a>
+        <a href="../produkte/gridmac.html">GridMac</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Unternehmen</h3>
+
+        <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+        <a href="../unternehmen/team.html">Unser Team</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/fuer-unternehmen.html">
+          Für Unternehmen
+        </a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+
+        <h3 class="footer-subtitle">Rechtliches</h3>
+
+        <a href="../rechtliches/impressum.html">Impressum</a>
+        <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+        <a href="../rechtliches/agb.html">AGB</a>
+        <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+        <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+        <a href="../rechtliches/barrierefreiheit.html">
+          Barrierefreiheitserklärung
+        </a>
+
+        <button class="footer-text-button"
+                type="button"
+                data-open-cookie>
+          Cookie-Einstellungen
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Gridmind Technologies</span>
+      <span>
+        Designed with <span class="heart">♥</span> by Gridmind
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==========================================
+     GEMEINSAMER COOKIE-BANNER
+     ========================================== -->
+
+<div class="cookie-overlay" id="cookie-overlay" hidden></div>
+
+<section
+  class="cookie-banner"
+  id="cookie-banner"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="cookie-title"
+  aria-describedby="cookie-description"
+  tabindex="-1"
+  hidden>
+
+  <div class="cookie-heading">
+    <span class="cookie-icon">◈</span>
+
+    <div>
+      <span class="cookie-brand">GRIDMIND PRIVACY</span>
+      <h2 id="cookie-title">
+        Deine Privatsphäre zählt.
+      </h2>
+    </div>
+  </div>
+
+  <p id="cookie-description">
+    Wir verwenden notwendige Speichertechnologien
+    für die Funktion dieser Website. Zusätzliche
+    Technologien aktivieren wir nur mit deiner Einwilligung.
+  </p>
+
+  <div class="cookie-details" id="cookie-details" hidden>
+
+    <label class="cookie-option">
+      <span>
+        <strong>Notwendig</strong>
+        <small>Grundlegende Funktionen und deine Auswahl.</small>
+      </span>
+      <input type="checkbox" checked disabled>
+    </label>
+
+    <label class="cookie-option">
+      <span>
+        <strong>Funktional</strong>
+        <small>Zusätzliche Komfortfunktionen.</small>
+      </span>
+      <input type="checkbox" id="consent-functional">
+    </label>
+
+    <label class="cookie-option">
+      <span>
+        <strong>Statistik</strong>
+        <small>Optionale Auswertung der Website-Nutzung.</small>
+      </span>
+      <input type="checkbox" id="consent-analytics">
+    </label>
+
+    <label class="cookie-option">
+      <span>
+        <strong>Marketing</strong>
+        <small>Optionale Marketingtechnologien.</small>
+      </span>
+      <input type="checkbox" id="consent-marketing">
+    </label>
+  </div>
+
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept"
+            type="button" id="cookie-accept">
+      Alle akzeptieren
+    </button>
+
+    <button class="cookie-btn cookie-reject"
+            type="button" id="cookie-reject">
+      Nur notwendige
+    </button>
+
+    <button class="cookie-btn cookie-settings"
+            type="button" id="cookie-settings">
+      Einstellungen
+    </button>
+
+    <button class="cookie-btn cookie-save"
+            type="button" id="cookie-save" hidden>
+      Auswahl speichern
+    </button>
+  </div>
+
+  <div class="cookie-legal">
+    <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+    <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+    <a href="../rechtliches/impressum.html">Impressum</a>
+  </div>
+</section>
+
+<!-- ==========================================
+     TYPEWRITER & TIMELINE
+     Direkt eingebaut: keine weitere JS-Datei
+     ========================================== -->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* ------------------------------------------
+     TYPEWRITER
+     ------------------------------------------ */
+
+  const typeElement = document.getElementById("sec-typewriter");
+
+  const phrases = [
+    "IT-Security Experte",
+    "Cloud Engineer",
+    "DevSecOps Specialist"
+  ];
+
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  );
+
+  if (typeElement) {
+    if (reducedMotion.matches) {
+      typeElement.textContent = phrases[0];
+    } else {
+      let phraseIndex = 0;
+      let charIndex = phrases[0].length;
+      let deleting = false;
+
+      function typewriterTick() {
+        const phrase = phrases[phraseIndex];
+
+        if (deleting) {
+          charIndex--;
+        } else {
+          charIndex++;
+        }
+
+        typeElement.textContent =
+          Array.from(phrase).slice(0, charIndex).join("");
+
+        let delay = deleting ? 48 : 95;
+
+        if (!deleting && charIndex >= Array.from(phrase).length) {
+          deleting = true;
+          delay = 1900;
+        } else if (deleting && charIndex <= 0) {
+          deleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          delay = 380;
+        }
+
+        window.setTimeout(typewriterTick, delay);
+      }
+
+      window.setTimeout(() => {
+        deleting = true;
+        typewriterTick();
+      }, 2000);
+    }
+  }
+
+  /* ------------------------------------------
+     TIMELINE SCROLL ANIMATION
+     ------------------------------------------ */
+
+  const roadmap = document.querySelector(".sec-roadmap");
+  const phases = Array.from(
+    document.querySelectorAll(".sec-phase")
+  );
+
+  const line = document.querySelector(".sec-roadmap-line");
+  const progress = document.querySelector(
+    ".sec-roadmap-line-progress"
+  );
+
+  if (!roadmap || !line || !progress) return;
+
+  if (reducedMotion.matches) {
+    phases.forEach(phase => phase.classList.add("is-visible"));
+    progress.style.height = "100%";
+    return;
+  }
+
+  if ("IntersectionObserver" in window) {
+    roadmap.classList.add("sec-roadmap-js");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.06,
+      rootMargin: "0px 0px -5% 0px"
+    });
+
+    phases.forEach(phase => observer.observe(phase));
+  } else {
+    phases.forEach(phase => phase.classList.add("is-visible"));
+  }
+
+  let ticking = false;
+
+  function updateRoadmap() {
+    const rect = line.getBoundingClientRect();
+
+    const trigger = window.innerHeight * 0.65;
+
+    const amount = Math.max(
+      0,
+      Math.min(rect.height, trigger - rect.top)
+    );
+
+    progress.style.height = amount + "px";
+
+    ticking = false;
+  }
+
+  function requestUpdate() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(updateRoadmap);
+  }
+
+  window.addEventListener("scroll", requestUpdate, {
+    passive: true
+  });
+
+  window.addEventListener("resize", requestUpdate);
+
+  requestUpdate();
+});
+</script>
+
+</body>
+</html>

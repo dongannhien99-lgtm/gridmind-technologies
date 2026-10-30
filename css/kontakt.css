@@ -1,0 +1,1393 @@
+
+/* =============================================
+   GRIDMIND TECHNOLOGIES
+   KONTAKTSEITE – COMPLETE CSS
+   ============================================= */
+
+.gridmind-contact {
+  --gc-green: #138a57;
+  --gc-dark: #103d34;
+  --gc-navy: #0b302c;
+  --gc-light: #f3f8f5;
+  --gc-muted: #637b70;
+  --gc-border: #dcebe2;
+
+  font-family: "Figtree", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.gridmind-contact main {
+  overflow: clip;
+}
+
+.gridmind-contact .gc-section {
+  padding: 110px 0 120px;
+}
+
+.gridmind-contact .gc-eyebrow {
+  display: block;
+  color: #138a57;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  margin-bottom: 20px;
+}
+
+.gridmind-contact .gc-heading {
+  text-align: center;
+  max-width: 830px;
+  margin: 0 auto 62px;
+}
+
+.gridmind-contact .gc-heading h2,
+.gridmind-contact .gc-faq-layout h2 {
+  color: #103d34;
+  font-size: clamp(37px,4.8vw,62px);
+  font-weight: 900;
+  line-height: 1.09;
+  letter-spacing: -.045em;
+  margin: 0 0 22px;
+}
+
+.gridmind-contact .gc-heading h2 em,
+.gridmind-contact .gc-faq-layout h2 em {
+  color: #138a57;
+  font-style: normal;
+}
+
+.gridmind-contact .gc-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #637b70;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+/* =============================================
+   BUTTON ANIMATION
+   ============================================= */
+
+.gridmind-contact .hero-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #138a57;
+  color: white;
+  animation: gcButtonBreathe 3.5s ease-in-out infinite;
+}
+
+.gridmind-contact .hero-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    rgba(255,255,255,.42) 50%,
+    transparent 70%
+  );
+  transform: translateX(-130%);
+  animation: gcButtonShimmer 3.8s ease-in-out 1s infinite;
+}
+
+.gridmind-contact .hero-button > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes gcButtonBreathe {
+  0%,100% {
+    box-shadow: 0 14px 35px -10px rgba(19,138,87,.5);
+  }
+  50% {
+    box-shadow:
+      0 18px 45px -10px rgba(19,138,87,.72),
+      0 0 0 6px rgba(19,138,87,.11);
+  }
+}
+
+@keyframes gcButtonShimmer {
+  0% { transform: translateX(-130%); }
+  60%,100% { transform: translateX(130%); }
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+
+.gridmind-contact .gc-hero {
+  position: relative;
+  padding: 115px 0 125px;
+  color: white;
+  background:
+    radial-gradient(
+      ellipse at 80% 36%,
+      rgba(73,199,139,.18),
+      transparent 53%
+    ),
+    linear-gradient(135deg,#082c2c,#0b493b);
+  overflow: hidden;
+}
+
+.gridmind-contact .gc-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(131,227,181,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(131,227,181,.035) 1px,transparent 1px);
+  background-size: 55px 55px;
+}
+
+.gridmind-contact .gc-hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.gridmind-contact .gc-hero-copy {
+  position: relative;
+  z-index: 5;
+  min-width: 0;
+}
+
+.gridmind-contact .gc-hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 16px;
+  border: 1px solid rgba(142,233,185,.28);
+  border-radius: 30px;
+  background: rgba(142,233,185,.08);
+  color: #a2efc5;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .09em;
+  margin-bottom: 29px;
+}
+
+.gridmind-contact .gc-hero-kicker i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #90efbb;
+  box-shadow: 0 0 0 5px rgba(144,239,187,.12);
+  animation: gcPulse 2.5s ease-in-out infinite;
+}
+
+.gridmind-contact .gc-hero h1 {
+  color: white;
+  font-size: clamp(45px,5.15vw,73px);
+  font-weight: 900;
+  line-height: 1.09;
+  letter-spacing: -.05em;
+  margin: 0 0 26px;
+}
+
+.gridmind-contact .gc-hero h1 span {
+  display: block;
+  color: #9bedbd;
+}
+
+.gridmind-contact .gc-hero-lead {
+  color: #d0e7dd;
+  font-size: 19px;
+  line-height: 1.75;
+  max-width: 540px;
+  margin-bottom: 32px;
+}
+
+.gridmind-contact .gc-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+
+.gridmind-contact .gc-hero-link {
+  color: #b5ead1;
+  font-size: 15px;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.gridmind-contact .gc-hero-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.gridmind-contact .gc-hero-highlights {
+  display: grid;
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.gridmind-contact .gc-hero-highlights span {
+  color: #c2e5d2;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.gridmind-contact .gc-hero-highlights b {
+  color: #8debb8;
+  margin-right: 12px;
+}
+
+/* =============================================
+   HERO ART
+   ============================================= */
+
+.gridmind-contact .gc-hero-art {
+  position: relative;
+  min-height: 520px;
+  isolation: isolate;
+}
+
+.gridmind-contact .gc-art-glow {
+  position: absolute;
+  inset: 10px -20px;
+  z-index: -2;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    rgba(84,214,149,.17),
+    transparent 70%
+  );
+}
+
+.gridmind-contact .gc-network {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -1;
+}
+
+.gridmind-contact .gc-network-line {
+  stroke: rgba(124,234,180,.5);
+  stroke-width: 2;
+  stroke-dasharray: 8 13;
+  animation: gcNetworkFlow 11s linear infinite;
+}
+
+.gridmind-contact .gc-network-orbit {
+  fill: none;
+  stroke: rgba(141,221,175,.15);
+  stroke-width: 2;
+}
+
+.gridmind-contact .gc-orbit-outer {
+  stroke-dasharray: 4 13;
+}
+
+.gridmind-contact .gc-network-dot {
+  fill: #7de9b2;
+}
+
+.gridmind-contact .gc-main-symbol {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 175px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #0c403c;
+  border: 1px solid rgba(119,230,179,.44);
+  border-radius: 48px;
+  box-shadow:
+    0 25px 65px rgba(0,0,0,.25),
+    0 0 55px rgba(91,212,148,.12);
+}
+
+.gridmind-contact .gc-main-symbol img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.gridmind-contact .gc-main-symbol strong {
+  color: #b4f0cc;
+  font-size: 11px;
+  letter-spacing: .11em;
+}
+
+.gridmind-contact .gc-floating-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 180px;
+  padding: 14px 17px;
+  background: #f8fffb;
+  border-radius: 17px;
+  border: 1px solid #cbe7d6;
+  box-shadow: 0 20px 45px rgba(0,0,0,.21);
+  animation: gcCardFloat 8s ease-in-out infinite;
+}
+
+.gridmind-contact .gc-floating-card > span {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background: #e0f3e7;
+  border-radius: 12px;
+  color: #138a57;
+  font-size: 22px;
+}
+
+.gridmind-contact .gc-floating-card strong {
+  display: block;
+  color: #164736;
+  font-size: 12px;
+}
+
+.gridmind-contact .gc-floating-card small {
+  display: block;
+  color: #849c8e;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.gridmind-contact .gc-card-one {
+  top: 7%;
+  left: 1%;
+}
+
+.gridmind-contact .gc-card-two {
+  top: 11%;
+  right: 0;
+  animation-delay: -2s;
+}
+
+.gridmind-contact .gc-card-three {
+  bottom: 9%;
+  right: 4%;
+  animation-delay: -4s;
+}
+
+.gridmind-contact .gc-spark {
+  position: absolute;
+  color: #99f0c1;
+  font-size: 30px;
+  animation: gcTwinkle 3s ease-in-out infinite;
+}
+
+.gridmind-contact .gc-spark-one {
+  left: 15%;
+  bottom: 17%;
+}
+
+.gridmind-contact .gc-spark-two {
+  right: 22%;
+  top: 4%;
+  animation-delay: -1.3s;
+}
+
+@keyframes gcPulse {
+  0%,100% { opacity: 1; }
+  50% { opacity: .4; }
+}
+
+@keyframes gcCardFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes gcTwinkle {
+  0%,100% { opacity: .35; transform: scale(.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes gcNetworkFlow {
+  to { stroke-dashoffset: -168; }
+}
+
+/* =============================================
+   TOPIC CARDS
+   ============================================= */
+
+.gridmind-contact .gc-topics {
+  background: #f3f8f5;
+}
+
+.gridmind-contact .gc-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 22px;
+}
+
+.gridmind-contact .gc-topic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  min-height: 310px;
+  padding: 31px;
+  border: 1px solid #dcebe2;
+  border-radius: 26px;
+  background: white;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease;
+}
+
+.gridmind-contact .gc-topic-card:hover {
+  transform: translateY(-6px);
+  border-color: #a8dfbd;
+  box-shadow: 0 20px 45px rgba(13,88,47,.1);
+}
+
+.gridmind-contact .gc-topic-number {
+  color: #80998a;
+  font: 800 11px Consolas,monospace;
+}
+
+.gridmind-contact .gc-topic-icon {
+  display: grid;
+  place-items: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 19px;
+  background: #e0f4e8;
+  color: #138a57;
+  font-size: 30px;
+  margin: 28px 0 22px;
+}
+
+.gridmind-contact .gc-topic-card h3 {
+  color: #153f33;
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.gridmind-contact .gc-topic-card p {
+  color: #637b70;
+  font-size: 15px;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.gridmind-contact .gc-topic-card strong {
+  color: #138a57;
+  font-size: 14px;
+  margin-top: 17px;
+}
+
+/* =============================================
+   CONTACT FORM SECTION
+   ============================================= */
+
+.gridmind-contact .gc-contact-section {
+  background: white;
+  scroll-margin-top: 85px;
+}
+
+.gridmind-contact .gc-contact-layout {
+  display: grid;
+  grid-template-columns: .76fr 1.24fr;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid #dcebe2;
+  border-radius: 32px;
+  box-shadow: 0 25px 70px rgba(12,78,46,.09);
+}
+
+/* LEFT ASIDE */
+
+.gridmind-contact .gc-contact-aside {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 37px;
+  background:
+    radial-gradient(circle at 80% 75%,
+      rgba(125,226,168,.17),transparent 55%),
+    linear-gradient(140deg,#0b3432,#0e7052);
+  color: white;
+}
+
+.gridmind-contact .gc-contact-aside::after {
+  content: "";
+  position: absolute;
+  width: 310px;
+  height: 310px;
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 50%;
+  right: -160px;
+  bottom: -150px;
+  pointer-events: none;
+}
+
+.gridmind-contact .gc-aside-icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(164,240,198,.14);
+  border: 1px solid rgba(164,240,198,.2);
+  color: #b3f5ce;
+  border-radius: 19px;
+  font-size: 33px;
+  margin-bottom: 35px;
+}
+
+.gridmind-contact .gc-aside-eyebrow {
+  display: block;
+  color: #a3ebc4;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  margin-bottom: 18px;
+}
+
+.gridmind-contact .gc-contact-aside h3 {
+  color: white;
+  font-size: clamp(29px,3vw,42px);
+  line-height: 1.12;
+  letter-spacing: -.04em;
+  margin-bottom: 23px;
+}
+
+.gridmind-contact .gc-contact-aside > p {
+  color: #d1e9dc;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.gridmind-contact .gc-aside-divider {
+  height: 1px;
+  background: rgba(255,255,255,.17);
+  margin: 35px 0;
+}
+
+.gridmind-contact .gc-aside-benefits {
+  display: grid;
+  gap: 26px;
+}
+
+.gridmind-contact .gc-aside-benefits > div {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  column-gap: 12px;
+}
+
+.gridmind-contact .gc-aside-benefits span {
+  grid-row: span 2;
+  color: #b2f0cb;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.gridmind-contact .gc-aside-benefits strong {
+  color: #fff;
+  font-size: 16px;
+}
+
+.gridmind-contact .gc-aside-benefits small {
+  display: block;
+  color: #bcd9cb;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.gridmind-contact .gc-aside-bottom {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: auto;
+  padding-top: 75px;
+}
+
+.gridmind-contact .gc-aside-bottom img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.gridmind-contact .gc-aside-bottom span {
+  color: #e1f4e7;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+/* RIGHT FORM */
+
+.gridmind-contact .gc-form-panel {
+  min-width: 0;
+  padding: 42px;
+  background: #fff;
+}
+
+.gridmind-contact .gc-form-heading {
+  margin-bottom: 30px;
+}
+
+.gridmind-contact .gc-form-step {
+  display: block;
+  font-size: 11px;
+  color: #138a57;
+  letter-spacing: .13em;
+  font-weight: 900;
+  margin-bottom: 13px;
+}
+
+.gridmind-contact .gc-form-heading h3 {
+  color: #173e34;
+  font-size: clamp(26px,3vw,34px);
+  margin-bottom: 12px;
+}
+
+.gridmind-contact .gc-form-heading p {
+  color: #738b7d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.gridmind-contact .gc-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 21px 18px;
+}
+
+.gridmind-contact .gc-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.gridmind-contact .gc-field-full {
+  grid-column: 1 / -1;
+}
+
+.gridmind-contact .gc-field[hidden] {
+  display: none !important;
+}
+
+.gridmind-contact .gc-field label {
+  display: block;
+  margin-bottom: 10px;
+  color: #264b38;
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.gridmind-contact .gc-field input,
+.gridmind-contact .gc-field textarea,
+.gridmind-contact .gc-field select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid #dce9e1;
+  border-radius: 14px;
+  background: #f8fbf9;
+  color: #183e31;
+  padding: 16px;
+  font: 500 15px "Figtree",Arial,sans-serif;
+  outline: none;
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+}
+
+.gridmind-contact .gc-field input::placeholder,
+.gridmind-contact .gc-field textarea::placeholder {
+  color: #96a89c;
+}
+
+.gridmind-contact .gc-field input:focus,
+.gridmind-contact .gc-field textarea:focus,
+.gridmind-contact .gc-field select:focus {
+  border-color: #138a57;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(19,138,87,.09);
+}
+
+.gridmind-contact .gc-field textarea {
+  resize: vertical;
+  min-height: 160px;
+  line-height: 1.65;
+}
+
+.gridmind-contact .gc-character-count {
+  align-self: flex-end;
+  color: #8ca294;
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+.gridmind-contact .gc-consent {
+  margin-top: 26px;
+}
+
+.gridmind-contact .gc-check-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  color: #5f786a;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.gridmind-contact .gc-check-label input {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  accent-color: #138a57;
+}
+
+.gridmind-contact .gc-check-label a {
+  color: #138a57;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.gridmind-contact .gc-form-actions {
+  margin-top: 28px;
+}
+
+.gridmind-contact .gc-submit,
+.gridmind-contact .gc-copy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 54px;
+  padding: 15px 25px;
+  border: 0;
+  border-radius: 15px;
+  background: #138a57;
+  color: white;
+  font: 850 15px "Figtree",Arial,sans-serif;
+  cursor: pointer;
+  transition: background .2s,transform .2s;
+}
+
+.gridmind-contact .gc-submit:hover,
+.gridmind-contact .gc-copy-button:hover {
+  background: #0d7148;
+  transform: translateY(-2px);
+}
+
+.gridmind-contact .gc-form-note {
+  max-width: 550px;
+  margin-top: 16px;
+  color: #82968b;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* =============================================
+   FORM RESULT
+   ============================================= */
+
+.gridmind-contact .gc-result {
+  margin-top: 35px;
+  padding: 27px;
+  border-radius: 23px;
+  border: 1px solid #b9dec7;
+  background: #f1faf4;
+  outline: none;
+}
+
+.gridmind-contact .gc-result[hidden] {
+  display: none !important;
+}
+
+.gridmind-contact .gc-result-header {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.gridmind-contact .gc-result-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  flex: 0 0 43px;
+  border-radius: 13px;
+  color: #138a57;
+  background: #d7f1e1;
+  font-size: 22px;
+}
+
+.gridmind-contact .gc-result-header h4 {
+  color: #154d37;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.gridmind-contact .gc-result-header p {
+  margin: 0;
+  color: #5c7f69;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.gridmind-contact .gc-result label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 850;
+  color: #235a3b;
+}
+
+.gridmind-contact .gc-result textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 235px;
+  padding: 16px;
+  border: 1px solid #d5e9db;
+  border-radius: 14px;
+  background: white;
+  color: #244937;
+  font: 13px/1.7 "Figtree",Arial,sans-serif;
+  resize: vertical;
+}
+
+.gridmind-contact .gc-result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.gridmind-contact .gc-edit-button {
+  min-height: 50px;
+  border: 1px solid #bbdbc6;
+  background: white;
+  color: #23794c;
+  border-radius: 14px;
+  padding: 13px 19px;
+  font: 800 13px "Figtree",Arial,sans-serif;
+  cursor: pointer;
+}
+
+.gridmind-contact .gc-edit-button:hover {
+  background: #e7f5ea;
+}
+
+.gridmind-contact .gc-copy-status {
+  color: #246746;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+
+/* =============================================
+   PROCESS
+   ============================================= */
+
+.gridmind-contact .gc-process {
+  background: #f3f8f5;
+}
+
+.gridmind-contact .gc-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 20px;
+}
+
+.gridmind-contact .gc-process-grid article {
+  padding: 27px;
+  border: 1px solid #dcebe1;
+  border-radius: 25px;
+  background: white;
+}
+
+.gridmind-contact .gc-process-number {
+  display: block;
+  color: #9bb0a2;
+  font: 900 12px Consolas,monospace;
+  margin-bottom: 30px;
+}
+
+.gridmind-contact .gc-process-icon {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  background: #e2f5e9;
+  color: #138a57;
+  border-radius: 18px;
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+
+.gridmind-contact .gc-process-grid h3 {
+  color: #153f33;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.gridmind-contact .gc-process-grid p {
+  color: #647b70;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =============================================
+   DIRECTIONS
+   ============================================= */
+
+.gridmind-contact .gc-directions {
+  background: white;
+}
+
+.gridmind-contact .gc-direction-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 23px;
+}
+
+.gridmind-contact .gc-direction-grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 310px;
+  padding: 33px;
+  background: #f5faf7;
+  border: 1px solid #dcebe2;
+  border-radius: 26px;
+  text-decoration: none;
+  transition: transform .25s,box-shadow .25s;
+}
+
+.gridmind-contact .gc-direction-grid a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(13,84,52,.09);
+}
+
+.gridmind-contact .gc-direction-icon {
+  display: grid;
+  place-items: center;
+  width: 61px;
+  height: 61px;
+  border-radius: 19px;
+  background: #e0f3e8;
+  color: #138a57;
+  font-size: 31px;
+  margin-bottom: 27px;
+}
+
+.gridmind-contact .gc-direction-grid a > span {
+  color: #138a57;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.gridmind-contact .gc-direction-grid h3 {
+  color: #153f33;
+  font-size: 24px;
+  margin: 14px 0 12px;
+}
+
+.gridmind-contact .gc-direction-grid p {
+  flex: 1;
+  color: #647b70;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.gridmind-contact .gc-direction-grid strong {
+  color: #138a57;
+  font-size: 14px;
+  margin-top: 18px;
+}
+
+/* =============================================
+   FAQ
+   ============================================= */
+
+.gridmind-contact .gc-faq {
+  background: #f3f8f5;
+}
+
+.gridmind-contact .gc-faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.gridmind-contact .gc-faq-lead {
+  color: #637b70;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.gridmind-contact .gc-faq-list {
+  display: grid;
+  align-content: start;
+}
+
+.gridmind-contact .gc-faq-list details {
+  padding: 21px 0;
+  border-bottom: 1px solid #d6e6da;
+}
+
+.gridmind-contact .gc-faq-list summary {
+  cursor: pointer;
+  color: #174535;
+  font-size: 17px;
+  font-weight: 850;
+  line-height: 1.5;
+}
+
+.gridmind-contact .gc-faq-list summary:hover {
+  color: #138a57;
+}
+
+.gridmind-contact .gc-faq-list details p {
+  color: #647b70;
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 14px 0 0;
+}
+
+/* =============================================
+   FINAL CTA
+   ============================================= */
+
+.gridmind-contact .gc-final {
+  padding: 120px 20px 130px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 80% 5%,
+      rgba(94,216,153,.2),transparent 55%),
+    linear-gradient(135deg,#082c2e,#0d7053);
+  color: white;
+}
+
+.gridmind-contact .gc-final .gc-eyebrow {
+  color: #a6eec8;
+}
+
+.gridmind-contact .gc-final h2 {
+  max-width: 880px;
+  color: white;
+  font-size: clamp(44px,5.8vw,78px);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  margin: 20px auto 25px;
+}
+
+.gridmind-contact .gc-final h2 em {
+  color: #a0efc5;
+  font-style: normal;
+}
+
+.gridmind-contact .gc-final p {
+  max-width: 600px;
+  color: #d6eee3;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 auto 30px;
+}
+
+/* =============================================
+   COOKIE DIALOG
+   ============================================= */
+
+.gridmind-contact .cookie-overlay {
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  z-index: 9998;
+}
+
+.gridmind-contact .cookie-banner {
+  z-index: 9999 !important;
+  background: white;
+  color: #173f34;
+  box-shadow: 0 20px 60px rgba(5,58,37,.18);
+}
+
+.gridmind-contact .cookie-banner[hidden],
+.gridmind-contact .cookie-overlay[hidden] {
+  display: none !important;
+}
+
+/* =============================================
+   RESPONSIVE – LARGE TABLET
+   ============================================= */
+
+@media (max-width: 1050px) {
+  .gridmind-contact .gc-hero-layout {
+    gap: 25px;
+  }
+
+  .gridmind-contact .gc-hero h1 {
+    font-size: 52px;
+  }
+
+  .gridmind-contact .gc-contact-layout {
+    grid-template-columns: .82fr 1.18fr;
+  }
+
+  .gridmind-contact .gc-form-panel {
+    padding: 30px;
+  }
+
+  .gridmind-contact .gc-contact-aside {
+    padding: 35px 28px;
+  }
+
+  .gridmind-contact .gc-faq-layout {
+    gap: 45px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE – TABLET
+   ============================================= */
+
+@media (max-width: 800px) {
+  .gridmind-contact .gc-section {
+    padding: 80px 0 90px;
+  }
+
+  .gridmind-contact .gc-hero {
+    padding: 75px 0 90px;
+  }
+
+  .gridmind-contact .gc-hero-layout,
+  .gridmind-contact .gc-faq-layout,
+  .gridmind-contact .gc-contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-contact .gc-hero-copy {
+    text-align: center;
+  }
+
+  .gridmind-contact .gc-hero h1 {
+    font-size: clamp(43px,7.4vw,62px);
+  }
+
+  .gridmind-contact .gc-hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gridmind-contact .gc-hero-actions {
+    justify-content: center;
+  }
+
+  .gridmind-contact .gc-hero-highlights {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .gridmind-contact .gc-hero-art {
+    width: min(550px,100%);
+    margin: 10px auto 0;
+  }
+
+  .gridmind-contact .gc-topic-grid,
+  .gridmind-contact .gc-direction-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .gridmind-contact .gc-process-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .gridmind-contact .gc-contact-aside {
+    padding: 35px;
+  }
+
+  .gridmind-contact .gc-contact-aside h3 br {
+    display: none;
+  }
+
+  .gridmind-contact .gc-aside-bottom {
+    padding-top: 35px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE – MOBILE
+   ============================================= */
+
+@media (max-width: 600px) {
+  .gridmind-contact .gc-section {
+    padding: 75px 0 85px;
+  }
+
+  .gridmind-contact .gc-hero h1 {
+    font-size: clamp(37px,8.1vw,52px);
+  }
+
+  .gridmind-contact .gc-hero-lead {
+    font-size: 16px;
+  }
+
+  .gridmind-contact .gc-hero-kicker {
+    font-size: 9px;
+  }
+
+  .gridmind-contact .gc-hero-art {
+    min-height: 400px;
+  }
+
+  .gridmind-contact .gc-main-symbol {
+    width: 125px;
+    height: 125px;
+    border-radius: 34px;
+  }
+
+  .gridmind-contact .gc-main-symbol img {
+    width: 67px;
+    height: 67px;
+  }
+
+  .gridmind-contact .gc-main-symbol strong {
+    font-size: 8px;
+  }
+
+  .gridmind-contact .gc-floating-card {
+    min-width: 0;
+    padding: 9px;
+    gap: 7px;
+  }
+
+  .gridmind-contact .gc-floating-card > span {
+    width: 29px;
+    height: 29px;
+    font-size: 17px;
+  }
+
+  .gridmind-contact .gc-floating-card strong {
+    font-size: 10px;
+  }
+
+  .gridmind-contact .gc-floating-card small {
+    font-size: 8px;
+  }
+
+  .gridmind-contact .gc-card-one {
+    left: 0;
+    top: 5%;
+  }
+
+  .gridmind-contact .gc-card-two {
+    right: 0;
+    top: 9%;
+  }
+
+  .gridmind-contact .gc-card-three {
+    right: 1%;
+    bottom: 3%;
+  }
+
+  .gridmind-contact .gc-topic-grid,
+  .gridmind-contact .gc-direction-grid,
+  .gridmind-contact .gc-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-contact .gc-topic-card {
+    min-height: 270px;
+  }
+
+  .gridmind-contact .gc-contact-layout {
+    border-radius: 23px;
+  }
+
+  .gridmind-contact .gc-contact-aside {
+    padding: 30px 25px;
+  }
+
+  .gridmind-contact .gc-contact-aside h3 {
+    font-size: 29px;
+  }
+
+  .gridmind-contact .gc-form-panel {
+    padding: 27px 18px;
+  }
+
+  .gridmind-contact .gc-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-contact .gc-field-full {
+    grid-column: 1;
+  }
+
+  .gridmind-contact .gc-field input,
+  .gridmind-contact .gc-field textarea,
+  .gridmind-contact .gc-field select {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .gridmind-contact .gc-result {
+    padding: 18px;
+  }
+
+  .gridmind-contact .gc-result-header {
+    flex-direction: column;
+  }
+
+  .gridmind-contact .gc-submit,
+  .gridmind-contact .gc-copy-button {
+    width: 100%;
+  }
+
+  .gridmind-contact .gc-result-actions {
+    flex-direction: column;
+  }
+
+  .gridmind-contact .gc-edit-button {
+    width: 100%;
+  }
+
+  .gridmind-contact .gc-heading h2,
+  .gridmind-contact .gc-faq-layout h2 {
+    font-size: clamp(35px,8vw,48px);
+  }
+}
+
+/* =============================================
+   ACCESSIBILITY
+   ============================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .gridmind-contact .hero-button,
+  .gridmind-contact .hero-button::before,
+  .gridmind-contact .gc-hero-kicker i,
+  .gridmind-contact .gc-network-line,
+  .gridmind-contact .gc-floating-card,
+  .gridmind-contact .gc-spark {
+    animation: none !important;
+  }
+
+  .gridmind-contact .gc-topic-card,
+  .gridmind-contact .gc-direction-grid a,
+  .gridmind-contact .gc-submit,
+  .gridmind-contact .gc-copy-button {
+    transition: none !important;
+  }
+}

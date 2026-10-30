@@ -1,0 +1,1460 @@
+
+/* ==============================================
+   GRIDMIND GRIDTAB – COMPLETE PRODUCT CSS
+   ============================================== */
+
+.gridmind-gridtab {
+  --gt-green: #138a57;
+  --gt-dark: #103d34;
+  --gt-muted: #647d70;
+  --gt-light: #f3f8f5;
+  --gt-device-color: #367b66;
+  font-family: "Figtree", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.gridmind-gridtab main { overflow: clip; }
+.gridmind-gridtab .gt-section { padding: 110px 0 120px; }
+
+.gridmind-gridtab .gt-eyebrow {
+  display: block;
+  color: #138a57;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  margin-bottom: 19px;
+}
+
+.gridmind-gridtab .gt-heading {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 60px;
+}
+
+.gridmind-gridtab .gt-heading h2,
+.gridmind-gridtab .gt-section-copy h2 {
+  color: #103d34;
+  font-size: clamp(37px,5vw,64px);
+  line-height: 1.08;
+  letter-spacing: -.048em;
+  font-weight: 900;
+  margin: 0 0 23px;
+}
+
+.gridmind-gridtab .gt-heading h2 em,
+.gridmind-gridtab .gt-section-copy h2 em {
+  color: #138a57;
+  font-style: normal;
+}
+
+.gridmind-gridtab .gt-heading p,
+.gridmind-gridtab .gt-section-copy p {
+  color: #647d70;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.gridmind-gridtab .gt-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.gridmind-gridtab .gt-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.gridmind-gridtab .gt-inline-link {
+  display: inline-flex;
+  text-decoration: none;
+  color: #138a57;
+  font-weight: 850;
+  margin-top: 18px;
+}
+
+.gridmind-gridtab .gt-inline-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* ==============================================
+   GRIDMIND SHIMMER BUTTON
+   ============================================== */
+
+.gridmind-gridtab .hero-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #138a57;
+  color: white;
+  animation: gtButtonBreathe 3.4s ease-in-out infinite;
+}
+
+.gridmind-gridtab .hero-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transform: translateX(-130%);
+  background: linear-gradient(
+    115deg,transparent 30%,
+    rgba(255,255,255,.4) 50%,transparent 70%
+  );
+  animation: gtButtonShimmer 3.8s ease-in-out 1s infinite;
+}
+
+.gridmind-gridtab .hero-button > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes gtButtonBreathe {
+  0%,100% {
+    box-shadow: 0 14px 36px -10px rgba(19,138,87,.5);
+  }
+  50% {
+    box-shadow:
+      0 18px 45px -10px rgba(19,138,87,.7),
+      0 0 0 6px rgba(19,138,87,.12);
+  }
+}
+
+@keyframes gtButtonShimmer {
+  0% { transform: translateX(-130%); }
+  60%,100% { transform: translateX(130%); }
+}
+
+/* ==============================================
+   PRODUCT NAVIGATION
+   ============================================== */
+
+.gridmind-gridtab .gt-subnav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid #dce9df;
+  backdrop-filter: blur(17px);
+}
+
+.gridmind-gridtab .gt-subnav-inner {
+  min-height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.gridmind-gridtab .gt-subnav-inner > strong {
+  color: #143c33;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.gridmind-gridtab .gt-subnav-inner > div {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.gridmind-gridtab .gt-subnav a {
+  color: #456153;
+  font-size: 13px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.gridmind-gridtab .gt-subnav a:hover {
+  color: #138a57;
+}
+
+.gridmind-gridtab .gt-subnav .gt-buy-small {
+  background: #138a57;
+  color: white;
+  padding: 9px 18px;
+  border-radius: 30px;
+}
+
+.gridmind-gridtab .gt-subnav .gt-buy-small:hover {
+  color: white;
+  background: #0b6b43;
+}
+
+/* ==============================================
+   HERO
+   ============================================== */
+
+.gridmind-gridtab .gt-hero {
+  text-align: center;
+  padding: 100px 0 85px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 78%,
+      #dff6e9,transparent 62%),
+    linear-gradient(#fff,#f4faf6);
+}
+
+.gridmind-gridtab .gt-hero h1 {
+  font-size: clamp(80px,13vw,166px);
+  line-height: .96;
+  font-weight: 900;
+  letter-spacing: -.085em;
+  color: #103d34;
+  margin: 18px 0 25px;
+}
+
+.gridmind-gridtab .gt-hero h1 span {
+  color: #138a57;
+}
+
+.gridmind-gridtab .gt-hero-slogan {
+  font-size: clamp(26px,4vw,49px);
+  font-weight: 850;
+  letter-spacing: -.035em;
+  color: #19473a;
+  min-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+.gridmind-gridtab #gt-typewriter {
+  color: #138a57;
+}
+
+.gridmind-gridtab .gt-hero-slogan > i {
+  display: inline-block;
+  height: .83em;
+  width: 4px;
+  margin-left: 5px;
+  background: #16b573;
+  animation: gtBlink .8s steps(1) infinite;
+}
+
+.gridmind-gridtab .gt-hero-description {
+  color: #627a6e;
+  max-width: 640px;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 auto 29px;
+}
+
+.gridmind-gridtab .gt-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+@keyframes gtBlink {
+  0%,49% { opacity: 1; }
+  50%,100% { opacity: 0; }
+}
+
+/* ==============================================
+   EINHEITLICHE GRIDTAB-KOMPONENTE
+
+   Jede Rückseite nutzt:
+   .gt-device.gt-back
+     .gt-camera
+       .gt-lens
+       .gt-flash
+     img.gt-logo
+
+   ÄNDERUNGEN NUR HIER VORNEHMEN.
+   ============================================== */
+
+.gridmind-gridtab .gt-device {
+  --gt-width: 360px;
+  position: relative;
+  flex: none;
+  width: var(--gt-width);
+  aspect-ratio: 178.5 / 247.6;
+  border-radius: 5.7% / 4.2%;
+  box-sizing: border-box;
+  box-shadow: 0 35px 75px rgba(8,62,45,.23);
+}
+
+.gridmind-gridtab .gt-back {
+  background:
+    linear-gradient(
+      130deg,
+      rgba(255,255,255,.2),
+      transparent 47%,
+      rgba(0,0,0,.15)
+    ),
+    var(--gt-device-color);
+  border: max(4px,calc(var(--gt-width) * .015))
+          solid rgba(7,52,42,.55);
+}
+
+/* EIN KAMERAMODUL FÜR ALLE RÜCKSEITEN */
+
+.gridmind-gridtab .gt-camera {
+  position: absolute;
+  top: 4.6%;
+  left: 6.3%;
+  width: 19%;
+  aspect-ratio: 1;
+  border-radius: 26%;
+  background: rgba(13,63,54,.55);
+  border: max(1px,calc(var(--gt-width) * .005))
+          solid rgba(255,255,255,.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.gridmind-gridtab .gt-lens {
+  position: absolute;
+  width: 56%;
+  aspect-ratio: 1;
+  top: 19%;
+  left: 10%;
+  border-radius: 50%;
+  border: max(2px,calc(var(--gt-width) * .013))
+          solid #a1c9ba;
+  background:
+    radial-gradient(
+      circle at 43% 43%,
+      #609bb7 0 9%,
+      #11233b 10% 23%,
+      #2c425a 24% 36%,
+      #08101c 38% 67%,
+      #7896a0 70% 74%,
+      #203e42 76%
+    );
+  box-shadow: 0 3px 9px rgba(0,0,0,.3);
+}
+
+.gridmind-gridtab .gt-flash {
+  position: absolute;
+  top: 28%;
+  right: 11%;
+  width: 18%;
+  aspect-ratio: 1;
+  background: #fff1c9;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255,232,173,.65);
+}
+
+/* EIN LOGO FÜR ALLE RÜCKSEITEN */
+
+.gridmind-gridtab .gt-logo {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  width: 25%;
+  height: auto;
+  transform: translate(-50%,-50%);
+  object-fit: contain;
+  opacity: .7;
+}
+
+/* EINHEITLICHE VORDERSEITE */
+
+.gridmind-gridtab .gt-front {
+  padding: max(5px,calc(var(--gt-width) * .018));
+  border: max(4px,calc(var(--gt-width) * .014))
+          solid #234f48;
+  background: #0b181a;
+  overflow: hidden;
+}
+
+.gridmind-gridtab .gt-screen {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 4.5% / 3.5%;
+  background: linear-gradient(135deg,#081d34,#0b5860,#28bd90);
+}
+
+.gridmind-gridtab .gt-front-camera {
+  position: absolute;
+  z-index: 5;
+  top: 1.7%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #07121c;
+  border: 2px solid #395f68;
+}
+
+.gridmind-gridtab .gt-screen-status {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 6%;
+  font-size: clamp(9px,1vw,13px);
+  font-weight: 900;
+  color: white;
+}
+
+.gridmind-gridtab .gt-wallpaper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.gridmind-gridtab .gt-wallpaper-orb {
+  position: absolute;
+  border-radius: 50%;
+  width: 110%;
+  aspect-ratio: 1;
+}
+
+.gridmind-gridtab .gt-orb-one {
+  left: 20%;
+  top: 12%;
+  background: radial-gradient(circle,#a3f7cc,#17b79a 63%,#0e596b);
+}
+
+.gridmind-gridtab .gt-orb-two {
+  left: -36%;
+  top: 50%;
+  background: #0d6b67;
+}
+
+.gridmind-gridtab .gt-orb-three {
+  right: -30%;
+  bottom: -50%;
+  background: #053f43;
+}
+
+.gridmind-gridtab .gt-screen-title {
+  position: absolute;
+  z-index: 3;
+  top: 24%;
+  left: 8%;
+  color: white;
+  text-align: left;
+}
+
+.gridmind-gridtab .gt-screen-title small {
+  display: block;
+  font-size: clamp(9px,1.1vw,14px);
+  letter-spacing: .18em;
+  margin-bottom: 12px;
+}
+
+.gridmind-gridtab .gt-screen-title strong {
+  display: block;
+  font-size: clamp(25px,3.1vw,47px);
+  line-height: 1.04;
+  letter-spacing: -.05em;
+}
+
+.gridmind-gridtab .gt-screen-dock {
+  position: absolute;
+  z-index: 4;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 14px;
+  padding: 12px;
+  background: rgba(255,255,255,.18);
+  border-radius: 19px;
+  backdrop-filter: blur(10px);
+}
+
+.gridmind-gridtab .gt-screen-dock span {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 11px;
+  background: rgba(255,255,255,.25);
+  color: white;
+}
+
+/* ==============================================
+   HERO DEVICE PLACEMENT
+   ============================================== */
+
+.gridmind-gridtab .gt-hero-stage {
+  position: relative;
+  max-width: 1080px;
+  height: 710px;
+  margin: 55px auto 0;
+  isolation: isolate;
+}
+
+.gridmind-gridtab .gt-stage-glow {
+  position: absolute;
+  inset: 8% 6%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(ellipse,#c5ebd6,transparent 68%);
+}
+
+.gridmind-gridtab .gt-hero-back {
+  --gt-width: 340px;
+  position: absolute;
+  top: 12%;
+  left: 31%;
+  transform: translateX(-50%) rotate(-17deg);
+  animation: gtHeroBackFloat 9s ease-in-out infinite;
+}
+
+.gridmind-gridtab .gt-hero-front {
+  --gt-width: 380px;
+  position: absolute;
+  top: 7%;
+  left: 68%;
+  transform: translateX(-50%) rotate(11deg);
+  animation: gtHeroFrontFloat 8s ease-in-out -2s infinite;
+}
+
+.gridmind-gridtab .gt-stage-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: #7d9c8a;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .14em;
+}
+
+@keyframes gtHeroBackFloat {
+  0%,100% { transform: translateX(-50%) rotate(-17deg) translateY(0); }
+  50% { transform: translateX(-50%) rotate(-17deg) translateY(-12px); }
+}
+
+@keyframes gtHeroFrontFloat {
+  0%,100% { transform: translateX(-50%) rotate(11deg) translateY(0); }
+  50% { transform: translateX(-50%) rotate(11deg) translateY(-14px); }
+}
+
+/* ==============================================
+   HIGHLIGHTS
+   ============================================== */
+
+.gridmind-gridtab .gt-highlights {
+  background: #f5faf7;
+  padding: 40px 0 70px;
+}
+
+.gridmind-gridtab .gt-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 20px;
+}
+
+.gridmind-gridtab .gt-highlight-grid article {
+  padding: 25px;
+  border-top: 1px solid #d8e9dd;
+}
+
+.gridmind-gridtab .gt-highlight-grid article > span {
+  display: block;
+  color: #138a57;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 17px;
+}
+
+.gridmind-gridtab .gt-highlight-grid strong {
+  display: block;
+  color: #153f33;
+  font-size: 35px;
+  letter-spacing: -.045em;
+}
+
+.gridmind-gridtab .gt-highlight-grid p {
+  color: #728b7e;
+  font-size: 14px;
+  margin: 8px 0 0;
+}
+
+/* ==============================================
+   DESIGN
+   ============================================== */
+
+.gridmind-gridtab .gt-design {
+  background: white;
+}
+
+.gridmind-gridtab .gt-design-stage {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  min-height: 550px;
+  border-radius: 36px;
+  background: #e9f6ee;
+}
+
+.gridmind-gridtab .gt-design-circle {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: #d0ecdb;
+}
+
+.gridmind-gridtab .gt-design-device {
+  --gt-width: 300px;
+  transform: rotate(-12deg);
+}
+
+.gridmind-gridtab .gt-design-stage .gt-stage-caption {
+  bottom: 25px;
+}
+
+/* ==============================================
+   COLORS / CONFIGURATOR
+   ============================================== */
+
+.gridmind-gridtab .gt-colors {
+  background: #f3f8f5;
+}
+
+.gridmind-gridtab .gt-config-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.gridmind-gridtab .gt-config-stage {
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+  border-radius: 36px;
+  background:
+    radial-gradient(circle,#d7f1e0,#e6f2eb 73%);
+  overflow: hidden;
+}
+
+.gridmind-gridtab .gt-config-device {
+  --gt-width: 300px;
+  transform: rotate(-10deg);
+}
+
+/* FARBE: ALLE RÜCKSEITEN HABEN DIE GLEICHE FARBE.
+   DIE GEMEINSAME VARIABLE STEUERT SIE ALLE. */
+
+.gridmind-gridtab .gt-config h3 {
+  color: #173f33;
+  font-size: 34px;
+  margin: 0 0 25px;
+}
+
+.gridmind-gridtab .gt-config-label {
+  display: block;
+  color: #748d7e;
+  font-size: 12px;
+  letter-spacing: .13em;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.gridmind-gridtab .gt-swatches {
+  display: flex;
+  gap: 13px;
+}
+
+.gridmind-gridtab .gt-swatch {
+  width: 53px;
+  height: 53px;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.gridmind-gridtab .gt-swatch span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #367b66;
+}
+
+.gridmind-gridtab .gt-swatch[data-gt-color="midnight"] span {
+  background: #293b4b;
+}
+
+.gridmind-gridtab .gt-swatch[data-gt-color="silver"] span {
+  background: #c7d1d7;
+}
+
+.gridmind-gridtab .gt-swatch[data-gt-color="sky"] span {
+  background: #8dbbd8;
+}
+
+.gridmind-gridtab .gt-swatch.is-selected {
+  border-color: #138a57;
+}
+
+.gridmind-gridtab .gt-divider {
+  height: 1px;
+  background: #d7e7dd;
+  margin: 33px 0;
+}
+
+.gridmind-gridtab .gt-storage-options,
+.gridmind-gridtab .gt-network-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.gridmind-gridtab .gt-storage,
+.gridmind-gridtab .gt-network {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 850;
+  color: #365d48;
+  background: white;
+  border: 2px solid #d8e6dd;
+  border-radius: 15px;
+  padding: 15px 19px;
+}
+
+.gridmind-gridtab .gt-storage.is-selected,
+.gridmind-gridtab .gt-network.is-selected {
+  color: #0b7548;
+  border-color: #138a57;
+  background: #e5f5eb;
+}
+
+.gridmind-gridtab .gt-selection {
+  margin: 28px 0 24px;
+  color: #607b6c;
+  font-size: 15px;
+}
+
+.gridmind-gridtab .gt-selection strong {
+  color: #174a36;
+}
+
+/* ==============================================
+   DARK DISPLAY SECTION
+   ============================================== */
+
+.gridmind-gridtab .gt-display {
+  background:
+    radial-gradient(ellipse at 50% 65%,
+      rgba(26,128,105,.25),transparent 65%),
+    #071e29;
+  overflow: hidden;
+  color: white;
+}
+
+.gridmind-gridtab .gt-heading-dark .gt-eyebrow {
+  color: #90e9bc;
+}
+
+.gridmind-gridtab .gt-heading-dark h2 {
+  color: white;
+}
+
+.gridmind-gridtab .gt-heading-dark h2 em {
+  color: #9beec7;
+}
+
+.gridmind-gridtab .gt-heading-dark p {
+  color: #bdd7d2;
+}
+
+.gridmind-gridtab .gt-display-stage {
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gridmind-gridtab .gt-display-device {
+  --gt-width: 440px;
+  transform: perspective(1000px) rotateX(9deg);
+  box-shadow: 0 0 100px rgba(40,204,150,.16);
+}
+
+.gridmind-gridtab .gt-display-stats {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 25px;
+  margin-top: 42px;
+}
+
+.gridmind-gridtab .gt-display-stats article {
+  padding: 24px;
+  border-top: 1px solid rgba(255,255,255,.22);
+}
+
+.gridmind-gridtab .gt-display-stats strong {
+  display: block;
+  color: #9ceec7;
+  font-size: 32px;
+  letter-spacing: -.035em;
+  margin-bottom: 10px;
+}
+
+.gridmind-gridtab .gt-display-stats span {
+  color: #bed9d5;
+  font-size: 14px;
+}
+
+/* ==============================================
+   CREATIVITY
+   ============================================== */
+
+.gridmind-gridtab .gt-creativity { background: white; }
+
+.gridmind-gridtab .gt-creative-art {
+  min-height: 480px;
+  display: grid;
+  place-items: center;
+  border-radius: 36px;
+  position: relative;
+  background: #e5f5ed;
+  overflow: hidden;
+}
+
+.gridmind-gridtab .gt-creative-sheet {
+  width: min(75%,350px);
+  min-height: 330px;
+  padding: 35px;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0 25px 50px rgba(10,90,51,.14);
+  transform: rotate(-7deg);
+}
+
+.gridmind-gridtab .gt-creative-sheet small {
+  display: block;
+  color: #138a57;
+  font-weight: 900;
+  letter-spacing: .12em;
+  margin-bottom: 38px;
+}
+
+.gridmind-gridtab .gt-creative-sheet strong {
+  display: block;
+  color: #164636;
+  font-size: clamp(34px,4vw,52px);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+}
+
+.gridmind-gridtab .gt-creative-doodle {
+  margin-top: 30px;
+  color: #36bc80;
+  font-size: 33px;
+}
+
+.gridmind-gridtab .gt-stylus {
+  position: absolute;
+  width: 12px;
+  height: 330px;
+  border-radius: 9px;
+  background: linear-gradient(90deg,#9aafa9,#fff,#bac8c2);
+  box-shadow: 8px 12px 22px rgba(0,0,0,.17);
+  transform: rotate(32deg);
+  right: 18%;
+  bottom: 32px;
+}
+
+.gridmind-gridtab .gt-creative-art > span {
+  position: absolute;
+  bottom: 20px;
+  color: #739e85;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+/* ==============================================
+   PERFORMANCE
+   ============================================== */
+
+.gridmind-gridtab .gt-performance {
+  background: #f3f8f5;
+}
+
+.gridmind-gridtab .gt-performance-art {
+  position: relative;
+  min-height: 460px;
+  display: grid;
+  place-items: center;
+  border-radius: 36px;
+  overflow: hidden;
+  background: radial-gradient(circle,#d4f1e0,#e9f7ee);
+}
+
+.gridmind-gridtab .gt-chip-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(40deg,transparent 49.7%,#aadac1 50%,transparent 50.3%),
+    linear-gradient(140deg,transparent 49.7%,#aadac1 50%,transparent 50.3%);
+}
+
+.gridmind-gridtab .gt-chip {
+  position: relative;
+  z-index: 2;
+  width: 225px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 12px solid #276d58;
+  border-radius: 37px;
+  background: linear-gradient(135deg,#0b3533,#0c7757);
+  box-shadow: 0 35px 60px rgba(10,76,47,.25);
+}
+
+.gridmind-gridtab .gt-chip small {
+  color: #b9f0d2;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+.gridmind-gridtab .gt-chip strong {
+  font-size: 94px;
+  line-height: 1.1;
+  letter-spacing: -.07em;
+}
+
+.gridmind-gridtab .gt-chip span {
+  color: #b8e2ce;
+  font-size: 9px;
+  letter-spacing: .1em;
+}
+
+/* ==============================================
+   CAMERA SECTION
+   ============================================== */
+
+.gridmind-gridtab .gt-camera-section {
+  background: white;
+}
+
+.gridmind-gridtab .gt-camera-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.gridmind-gridtab .gt-camera-stats strong {
+  display: block;
+  color: #138a57;
+  font-size: 33px;
+}
+
+.gridmind-gridtab .gt-camera-stats span {
+  color: #738c7d;
+  font-size: 13px;
+}
+
+.gridmind-gridtab .gt-camera-stage {
+  min-height: 540px;
+  display: grid;
+  place-items: center;
+  border-radius: 36px;
+  overflow: hidden;
+  background: #e9f5ee;
+}
+
+.gridmind-gridtab .gt-camera-device {
+  --gt-width: 300px;
+  transform: rotate(9deg);
+}
+
+/* ==============================================
+   FEATURES
+   ============================================== */
+
+.gridmind-gridtab .gt-features {
+  background: #f3f8f5;
+}
+
+.gridmind-gridtab .gt-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 24px;
+}
+
+.gridmind-gridtab .gt-feature-grid article {
+  min-height: 250px;
+  padding: 30px;
+  border-radius: 25px;
+  border: 1px solid #dceae1;
+  background: white;
+}
+
+.gridmind-gridtab .gt-feature-grid article > span {
+  display: block;
+  color: #138a57;
+  font-size: 34px;
+  margin-bottom: 26px;
+}
+
+.gridmind-gridtab .gt-feature-grid h3 {
+  color: #153f34;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.gridmind-gridtab .gt-feature-grid p {
+  color: #627b6e;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ==============================================
+   SPECIFICATIONS
+   ============================================== */
+
+.gridmind-gridtab .gt-specs {
+  background: white;
+}
+
+.gridmind-gridtab .gt-spec-table {
+  max-width: 940px;
+  margin: 0 auto;
+  border-top: 1px solid #dce9e1;
+}
+
+.gridmind-gridtab .gt-spec-row {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 15px;
+  border-bottom: 1px solid #dce9e1;
+  padding: 23px 18px;
+}
+
+.gridmind-gridtab .gt-spec-row strong {
+  color: #153f32;
+  font-size: 16px;
+}
+
+.gridmind-gridtab .gt-spec-row span {
+  color: #637c6e;
+  font-size: 16px;
+}
+
+.gridmind-gridtab .gt-spec-note {
+  max-width: 940px;
+  margin: 25px auto 0;
+  color: #81988b;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* ==============================================
+   ECOSYSTEM
+   ============================================== */
+
+.gridmind-gridtab .gt-ecosystem {
+  background: #f3f8f5;
+}
+
+.gridmind-gridtab .gt-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 23px;
+}
+
+.gridmind-gridtab .gt-ecosystem-grid > a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 34px;
+  border: 1px solid #dceae1;
+  border-radius: 26px;
+  background: white;
+  text-decoration: none;
+  min-height: 260px;
+  transition: transform .25s,box-shadow .25s;
+}
+
+.gridmind-gridtab .gt-ecosystem-grid > a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(10,85,49,.1);
+}
+
+.gridmind-gridtab .gt-ecosystem-grid a > span {
+  font-size: 47px;
+  color: #138a57;
+  margin-bottom: 25px;
+}
+
+.gridmind-gridtab .gt-ecosystem-grid h3 {
+  color: #153d33;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.gridmind-gridtab .gt-ecosystem-grid p {
+  color: #647d70;
+  font-size: 15px;
+  flex: 1;
+}
+
+.gridmind-gridtab .gt-ecosystem-grid strong {
+  color: #138a57;
+  font-size: 14px;
+}
+
+/* ==============================================
+   FAQ
+   ============================================== */
+
+.gridmind-gridtab .gt-faq {
+  background: white;
+}
+
+.gridmind-gridtab .gt-faq-list {
+  display: grid;
+  align-content: start;
+}
+
+.gridmind-gridtab .gt-faq-list details {
+  padding: 22px 0;
+  border-bottom: 1px solid #dceae1;
+}
+
+.gridmind-gridtab .gt-faq-list summary {
+  color: #174535;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.gridmind-gridtab .gt-faq-list summary:hover {
+  color: #138a57;
+}
+
+.gridmind-gridtab .gt-faq-list p {
+  color: #637b6e;
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 14px 0 0;
+}
+
+/* ==============================================
+   FINAL CTA
+   ============================================== */
+
+.gridmind-gridtab .gt-final {
+  padding: 120px 20px 130px;
+  background:
+    radial-gradient(ellipse at 80% 10%,
+      rgba(97,222,164,.2),transparent 55%),
+    linear-gradient(135deg,#092b30,#0d7354);
+  text-align: center;
+  color: white;
+}
+
+.gridmind-gridtab .gt-final .gt-eyebrow {
+  color: #9decc2;
+}
+
+.gridmind-gridtab .gt-final h2 {
+  color: white;
+  font-size: clamp(44px,6vw,80px);
+  line-height: 1.07;
+  letter-spacing: -.05em;
+  margin: 20px auto 25px;
+}
+
+.gridmind-gridtab .gt-final h2 em {
+  color: #a0efc7;
+  font-style: normal;
+}
+
+.gridmind-gridtab .gt-final p {
+  color: #d5f0e3;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 auto 30px;
+}
+
+/* ==============================================
+   COOKIE BANNER
+   ============================================== */
+
+.gridmind-gridtab .cookie-overlay {
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  z-index: 9998;
+}
+
+.gridmind-gridtab .cookie-banner {
+  background: white;
+  color: #173f33;
+  z-index: 9999 !important;
+}
+
+.gridmind-gridtab .cookie-overlay[hidden],
+.gridmind-gridtab .cookie-banner[hidden] {
+  display: none !important;
+}
+
+/* ==============================================
+   TABLET RESPONSIVE
+   ============================================== */
+
+@media (max-width: 1050px) {
+  .gridmind-gridtab .gt-split {
+    gap: 45px;
+  }
+
+  .gridmind-gridtab .gt-hero-stage {
+    max-width: 850px;
+    height: 610px;
+  }
+
+  .gridmind-gridtab .gt-hero-back {
+    --gt-width: 290px;
+  }
+
+  .gridmind-gridtab .gt-hero-front {
+    --gt-width: 330px;
+  }
+
+  .gridmind-gridtab .gt-config-layout {
+    gap: 35px;
+  }
+
+  .gridmind-gridtab .gt-config-device,
+  .gridmind-gridtab .gt-design-device,
+  .gridmind-gridtab .gt-camera-device {
+    --gt-width: 260px;
+  }
+}
+
+@media (max-width: 800px) {
+  .gridmind-gridtab .gt-section {
+    padding: 80px 0 90px;
+  }
+
+  .gridmind-gridtab .gt-split,
+  .gridmind-gridtab .gt-config-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-gridtab .gt-subnav-inner > div {
+    gap: 15px;
+  }
+
+  .gridmind-gridtab .gt-subnav a:not(.gt-buy-small) {
+    display: none;
+  }
+
+  .gridmind-gridtab .gt-hero-stage {
+    max-width: 600px;
+    height: 560px;
+  }
+
+  .gridmind-gridtab .gt-hero-back {
+    --gt-width: 235px;
+  }
+
+  .gridmind-gridtab .gt-hero-front {
+    --gt-width: 275px;
+  }
+
+  .gridmind-gridtab .gt-feature-grid,
+  .gridmind-gridtab .gt-ecosystem-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .gridmind-gridtab .gt-highlight-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .gridmind-gridtab .gt-display-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-gridtab .gt-design-stage,
+  .gridmind-gridtab .gt-camera-stage,
+  .gridmind-gridtab .gt-config-stage {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gridmind-gridtab .gt-hero {
+    padding-top: 75px;
+  }
+
+  .gridmind-gridtab .gt-hero h1 {
+    font-size: clamp(67px,16vw,102px);
+  }
+
+  .gridmind-gridtab .gt-hero-slogan {
+    font-size: 25px;
+    min-height: 2.6em;
+  }
+
+  .gridmind-gridtab .gt-hero-description {
+    font-size: 16px;
+  }
+
+  .gridmind-gridtab .gt-hero-stage {
+    height: 365px;
+    margin-top: 35px;
+  }
+
+  .gridmind-gridtab .gt-hero-back {
+    --gt-width: 135px;
+    left: 32%;
+    top: 13%;
+  }
+
+  .gridmind-gridtab .gt-hero-front {
+    --gt-width: 162px;
+    left: 67%;
+    top: 10%;
+  }
+
+  .gridmind-gridtab .gt-stage-caption {
+    font-size: 8px;
+  }
+
+  .gridmind-gridtab .gt-screen-status {
+    font-size: 8px;
+  }
+
+  .gridmind-gridtab .gt-screen-title {
+    top: 27%;
+  }
+
+  .gridmind-gridtab .gt-screen-title strong {
+    font-size: 19px;
+  }
+
+  .gridmind-gridtab .gt-screen-title small {
+    font-size: 7px;
+  }
+
+  .gridmind-gridtab .gt-screen-dock {
+    gap: 5px;
+    padding: 6px;
+    border-radius: 11px;
+  }
+
+  .gridmind-gridtab .gt-screen-dock span {
+    height: 22px;
+    width: 22px;
+    font-size: 11px;
+    border-radius: 7px;
+  }
+
+  .gridmind-gridtab .gt-design-stage,
+  .gridmind-gridtab .gt-camera-stage,
+  .gridmind-gridtab .gt-config-stage {
+    min-height: 410px;
+  }
+
+  .gridmind-gridtab .gt-design-device,
+  .gridmind-gridtab .gt-camera-device,
+  .gridmind-gridtab .gt-config-device {
+    --gt-width: 195px;
+  }
+
+  .gridmind-gridtab .gt-design-circle {
+    width: 320px;
+    height: 320px;
+  }
+
+  .gridmind-gridtab .gt-display-stage {
+    height: 435px;
+  }
+
+  .gridmind-gridtab .gt-display-device {
+    --gt-width: 300px;
+  }
+
+  .gridmind-gridtab .gt-display-device .gt-screen-title strong {
+    font-size: 33px;
+  }
+
+  .gridmind-gridtab .gt-highlight-grid {
+    gap: 5px;
+  }
+
+  .gridmind-gridtab .gt-highlight-grid article {
+    padding: 17px 8px;
+  }
+
+  .gridmind-gridtab .gt-highlight-grid strong {
+    font-size: 27px;
+  }
+
+  .gridmind-gridtab .gt-feature-grid,
+  .gridmind-gridtab .gt-ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gridmind-gridtab .gt-spec-row {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 19px 10px;
+  }
+
+  .gridmind-gridtab .gt-spec-row span {
+    font-size: 14px;
+  }
+
+  .gridmind-gridtab .gt-creative-art {
+    min-height: 410px;
+  }
+
+  .gridmind-gridtab .gt-creative-sheet {
+    min-height: 280px;
+    padding: 25px;
+  }
+
+  .gridmind-gridtab .gt-creative-sheet strong {
+    font-size: 37px;
+  }
+
+  .gridmind-gridtab .gt-stylus {
+    height: 265px;
+    right: 16%;
+  }
+
+  .gridmind-gridtab .gt-chip {
+    width: 185px;
+    height: 185px;
+  }
+
+  .gridmind-gridtab .gt-chip strong {
+    font-size: 73px;
+  }
+}
+
+/* ==============================================
+   ACCESSIBILITY
+   ============================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .gridmind-gridtab .hero-button,
+  .gridmind-gridtab .hero-button::before,
+  .gridmind-gridtab .gt-hero-slogan > i,
+  .gridmind-gridtab .gt-hero-back,
+  .gridmind-gridtab .gt-hero-front {
+    animation: none !important;
+  }
+}

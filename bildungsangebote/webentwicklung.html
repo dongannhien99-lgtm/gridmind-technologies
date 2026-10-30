@@ -1,0 +1,891 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#138a57">
+  <meta name="description" content="Webentwicklung bei Gridmind Technologies: HTML, CSS, JavaScript, Responsives Design und moderne Webanwendungen.">
+  <title>Webentwicklung | Gridmind Technologies</title>
+
+  <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/webentwicklung.css">
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body class="gridmind-webdev">
+<a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
+
+<!-- GEMEINSAMER GRIDMIND HEADER -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"
+       aria-label="Gridmind Technologies – Startseite">
+      <img src="../assets/logo.png" width="280" height="94"
+           alt="Gridmind Technologies">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-offers">
+          Unsere Angebote
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown" id="nav-offers">
+          <span class="dropdown-title">Ausbildung & Karriere</span>
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html" aria-current="page">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+          <span class="dropdown-title">Digitale Dienstleistungen</span>
+          <a href="../services/websites.html">Websites erstellen lassen</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-devices">
+          Geräte & Software
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown" id="nav-devices">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </div>
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-cta" href="../unternehmen/kontakt.html">
+        Beratung anfragen <span aria-hidden="true">↗</span>
+      </a>
+      <button class="hamburger" id="hamburger" type="button"
+              aria-label="Menü öffnen" aria-controls="mobile-menu"
+              aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu"
+       aria-label="Mobiles Menü" inert>
+    <div class="mobile-menu-inner">
+      <a href="../index.html">Startseite</a>
+      <details>
+        <summary>Bildungsangebote</summary>
+        <div class="mobile-submenu">
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html" aria-current="page">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+      </details>
+      <details>
+        <summary>Websites & Software</summary>
+        <div class="mobile-submenu">
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </details>
+      <details>
+        <summary>Grid-Geräte</summary>
+        <div class="mobile-submenu">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </details>
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+      <a href="../unternehmen/kontakt.html">Kontakt</a>
+      <a class="mobile-cta" href="../unternehmen/kontakt.html">
+        Beratung anfragen →
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- HERO MIT TYPEWRITER -->
+  <section class="web-hero" aria-labelledby="web-hero-title">
+    <div class="container web-hero-layout">
+
+      <div class="web-hero-copy">
+        <span class="web-kicker">
+          <i></i> GRIDMIND LEARNING · WEBENTWICKLUNG
+        </span>
+
+        <h1 id="web-hero-title">
+          Werde zum
+          <span class="web-typing-line">
+            <span id="web-typewriter" aria-hidden="true">Webentwickler</span><span class="web-typing-cursor" aria-hidden="true"></span>
+          </span>
+        </h1>
+
+        <p class="web-sr-only">
+          Lerne für die Berufsfelder Webentwickler,
+          Frontend Developer und Fullstack Developer.
+        </p>
+
+        <p class="web-hero-lead">
+          Entdecke moderne Webentwicklung:
+          vom ersten HTML-Element über interaktive
+          JavaScript-Anwendungen bis zum eigenen
+          veröffentlichten Webprojekt.
+        </p>
+
+        <div class="web-hero-checks">
+          <span>✓ HTML, CSS & JavaScript</span>
+          <span>✓ Responsive Design</span>
+          <span>✓ Eigene Projekte</span>
+        </div>
+
+        <a href="../unternehmen/kontakt.html"
+           class="btn btn-primary hero-button">
+          Jetzt Beratung anfragen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+
+        <small class="web-hero-note">
+          Entdecke das geplante Gridmind-Bildungsangebot.
+        </small>
+      </div>
+
+      <!-- ANIMIERTE WEBENTWICKLUNGS-SZENE -->
+      <div class="web-stage" aria-label="Illustrative Entwicklungsumgebung mit Code und Website-Vorschau">
+        <div class="web-stage-glow"></div>
+
+        <div class="web-code-window web-float-code">
+          <div class="web-window-header">
+            <span class="web-window-dots"><i></i><i></i><i></i></span>
+            <span>portfolio / index.html</span>
+            <span class="web-window-label">● LIVE</span>
+          </div>
+          <div class="web-code-lines">
+            <div><span>01</span> <b>&lt;main&gt;</b></div>
+            <div><span>02</span> &nbsp; <b>&lt;section</b> <em>class</em>=<mark>"hero"</mark><b>&gt;</b></div>
+            <div><span>03</span> &nbsp; &nbsp; <b>&lt;h1&gt;</b></div>
+            <div><span>04</span> &nbsp; &nbsp; &nbsp; Hello World!</div>
+            <div><span>05</span> &nbsp; &nbsp; <b>&lt;/h1&gt;</b></div>
+            <div><span>06</span> &nbsp; &nbsp; <b>&lt;button&gt;</b></div>
+            <div><span>07</span> &nbsp; &nbsp; &nbsp; Explore</div>
+            <div><span>08</span> &nbsp; &nbsp; <b>&lt;/button&gt;</b></div>
+            <div><span>09</span> &nbsp; <b>&lt;/section&gt;</b></div>
+            <div><span>10</span> <b>&lt;/main&gt;</b></div>
+          </div>
+          <div class="web-code-footer">
+            <span>✓ No errors</span>
+            <span>HTML · UTF-8</span>
+          </div>
+        </div>
+
+        <div class="web-preview-window web-float-preview">
+          <div class="web-preview-top">
+            <span class="web-window-dots"><i></i><i></i><i></i></span>
+            <span>my-portfolio.local</span>
+          </div>
+          <div class="web-preview-body">
+            <div class="web-preview-navigation">
+              <span>MY PORTFOLIO</span><span>☰</span>
+            </div>
+            <div class="web-preview-content">
+              <small>HELLO, I'M A DEVELOPER</small>
+              <strong>Ideas into<br>reality<span>.</span></strong>
+              <span class="web-demo-cta">View my work ↗</span>
+              <div class="web-demo-tiles">
+                <i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="web-float-label web-float-html">
+          <span>H</span> HTML5
+        </div>
+        <div class="web-float-label web-float-css">
+          <span>C</span> CSS3
+        </div>
+        <div class="web-float-label web-float-js">
+          <span>JS</span> JavaScript
+        </div>
+        <div class="web-success web-float-success">
+          <span>✓</span>
+          <div><strong>Projekt veröffentlicht</strong><small>Deine erste Website ist online</small></div>
+        </div>
+
+        <span class="web-star web-star-one" aria-hidden="true">✦</span>
+        <span class="web-star web-star-two" aria-hidden="true">✧</span>
+      </div>
+    </div>
+
+    <svg class="web-wave" viewBox="0 0 1440 110"
+         preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 35C260 105 520 0 765 37C1010 80 1230 18 1440 55V110H0Z"
+            fill="#f3f8f5"/>
+    </svg>
+  </section>
+
+  <!-- WARUM WEBENTWICKLUNG -->
+  <section class="web-intro web-section" id="warum">
+    <div class="container web-two-columns">
+      <div>
+        <span class="web-eyebrow">WARUM WEBENTWICKLUNG?</span>
+        <h2>Gestalte die<br><em>digitale Welt.</em></h2>
+        <p class="web-lead">
+          Websites und Webanwendungen begegnen uns überall:
+          beim Einkaufen, Lernen, Arbeiten und Kommunizieren.
+          Webentwickler gestalten und programmieren
+          die Anwendungen dahinter.
+        </p>
+      </div>
+
+      <div class="web-intro-list">
+        <article>
+          <span class="web-intro-icon">⌘</span>
+          <div>
+            <h3>Frontend Developer</h3>
+            <p>Entwickle Benutzeroberflächen, interaktive Komponenten und responsive Layouts.</p>
+          </div>
+        </article>
+        <article>
+          <span class="web-intro-icon">▣</span>
+          <div>
+            <h3>Fullstack Developer</h3>
+            <p>Verbinde Frontend, Backend, Datenbanken und APIs zu vollständigen Anwendungen.</p>
+          </div>
+        </article>
+        <article>
+          <span class="web-intro-icon">✦</span>
+          <div>
+            <h3>Creative Web Developer</h3>
+            <p>Kombiniere Design, Bewegung, Interaktivität und sauberen Code zu digitalen Erlebnissen.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAS DU LERNST -->
+  <section class="web-skills web-section" id="inhalte">
+    <div class="container">
+      <div class="web-section-heading">
+        <span class="web-eyebrow">DEINE SKILLS</span>
+        <h2>Vom ersten Tag an<br><em>digital gestalten.</em></h2>
+        <p>Die wichtigsten Bausteine moderner Websites und Webanwendungen.</p>
+      </div>
+
+      <div class="web-skills-grid">
+        <article class="web-skill-card">
+          <span class="web-skill-number">01 / STRUCTURE</span>
+          <span class="web-skill-icon">H</span>
+          <h3>HTML5</h3>
+          <p>Strukturiere Websites mit semantischem HTML und verständlichen Seiteninhalten.</p>
+          <span class="web-skill-foot">Semantik · Formulare · Accessibility</span>
+        </article>
+        <article class="web-skill-card">
+          <span class="web-skill-number">02 / DESIGN</span>
+          <span class="web-skill-icon">C</span>
+          <h3>CSS3</h3>
+          <p>Gestalte moderne Layouts mit Flexbox, Grid, Animationen und responsivem Design.</p>
+          <span class="web-skill-foot">Flexbox · Grid · Animation</span>
+        </article>
+        <article class="web-skill-card">
+          <span class="web-skill-number">03 / INTERACTION</span>
+          <span class="web-skill-icon">JS</span>
+          <h3>JavaScript</h3>
+          <p>Erstelle Interaktionen, verarbeite Eingaben und arbeite mit modernen Browser-APIs.</p>
+          <span class="web-skill-foot">DOM · Events · Fetch</span>
+        </article>
+        <article class="web-skill-card">
+          <span class="web-skill-number">04 / TOOLS</span>
+          <span class="web-skill-icon">G</span>
+          <h3>Git & GitHub</h3>
+          <p>Verwalte Versionen, dokumentiere Projekte und lerne kollaborative Entwicklung kennen.</p>
+          <span class="web-skill-foot">Git · GitHub · Workflow</span>
+        </article>
+        <article class="web-skill-card">
+          <span class="web-skill-number">05 / ADVANCED</span>
+          <span class="web-skill-icon">TS</span>
+          <h3>Moderne Frameworks</h3>
+          <p>Entdecke komponentenbasierte Entwicklung, TypeScript und moderne Frontend-Architektur.</p>
+          <span class="web-skill-foot">TypeScript · Components · State</span>
+        </article>
+        <article class="web-skill-card">
+          <span class="web-skill-number">06 / PRODUCTION</span>
+          <span class="web-skill-icon">↗</span>
+          <h3>Deployment</h3>
+          <p>Teste, optimiere und veröffentliche deine Anwendungen für verschiedene Geräte.</p>
+          <span class="web-skill-foot">Testing · Performance · Hosting</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="web-roadmap web-section" id="lernweg">
+    <div class="container">
+      <div class="web-section-heading">
+        <span class="web-eyebrow">DEIN LERNPFAD</span>
+        <h2>Schritt für Schritt zum<br><em>Webentwickler.</em></h2>
+        <p>Vier Lernphasen – von deiner ersten HTML-Seite bis zum eigenen Portfolio und deiner Karrierevorbereitung.</p>
+      </div>
+
+      <div class="web-roadmap-track">
+        <div class="web-roadmap-line" aria-hidden="true">
+          <div class="web-roadmap-progress"></div>
+        </div>
+
+        <!-- PHASE 1 -->
+        <article class="web-phase">
+          <div class="web-phase-copy">
+            <span class="web-phase-eyebrow">PHASE 01 · FOUNDATIONS</span>
+            <h3>Baue dein<br><em>Frontend-Fundament.</em></h3>
+            <p>Verstehe den Aufbau von Websites und gestalte deine ersten responsiven Benutzeroberflächen.</p>
+            <div class="web-phase-checks">
+              <span>✓ HTML und CSS verstehen</span>
+              <span>✓ Responsive Layouts gestalten</span>
+              <span>✓ Semantisches Webdesign einsetzen</span>
+            </div>
+          </div>
+          <div class="web-phase-marker" aria-hidden="true">01</div>
+          <div class="web-phase-modules">
+            <div class="web-module">
+              <h4>HTML & Webseitenstruktur</h4>
+              <div class="web-module-tags"><span>HTML5</span><span>Semantik</span><span>Formulare</span></div>
+            </div>
+            <div class="web-module">
+              <h4>CSS & Responsives Design</h4>
+              <div class="web-module-tags"><span>CSS3</span><span>Flexbox</span><span>Grid</span></div>
+            </div>
+            <div class="web-module">
+              <h4>UI/UX Grundlagen</h4>
+              <div class="web-module-tags"><span>Figma</span><span>Accessibility</span><span>Design</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 2 -->
+        <article class="web-phase">
+          <div class="web-phase-copy">
+            <span class="web-phase-eyebrow">PHASE 02 · JAVASCRIPT</span>
+            <h3>Erwecke Websites<br><em>zum Leben.</em></h3>
+            <p>Programmiere interaktive Seiten und lerne, Browserfunktionen sowie externe Daten einzubinden.</p>
+            <div class="web-phase-checks">
+              <span>✓ Benutzerinteraktionen programmieren</span>
+              <span>✓ Mit Daten und APIs arbeiten</span>
+              <span>✓ Code strukturieren und testen</span>
+            </div>
+          </div>
+          <div class="web-phase-marker" aria-hidden="true">02</div>
+          <div class="web-phase-modules">
+            <div class="web-module">
+              <h4>JavaScript Grundlagen</h4>
+              <div class="web-module-tags"><span>Variables</span><span>Functions</span><span>Arrays</span></div>
+            </div>
+            <div class="web-module">
+              <h4>Web-Interaktivität</h4>
+              <div class="web-module-tags"><span>DOM</span><span>Events</span><span>Forms</span></div>
+            </div>
+            <div class="web-module">
+              <h4>API Integration</h4>
+              <div class="web-module-tags"><span>Fetch</span><span>JSON</span><span>Async/Await</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 3 -->
+        <article class="web-phase">
+          <div class="web-phase-copy">
+            <span class="web-phase-eyebrow">PHASE 03 · MODERN WEB APPS</span>
+            <h3>Entwickle moderne<br><em>Webanwendungen.</em></h3>
+            <p>Verbinde Komponenten, Frameworks und moderne Werkzeuge zu größeren Projekten.</p>
+            <div class="web-phase-checks">
+              <span>✓ Komponentenbasierte Anwendungen</span>
+              <span>✓ TypeScript kennenlernen</span>
+              <span>✓ Tests und Deployment verstehen</span>
+            </div>
+          </div>
+          <div class="web-phase-marker" aria-hidden="true">03</div>
+          <div class="web-phase-modules">
+            <div class="web-module">
+              <h4>Frontend Frameworks</h4>
+              <div class="web-module-tags"><span>React</span><span>Components</span><span>Routing</span></div>
+            </div>
+            <div class="web-module">
+              <h4>Software Engineering</h4>
+              <div class="web-module-tags"><span>TypeScript</span><span>Git</span><span>GitHub</span></div>
+            </div>
+            <div class="web-module">
+              <h4>Qualität & Bereitstellung</h4>
+              <div class="web-module-tags"><span>Testing</span><span>Performance</span><span>Deploy</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHASE 4 -->
+        <article class="web-phase web-phase-last">
+          <div class="web-phase-copy">
+            <span class="web-phase-eyebrow">PHASE 04 · PORTFOLIO & CAREER</span>
+            <h3>Zeige, was<br><em>du entwickeln kannst.</em></h3>
+            <p>Gestalte dein eigenes Portfolio, präsentiere Projekte und bereite dich auf passende IT-Einstiegsstellen vor.</p>
+            <div class="web-phase-checks">
+              <span>✓ Eigene Projekte präsentieren</span>
+              <span>✓ Portfolio veröffentlichen</span>
+              <span>✓ Bewerbungsgespräche vorbereiten</span>
+            </div>
+          </div>
+          <div class="web-phase-marker" aria-hidden="true">04</div>
+          <div class="web-phase-modules">
+            <div class="web-module">
+              <h4>Eigene Projekte</h4>
+              <div class="web-module-tags"><span>Portfolio</span><span>Website</span><span>Web-App</span></div>
+            </div>
+            <div class="web-module">
+              <h4>Karrierevorbereitung</h4>
+              <div class="web-module-tags"><span>CV</span><span>GitHub</span><span>Interview</span></div>
+            </div>
+            <div class="web-roadmap-finish">
+              <span>✦</span>
+              <div><strong>Dein Entwicklerportfolio</strong><small>Projekte als Arbeitsproben</small></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="web-roadmap-cta">
+        <h3>Starte mit deiner ersten Codezeile.</h3>
+        <p>Entdecke deinen möglichen Lernweg in die Webentwicklung.</p>
+        <a href="../unternehmen/kontakt.html"
+           class="btn btn-primary hero-button">
+          Lernweg besprechen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJEKTE -->
+  <section class="web-projects web-section" id="projekte">
+    <div class="container">
+      <div class="web-section-heading">
+        <span class="web-eyebrow">LEARNING BY BUILDING</span>
+        <h2>Dein Code.<br><em>Deine Projekte.</em></h2>
+        <p>Beispielhafte Anwendungen, mit denen du deine Fähigkeiten schrittweise vertiefen kannst.</p>
+      </div>
+      <div class="web-project-grid">
+        <article class="web-project-card">
+          <div class="web-project-graphic web-project-graphic-one">
+            <div class="web-mini-browser">
+              <span class="web-mini-browser-top">● ● ●</span>
+              <strong>CREATIVE<br>STUDIO.</strong>
+              <i></i><i></i>
+            </div>
+          </div>
+          <div class="web-project-copy">
+            <span>PROJEKT 01</span>
+            <h3>Responsive Landingpage</h3>
+            <p>Gestalte eine moderne Website, die auf Smartphones, Tablets und Desktop-Geräten funktioniert.</p>
+            <div class="web-project-tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+          </div>
+        </article>
+        <article class="web-project-card">
+          <div class="web-project-graphic web-project-graphic-two">
+            <div class="web-mini-dashboard">
+              <span>MY TASKS</span>
+              <div>✓ Website-Layout</div>
+              <div>✓ Komponenten</div>
+              <div>○ Deployment</div>
+            </div>
+          </div>
+          <div class="web-project-copy">
+            <span>PROJEKT 02</span>
+            <h3>Interaktive Web-App</h3>
+            <p>Programmiere eine Anwendung mit Formulareingaben, Zustandsverwaltung und Browser-Speicher.</p>
+            <div class="web-project-tags"><span>JavaScript</span><span>DOM</span><span>Storage</span></div>
+          </div>
+        </article>
+        <article class="web-project-card">
+          <div class="web-project-graphic web-project-graphic-three">
+            <div class="web-mini-shop">
+              <span>THE COLLECTION</span>
+              <div class="web-shop-product">◉</div>
+              <strong>Discover your style</strong>
+            </div>
+          </div>
+          <div class="web-project-copy">
+            <span>PROJEKT 03</span>
+            <h3>Web-App mit API</h3>
+            <p>Rufe externe Daten ab und integriere sie in eine responsive Weboberfläche.</p>
+            <div class="web-project-tags"><span>API</span><span>Fetch</span><span>JavaScript</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANCHEN-MARQUEE -->
+  <section class="web-industries web-section"
+           aria-labelledby="web-industries-title">
+    <div class="web-section-heading">
+      <span class="web-eyebrow">DEINE PERSPEKTIVEN</span>
+      <h2 id="web-industries-title">
+        Webentwicklung verbindet<br><em>viele Branchen.</em>
+      </h2>
+      <p>Digitale Produkte und Webanwendungen werden in ganz unterschiedlichen Arbeitsfeldern entwickelt.</p>
+    </div>
+
+    <div class="web-marquee" aria-label="IT-Berufsfelder und Branchen">
+      <div class="web-marquee-row">
+        <div class="web-marquee-track">
+          <div class="web-marquee-group">
+            <span>⌘ Webentwicklung</span><span>◈ Software Engineering</span>
+            <span>✦ Creative Development</span><span>▣ E-Commerce</span>
+            <span>◇ IT-Beratung</span><span>↗ Produktentwicklung</span>
+          </div>
+          <div class="web-marquee-group" aria-hidden="true">
+            <span>⌘ Webentwicklung</span><span>◈ Software Engineering</span>
+            <span>✦ Creative Development</span><span>▣ E-Commerce</span>
+            <span>◇ IT-Beratung</span><span>↗ Produktentwicklung</span>
+          </div>
+        </div>
+      </div>
+      <div class="web-marquee-row web-marquee-reverse">
+        <div class="web-marquee-track">
+          <div class="web-marquee-group">
+            <span>◇ FinTech</span><span>◎ HealthTech</span>
+            <span>⚙ Automatisierung</span><span>✦ KI-Anwendungen</span>
+            <span>▤ Unternehmenssoftware</span><span>⌘ Start-ups</span>
+          </div>
+          <div class="web-marquee-group" aria-hidden="true">
+            <span>◇ FinTech</span><span>◎ HealthTech</span>
+            <span>⚙ Automatisierung</span><span>✦ KI-Anwendungen</span>
+            <span>▤ Unternehmenssoftware</span><span>⌘ Start-ups</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="web-industries-note">
+      Die genannten Bereiche sind mögliche Tätigkeitsfelder und keine Arbeitgeberreferenzen oder Stellenzusagen.
+    </p>
+  </section>
+
+  <!-- WARUM GRIDMIND -->
+  <section class="web-benefits web-section">
+    <div class="container">
+      <div class="web-section-heading">
+        <span class="web-eyebrow">UNSER LERNKONZEPT</span>
+        <h2>Lerne durch Verstehen.<br><em>Wachse durch Projekte.</em></h2>
+      </div>
+      <div class="web-benefits-grid">
+        <article><span>01</span><h3>Klare Grundlagen</h3><p>Verstehe, wie Websites aufgebaut sind und wie ihre Bestandteile zusammenspielen.</p></article>
+        <article><span>02</span><h3>Eigene Anwendungen</h3><p>Setze technische Konzepte in realistische Übungsprojekte um.</p></article>
+        <article><span>03</span><h3>Modernes Webdesign</h3><p>Entwickle responsive Benutzeroberflächen mit Sinn für Gestaltung und Bedienbarkeit.</p></article>
+        <article><span>04</span><h3>Werkzeuge aus der Praxis</h3><p>Nutze Versionskontrolle, Debugging und moderne Entwicklungswerkzeuge.</p></article>
+        <article><span>05</span><h3>Qualität im Code</h3><p>Lerne, Websites zugänglich, wartbar und leistungsfähig zu gestalten.</p></article>
+        <article><span>06</span><h3>Karriereorientierung</h3><p>Dokumentiere deine Arbeiten und bereite deinen beruflichen Einstieg vor.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINANZIERUNG -->
+  <section class="web-financing web-section">
+    <div class="container web-two-columns">
+      <div>
+        <span class="web-eyebrow">KOSTEN & FINANZIERUNG</span>
+        <h2>Deine Weiterbildung.<br><em>Deine Entscheidung.</em></h2>
+        <p class="web-lead">
+          Über Starttermin, Kursdauer, Teilnahmegebühren
+          und mögliche Förderungen informieren wir,
+          sobald die Bedingungen unseres geplanten
+          Bildungsangebots verbindlich feststehen.
+        </p>
+        <a href="../unternehmen/kontakt.html"
+           class="btn btn-primary hero-button">
+          Informationen anfragen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="web-financing-list">
+        <article><span>€</span><div><h3>Eigenfinanzierung</h3><p>Informiere dich über spätere Kurskonditionen und Teilnahmebedingungen.</p></div></article>
+        <article><span>⌂</span><div><h3>Unterstützung durch Arbeitgeber</h3><p>Eine Kostenübernahme für berufliche Weiterbildung lässt sich gegebenenfalls mit dem Arbeitgeber besprechen.</p></div></article>
+        <article><span>▤</span><div><h3>Öffentliche Förderung</h3><p>Eine Förderfähigkeit setzt die jeweiligen Zulassungen und gesetzlichen Voraussetzungen voraus; für Gridmind ist sie noch nicht bestätigt.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF -->
+  <section class="web-next-steps web-section">
+    <div class="container">
+      <div class="web-section-heading">
+        <span class="web-eyebrow">SO GEHT ES WEITER</span>
+        <h2>Von deiner Anfrage<br><em>zum passenden Lernweg.</em></h2>
+      </div>
+      <div class="web-next-grid">
+        <article><span>01</span><h3>Kontakt aufnehmen</h3><p>Stelle uns deine Fragen zum geplanten Webentwicklungsangebot.</p></article>
+        <article><span>02</span><h3>Interessen klären</h3><p>Überlege, welche Vorkenntnisse und Lernziele du mitbringst.</p></article>
+        <article><span>03</span><h3>Weitere Informationen</h3><p>Erkundige dich nach dem aktuellen Planungsstand und späteren Teilnahmebedingungen.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="web-faq web-section" id="faq">
+    <div class="container web-two-columns">
+      <div>
+        <span class="web-eyebrow">HÄUFIGE FRAGEN</span>
+        <h2>Deine Fragen.<br><em>Unsere Antworten.</em></h2>
+        <p class="web-lead">Wissenswertes über den Einstieg in die Webentwicklung.</p>
+      </div>
+      <div class="web-faq-list">
+        <details><summary>Kann ich Webentwicklung ohne Vorkenntnisse lernen?</summary><p>Ja, die Grundlagen von HTML, CSS und JavaScript lassen sich schrittweise erlernen. Wie schnell du Fortschritte machst, hängt unter anderem von deinem Lerntempo und deiner Übungspraxis ab.</p></details>
+        <details><summary>Welche Programmiersprachen werden behandelt?</summary><p>Das geplante Curriculum umfasst HTML und CSS als Webtechnologien sowie JavaScript. Weiterführende Themen können TypeScript und moderne Frontend-Frameworks sein.</p></details>
+        <details><summary>Kann ich meine eigene Website erstellen?</summary><p>Genau das ist ein mögliches Lernprojekt: von der Gestaltung und Programmierung bis zum Testen und Veröffentlichen einer Website.</p></details>
+        <details><summary>Was ist der Unterschied zwischen Frontend und Backend?</summary><p>Das Frontend ist der sichtbare Teil einer Anwendung. Das Backend verarbeitet Daten, implementiert serverseitige Logik und stellt Schnittstellen bereit.</p></details>
+        <details><summary>Kann ich KI-Werkzeuge beim Programmieren nutzen?</summary><p>Ja. KI-Werkzeuge können beim Erklären, Testen und Überarbeiten von Code unterstützen. Es bleibt wichtig, Vorschläge selbst zu verstehen und zu überprüfen.</p></details>
+        <details><summary>Bekomme ich nach dem Kurs automatisch einen Job?</summary><p>Nein. Berufliche Perspektiven hängen von individuellen Fähigkeiten, Projekten, Bewerbungen und der Situation auf dem Arbeitsmarkt ab.</p></details>
+        <details><summary>Wie lange dauert das Bildungsangebot?</summary><p>Für das geplante Gridmind-Programm sind Kursdauer, Lernformat und Starttermin noch nicht verbindlich festgelegt.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABSCHLUSS -->
+  <section class="web-final">
+    <div class="container web-final-inner">
+      <span class="web-eyebrow">GRIDMIND TECHNOLOGIES</span>
+      <h2>Deine Ideen verdienen<br><em>einen Platz im Web.</em></h2>
+      <p>Entdecke die Möglichkeiten der Webentwicklung und beginne mit deinem nächsten Lernschritt.</p>
+      <a href="../unternehmen/kontakt.html"
+         class="btn btn-primary hero-button">
+        Jetzt Kontakt aufnehmen
+        <span class="arrow-circle" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- GEMEINSAMER GRIDMIND FOOTER -->
+<footer class="site-footer">
+  <svg class="footer-wave" viewBox="0 0 1440 125"
+       preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z"
+          fill="#092f2b"/>
+  </svg>
+  <div class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <img src="../assets/logo.png" width="280" height="94" alt="Gridmind Technologies">
+        </a>
+        <p>Wir verbinden Menschen, Ideen und Technologie – von deinem ersten IT-Projekt bis zur digitalen Zukunft.</p>
+        <a class="footer-contact" href="../unternehmen/kontakt.html">Kontakt zu Gridmind ↗</a>
+        <div class="footer-social" aria-label="Weitere Informationen">
+          <a href="../unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+          <a href="../unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+          <a href="../unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Bildungsangebote</h3>
+        <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+        <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+        <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+        <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+        <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+      </div>
+      <div class="footer-column">
+        <h3>Produkte & Services</h3>
+        <a href="../services/websites.html">Website-Erstellung</a>
+        <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+        <a href="../services/ki-integration.html">KI-Integration</a>
+        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        <a href="../produkte/gridphone.html">GridPhone</a>
+        <a href="../produkte/gridtab.html">GridTab</a>
+        <a href="../produkte/gridwatch.html">GridWatch</a>
+        <a href="../produkte/gridmac.html">GridMac</a>
+      </div>
+      <div class="footer-column">
+        <h3>Unternehmen</h3>
+        <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+        <a href="../unternehmen/team.html">Unser Team</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+        <h3 class="footer-subtitle">Rechtliches</h3>
+        <a href="../rechtliches/impressum.html">Impressum</a>
+        <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+        <a href="../rechtliches/agb.html">AGB</a>
+        <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+        <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+        <a href="../rechtliches/barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <button class="footer-text-button" type="button" data-open-cookie>Cookie-Einstellungen</button>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Gridmind Technologies</span>
+      <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE-DIALOG -->
+<div class="cookie-overlay" id="cookie-overlay" hidden></div>
+<section class="cookie-banner" id="cookie-banner"
+         role="dialog" aria-modal="true"
+         aria-labelledby="cookie-title"
+         aria-describedby="cookie-description"
+         tabindex="-1" hidden>
+  <div class="cookie-heading">
+    <span class="cookie-icon">◈</span>
+    <div>
+      <span class="cookie-brand">GRIDMIND PRIVACY</span>
+      <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+    </div>
+  </div>
+  <p id="cookie-description">
+    Wir verwenden notwendige Speichertechnologien für die Funktion dieser Website.
+    Zusätzliche Technologien aktivieren wir nur mit deiner Einwilligung.
+  </p>
+  <div class="cookie-details" id="cookie-details" hidden>
+    <label class="cookie-option"><span><strong>Notwendig</strong><small>Grundlegende Funktionen und deine Auswahl.</small></span><input type="checkbox" checked disabled></label>
+    <label class="cookie-option"><span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span><input type="checkbox" id="consent-functional"></label>
+    <label class="cookie-option"><span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span><input type="checkbox" id="consent-analytics"></label>
+    <label class="cookie-option"><span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span><input type="checkbox" id="consent-marketing"></label>
+  </div>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept" id="cookie-accept" type="button">Alle akzeptieren</button>
+    <button class="cookie-btn cookie-reject" id="cookie-reject" type="button">Nur notwendige</button>
+    <button class="cookie-btn cookie-settings" id="cookie-settings" type="button">Einstellungen</button>
+    <button class="cookie-btn cookie-save" id="cookie-save" type="button" hidden>Auswahl speichern</button>
+  </div>
+  <div class="cookie-legal">
+    <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+    <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+    <a href="../rechtliches/impressum.html">Impressum</a>
+  </div>
+</section>
+
+<!-- TYPEWRITER + TIMELINE -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const phrases = [
+    "Webentwickler",
+    "Frontend Developer",
+    "Fullstack Developer"
+  ];
+
+  const output = document.getElementById("web-typewriter");
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  if (output) {
+    if (reduced.matches) {
+      output.textContent = phrases[0];
+    } else {
+      let index = 0;
+      let position = phrases[0].length;
+      let deleting = true;
+
+      function tick() {
+        const chars = Array.from(phrases[index]);
+        position += deleting ? -1 : 1;
+        position = Math.max(0, Math.min(chars.length, position));
+        output.textContent = chars.slice(0, position).join("");
+
+        let delay = deleting ? 48 : 88;
+
+        if (position === 0 && deleting) {
+          deleting = false;
+          index = (index + 1) % phrases.length;
+          delay = 350;
+        } else if (position === chars.length && !deleting) {
+          deleting = true;
+          delay = 1800;
+        }
+
+        window.setTimeout(tick, delay);
+      }
+
+      window.setTimeout(tick, 1900);
+    }
+  }
+
+  const track = document.querySelector(".web-roadmap-track");
+  const line = document.querySelector(".web-roadmap-line");
+  const progress = document.querySelector(".web-roadmap-progress");
+  const phases = Array.from(document.querySelectorAll(".web-phase"));
+
+  if (!track || !line || !progress) return;
+
+  if (reduced.matches) {
+    phases.forEach(p => p.classList.add("is-visible"));
+    progress.style.height = "100%";
+    return;
+  }
+
+  if ("IntersectionObserver" in window) {
+    track.classList.add("web-roadmap-js");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.05, rootMargin: "0px 0px -5% 0px"});
+    phases.forEach(p => observer.observe(p));
+  } else {
+    phases.forEach(p => p.classList.add("is-visible"));
+  }
+
+  let scheduled = false;
+  function update() {
+    const rect = line.getBoundingClientRect();
+    const trigger = window.innerHeight * 0.65;
+    const amount = Math.max(0, Math.min(rect.height, trigger - rect.top));
+    progress.style.height = amount + "px";
+    scheduled = false;
+  }
+
+  function requestUpdate() {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(update);
+  }
+
+  window.addEventListener("scroll", requestUpdate, {passive: true});
+  window.addEventListener("resize", requestUpdate);
+  requestUpdate();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1094 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e4038">
+  <meta name="description" content="GridWatch von Gridmind Technologies – elegantes Smartwatch-Konzept für Bewegung, Kommunikation und deinen Alltag.">
+  <title>GridWatch | Gridmind Technologies</title>
+
+  <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+  <link rel="stylesheet" href="../css/figtree.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/gridwatch.css">
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body class="gridmind-gridwatch">
+<a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
+
+<!-- ==========================================
+     GEMEINSAMER GRIDMIND HEADER
+     ========================================== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"
+       aria-label="Gridmind Technologies – Startseite">
+      <img src="../assets/logo.png" width="280" height="94"
+           alt="Gridmind Technologies">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-offers">
+          Unsere Angebote
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown" id="nav-offers">
+          <span class="dropdown-title">Ausbildung & Karriere</span>
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+          <span class="dropdown-title">Digitale Dienstleistungen</span>
+          <a href="../services/websites.html">Websites erstellen lassen</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-trigger" type="button"
+                aria-expanded="false" aria-controls="nav-devices">
+          Geräte & Software
+          <svg viewBox="0 0 12 8" width="12" height="8"
+               fill="none" aria-hidden="true">
+            <path d="M1 1.5L6 6.5L11 1.5"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown" id="nav-devices">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html" aria-current="page">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </div>
+
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="kaufen.html?produkt=gridwatch" class="header-cta">
+        GridWatch kaufen
+        <span aria-hidden="true">↗</span>
+      </a>
+      <button class="hamburger" id="hamburger" type="button"
+              aria-label="Menü öffnen"
+              aria-controls="mobile-menu"
+              aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobiles Menü">
+    <div class="mobile-menu-inner">
+      <a href="../index.html">Startseite</a>
+      <details>
+        <summary>Bildungsangebote</summary>
+        <div class="mobile-submenu">
+          <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+          <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+          <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+          <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+          <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+        </div>
+      </details>
+      <details>
+        <summary>Websites & Software</summary>
+        <div class="mobile-submenu">
+          <a href="../services/websites.html">Website-Erstellung</a>
+          <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+          <a href="../services/ki-integration.html">KI-Integration</a>
+        </div>
+      </details>
+      <details>
+        <summary>Grid-Geräte</summary>
+        <div class="mobile-submenu">
+          <a href="../produkte/gridphone.html">GridPhone</a>
+          <a href="../produkte/gridtab.html">GridTab</a>
+          <a href="../produkte/gridwatch.html" aria-current="page">GridWatch</a>
+          <a href="../produkte/gridmac.html">GridMac</a>
+          <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        </div>
+      </details>
+      <a href="../unternehmen/ueber-uns.html">Über uns</a>
+      <a href="../unternehmen/blog.html">Blog</a>
+      <a href="../unternehmen/karriere.html">Karriere</a>
+      <a href="../unternehmen/kontakt.html">Kontakt</a>
+      <a href="kaufen.html?produkt=gridwatch" class="mobile-cta">
+        GridWatch kaufen →
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- PRODUKT-SUBNAVIGATION -->
+  <nav class="gw-subnav" aria-label="GridWatch Produktnavigation">
+    <div class="container gw-subnav-inner">
+      <strong>GridWatch</strong>
+      <div>
+        <a href="#design">Design</a>
+        <a href="#farben">Farben</a>
+        <a href="#display">Display</a>
+        <a href="#gesundheit">Fitness</a>
+        <a href="#technik">Technische Daten</a>
+        <a class="gw-small-buy" href="kaufen.html?produkt=gridwatch">
+          Kaufen
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO
+       ========================================== -->
+  <section class="gw-hero" aria-labelledby="gw-hero-title">
+    <div class="container gw-hero-inner">
+      <span class="gw-eyebrow">GRIDMIND TECHNOLOGIES PRESENTS</span>
+
+      <h1 id="gw-hero-title">GridWatch<span>.</span></h1>
+
+      <p class="gw-hero-slogan">
+        Mehr Zeit für
+        <span id="gw-typewriter">dich.</span><i aria-hidden="true"></i>
+      </p>
+
+      <p class="gw-hero-description">
+        Stil trifft intelligente Technologie.
+        Die GridWatch verbindet ein elegantes Design
+        mit smarten Ideen für Bewegung, Organisation
+        und die besonderen Momente deines Alltags.
+      </p>
+
+      <div class="gw-hero-actions">
+        <a href="kaufen.html?produkt=gridwatch"
+           class="btn btn-primary hero-button">
+          GridWatch kaufen
+          <span class="arrow-circle" aria-hidden="true">→</span>
+        </a>
+        <a href="#entdecken" class="gw-inline-link">
+          GridWatch entdecken ↓
+        </a>
+      </div>
+
+      <!-- EINHEITLICHE UHR -->
+      <div class="gw-hero-stage">
+        <div class="gw-stage-glow"></div>
+
+        <div class="gw-watch gw-hero-watch" role="img"
+             aria-label="GridWatch mit grünem Armband und dunklem Zifferblatt">
+          <div class="gw-strap gw-strap-top">
+            <div class="gw-strap-detail"></div>
+          </div>
+
+          <div class="gw-strap gw-strap-bottom">
+            <div class="gw-strap-holes">
+              <i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+
+          <div class="gw-case">
+            <span class="gw-crown"></span>
+            <span class="gw-side-button"></span>
+            <div class="gw-screen">
+              <div class="gw-face">
+                <div class="gw-face-top">
+                  <span>GRIDMIND</span>
+                  <span class="gw-face-dot">●</span>
+                </div>
+                <div class="gw-face-time">
+                  <strong>10:08</strong>
+                  <span>FR 30</span>
+                </div>
+                <div class="gw-face-rings">
+                  <i></i><i></i><i></i>
+                </div>
+                <div class="gw-face-bottom">
+                  <img src="../assets/logo-icon.png" alt="">
+                  <span>MOVE YOUR DAY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span class="gw-stage-caption">
+          GRIDWATCH · PRODUKTVISUALISIERUNG
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       HIGHLIGHTS
+       ========================================== -->
+  <section class="gw-highlights" id="entdecken">
+    <div class="container gw-highlight-grid">
+      <article>
+        <span>01</span>
+        <strong>42 / 46 mm</strong>
+        <p>Gehäusegrößen</p>
+      </article>
+      <article>
+        <span>02</span>
+        <strong>OLED</strong>
+        <p>Displaykonzept</p>
+      </article>
+      <article>
+        <span>03</span>
+        <strong>GPS</strong>
+        <p>Standortfunktionen</p>
+      </article>
+      <article>
+        <span>04</span>
+        <strong>~24 h</strong>
+        <p>Akkulaufzeit als Zielwert</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DESIGN – GLEICHE UHR
+       ========================================== -->
+  <section class="gw-section gw-design" id="design">
+    <div class="container gw-split">
+
+      <div class="gw-section-copy">
+        <span class="gw-eyebrow">DESIGN</span>
+        <h2>Ein kleines Detail.<br><em>Große Wirkung.</em></h2>
+        <p>
+          Die GridWatch setzt auf ein elegant
+          abgerundetes Gehäuse mit einer klaren
+          Formensprache und harmonischen Proportionen.
+        </p>
+        <p>
+          Die digitale Krone und das seitliche
+          Bedienelement ergänzen das Touchdisplay.
+          Das Armband sorgt für einen einheitlichen
+          Look vom Gehäuse bis zum Handgelenk.
+        </p>
+        <a href="#farben" class="gw-inline-link">
+          Farben entdecken ↗
+        </a>
+      </div>
+
+      <div class="gw-design-stage">
+        <div class="gw-design-circle"></div>
+
+        <div class="gw-watch gw-design-watch" role="img"
+             aria-label="GridWatch Produktansicht">
+          <div class="gw-strap gw-strap-top">
+            <div class="gw-strap-detail"></div>
+          </div>
+          <div class="gw-strap gw-strap-bottom">
+            <div class="gw-strap-holes">
+              <i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+          <div class="gw-case">
+            <span class="gw-crown"></span>
+            <span class="gw-side-button"></span>
+            <div class="gw-screen">
+              <div class="gw-face">
+                <div class="gw-face-top">
+                  <span>GRIDMIND</span><span class="gw-face-dot">●</span>
+                </div>
+                <div class="gw-face-time">
+                  <strong>10:08</strong><span>FR 30</span>
+                </div>
+                <div class="gw-face-rings"><i></i><i></i><i></i></div>
+                <div class="gw-face-bottom">
+                  <img src="../assets/logo-icon.png" alt="">
+                  <span>MOVE YOUR DAY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span class="gw-stage-caption">DESIGNED BY GRIDMIND</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       KONFIGURATOR
+       ========================================== -->
+  <section class="gw-section gw-colors" id="farben">
+    <div class="container">
+      <div class="gw-heading">
+        <span class="gw-eyebrow">DEINE GRIDWATCH</span>
+        <h2>Deine Uhr.<br><em>Dein Stil.</em></h2>
+        <p>
+          Wähle Gehäusegröße, Farbe und
+          Verbindung im interaktiven Produktkonfigurator.
+        </p>
+      </div>
+
+      <div class="gw-config-layout">
+        <div class="gw-config-stage">
+          <!-- IDENTISCHE UHR -->
+          <div class="gw-watch gw-config-watch" role="img"
+               aria-label="GridWatch Konfiguratorvorschau">
+            <div class="gw-strap gw-strap-top">
+              <div class="gw-strap-detail"></div>
+            </div>
+            <div class="gw-strap gw-strap-bottom">
+              <div class="gw-strap-holes">
+                <i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <div class="gw-case">
+              <span class="gw-crown"></span>
+              <span class="gw-side-button"></span>
+              <div class="gw-screen">
+                <div class="gw-face">
+                  <div class="gw-face-top">
+                    <span>GRIDMIND</span>
+                    <span class="gw-face-dot">●</span>
+                  </div>
+                  <div class="gw-face-time">
+                    <strong>10:08</strong><span>FR 30</span>
+                  </div>
+                  <div class="gw-face-rings">
+                    <i></i><i></i><i></i>
+                  </div>
+                  <div class="gw-face-bottom">
+                    <img src="../assets/logo-icon.png" alt="">
+                    <span>MOVE YOUR DAY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gw-config">
+          <span class="gw-config-label">GEHÄUSEGRÖSSE</span>
+
+          <div class="gw-option-group" role="group"
+               aria-label="Gehäusegröße">
+            <button class="gw-option is-selected"
+                    type="button" data-gw-size="42"
+                    aria-pressed="true">42 mm</button>
+            <button class="gw-option"
+                    type="button" data-gw-size="46"
+                    aria-pressed="false">46 mm</button>
+          </div>
+
+          <div class="gw-divider"></div>
+
+          <span class="gw-config-label">ARMBANDFARBE</span>
+          <h3 id="gw-color-name">Forest Green</h3>
+
+          <div class="gw-swatches" role="group"
+               aria-label="Armbandfarbe">
+            <button type="button" class="gw-swatch is-selected"
+                    data-gw-color="forest"
+                    aria-label="Forest Green"
+                    aria-pressed="true"><span></span></button>
+            <button type="button" class="gw-swatch"
+                    data-gw-color="midnight"
+                    aria-label="Midnight"
+                    aria-pressed="false"><span></span></button>
+            <button type="button" class="gw-swatch"
+                    data-gw-color="sand"
+                    aria-label="Sand"
+                    aria-pressed="false"><span></span></button>
+            <button type="button" class="gw-swatch"
+                    data-gw-color="sky"
+                    aria-label="Sky Blue"
+                    aria-pressed="false"><span></span></button>
+          </div>
+
+          <div class="gw-divider"></div>
+
+          <span class="gw-config-label">VERBINDUNG</span>
+
+          <div class="gw-option-group" role="group"
+               aria-label="Verbindung">
+            <button type="button" class="gw-option is-selected"
+                    data-gw-network="gps"
+                    aria-pressed="true">GPS</button>
+            <button type="button" class="gw-option"
+                    data-gw-network="cellular"
+                    aria-pressed="false">GPS + Cellular</button>
+          </div>
+
+          <p class="gw-selection">
+            Deine Auswahl:
+            <strong id="gw-selection">
+              42 mm · Forest Green · GPS
+            </strong>
+          </p>
+
+          <a href="kaufen.html?produkt=gridwatch"
+             id="gw-config-buy"
+             class="btn btn-primary hero-button">
+            Jetzt kaufen
+            <span class="arrow-circle" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DISPLAY
+       ========================================== -->
+  <section class="gw-section gw-display" id="display">
+    <div class="container">
+      <div class="gw-heading gw-heading-dark">
+        <span class="gw-eyebrow">DISPLAY</span>
+        <h2>Alles im Blick.<br><em>Mit einem Blick.</em></h2>
+        <p>
+          Ein kompaktes OLED-Display bietet Platz
+          für Uhrzeit, Benachrichtigungen,
+          Aktivitäten und nützliche Informationen.
+        </p>
+      </div>
+
+      <div class="gw-display-stage">
+        <div class="gw-watch gw-display-watch" role="img"
+             aria-label="Große Ansicht des GridWatch-Displays">
+          <div class="gw-strap gw-strap-top">
+            <div class="gw-strap-detail"></div>
+          </div>
+          <div class="gw-strap gw-strap-bottom">
+            <div class="gw-strap-holes">
+              <i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+          <div class="gw-case">
+            <span class="gw-crown"></span>
+            <span class="gw-side-button"></span>
+            <div class="gw-screen">
+              <div class="gw-face">
+                <div class="gw-face-top">
+                  <span>GRIDMIND</span><span class="gw-face-dot">●</span>
+                </div>
+                <div class="gw-face-time">
+                  <strong>10:08</strong><span>FR 30</span>
+                </div>
+                <div class="gw-face-rings"><i></i><i></i><i></i></div>
+                <div class="gw-face-bottom">
+                  <img src="../assets/logo-icon.png" alt="">
+                  <span>MOVE YOUR DAY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gw-display-stats">
+        <article><strong>OLED</strong><span>Displaytechnologie</span></article>
+        <article><strong>42 / 46 mm</strong><span>Gehäusevarianten</span></article>
+        <article><strong>Always-On</strong><span>Designziel</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BEWEGUNG / FITNESS
+       ========================================== -->
+  <section class="gw-section gw-fitness" id="gesundheit">
+    <div class="container gw-split">
+      <div class="gw-section-copy">
+        <span class="gw-eyebrow">BEWEGUNG & FITNESS</span>
+        <h2>Jeder Schritt<br><em>zählt.</em></h2>
+        <p>
+          Bewegung beginnt im Alltag.
+          Die GridWatch-Fitnessansicht zeigt,
+          wie Schritte, Trainingseinheiten und
+          Aktivitätsziele übersichtlich
+          dargestellt werden können.
+        </p>
+        <p>
+          Das Fitnesskonzept verbindet
+          verständliche Übersichten mit
+          einer schnellen Bedienbarkeit
+          direkt am Handgelenk.
+        </p>
+      </div>
+
+      <div class="gw-fitness-visual">
+        <div class="gw-activity-circle">
+          <div class="gw-activity-inner">
+            <small>DAILY ACTIVITY</small>
+            <strong>8.240</strong>
+            <span>Schritte</span>
+          </div>
+        </div>
+        <div class="gw-fitness-tags">
+          <span>↗ Bewegung</span>
+          <span>◈ Training</span>
+          <span>✦ Fortschritt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ALLTAG
+       ========================================== -->
+  <section class="gw-section gw-lifestyle">
+    <div class="container">
+      <div class="gw-heading">
+        <span class="gw-eyebrow">DEIN ALLTAG</span>
+        <h2>Mehr erleben.<br><em>Weniger verpassen.</em></h2>
+      </div>
+
+      <div class="gw-feature-grid">
+        <article>
+          <span>✉</span>
+          <h3>Benachrichtigungen</h3>
+          <p>Wichtige Informationen bequem am Handgelenk betrachten.</p>
+        </article>
+        <article>
+          <span>⌚</span>
+          <h3>Individuelle Zifferblätter</h3>
+          <p>Gestalte die Anzeige passend zu deinem Stil und deinen Interessen.</p>
+        </article>
+        <article>
+          <span>⌖</span>
+          <h3>GPS & Orientierung</h3>
+          <p>Standortbezogene Funktionen als Bestandteil des Ausstattungskonzepts.</p>
+        </article>
+        <article>
+          <span>♫</span>
+          <h3>Musik & Medien</h3>
+          <p>Musiksteuerung und Medienfunktionen direkt über die Uhr.</p>
+        </article>
+        <article>
+          <span>◈</span>
+          <h3>Aktivitätsübersicht</h3>
+          <p>Schritte, Bewegung und persönliche Ziele verständlich darstellen.</p>
+        </article>
+        <article>
+          <span>☁</span>
+          <h3>Verbunden unterwegs</h3>
+          <p>Kommunikation und Synchronisierung über geeignete Funkverbindungen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       AKKU
+       ========================================== -->
+  <section class="gw-section gw-battery">
+    <div class="container gw-split">
+      <div class="gw-battery-visual">
+        <div class="gw-battery-ring">
+          <div class="gw-battery-inner">
+            <span>⚡</span>
+            <strong>24 h</strong>
+            <small>AKKUZIEL</small>
+          </div>
+        </div>
+      </div>
+      <div class="gw-section-copy">
+        <span class="gw-eyebrow">ENERGIE</span>
+        <h2>Bereit für<br><em>deinen Tag.</em></h2>
+        <p>
+          Eine energieeffiziente Plattform
+          und intelligente Displaysteuerung
+          bilden die Grundlage des
+          GridWatch-Akkukonzepts.
+        </p>
+        <p>
+          Als Zielwert orientiert sich das
+          Produktdesign an einer Laufzeit
+          von etwa 24 Stunden bei
+          typischer Nutzung.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       AUSSTATTUNG / TECHNISCHE DATEN
+       ========================================== -->
+  <section class="gw-section gw-specs" id="technik">
+    <div class="container">
+      <div class="gw-heading">
+        <span class="gw-eyebrow">TECHNISCHE DETAILS</span>
+        <h2>GridWatch.<br><em>Alles auf einen Blick.</em></h2>
+        <p>Orientierungswerte für das GridWatch-Hardwarekonzept.</p>
+      </div>
+
+      <div class="gw-spec-table">
+        <div class="gw-spec-row">
+          <strong>Gehäusegrößen</strong>
+          <span>42 mm / 46 mm</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Abmessungen – 42 mm</strong>
+          <span>ca. 42 × 36 × 9,7 mm</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Abmessungen – 46 mm</strong>
+          <span>ca. 46 × 39 × 9,7 mm</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Gewicht</strong>
+          <span>ca. 30–38 g ohne Armband, je nach Größe</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Display</strong>
+          <span>OLED, Touchscreen</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Auflösung – 42 mm</strong>
+          <span>374 × 446 Pixel als Orientierungswert</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Auflösung – 46 mm</strong>
+          <span>416 × 496 Pixel als Orientierungswert</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Bedienung</strong>
+          <span>Touchscreen, digitale Krone, Seitentaste</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Verbindungen</strong>
+          <span>Bluetooth, Wi-Fi, GPS; Cellular als Variante</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Speicher</strong>
+          <span>64 GB als Designziel</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Akkulaufzeit</strong>
+          <span>ca. 24 Stunden als Entwicklungsziel</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Sensorik</strong>
+          <span>Bewegung, optische Pulsmessung und Umgebungslicht als Konzept</span>
+        </div>
+        <div class="gw-spec-row">
+          <strong>Armbandfarben</strong>
+          <span>Forest Green, Midnight, Sand, Sky Blue</span>
+        </div>
+      </div>
+
+      <p class="gw-spec-note">
+        Alle technischen Werte beschreiben den GridWatch-Entwurf.
+        Medizinische Funktionen, Wasserbeständigkeit und
+        Sicherheitsmerkmale sind nicht als geprüft oder zertifiziert dargestellt.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GRIDMIND ÖKOSYSTEM
+       ========================================== -->
+  <section class="gw-section gw-ecosystem">
+    <div class="container">
+      <div class="gw-heading">
+        <span class="gw-eyebrow">GRIDMIND ECOSYSTEM</span>
+        <h2>Alles im<br><em>Zusammenspiel.</em></h2>
+        <p>Entdecke weitere Produkte aus der Gridmind-Welt.</p>
+      </div>
+
+      <div class="gw-ecosystem-grid">
+        <a href="../produkte/gridphone.html">
+          <span>▯</span>
+          <h3>GridPhone</h3>
+          <p>Dein Alltag. Dein Smartphone.</p>
+          <strong>Entdecken ↗</strong>
+        </a>
+        <a href="../produkte/gridtab.html">
+          <span>▣</span>
+          <h3>GridTab</h3>
+          <p>Großzügiger Raum für deine Ideen.</p>
+          <strong>Entdecken ↗</strong>
+        </a>
+        <a href="../produkte/gridmac.html">
+          <span>⌘</span>
+          <h3>GridMac</h3>
+          <p>Produktivität neu gestalten.</p>
+          <strong>Entdecken ↗</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ
+       ========================================== -->
+  <section class="gw-section gw-faq" id="faq">
+    <div class="container gw-split">
+      <div class="gw-section-copy">
+        <span class="gw-eyebrow">HÄUFIGE FRAGEN</span>
+        <h2>Fragen zur<br><em>GridWatch?</em></h2>
+        <p>Antworten zu Größen, Farben und der GridWatch-Produktgestaltung.</p>
+      </div>
+
+      <div class="gw-faq-list">
+        <details>
+          <summary>Welche Größen gibt es?</summary>
+          <p>Der GridWatch-Konfigurator bietet zwei Gehäusegrößen: 42 mm und 46 mm.</p>
+        </details>
+        <details>
+          <summary>Welche Armbandfarben stehen zur Auswahl?</summary>
+          <p>Du kannst Forest Green, Midnight, Sand und Sky Blue auswählen. Die Produktansichten verwenden dasselbe Armbanddesign.</p>
+        </details>
+        <details>
+          <summary>Kann ich die GridWatch mit GPS verwenden?</summary>
+          <p>Der Produktentwurf sieht eine GPS-Variante sowie eine zusätzliche Cellular-Konfiguration vor.</p>
+        </details>
+        <details>
+          <summary>Kann ich das Zifferblatt personalisieren?</summary>
+          <p>Das GridWatch-Konzept berücksichtigt unterschiedliche digitale Zifferblattansichten und individuell anpassbare Informationen.</p>
+        </details>
+        <details>
+          <summary>Wie lange hält der Akku?</summary>
+          <p>Als Entwicklungsziel verwenden wir ungefähr 24 Stunden bei typischer Nutzung. Eine tatsächliche Laufzeit müsste am fertigen Gerät gemessen werden.</p>
+        </details>
+        <details>
+          <summary>Kann die GridWatch meine Gesundheit überwachen?</summary>
+          <p>Der Entwurf umfasst Ideen für Aktivitäts- und Sensordaten. Er stellt keine bestätigten medizinischen Mess- oder Diagnosefunktionen dar.</p>
+        </details>
+        <details>
+          <summary>Wohin führt der Kaufen-Button?</summary>
+          <p>Der Button führt zur zentralen Gridmind-Kaufseite. Die ausgewählte Gehäusegröße, Farbe und Verbindung werden über die Adresse übertragen.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FINAL CTA
+       ========================================== -->
+  <section class="gw-final">
+    <div class="container gw-final-inner">
+      <span class="gw-eyebrow">GRIDMIND TECHNOLOGIES</span>
+      <h2>Deine Zeit.<br><em>Deine GridWatch.</em></h2>
+      <p>Entdecke die GridWatch in deinem bevorzugten Design.</p>
+
+      <a href="kaufen.html?produkt=gridwatch"
+         class="btn btn-primary hero-button">
+        GridWatch kaufen
+        <span class="arrow-circle" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- ==========================================
+     GEMEINSAMER GRIDMIND FOOTER
+     ========================================== -->
+<footer class="site-footer">
+  <svg class="footer-wave" viewBox="0 0 1440 125"
+       preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 42C240 110 470 5 720 42C955 80 1190 7 1440 55V125H0Z"
+          fill="#092f2b"/>
+  </svg>
+
+  <div class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <img src="../assets/logo.png" width="280" height="94"
+               alt="Gridmind Technologies">
+        </a>
+        <p>
+          Wir verbinden Menschen, Ideen und Technologie –
+          von deinem ersten IT-Projekt bis zur digitalen Zukunft.
+        </p>
+        <a href="../unternehmen/kontakt.html"
+           class="footer-contact">Kontakt zu Gridmind ↗</a>
+        <div class="footer-social" aria-label="Weitere Informationen">
+          <a href="../unternehmen/blog.html" aria-label="Gridmind Blog">B</a>
+          <a href="../unternehmen/karriere.html" aria-label="Gridmind Karriere">K</a>
+          <a href="../unternehmen/kontakt.html" aria-label="Gridmind Kontakt">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Bildungsangebote</h3>
+        <a href="../bildungsangebote/ki-softwareentwickler.html">KI-Softwareentwickler</a>
+        <a href="../bildungsangebote/ki-automation.html">KI-Automation</a>
+        <a href="../bildungsangebote/webentwicklung.html">Webentwicklung</a>
+        <a href="../bildungsangebote/devsecops.html">DevSecOps</a>
+        <a href="../bildungsangebote/young-coders.html">Young Coders</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Produkte & Services</h3>
+        <a href="../services/websites.html">Website-Erstellung</a>
+        <a href="../services/softwareentwicklung.html">Softwareentwicklung</a>
+        <a href="../services/ki-integration.html">KI-Integration</a>
+        <a href="../produkte/gridmind-ai.html">Gridmind AI</a>
+        <a href="../produkte/gridphone.html">GridPhone</a>
+        <a href="../produkte/gridtab.html">GridTab</a>
+        <a href="../produkte/gridwatch.html">GridWatch</a>
+        <a href="../produkte/gridmac.html">GridMac</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Unternehmen</h3>
+        <a href="../unternehmen/ueber-uns.html">Über Gridmind</a>
+        <a href="../unternehmen/team.html">Unser Team</a>
+        <a href="../unternehmen/karriere.html">Karriere</a>
+        <a href="../unternehmen/blog.html">Blog</a>
+        <a href="../unternehmen/fuer-unternehmen.html">Für Unternehmen</a>
+        <a href="../unternehmen/kontakt.html">Kontakt</a>
+        <h3 class="footer-subtitle">Rechtliches</h3>
+        <a href="../rechtliches/impressum.html">Impressum</a>
+        <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+        <a href="../rechtliches/agb.html">AGB</a>
+        <a href="../rechtliches/widerruf.html">Widerrufsrecht</a>
+        <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+        <a href="../rechtliches/barrierefreiheit.html">
+          Barrierefreiheitserklärung
+        </a>
+        <button type="button" class="footer-text-button"
+                data-open-cookie>Cookie-Einstellungen</button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Gridmind Technologies</span>
+      <span>Designed with <span class="heart">♥</span> by Gridmind</span>
+    </div>
+  </div>
+</footer>
+
+<!-- GEMEINSAMER COOKIE-DIALOG -->
+<div class="cookie-overlay" id="cookie-overlay" hidden></div>
+<section class="cookie-banner" id="cookie-banner"
+         role="dialog" aria-modal="true"
+         aria-labelledby="cookie-title"
+         aria-describedby="cookie-description"
+         tabindex="-1" hidden>
+  <div class="cookie-heading">
+    <span class="cookie-icon">◈</span>
+    <div>
+      <span class="cookie-brand">GRIDMIND PRIVACY</span>
+      <h2 id="cookie-title">Deine Privatsphäre zählt.</h2>
+    </div>
+  </div>
+  <p id="cookie-description">
+    Wir verwenden notwendige Speichertechnologien für die Funktion
+    dieser Website. Zusätzliche Technologien aktivieren wir nur
+    mit deiner Einwilligung.
+  </p>
+  <div class="cookie-details" id="cookie-details" hidden>
+    <label class="cookie-option">
+      <span><strong>Notwendig</strong><small>Grundlegende Funktionen und deine Auswahl.</small></span>
+      <input type="checkbox" checked disabled>
+    </label>
+    <label class="cookie-option">
+      <span><strong>Funktional</strong><small>Zusätzliche Komfortfunktionen.</small></span>
+      <input type="checkbox" id="consent-functional">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Statistik</strong><small>Optionale Auswertung der Website-Nutzung.</small></span>
+      <input type="checkbox" id="consent-analytics">
+    </label>
+    <label class="cookie-option">
+      <span><strong>Marketing</strong><small>Optionale Marketingtechnologien.</small></span>
+      <input type="checkbox" id="consent-marketing">
+    </label>
+  </div>
+  <div class="cookie-actions">
+    <button type="button" class="cookie-btn cookie-accept"
+            id="cookie-accept">Alle akzeptieren</button>
+    <button type="button" class="cookie-btn cookie-reject"
+            id="cookie-reject">Nur notwendige</button>
+    <button type="button" class="cookie-btn cookie-settings"
+            id="cookie-settings">Einstellungen</button>
+    <button type="button" class="cookie-btn cookie-save"
+            id="cookie-save" hidden>Auswahl speichern</button>
+  </div>
+  <div class="cookie-legal">
+    <a href="../rechtliches/datenschutz.html">Datenschutz</a>
+    <a href="../rechtliches/cookies.html">Cookie-Richtlinie</a>
+    <a href="../rechtliches/impressum.html">Impressum</a>
+  </div>
+</section>
+
+<!-- ==========================================
+     TYPEWRITER + KONFIGURATOR
+     ========================================== -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  // TYPEWRITER
+  const typewriter = document.getElementById("gw-typewriter");
+  const phrases = [
+    "dich.",
+    "deine Ziele.",
+    "deine Bewegung.",
+    "deinen Alltag."
+  ];
+
+  if (typewriter && !reducedMotion) {
+    let phraseIndex = 0;
+    let charIndex = phrases[0].length;
+    let deleting = true;
+
+    function tick() {
+      const chars = Array.from(phrases[phraseIndex]);
+      charIndex += deleting ? -1 : 1;
+      charIndex = Math.max(0, Math.min(chars.length, charIndex));
+      typewriter.textContent = chars.slice(0, charIndex).join("");
+
+      let delay = deleting ? 52 : 98;
+
+      if (deleting && charIndex === 0) {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        deleting = false;
+        delay = 380;
+      } else if (!deleting &&
+                 charIndex === phrases[phraseIndex].length) {
+        deleting = true;
+        delay = 1900;
+      }
+
+      window.setTimeout(tick, delay);
+    }
+
+    window.setTimeout(tick, 1800);
+  }
+
+  // GRIDWATCH KONFIGURATOR
+  const colors = {
+    forest: {
+      name: "Forest Green",
+      strap: "#367b66",
+      caseColor: "#3e7465"
+    },
+    midnight: {
+      name: "Midnight",
+      strap: "#273f4b",
+      caseColor: "#354d59"
+    },
+    sand: {
+      name: "Sand",
+      strap: "#c7bda7",
+      caseColor: "#b1a993"
+    },
+    sky: {
+      name: "Sky Blue",
+      strap: "#87b6d4",
+      caseColor: "#759fb9"
+    }
+  };
+
+  let selectedSize = "42";
+  let selectedColor = "forest";
+  let selectedNetwork = "gps";
+
+  const sizeButtons = Array.from(
+    document.querySelectorAll("[data-gw-size]")
+  );
+  const colorButtons = Array.from(
+    document.querySelectorAll("[data-gw-color]")
+  );
+  const networkButtons = Array.from(
+    document.querySelectorAll("[data-gw-network]")
+  );
+
+  const nameOutput = document.getElementById("gw-color-name");
+  const selectionOutput = document.getElementById("gw-selection");
+  const buyLink = document.getElementById("gw-config-buy");
+
+  function updateConfigurator() {
+    const color = colors[selectedColor];
+
+    document.body.style.setProperty(
+      "--gw-strap-color", color.strap
+    );
+    document.body.style.setProperty(
+      "--gw-case-color", color.caseColor
+    );
+
+    document.body.classList.toggle(
+      "gw-large-selected", selectedSize === "46"
+    );
+
+    if (nameOutput) {
+      nameOutput.textContent = color.name;
+    }
+
+    const networkLabel = selectedNetwork === "gps"
+      ? "GPS" : "GPS + Cellular";
+
+    if (selectionOutput) {
+      selectionOutput.textContent =
+        selectedSize + " mm · " +
+        color.name + " · " + networkLabel;
+    }
+
+    if (buyLink) {
+      const params = new URLSearchParams({
+        produkt: "gridwatch",
+        groesse: selectedSize,
+        farbe: selectedColor,
+        verbindung: selectedNetwork
+      });
+
+      buyLink.href = "kaufen.html?" + params.toString();
+    }
+  }
+
+  function bindOptions(buttons, key, callback) {
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        callback(button.dataset[key]);
+
+        buttons.forEach(item => {
+          const active = item === button;
+          item.classList.toggle("is-selected", active);
+          item.setAttribute("aria-pressed", String(active));
+        });
+
+        updateConfigurator();
+      });
+    });
+  }
+
+  bindOptions(sizeButtons, "gwSize", value => {
+    if (["42", "46"].includes(value)) selectedSize = value;
+  });
+
+  bindOptions(colorButtons, "gwColor", value => {
+    if (Object.prototype.hasOwnProperty.call(colors, value)) {
+      selectedColor = value;
+    }
+  });
+
+  bindOptions(networkButtons, "gwNetwork", value => {
+    if (["gps", "cellular"].includes(value)) {
+      selectedNetwork = value;
+    }
+  });
+
+  updateConfigurator();
+});
+</script>
+</body>
+</html>
